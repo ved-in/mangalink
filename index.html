@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MangaLink - Find Where to Read</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header id="site_header">
+    <div class="logo">Manga<span>Link</span></div>
+    <div class="tagline">find where to read - no piracy, just links</div>
+  </header>
+
+  <section class="hero">
+    <h1>Find <em>Where</em><br>to Read It</h1>
+    <p>Search any manga or manhwa - we'll check every source and show you where each chapter is available.</p>
+    <div class="search_wrap">
+      <input type="text" id="search_input" placeholder="e.g. Solo Leveling, Overgeared, Chainsaw Man…" autocomplete="off" />
+      <button id="search_btn">Search</button>
+    </div>
+  </section>
+
+  <div class="container" id="main_container" style="display:none">
+
+    <!-- LEFT: Search results + Bookmarks tabs -->
+    <div id="left_panel">
+      <div id="tabs">
+        <button class="tab active" data-tab="search">Search</button>
+        <button class="tab" data-tab="bookmarks">Bookmarks</button>
+      </div>
+
+      <div id="search_view">
+        <div class="panel_title">Results</div>
+        <div id="results_list">
+          <div class="empty_state"><p>Search for a title above</p></div>
+        </div>
+      </div>
+
+      <div id="bookmarks_view" style="display:none">
+        <div class="panel_title">Bookmarks</div>
+        <div id="bm_list">
+          <div class="empty_state"><p>No bookmarks yet.<br>Search a title and tap the ★ icon.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Chapter list -->
+    <div id="chapters_panel">
+      <div class="chapters_header">
+        <div class="selected_title" id="selected_title">Select a title →</div>
+        <input type="text" id="chapter_search" placeholder="Jump to ch…" />
+      </div>
+      <div class="chapters_list" id="chapters_list">
+        <div class="empty_state">
+          <div class="big_icon">📖</div>
+          <p>Pick a title on the left<br>to see its chapters</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SOURCES MODAL -->
+  <div id="modal">
+    <div class="modal_box">
+      <div class="modal_head">
+        <div>
+          <div class="modal_chapter_label" id="modal_chapter_label">Chapter</div>
+          <div class="modal_title_text" id="modal_title">Title</div>
+        </div>
+        <button class="close_btn" id="close_modal">✕</button>
+      </div>
+      <div class="modal_body" id="modal_body">
+        <div class="source_checking"><div class="spinner"></div><br>Checking sources…</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    MangaLink does not host any content. All links point to third-party websites. &nbsp;·&nbsp;
+    Data via <a href="https://api.jikan.moe" target="_blank">Jikan / MyAnimeList</a>. &nbsp;·&nbsp;
+    Built for readers, by readers.
+  </footer>
+
+  <!-- Sources must load before modal.js -->
+  <script src="js/sources/asura.js"></script>
+  <script src="js/sources/demonic.js"></script>
+  <script src="js/sources/adk.js"></script>
+
+  <!-- Core modules -->
+  <script src="js/storage.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/checker.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/bookmarks.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
