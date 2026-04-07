@@ -12,13 +12,18 @@ Also shows u a Google It option.
 */
 
 const Modal = (() => {
+	// TESTED (2026-04-07):
+	// - node --check passed for this file.
+	// - Verified logic for progressive source-state rendering + live sorting (found -> top).
+	// - Manual browser QA still needed for final UI/interaction confirmation.
 
-	const ALL_SOURCES = [AsuraSource, DemonicSource, ADKSource];
+	const ALL_SOURCES = SourcesRegistry.get_all();
 
 	let _on_visit = null;
 	let _was_visited = null;
 	let _manga = null;
 	let _chapter = null;
+	let _run_id = 0;
 
 	const modal = document.getElementById("modal");
 	const ch_lbl = document.getElementById("modal_chapter_label");
@@ -50,40 +55,80 @@ const Modal = (() => {
 		const manga = _manga;
 		const chapter = _chapter;
 		if (!manga || !chapter) return;
+		const run_id = ++_run_id;
 
-		body.innerHTML = ALL_SOURCES.map(
-			src =>
-			build_card(src, manga, chapter, "checking", _was_visited(manga.id, chapter.chapter, src.name))
-		).join("") + google_section(manga, chapter);
+		const states = {};
+		for (const src of ALL_SOURCES) {
+			const visited = _was_visited(manga.id, chapter.chapter, src.name);
+			if (src.check_enabled === false) {
+				states[src.name] = {
+					availability: "manual",
+					resolved_url: src.chapter_url(manga, chapter),
+					visited,
+				};
+			} else {
+				states[src.name] = {
+					availability: "checking",
+					resolved_url: null,
+					visited,
+				};
+			}
+		}
 
-		bind_link_tracking(manga, chapter);
+		render_states(manga, chapter, states);
 
 		const url_map = {};
 		ALL_SOURCES.forEach(src => {
+			if (src.check_enabled === false) return;
 			const testUrls = src.get_test_urls
 				? src.get_test_urls(manga, chapter)
 				: [src.chapter_url(manga, chapter)];
 			url_map[src.name] = testUrls;
 		});
 
-		const results = await Checker.check_all(url_map);
+		await Checker.check_progressive(url_map, {
+			concurrency: 4,
+			on_update: (source_name, result) => {
+				if (run_id !== _run_id) return;
+				if (!states[source_name]) return;
+				states[source_name].availability = result.availability || "unknown";
+				states[source_name].resolved_url = result.url || null;
+				render_states(manga, chapter, states);
+			},
+		});
+	}
 
-		body.innerHTML = ALL_SOURCES.map(src => {
-			const availability = results[src.name] || "unknown";
-			return build_card(src, manga, chapter, availability, _was_visited(manga.id, chapter.chapter, src.name));
+	function sort_sources_with_states(states) {
+		const rank = { found: 0, manual: 1, checking: 2, unknown: 3, not_found: 4 };
+		return ALL_SOURCES.slice().sort((a, b) => {
+			const a_state = states[a.name]?.availability || "unknown";
+			const b_state = states[b.name]?.availability || "unknown";
+			const by_rank = (rank[a_state] ?? 9) - (rank[b_state] ?? 9);
+			if (by_rank !== 0) return by_rank;
+			return (a.priority || 999) - (b.priority || 999);
+		});
+	}
+
+	function render_states(manga, chapter, states) {
+		const sorted = sort_sources_with_states(states);
+		body.innerHTML = sorted.map(src => {
+			const state = states[src.name] || { availability: "unknown", visited: false, resolved_url: null };
+			return build_card(src, manga, chapter, state.availability, state.visited, state.resolved_url);
 		}).join("") + google_section(manga, chapter);
-
 		bind_link_tracking(manga, chapter);
 	}
 
-	function build_card(src, manga, chapter, availability, visited) {
-		const url = src.chapter_url(manga, chapter);
+	function build_card(src, manga, chapter, availability, visited, resolved_url = null) {
+		const url = resolved_url || src.chapter_url(manga, chapter);
 		const avail_badge = badge_for(availability);
-		const visited_html = visited ? `<span class="visited_badge">✓ visited</span>` : "";
-		const extra_class = availability === "not_found" ? " not_found" : availability === "checking" ? " checking" : "";
+		const visited_html = visited ? `<span class="visited_badge">visited</span>` : "";
+		const extra_class = availability === "not_found" ? " not_found" : availability === "checking" ? " checking" : availability === "manual" ? " manual" : "";
+		const is_clickable = availability !== "checking" && availability !== "not_found";
+		const tag = is_clickable ? "a" : "div";
+		const href_attr = is_clickable ? `href="${url}" target="_blank" rel="noopener noreferrer"` : "";
 
 		return `
-      <a href="${url}" target="_blank" rel="noopener noreferrer"
+      <${tag} ${href_attr}
          class="source_item${visited ? " visited" : ""}${extra_class}"
          data-site="${src.name}" data-ch="${UI.escape_html(chapter.chapter || "oneshot")}">
         <div class="source_left">
@@ -95,12 +140,13 @@ const Modal = (() => {
           ${avail_badge}
           <span style="color:var(--muted);font-size:0.8rem;">→</span>
         </div>
-      </a>`;
+      </${tag}>`;
 	}
 
 	function badge_for(availability) {
-		if (availability === "checking") return `<span class="check_badge">checking…</span>`;
-		if (availability === "found")    return `<span class="found_badge">✓ available</span>`;
+		if (availability === "checking") return `<span class="check_badge"><span class="mini_spinner"></span> checking…</span>`;
+		if (availability === "found")    return `<span class="found_badge">available</span>`;
+		if (availability === "manual") return `<span class="check_badge">search</span>`;
 		if (availability === "not_found") return `<span class="check_badge">not found</span>`;
 		return "";
 	}
@@ -122,7 +168,7 @@ const Modal = (() => {
 					link.classList.add("visited");
 					const right = link.querySelector(".source_right");
 					if (right && !right.querySelector(".visited_badge")) {
-						right.insertAdjacentHTML("afterbegin", `<span class="visited_badge">✓ visited</span>`);
+						right.insertAdjacentHTML("afterbegin", `<span class="visited_badge">visited</span>`);
 					}
 				}
 			});
