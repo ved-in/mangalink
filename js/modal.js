@@ -60,10 +60,20 @@ const Modal = (() => {
 
 		const url_map = {};
 		ALL_SOURCES.forEach(src => {
-			const testUrls = src.get_test_urls
-				? src.get_test_urls(manga, chapter)
-				: [src.chapter_url(manga, chapter)];
-			url_map[src.name] = testUrls;
+			if (src.check_type === "html_alt")
+			{
+				url_map[src.name] = {
+					type: "html_alt",
+					url: src.chapter_url(manga, chapter),
+					alt: src.get_alt_text(manga, chapter),
+				};
+			}
+			else if (src.get_test_urls) {
+				url_map[src.name] = src.get_test_urls(manga, chapter);
+			}
+			else {
+				url_map[src.name] = [src.chapter_url(manga, chapter)];
+			}
 		});
 
 		const results = await Checker.check_all(url_map);

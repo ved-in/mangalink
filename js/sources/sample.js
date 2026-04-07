@@ -5,6 +5,24 @@ const SampleSource = {
 	icon: "🌐",
 	type: "fantl", // genre/type label, just for reference
 
+	// check_type tells the proxy HOW to verify this source.
+	// "html_alt" = fetch the chapter_url page HTML and look for the alt text pattern.
+	// Remove the comment of the line below if you have that pattern
+	
+	//check_type: "html_alt",
+
+	// Sample function for html_alt type checking.
+	
+	/*
+
+	get_alt_text(manga, chapter)
+	{
+		return `${manga.title} Chapter ${chapter.chapter} 1`;
+	},
+
+	*/
+
+
 	_to_slug(title)
 	// THIS WILL BE CHANGED ACCORDING TO SITES. Some of em are... weird...
 	{

@@ -61,20 +61,33 @@ If you are the owner of the particular scanlations this project links to and wan
 Similarly if you want a scanlation to be added, u may create a new issue.
 
 ## ToDo
-[ ] Demonicscans is unreliable. See if it has some more different urls for images to make it more consistent. Or there other way im missing. Maybe some pattern in page source?
-[ ] Check if Asurascans and ADKscans works as expected with different namings of series
+[x] Demonicscans is unreliable. See if it has some more different urls for images to make it more consistent. Or there other way im missing. Maybe some pattern in page source? (done, the alt param of elements in page source of chapters had a pattern. using that)
+
+[x] Check if Asurascans and ADKscans works as expected with different namings of series
+
 [ ] A direct method to load all sources might be good. Maybe a standard json format where everything is described in json?
+
 [ ] Continue Reading feature
+
 [ ] Clear read history or all bookmarks at once or for particular series
-[ ] Add more sources - can refer to some in MangaFox maybe
+
+[ ] Add more sources - can refer to some in MangaFox maybe (https://en-thunderscans.com/)
+
 [ ] Make sources update dynamically (after check, show available or not) and move available ones at top and others at bottom. Show a circle loading animation while different sources are being tested
+
 [ ] After adding MORE scanlation websites, the amount of links to test will increase MUCH (or maybe not, demonicscans might be an exception). A server-side cache?
-[ ] On demand source checking to prevent GAZILLIONS of HTTP Requests (maybe its not even a problem?) or source checking depending on genre? Like AsuraScans is THE GOAT for regression, isekai genre so a priority list?
+
+[x] On demand source checking to prevent GAZILLIONS of HTTP Requests (maybe its not even a problem?) or source checking depending on genre? Like AsuraScans is THE GOAT for regression, isekai genre so a priority list? (no need)
+
 [ ] Make validation of urls client side. It will be much faster. I tried proxies like corsproxy.io but they are pretty slow. Will need to see what can be done.
-[ ] Ship it as a website maybe through vercel.
+
+[x] Ship it as a website maybe through vercel. (done, through github pages)
 
 ## Long term
 [ ] **CANNOT SOLVE RIGHT NOW** - names in Jikan API and scanlations do not match many times. Would be nice if I could find a way but as of now I cannot think of ANYTHING. ORRRRRR maybe we could fetch from the scanlations websites we use so the series available here are definitely available in one of the sources. But that's for later when we make the api
+
 [ ] Ship it as a extension and or... a mobile app?
+
 [ ] I also want to make this a CLI tool (python maybe, or rust?)
+
 [ ] Search by genre, status, year, etc.

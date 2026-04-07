@@ -1,51 +1,39 @@
 /*
-THIS FUCKING STUPID SCANLATIONS WEBSITE DECIDED ITS A GOOD IDEA TO HAVE
-MULTIPLEEEE FUCKING LINKS FOR ITS IMAGES... NO IT DOES NOT STOP AGGREGATORS...
-WEIRD AHH ENCODING AND THIS WEIRD AHH `{chapter_num}.` ENDPOINT WTF????
+I was overcomplicating this.
+Instead of checking all the possible image urls WHICH THERE ARE MORE AND I WAS MISSING THEM
 
-	10/10 for reading...
-  -100/10 for comfortabilty...
+The images of the chapters all have `alt` attribute of similar pattern like:
+"Martial Peak Chapter 3859 1"
+"Possessing Me: The Untouchable Outsider Chapter 18 1"
 
-I spent 2 DAYS WRESLING WITH THIS DUMB SHIT
-TRULY DEMONIC
+which is of the pattern
+`${manga.title} Chapter ${chapter.chapter} {page_no}`
 
-series url - https://demonicscans.org/manga/Solo-Leveling%253A-Ragnarok
-chapter url - https://demonicscans.org/title/Solo-Leveling%253A-Ragnarok/chapter/{chap_num}/1 -> The 1 at the end can be... replaced by ANYTHING... it doesn't seem to represent mirrors... idk..
+Since I will not know which page_no exist, I can just check for the 1st image. Any scanlation will DEFINITELY have atleast one image xD
 
-image url - https://demoniclibs.com/Solo%20Leveling%20%20Ragnarok/1./1.webp
-			https://mangareadon.org/Solo%20Leveling/198/3.webp
-			https://demonicscans.org/title/Gokinjo-JK-Isezaki%25252Dsan-wa-Isekaigaeri-no-Daiseijo/chapter/1/1
-			etc.
-
-Sadly, we have to check image urls because demonicscans.org is a SPA (Single Page Application)
-Which just means it loads up the basic html page then dynamically updates content via JS... 
-I can just got to like https://demonicscans.org/title/Solo-Leveling%253A-Ragnarok/chapter/69420/1 which DOES NOT EXIST!!! 
-and it will STILL give me a 400 status code.
-
-This thing will give me nightmares...
-
-
-⡴⠒⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⠉⠳⡆⠀
-⣇⠰⠉⢙⡄⠀⠀⣴⠖⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣆⠁⠙⡆
-⠘⡇⢠⠞⠉⠙⣾⠃⢀⡼⠀⠀⠀⠀⠀⠀⠀⢀⣼⡀⠄⢷⣄⣀⠀⠀⠀⠀⠀⠀⠀⠰⠒⠲⡄⠀⣏⣆⣀⡍
-⠀⢠⡏⠀⡤⠒⠃⠀⡜⠀⠀⠀⠀⠀⢀⣴⠾⠛⡁⠀⠀⢀⣈⡉⠙⠳⣤⡀⠀⠀⠀⠘⣆⠀⣇⡼⢋⠀⠀⢱
-⠀⠘⣇⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⡴⢋⡣⠊⡩⠋⠀⠀⠀⠣⡉⠲⣄⠀⠙⢆⠀⠀⠀⣸⠀⢉⠀⢀⠿⠀⢸
-⠀⠀⠸⡄⠀⠈⢳⣄⡇⠀⠀⢀⡞⠀⠈⠀⢀⣴⣾⣿⣿⣿⣿⣦⡀⠀⠀⠀⠈⢧⠀⠀⢳⣰⠁⠀⠀⠀⣠⠃
-⠀⠀⠀⠘⢄⣀⣸⠃⠀⠀⠀⡸⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠈⣇⠀⠀⠙⢄⣀⠤⠚⠁⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⢘⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⢰⣿⣿⣿⡿⠛⠁⠀⠉⠛⢿⣿⣿⣿⣧⠀⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡀⣸⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⡀⢀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡇⠹⠿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⡿⠁⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣤⣞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢢⣀⣠⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠲⢤⣀⣀⠀⢀⣀⣀⠤⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-
+⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⢉⣡⢤⣤⣤⣤⣤⣄⣈⡉⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⠟⠋⣀⣴⣮⠽⢾⣻⣞⣷⣟⣯⣿⠿⢿⠷⢦⣄⠙⠻⣿⣿⣿⣿⣿
+⣿⣿⣿⡿⠃⢀⣼⡿⠿⠿⣿⣜⠻⣿⣼⣿⡿⣃⣿⡿⠿⢿⣜⢣⡄⠘⢿⣿⣿⣿
+⣿⣿⠏⢀⠆⣽⡏⠀⠀⠊⠹⣿⡄⣿⣿⣿⢡⣿⡏⠀⠀⠂⢉⡧⢻ ⣦⡀⠻⣿⣿
+⣿⠏⢀⢣⢂⠹⣿⣤⣀⣴⣿⡟⡔⣿⣿⣿⢐⣿⣿⣤⣀⣤⣾⢓⣸⣿⣷⡄⠹⣿
+⡏⠠⡍⢆⠣⢆⡑⢋⠟⣭⠓⠈⣴⣿⣿⣿⣧⡨⢝⡛⠿⣙⢆⣵⣿⣿⣿⣳⡀⢹
+⠀⡜⡸⢌⠳⢌⠶⣉⢚⣀⢼⡺⣯⣟⣿⣿⣿⣿⣦⣌⣛⡻⠿⢿⣿⡿⣯⢿⡅⠀
+⠠⣑⠣⡜⡰⡘⢤⠛⣜⡹⣎⡷⣏⣿⢯⣿⣻⣿⣿⣿⣿⣷⣶⣾⣿⣳⢿⡾⣱⠀
+⠐⣨⠑⢦⡑⢍⠲⣩⠒⡵⢣⡻⣜⣳⢟⡾⣯⣟⡿⣯⢿⡿⣽⣻⣳⢯⣛⡾⡅⠂
+⡄⠰⣉⠦⣉⢎⡱⢂⡛⢬⢣⡝⢮⡝⣾⡹⢾⡭⢿⡽⣯⢟⡷⣫⡽⣞⢽⡚⠁⢰
+⣷⡄⠘⠴⡡⢎⡰⢩⠜⡡⢖⡹⢦⡹⢲⡝⢧⡻⣝⢾⡱⢯⡞⡵⣹⢜⡲⠁⢬⣾
+⣿⣿⣦⠈⠑⢪⡔⢣⡎⢱⠊⣴⢣⡜⢣⠚⣥⢳⡍⣮⠙⣧⠚⣵⢣⡎⠁⣴⣿⣿
+⣿⣿⣿⣷⣔⠈⠰⢣⠘⢦⡙⠀⣤⣶⣦⠀⢰⡆⠘⢌⡳⢌⠳⠂⠁⣠⣾⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣶⣤⣌⣀⠡⠀⠀⠂⠈⠐⠀⢀⠂⠈⢄⣂⣤⣷⣿⣿⣿⣿⣿⣿
 */
 
 const DemonicSource = {
 	name: "Demonic Scans",
 	icon: "😈",
 	type: "fantl",
+	check_type: "html_alt",
+	// check_type tells the proxy HOW to verify this source.
+	// "html_alt" = fetch the chapter_url page HTML and look for the alt text pattern.
 
 	_to_web_slug(title)
 	{
@@ -57,9 +45,12 @@ const DemonicSource = {
 			.replace(/[^a-zA-Z0-9\-%]/g, "");
 	},
 
-	_to_image_slug(title)
+	// Returns the expected alt text of the first chapter image, e.g.:
+	//   "Martial Peak Chapter 3859 1" 								-> chapter 3859 pg 1 of the series "Martial Peak Chapter" 
+	//   "Possessing Me: The Untouchable Outsider Chapter 18 1" 	-> chapter 18 pg 1 of the series "Possessing Me: The Untouchable Outsider"
+	get_alt_text(manga, chapter)
 	{
-		return title.trim().replace(/:/g, " ");
+		return `${manga.title} Chapter ${chapter.chapter} 1`;
 	},
 
 	series_url(manga)
@@ -73,32 +64,4 @@ const DemonicSource = {
 		if (!chapter.chapter) return this.series_url(manga);
 		return `https://demonicscans.org/title/${slug}/chapter/${chapter.chapter}/1`;
 	},
-
-	// The proxy has all these link patterns for chapter existence WHICH I COULD FIND
-	// I'm WILLING TO BET there are ATLEAST 5-6 more of them I've yet to discover
-	// And the path styles are fked up too... Something /{chap_num}/ sometimes /{chap_num}./ WHAAAAAAAAAAAA
-
-	get_test_urls(manga, chapter)
-	{
-		if (!chapter.chapter) return [];
-
-		const encodedSlug = encodeURIComponent(this._to_image_slug(manga.title));
-		const extensions = [".jpg", ".webp", ".png"];
-		const urls = [];
-
-		for (const ext of extensions)
-		{
-			urls.push(`https://mangafirst.org/${encodedSlug}/${chapter.chapter}/1${ext}`);
-		}
-
-		for (const ext of extensions)
-		{
-			urls.push(`https://demoniclibs.com/${encodedSlug}/${chapter.chapter}/1${ext}`);
-			urls.push(`https://demoniclibs.com/${encodedSlug}/${chapter.chapter}./1${ext}`);
-			urls.push(`https://cdn.demoniclibs.com/${encodedSlug}/${chapter.chapter}/1${ext}`);
-			urls.push(`https://cdn.demoniclibs.com/${encodedSlug}/${chapter.chapter}./1${ext}`);
-		}
-
-		return urls;
-	}
 };

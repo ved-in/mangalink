@@ -25,8 +25,8 @@ Buttt these hit rate limits FAST
 const Checker = (
 	() => {
 		
-		const PROXY =
-			window.location.hostname === "localhost"
+		const PROXY = 
+			(window.location.hostname === "localhost" || window.location.hostname === "")
 				? "http://localhost:3000"
 				: "https://mangalink.onrender.com";
 
@@ -53,10 +53,40 @@ const Checker = (
 			}
 		}
 
+		// For sources with check_type "html_alt": fetch the page HTML and
+		// look for an img whose alt attribute matches the expected string.
+		async function check_html_alt({ url, alt })
+		{
+			try {
+				const queryString = `?url=${encodeURIComponent(url)}&alt=${encodeURIComponent(alt)}`;
+
+				const res = await fetch(`${PROXY}/check-html${queryString}`, {
+					signal: AbortSignal.timeout(20000)
+				});
+
+				if (!res.ok) return "not_found";
+
+				const data = await res.json();
+				return data.exists ? "found" : "not_found";
+			}
+			catch (err)
+			{
+				console.error("Checker (html_alt) Error:", err);
+				return "unknown";
+			}
+		}
+
 		async function check_all(source_url_map)
 		{
 			const entries = Object.entries(source_url_map);
-			const results = await Promise.all(entries.map(([, urls]) => check_url(urls)));
+			const results = await Promise.all(
+				entries.map(
+					([, val]) =>
+						val?.type === "html_alt"
+							? check_html_alt(val)
+							: check_url(val)
+				)
+			);
 
 			const out = {};
 			entries.forEach(([name], i) => { out[name] = results[i]; });
