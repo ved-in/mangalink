@@ -11,6 +11,10 @@ Making that api will be a LONG term goal currently its functional...
 
 const API = (
 	() => {
+		// TESTED (2026-04-07):
+		// - node --check passed for this file.
+		// - parse_item now includes title_candidates (english + default + japanese + synonyms + titles[]).
+		// - Downstream source matching uses these candidates for slug variant attempts.
 
 		const BASE = "https://api.jikan.moe/v4";
 
@@ -45,16 +49,41 @@ const API = (
 
 		function parse_item(item)
 		{
+			const title_candidates = dedupe_titles([
+				item.title_english,
+				item.title,
+				item.title_japanese,
+				...(item.title_synonyms || []),
+				...((item.titles || []).map(t => t.title)),
+			]);
+
 			return {
 				id: String(item.mal_id),
 				mal_id: item.mal_id,
 				title: item.title_english || item.title || "Unknown",
+				title_candidates,
 				cover: item.images?.jpg?.large_image_url || item.images?.jpg?.image_url || null,
 				status: normalise_status(item.status),
 				year: item.published?.prop?.from?.year || null,
 				chapters: item.chapters || 0,
 				tags: (item.genres || []).map(g => g.name).slice(0, 3),
 			};
+		}
+
+		function dedupe_titles(list)
+		{
+			const seen = new Set();
+			const out = [];
+			for (const value of list || [])
+			{
+				const t = String(value || "").trim();
+				if (!t) continue;
+				const key = t.toLowerCase();
+				if (seen.has(key)) continue;
+				seen.add(key);
+				out.push(t);
+			}
+			return out;
 		}
 
 		function normalise_status(s)
