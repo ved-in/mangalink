@@ -73,7 +73,7 @@ Similarly if you want a scanlation to be added, u may create a new issue.
 
 [ ] Add more sources - can refer to some in MangaFox maybe (https://en-thunderscans.com/)
 
-[ ] Make sources update dynamically (after check, show available or not) and move available ones at top and others at bottom. Show a circle loading animation while different sources are being tested
+[x] Make sources update dynamically (after check, show available or not) and move available ones at top and others at bottom. Show a circle loading animation while different sources are being tested
 
 [ ] After adding MORE scanlation websites, the amount of links to test will increase MUCH (or maybe not, demonicscans might be an exception). A server-side cache?
 

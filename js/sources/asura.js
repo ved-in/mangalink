@@ -9,7 +9,7 @@ chapter url - https://asurascans.com/comics/solo-leveling-ragnarok-75e30c62/chap
 In this... if the chapter does not exist I get a CLEAR 404 status code...
 */
 
-const AsuraSource = {
+const ASURASCANS = {
 	name: "Asura Scans",
 	icon: "⚔️",
 	type: "fantl",

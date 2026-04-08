@@ -13,7 +13,7 @@ Also shows u a Google It option.
 
 const Modal = (() => {
 
-	const ALL_SOURCES = [AsuraSource, DemonicSource, ADKSource];
+	const ALL_SOURCES = [ASURASCANS, DEMONICSCANS, ADKSCANS, THUNDERSCANS];
 
 	let _on_visit = null;
 	let _was_visited = null;

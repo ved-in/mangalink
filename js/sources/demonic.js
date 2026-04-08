@@ -27,7 +27,7 @@ Since I will not know which page_no exist, I can just check for the 1st image. A
 ⣿⣿⣿⣿⣿⣿⣶⣤⣌⣀⠡⠀⠀⠂⠈⠐⠀⢀⠂⠈⢄⣂⣤⣷⣿⣿⣿⣿⣿⣿
 */
 
-const DemonicSource = {
+const DEMONICSCANS = {
 	name: "Demonic Scans",
 	icon: "😈",
 	type: "fantl",

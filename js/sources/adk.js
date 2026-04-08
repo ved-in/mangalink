@@ -7,7 +7,7 @@ chapter url - https://www.silentquill.net/a-reincarnated-former-slave-forms-the-
 justttt like asurascans but WITHOUT that hex... phewww
 */
 
-const ADKSource = {
+const ADKSCANS = {
 	name: "ADK Scans",
 	icon: "☄️",
 	type: "fantl",
