@@ -1,12 +1,21 @@
 # MangaLink
 
-Don't want to use aggregators BUT also don't want to open up 3 different scanlation sites JUST to find out which one has the chapter you want?
+Many people, like me end up jumping between multiple websites just to find a single chapter or the manga/manhwa saw on instagram.. One site might have it, another might not, another might be broken - and you don’t know until you check each one.
 
-Aggregators like MangaFire or MangaFox just scrape and rehost content from the actual scanlation groups - the groups that translate and clean everything - without giving them any traffic or ad revenue. Reading directly on the scanlators' sites is the least you can do to support the people actually doing the work.
- 
-The problem is there's no central place to know which scanlator has what. so you end up checking them one by one anyway.
+There *are* sites that collect everything in one place, but they copy content from the fan translation groups (scanlator groups) without supporting them stealing their possible ad revenue and site traffic (aggregators)
 
-This fixes that. you search a title, pick a chapter, and it tells you where you can read it AND whether the chapter actually exists there or not. bookmarks included.
+This tool helps you skip all that hassle.
+
+Just search for a series, choose the chapter you want, and it will show you:
+
+* Which websites actually have that chapter
+* Whether the chapter is available there or not
+* Quick links so you can go straight to it
+* Bookmark support and tracking of read chapters so you can save what you're reading
+
+(uses localStorage, not persistent across devices atm)
+
+No more opening multiple tabs just to find one chapter.
 
 If you would like to get a scanlation added, create an issue.
 
@@ -47,7 +56,10 @@ manga_link/
 │   └── styles.css
 └── js/
     ├── sources/
+    │   ├── sample.js  <- template for sources
     │   ├── asura.js
+    │   ├── thunder.js
+    │   ├── adk.js
     │   └── demonic.js
     ├── storage.js     <- localStorage persistence
     ├── api.js         <- Jikan/MAL data fetching
