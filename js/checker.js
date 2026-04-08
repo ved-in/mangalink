@@ -25,8 +25,8 @@ Buttt these hit rate limits FAST
 const Checker = (
 	() => {
 		
-		const PROXY = 
-			(window.location.hostname === "localhost" || window.location.hostname === "")
+		const PROXY =
+			window.location.hostname === "localhost" || window.location.hostname === ""
 				? "http://localhost:3000"
 				: "https://mangalink.onrender.com";
 
@@ -76,23 +76,18 @@ const Checker = (
 			}
 		}
 
-		async function check_all(source_url_map)
+		function check_each(source_url_map, on_result)
 		{
-			const entries = Object.entries(source_url_map);
-			const results = await Promise.all(
-				entries.map(
-					([, val]) =>
-						val?.type === "html_alt"
-							? check_html_alt(val)
-							: check_url(val)
-				)
-			);
+			for (const [name, val] of Object.entries(source_url_map))
+			{
+				const promise = val?.type === "html_alt"
+					? check_html_alt(val)
+					: check_url(val);
 
-			const out = {};
-			entries.forEach(([name], i) => { out[name] = results[i]; });
-			return out;
+				promise.then(status => on_result(name, status));
+			}
 		}
 
-		return { check_url, check_all };
+		return { check_url, check_each };
 	}
 )();

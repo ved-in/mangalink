@@ -76,19 +76,31 @@ const Modal = (() => {
 			}
 		});
 
-		const results = await Checker.check_all(url_map);
+		Checker.check_each(url_map, (name, status) => {
+			// if modal closed or chapter changed
+			if (_manga?.id !== manga.id || _chapter?.chapter !== chapter.chapter) return;
 
-		body.innerHTML = ALL_SOURCES.map(src => {
-			const availability = results[src.name] || "unknown";
-			return build_card(src, manga, chapter, availability, _was_visited(manga.id, chapter.chapter, src.name));
-		}).join("") + google_section(manga, chapter);
+			const src = ALL_SOURCES.find(s => s.name === name);
+			if (!src) return;
 
-		bind_link_tracking(manga, chapter);
+			const card = body.querySelector(`a.source_item[data-site="${CSS.escape(name)}"]`);
+			if (!card) return;
+
+			const old_badge = card.querySelector(".check_badge, .found_badge");
+			if (old_badge) old_badge.replaceWith(make_badge(status));
+
+			card.classList.remove("checking", "not_found");
+			if (status === "not_found") card.classList.add("not_found");
+		});
 	}
 
 	function build_card(src, manga, chapter, availability, visited) {
 		const url = src.chapter_url(manga, chapter);
-		const avail_badge = badge_for(availability);
+		const badge_html = {
+			checking:  `<span class="check_badge">checking…</span>`,
+			found:     `<span class="found_badge">✓ available</span>`,
+			not_found: `<span class="check_badge">not found</span>`,
+		}[availability] ?? "";
 		const visited_html = visited ? `<span class="visited_badge">✓ visited</span>` : "";
 		const extra_class = availability === "not_found" ? " not_found" : availability === "checking" ? " checking" : "";
 
@@ -102,17 +114,17 @@ const Modal = (() => {
         </div>
         <div class="source_right">
           ${visited_html}
-          ${avail_badge}
+          ${badge_html}
           <span style="color:var(--muted);font-size:0.8rem;">→</span>
         </div>
       </a>`;
 	}
 
-	function badge_for(availability) {
-		if (availability === "checking") return `<span class="check_badge">checking…</span>`;
-		if (availability === "found")    return `<span class="found_badge">✓ available</span>`;
-		if (availability === "not_found") return `<span class="check_badge">not found</span>`;
-		return "";
+	function make_badge(availability) {
+		if (availability === "checking") return Object.assign(document.createElement("span"), { className: "check_badge",  textContent: "checking…"    });
+		if (availability === "found")    return Object.assign(document.createElement("span"), { className: "found_badge",  textContent: "✓ available"   });
+		if (availability === "not_found") return Object.assign(document.createElement("span"), { className: "check_badge", textContent: "not found"     });
+		return document.createElement("span");
 	}
 
 	function google_section(manga, chapter) {
