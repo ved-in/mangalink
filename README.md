@@ -19,6 +19,8 @@ No more opening multiple tabs just to find one chapter.
 
 If you would like to get a scanlation added, create an issue.
 
+[Project currently on hiatus. Need to focus on studies for a while]
+
 ## Setup
 
 ### 1. Install dependencies
