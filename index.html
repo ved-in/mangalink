@@ -64,6 +64,22 @@
 
   </div>
 
+  <!-- DEBUG PANEL (toggle: Ctrl+Shift+D) -->
+  <div id="debug_panel">
+    <div class="dbg_header">
+      <span class="dbg_label">Debug - Source URL Tester</span>
+      <kbd class="dbg_hint_kbd">Ctrl+Shift+D to close</kbd>
+    </div>
+    <div class="dbg_inputs">
+      <input type="text" id="dbg_title"   placeholder="Manga title" />
+      <input type="text" id="dbg_chapter" placeholder="Chapter" />
+      <button id="dbg_check_btn" class="dbg_check">+ Check</button>
+    </div>
+    <div id="dbg_output">
+      <div class="dbg_hint">Enter a title and chapter number to preview source URLs.</div>
+    </div>
+  </div>
+
   <!-- SOURCES MODAL -->
   <div id="modal">
     <div class="modal_box">
@@ -90,8 +106,10 @@
   <script src="js/sources/asura.js"></script>
   <script src="js/sources/demonic.js"></script>
   <script src="js/sources/adk.js"></script>
+  <script src="js/sources/thunder.js"></script>
 
   <!-- Core modules -->
+  <script src="js/debug.js"></script>
   <script src="js/storage.js"></script>
   <script src="js/api.js"></script>
   <script src="js/checker.js"></script>

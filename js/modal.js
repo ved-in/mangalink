@@ -91,6 +91,7 @@ const Modal = (() => {
 
 			card.classList.remove("checking", "not_found");
 			if (status === "not_found") card.classList.add("not_found");
+			if (status === "found") body.prepend(card);
 		});
 	}
 

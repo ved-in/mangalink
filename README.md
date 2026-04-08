@@ -27,6 +27,9 @@ actually exists on each source site before showing it to you.
 ### 3. Open the app
 Open `index.html` in your browser (use Live Server in VS Code, or just double-click it).
 
+### Debug
+Jikan api does not contain majority of the series in the scanlations website. Till the time a proper API is made WHICH directly scrapes series details from these sites, u can use the debug panel `(ctrl+shift+D)` for testing sources.
+
 ---
 
 ## Adding a new source
@@ -71,7 +74,7 @@ Similarly if you want a scanlation to be added, u may create a new issue.
 
 [ ] Clear read history or all bookmarks at once or for particular series
 
-[ ] Add more sources - can refer to some in MangaFox maybe (https://en-thunderscans.com/)
+[ ] Add more sources - can refer to some in MangaFox maybe\
 
 [x] Make sources update dynamically (after check, show available or not) and move available ones at top and others at bottom. Show a circle loading animation while different sources are being tested
 
