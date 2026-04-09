@@ -96,7 +96,11 @@ const Modal = (() => {
 
 		const url_map = {};
 		sources.forEach(src => {
-			if (src.check_type === "html_alt")
+			if (src.check_type === "always_found")        // ← ADD THIS BRANCH
+			{
+				url_map[src.name] = { type: "always_found" };
+			}
+			else if (src.check_type === "html_alt")
 			{
 				url_map[src.name] = {
 					type: "html_alt",

@@ -60,7 +60,7 @@ const Checker = (
 		async function check_html_alt({ url, alt })
 		{
 			try {
-				const queryString = `?url=${encodeURIComponent(url)}&alt=${encodeURIComponent(alt)}`;
+				const queryString = `?url=${url}&alt=${encodeURIComponent(alt)}`;
 
 				const res = await fetch(`${PROXY}/check-html${queryString}`, {
 					signal: AbortSignal.timeout(20000)
