@@ -78,7 +78,7 @@ Similarly if you want a scanlation to be added, u may create a new issue.
 ## ToDo
 [x] Add temple scans
 
-[ ] fetch titles and covers from scanlators only and allow searching ONLY of them
+[ALMOSTTTTT] fetch titles and covers from scanlators only and allow searching ONLY of them
 
 [ ] Continue Reading feature
 

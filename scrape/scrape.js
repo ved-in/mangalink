@@ -16,6 +16,7 @@ const { scrape_thunder } = require('./sources/thunder');
 const { scrape_adk } = require('./sources/adk');
 const { scrape_demonic } = require('./sources/demonic');
 const { scrape_temple_toons } = require('./sources/temple');
+const { scrape_flame } = require('./sources/flame');
 
 
 function normalise(title)
@@ -44,19 +45,18 @@ function merge(lists)
 					if (!existing.sources.includes(src)) existing.sources.push(src);
 				}
 				if (!existing.cover && item.cover) existing.cover = item.cover;
-				if (item.slug.length < existing.slug.length) existing.slug = item.slug;
+
+				for (const [field, value] of Object.entries(item))
+				{
+                    if (!['title', 'slug', 'cover', 'sources'].includes(field) && existing[field] === undefined) {
+                        existing[field] = value;
+                    }
+                }
 			}
 			else
 			{
-				map.set(
-					key,
-					{
-						title: item.title,
-						slug: item.slug,
-						cover: item.cover || null,
-						sources: [...item.sources]
-					}
-				);
+				const { slug, ...rest } = item;
+				map.set(key, rest);
 			}
 		}
 	}
@@ -76,6 +76,7 @@ async function main()
 			scrape_demonic(),
 			scrape_temple_toons(),
 			scrape_thunder(),
+			scrape_flame(),
 		]
 	);
 
@@ -85,7 +86,8 @@ async function main()
 		'Asura',
 		'Demonic',
 		'Temple',
-		'Thunder'
+		'Thunder',
+		'Flame'
 	];
 
 	for (let i = 0; i < results.length; i++)
