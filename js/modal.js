@@ -9,16 +9,34 @@ CUZ THIS FUCKING DEMONICSCANS HAS SOOO MANY IMAGE LINKS AHHHHHH
 but you DEFINITELY will not miss a chapter which is in asurascans..
 
 Also shows u a Google It option.
+
+Flame Comics: chapter URLs have unguessable hex segments so we always
+link to the series main page instead and skip the proxy check.
+
+Sources are filtered to only those present in manga.sources so we
+don't show irrelevant scanlations for a given series.
+
+If manga.max_chapter is null we render a manual chapter-number input
+instead of a chapter list (handled in ui.js), but the modal itself
+still works fine — chapter.chapter comes from the manual input.
 */
 
 const Modal = (() => {
 
-	const ALL_SOURCES = [ASURASCANS, DEMONICSCANS, ADKSCANS, THUNDERSCANS, TEMPLESCANS];
+    // All known sources. Filtered per-manga by manga.sources list.
+    const SOURCE_MAP = {
+        "Asura Scans":   ASURASCANS,
+        "ADK Scans":     ADKSCANS,
+        "Thunder Scans": THUNDERSCANS,
+        "Temple Toons":  TEMPLESCANS,
+        "Demonic Scans": DEMONICSCANS,
+        "Flame Comics":  FLAMESCANS,
+    };
 
-	let _on_visit = null;
-	let _was_visited = null;
-	let _manga = null;
-	let _chapter = null;
+    let _on_visit = null;
+    let _was_visited = null;
+    let _manga = null;
+    let _chapter = null;
 
 	const modal = document.getElementById("modal");
 	const ch_lbl = document.getElementById("modal_chapter_label");
@@ -44,14 +62,32 @@ const Modal = (() => {
 	function close() {
 		modal.classList.remove("open");
 		_manga = _chapter = null;
-	}
+    }
+
+    function _active_sources(manga)
+    {
+        // Only show sources this series is actually listed on
+        const src_names = manga.sources || [];
+        return src_names
+            .map(n => SOURCE_MAP[n])
+            .filter(Boolean);
+    }
 
 	async function render() {
 		const manga = _manga;
 		const chapter = _chapter;
 		if (!manga || !chapter) return;
 
-		body.innerHTML = ALL_SOURCES.map(
+        const sources = _active_sources(manga);
+
+        if (sources.length === 0)
+        {
+            body.innerHTML = `<div class="empty_state"><p>No known sources for this title.</p></div>`
+                + google_section(manga, chapter);
+            return;
+        }
+
+		body.innerHTML = sources.map(
 			src =>
 			build_card(src, manga, chapter, "checking", _was_visited(manga.id, chapter.chapter, src.name))
 		).join("") + google_section(manga, chapter);
@@ -59,7 +95,7 @@ const Modal = (() => {
 		bind_link_tracking(manga, chapter);
 
 		const url_map = {};
-		ALL_SOURCES.forEach(src => {
+		sources.forEach(src => {
 			if (src.check_type === "html_alt")
 			{
 				url_map[src.name] = {
@@ -81,7 +117,7 @@ const Modal = (() => {
 			// if modal closed or chapter changed
 			if (_manga?.id !== manga.id || _chapter?.chapter !== chapter.chapter) return;
 
-			const src = ALL_SOURCES.find(s => s.name === name);
+			const src = sources.find(s => s.name === name);
 			if (!src) return;
 
 			const card = body.querySelector(`a.source_item[data-site="${CSS.escape(name)}"]`);
@@ -98,6 +134,17 @@ const Modal = (() => {
 
 	function build_card(src, manga, chapter, availability, visited) {
 		const url = src.chapter_url(manga, chapter);
+
+        // Notes for users
+        let note_for_user;
+
+        const is_flame = src.name === "Flame Comics";
+        const is_thunder = src.name === "Thunder Scans";
+        
+        if      (is_flame)      { note_for_user = `<span style="font-size:0.72rem;color:var(--muted);display:block;margin-top:2px;">opens series page</span>` }
+        else if (is_thunder)    { note_for_user = `<span style="font-size:0.72rem;color:var(--danger, #ff6b6b);display:block;margin-top:2px;">⚠️ some chapters may not be free</span>` }
+        else                    { note_for_user = "" }
+
 		const badge_html = {
 			checking:  `<span class="check_badge">checking…</span>`,
 			found:     `<span class="found_badge">✓ available</span>`,
@@ -112,7 +159,7 @@ const Modal = (() => {
          data-site="${src.name}" data-ch="${UI.escape_html(chapter.chapter || "oneshot")}">
         <div class="source_left">
           <div class="source_icon">${src.icon}</div>
-          <div class="source_name">${src.name}</div>
+          <div class="source_name">${src.name}${note_for_user}</div>
         </div>
         <div class="source_right">
           ${visited_html}

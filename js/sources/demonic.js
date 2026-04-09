@@ -41,6 +41,12 @@ const DEMONICSCANS = {
 			.trim()
 			.replace(/-/g, "%25252D")
 			.replace(/:/g, "%253A")
+			.replace(/!/g, "%2521")
+			.replace(/\[/g, "%255B")
+			.replace(/\]/g, "%255D")
+			.replace(/\(/g, "%2528")
+			.replace(/\)/g, "%2529")
+			.replace(/\//g, "%252F")
 			.replace(/\s+/g, "-")
 			.replace(/[^a-zA-Z0-9\-%]/g, "");
 	},
