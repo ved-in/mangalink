@@ -1,11 +1,14 @@
 /**
-Manga metadata scraper (title, slug, cover, sources)
+Manga metadata scraper (title, slug, cover, sources, max_chapter)
 
 - ADK Scans: Its paginated. Goes through all the pages and finds chapters through regex (WEIRDDDDDDDD HTML)
 - Asura Scans: Like I've said before... Asura IS THE GOATT. LITERALLY AN API!!! RAHHHHHHHHHHH
 - Demonic Scans: Paginated like ADK Scans. prettyy easy
 - Temple Scans: Weird ahhhh json
 - Thunder Scans: Paginated. Phewwwwwwww
+- Flame Comics: API gang too
+
+max_chapter: we store the HIGHEST chapter number seen across all sources.
 */
 
 const fs = require('fs');
@@ -46,9 +49,18 @@ function merge(lists)
 				}
 				if (!existing.cover && item.cover) existing.cover = item.cover;
 
+				// Keep the HIGHEST max_chapter seen across all sources
+				if (item.max_chapter !== null && item.max_chapter !== undefined)
+				{
+					if (existing.max_chapter === null || existing.max_chapter === undefined || item.max_chapter > existing.max_chapter)
+					{
+						existing.max_chapter = item.max_chapter;
+					}
+				}
+
 				for (const [field, value] of Object.entries(item))
 				{
-                    if (!['title', 'slug', 'cover', 'sources'].includes(field) && existing[field] === undefined) {
+                    if (!['title', 'slug', 'cover', 'sources', 'max_chapter'].includes(field) && existing[field] === undefined) {
                         existing[field] = value;
                     }
                 }
@@ -56,6 +68,8 @@ function merge(lists)
 			else
 			{
 				const { slug, ...rest } = item;
+				// Ensure max_chapter key exists even if null
+				if (!('max_chapter' in rest)) rest.max_chapter = null;
 				map.set(key, rest);
 			}
 		}
@@ -121,6 +135,10 @@ async function main()
 	{
 		console.log(`   ${src}: ${count}`);
 	}
+
+	// Stats on max_chapter coverage
+	const with_chapter = merged.filter(s => s.max_chapter !== null && s.max_chapter !== undefined);
+	console.log(`\nmax_chapter populated: ${with_chapter.length}/${merged.length} series`);
 
 	const out_dir = path.join(__dirname, '..', 'data');
 	const out_file = path.join(out_dir, 'series.json');

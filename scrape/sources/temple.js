@@ -35,36 +35,25 @@ async function scrape_temple_toons()
         const html = res.body;
 
         const slug_pattern = /\\"series_slug\\":\\"([a-z0-9\-]+)\\"/g;
+        const title_pattern = /\\"title\\":\\"([^\\]+)\\"/g;
+        const thumb_pattern = /\\"thumbnail\\":\\"(https:[^\\]+)\\"/g;
+        const chname_pattern = /\\"Chapter\\":\[\\{\\\"chapter_name\\\":\\"([^\\]+)\\"/g;
+        const ccount_pattern = /\\"_count\\":\\{[^}]*\\"Chapter\\":(\d+)/g;
 
         let slug_matches = [];
-        let match;
-        while ((match = slug_pattern.exec(html)) !== null)
-        {
-            slug_matches.push(match[1]);
-        }
-
-        console.log(`[Temple] Found ${slug_matches.length} slugs`);
-        
-        if (slug_matches.length > 0)
-        {
-            console.log(`[Temple] First 5 slugs: ${slug_matches.slice(0, 5).join('  ____  ')}`);
-        }
-        
-        const title_pattern = /\\"title\\":\\"([^\\]+)\\"/g;
         let title_matches = [];
-        while ((match = title_pattern.exec(html)) !== null)
-        {
-            title_matches.push(match[1]);
-        }
-        console.log(`[Temple] Found ${title_matches.length} titles`);
-        
-        const thumb_pattern = /\\"thumbnail\\":\\"(https:[^\\]+)\\"/g;
         let thumb_matches = [];
-        while ((match = thumb_pattern.exec(html)) !== null)
-        {
-            thumb_matches.push(match[1]);
-        }
-        console.log(`[Temple] Found ${thumb_matches.length} thumbnails`);
+        let chname_matches = [];
+        let ccount_matches = [];
+
+        let match;
+        while ((match = slug_pattern.exec(html)) !== null) slug_matches.push(match[1]);
+        while ((match = title_pattern.exec(html)) !== null) title_matches.push(match[1]);
+        while ((match = thumb_pattern.exec(html)) !== null) thumb_matches.push(match[1]);
+        while ((match = chname_pattern.exec(html)) !== null) chname_matches.push(match[1]);
+        while ((match = ccount_pattern.exec(html)) !== null) ccount_matches.push(parseInt(match[1], 10));
+
+        console.log(`[Temple] slugs=${slug_matches.length}, titles=${title_matches.length}, thumbs=${thumb_matches.length}, chnames=${chname_matches.length}, ccounts=${ccount_matches.length}`);
 
         if (slug_matches.length !== title_matches.length || slug_matches.length !== thumb_matches.length)
         {
@@ -83,13 +72,28 @@ async function scrape_temple_toons()
             if (!slug || seen_slugs.has(slug)) continue;
             if (!title || title.length <= 1) continue;
             
+            // Derive max_chapter (same logic as new version)
+            let max_chapter = null;
+            const chname = chname_matches[i];
+            if (chname)
+            {
+                const nm = chname.match(/(?:chapter|ch|episode|ep)[.\-\s#]*(\d+(?:\.\d+)?)/i)
+                         || chname.match(/(\d+(?:\.\d+)?)/);
+                if (nm) max_chapter = parseFloat(nm[1]);
+            }
+            if (max_chapter === null && ccount_matches[i] != null)
+            {
+                max_chapter = ccount_matches[i];
+            }
+            
             seen_slugs.add(slug);
             all_series.push(
                 {
                     title: decode_html_entities(title), 
                     slug: `https://templetoons.com/comic/${slug}`, 
                     cover, 
-                    sources: ['Temple Toons'] 
+                    sources: ['Temple Toons'],
+                    max_chapter
                 }
             );
         }

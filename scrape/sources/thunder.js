@@ -7,6 +7,12 @@ function extract_thunder_cards(html)
     const cards = [];
     const seen_slugs = new Set();
 
+    const epxs_re = /class="epxs">([^<]+)<\/div>/g;
+    const epxs_vals = [];
+    let m;
+    while ((m = epxs_re.exec(html)) !== null) epxs_vals.push(m[1].trim());
+
+    let card_idx = 0;
     $('.listupd .bs .bsx').each(
 		(i, el) => {
 			const link = $(el).find('a').first();
@@ -19,21 +25,27 @@ function extract_thunder_cards(html)
 			const title = $(el).find('.tt').text().trim() || slug.replace(/-/g, ' ');
 			const cover = $(el).find('.limit img').attr('src');
 
-			if (title && slug)
-			{
-				seen_slugs.add(slug);
-				cards.push(
-					{
-						title: decode_html_entities(title),
-						slug,
-						cover,
-						sources: ['Thunder Scans']
-					}
-				);
-			}
-    	}
-	);
+            seen_slugs.add(slug);
+            cards.push({
+                title: decode_html_entities(title),
+                slug,
+                cover,
+                sources: ['Thunder Scans'],
+                max_chapter,
+            });
+            card_idx++;
+        }
+    );
+
     return cards;
+}
+
+function parse_chapter_label(text)
+{
+    if (!text) return null;
+    const m = text.match(/(?:chapter|ch|episode|ep)[.\-\s#]*(\d+(?:\.\d+)?)/i)
+              || text.match(/(\d+(?:\.\d+)?)/);
+    return m ? parseFloat(m[1]) : null;
 }
 
 async function scrape_thunder()

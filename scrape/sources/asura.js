@@ -37,6 +37,7 @@ async function scrape_asura()
         catch (e)
         {
             console.error(`[Asura] JSON parse error on ${url}`);
+            break;
         }
 
         const items = json.data || [];
@@ -49,12 +50,32 @@ async function scrape_asura()
         for (const item of items)
         {
             if (!item.slug || !item.title) continue;
+
+            let max_chapter = null;
+
+            if (Array.isArray(item.latest_chapters) && item.latest_chapters.length > 0)
+            {
+                // Find the highest number across the returned latest chapters
+                for (const ch of item.latest_chapters)
+                {
+                    const n = parseFloat(ch.number ?? ch.chapter ?? '');
+                    if (!isNaN(n) && (max_chapter === null || n > max_chapter)) max_chapter = n;
+                }
+            }
+
+            if (max_chapter === null && item.chapter_count != null)
+            {
+                const n = parseFloat(item.chapter_count);
+                if (!isNaN(n)) max_chapter = n;
+            }
+
             series.push(
                 {
                     title: item.title,
                     slug: item.slug,
                     cover: item.cover || null,
-                    sources: ['Asura Scans'] 
+                    sources: ['Asura Scans'],
+                    max_chapter,
                 }
             );
         }

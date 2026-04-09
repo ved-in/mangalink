@@ -1,5 +1,4 @@
 const { fetch, decode_html_entities, add_cards } = require('./helpers');
-
 const cheerio = require('cheerio');
 
 function extract_demonic_cards(html)
@@ -28,19 +27,34 @@ function extract_demonic_cards(html)
 			if (!title) title = slug.replace(/-/g, ' ');
 			
 			let cover = $(container).find('.thumb img, img').first().attr('src');
+
+            // Chapter links are right in the listing: href="chaptered.php?manga=X&chapter=89"
+            // Grab all chapter numbers from this card and take the max
+            let max_chapter = null;
+            $(container).find('a.chplinks').each((_, a) =>
+            {
+                const chap_href = $(a).attr('href') || '';
+                const m = chap_href.match(/[?&]chapter=(\d+(?:\.\d+)?)/);
+                if (m)
+                {
+                    const n = parseFloat(m[1]);
+                    if (max_chapter === null || n > max_chapter) max_chapter = n;
+                }
+            });
+
 			
 			seen_slugs.add(slug);
 			cards.push(
 				{ 
 					title: decode_html_entities(title), 
-					slug, 
-					cover, 
-					sources: ['Demonic Scans'] 
+					slug: slug, 
+					cover: cover, 
+					sources: ['Demonic Scans'],
+                    max_chapter,
 				}
 			);
-    	}
-	);
-    
+        });
+
     return cards;
 }
 

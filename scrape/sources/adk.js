@@ -24,6 +24,7 @@ async function scrape_adk()
         }
         catch (e) {
             console.error(`[ADK] Fetch error: ${e.message}`);
+            consecutive_empty++;
             continue;
         }
 
@@ -64,8 +65,18 @@ async function scrape_adk()
                     cover = 'https://www.silentquill.net' + cover;
                 }
 
+                // .epxs holds the latest chapter label, e.g. "Chapter 11.5 End"
+                const epxs_text = el.find('.epxs').text().trim();
+                const max_chapter = parse_chapter_label(epxs_text);
+
                 seen_slugs.add(slug);
-                cards.push({ title: decode_html_entities(title), slug: href, cover, sources: ['ADK Scans'] });
+                cards.push({
+                    title: decode_html_entities(title),
+                    slug: href,
+                    cover,
+                    sources: ['ADK Scans'],
+                    max_chapter,
+                });
             }
         );
 
@@ -74,7 +85,7 @@ async function scrape_adk()
         if (cards.length === 0)
         {
             consecutive_empty++;
-            console.log(`[ADK] Page ${page}: 0 cards, total=${all_series.length} (${consecutive_empty}/3 consecutive empty).`);
+            console.log(`[ADK] Page ${page}: 0 cards (${consecutive_empty}/5 consecutive empty).`);
         }
         else
         {
@@ -87,6 +98,14 @@ async function scrape_adk()
 
     console.log(`[ADK] Done. Found ${all_series.length} series.`);
     return all_series;
+}
+
+function parse_chapter_label(text)
+{
+    if (!text) return null;
+    const m = text.match(/(?:chapter|ch|episode|ep)[.\-\s#]*(\d+(?:\.\d+)?)/i)
+              || text.match(/(\d+(?:\.\d+)?)/);
+    return m ? parseFloat(m[1]) : null;
 }
 
 module.exports = { scrape_adk };

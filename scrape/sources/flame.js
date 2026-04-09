@@ -49,6 +49,10 @@ async function scrape_flame()
             {
                 cover = 'https://flamecomics.xyz/' + cover.replace(/^\/+/, '');
             }
+            // chapter_count comes back as a string in the API response
+            const max_chapter = item.chapter_count != null
+                ? parseFloat(item.chapter_count) || null
+                : null;
 
             all_series.push(
                 {
@@ -56,7 +60,8 @@ async function scrape_flame()
                     slug: slug,
                     cover: cover || null,
                     sources: ['Flame Comics'],
-                    flame_series_id: id
+                    flame_series_id: id,
+                    max_chapter,
                 }
             );
         }
