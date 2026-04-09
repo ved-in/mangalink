@@ -9,9 +9,50 @@ const express = require("express");
 const https = require("https");
 const http = require("http");
 const cors = require("cors");
+const fs = require("fs");
+const path = require("path");
+const { LRUCache } = require("lru-cache");
 
 const app = express();
 app.use(cors());
+
+const CACHE_FILE = path.join(__dirname, "cache.json");
+const TTL_FOUND = 1000 * 60 * 60 * 6;  						// 6 hours  (chapter exists - stable)
+const TTL_MISSING = 1000 * 60 * 5;        					// 5 minutes (might get uploaded soon)
+const cache = new LRUCache({ max: 6900 });
+
+try 
+{
+	if (fs.existsSync(CACHE_FILE))
+	{
+		const saved = JSON.parse(fs.readFileSync(CACHE_FILE, "utf8"));
+		const now = Date.now();
+		let n = 0;
+		for (const [k, e] of Object.entries(saved))
+		{
+			const remaining = e.expires - now;
+			if (remaining > 0) { cache.set(k, e.value, { ttl: remaining }); n++; }
+		}
+		console.log(`[Cache] Loaded ${n} entries from disk.`);
+	}
+} catch (e) { console.warn(`[Cache] Load failed: ${e.message}`); }
+
+function cache_flush() 
+{
+	try 
+	{
+		const now = Date.now();
+		const dump = {};
+		for (const [k, v] of cache.entries())
+		{
+			const ttl = cache.getRemainingTTL(k);
+			if (ttl > 0) dump[k] = { value: v, expires: now + ttl };
+		}
+		fs.writeFileSync(CACHE_FILE, JSON.stringify(dump), "utf8");
+	} catch (e) { console.warn(`[Cache] Flush failed: ${e.message}`); }
+}
+
+setInterval(cache_flush, 1000 * 60 * 5);
 
 process.on(
 	"uncaughtException",
@@ -163,6 +204,14 @@ app.get(
 
 			for (const url of urls)
 			{
+				const cached = cache.get(url);
+				if (cached !== undefined)
+				{
+					console.log(`[CACHE HIT] ${url} → ${cached}`);
+					if (cached) { clearTimeout(requestTimeout); return res.json({ exists: true, url }); }
+					continue;
+				}
+
 				console.log(`[TRYING] ${url}`);
 				const result = await fetch_meta(url);
 
@@ -170,6 +219,8 @@ app.get(
 				const exists = isImage
 					? (result.status === 200 && result.contentType.includes("image"))
 					: (result.status === 200 && result.contentType.includes("text/html"));
+
+				cache.set(url, exists, { ttl: exists ? TTL_FOUND : TTL_MISSING });
 
 				if (exists)
 				{
@@ -213,6 +264,15 @@ app.get(
 				return res.status(400).json({ error: "Missing 'url' or 'alt' parameter" });
 			}
 
+			const cache_key = `html:${url}:${alt}`;
+			const cached = cache.get(cache_key);
+			if (cached !== undefined)
+			{
+				console.log(`[CACHE HIT] ${cache_key} → ${cached}`);
+				clearTimeout(requestTimeout);
+				return res.json({ exists: cached, url });
+			}
+
 			console.log(`[HTML-CHECK] ${url} | looking for alt="${alt}"`);
 			const result = await fetch_html(url);
 
@@ -220,12 +280,14 @@ app.get(
 			{
 				console.log(`[HTML-CHECK] Bad status ${result.status}`);
 				clearTimeout(requestTimeout);
+				cache.set(cache_key, false, { ttl: TTL_MISSING });
 				return res.json({ exists: false });
 			}
 
 			const needle = `alt="${alt}"`;
 			const exists = result.body.includes(needle);
 			console.log(`[HTML-CHECK] ${exists ? "FOUND" : "NOT FOUND"}: ${needle}`);
+			cache.set(cache_key, exists, { ttl: exists ? TTL_FOUND : TTL_MISSING });
 			clearTimeout(requestTimeout);
 			res.json({ exists, url });
 		}
@@ -241,6 +303,9 @@ app.get(
 	}
 );
 
+// Keep-alive - ping via UptimeRobot to prevent Render free-tier sleep
+app.get("/ping", (req, res) => res.json({ ok: true }));
+
 const PORT = process.env.PORT || 3000;
 const server = app.listen(
 	PORT,
@@ -254,3 +319,6 @@ server.on(
 		process.exit(1);
 	}
 );
+
+process.on("SIGTERM", () => { cache_flush(); server.close(); });
+process.on("SIGINT",  () => { cache_flush(); server.close(); });

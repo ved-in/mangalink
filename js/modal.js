@@ -153,6 +153,7 @@ const Modal = (() => {
 			checking:  `<span class="check_badge">checking…</span>`,
 			found:     `<span class="found_badge">✓ available</span>`,
 			not_found: `<span class="check_badge">not found</span>`,
+		    browse:    `<span class="browse_badge">browse</span>`,
 		}[availability] ?? "";
 		const visited_html = visited ? `<span class="visited_badge">✓ visited</span>` : "";
 		const extra_class = availability === "not_found" ? " not_found" : availability === "checking" ? " checking" : "";
@@ -177,6 +178,7 @@ const Modal = (() => {
 		if (availability === "checking") return Object.assign(document.createElement("span"), { className: "check_badge",  textContent: "checking…"    });
 		if (availability === "found")    return Object.assign(document.createElement("span"), { className: "found_badge",  textContent: "✓ available"   });
 		if (availability === "not_found") return Object.assign(document.createElement("span"), { className: "check_badge", textContent: "not found"     });
+		if (availability === "browse") return Object.assign(document.createElement("span"), { className: "browse_badge", textContent: "browse" });
 		return document.createElement("span");
 	}
 

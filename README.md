@@ -80,13 +80,27 @@ Similarly if you want a scanlation to be added, u may create a new issue.
 
 [x] fetch titles and covers from scanlators only and allow searching ONLY of them
 
+[x] Add server side cache
+
+[x] Tries validation of url through server on render but as a fallback uses corsproxy and more to make client side requests... 512 mb is SOO LITTLEE
+
+[x] Setted up UptimeRobot to ping the render backend every 5minutes to prevent it from shutting down
+
+[ ] templetoons sometimes have chapters with some prefixes like `https://templetoons.com/comic/becoming-the-obsessive-male-leads-ex-wife/84459-chapter-6` that 84459 is destroying it.
+
+[ ] Add Vortex Scans `https://vortexscans.org/`
+
+[ ] Add Reset Scans `https://reset-scans.org/`
+
+[ ] Add Valir Scans `https://valirscans.org/`
+
+[ ] Add Violet Scans `https://violetscans.org/`
+
 [ ] chapters like 1.1, 1.2, 1.5, etc are not displayed
 
 [ ] Continue Reading feature
 
 [ ] Clear read history or all bookmarks at once or for particular series
-
-[ ] Make validation of urls client side. It will be much faster. I tried proxies like corsproxy.io but they are pretty slow. Will need to see what can be done.
 
 ## Long term
 [ ] **CANNOT SOLVE RIGHT NOW** - names in Jikan API and scanlations do not match many times. Would be nice if I could find a way but as of now I cannot think of ANYTHING. ORRRRRR maybe we could fetch from the scanlations websites we use so the series available here are definitely available in one of the sources. But that's for later when we make the api
