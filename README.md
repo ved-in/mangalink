@@ -76,11 +76,9 @@ If you are the owner of the particular scanlations this project links to and wan
 Similarly if you want a scanlation to be added, u may create a new issue.
 
 ## ToDo
-[ ] Add temple scans
+[x] Add temple scans
 
 [ ] fetch titles and covers from scanlators only and allow searching ONLY of them
-
-[ ] A
 
 [ ] Continue Reading feature
 
