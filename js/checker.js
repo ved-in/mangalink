@@ -26,7 +26,9 @@ const Checker = (
 	() => {
 		
 		const PROXY =
-			window.location.hostname === "localhost" || window.location.hostname === ""
+			window.location.hostname === "localhost" ||
+			window.location.hostname === "127.0.0.1" ||
+			window.location.hostname === ""
 				? "http://localhost:3000"
 				: "https://mangalink.onrender.com";
 
@@ -80,6 +82,13 @@ const Checker = (
 		{
 			for (const [name, val] of Object.entries(source_url_map))
 			{
+                // always_found = Flame Comics (can't check chapter URLs)
+                if (val?.type === "always_found")
+                {
+                    on_result(name, "found");
+                    continue;
+                }
+
 				const promise = val?.type === "html_alt"
 					? check_html_alt(val)
 					: check_url(val);

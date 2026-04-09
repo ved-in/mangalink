@@ -1,7 +1,7 @@
 const Debug = (
 	() => {
 
-		const SOURCES = [ASURASCANS, DEMONICSCANS, ADKSCANS, THUNDERSCANS];
+		const SOURCES = [ASURASCANS, DEMONICSCANS, ADKSCANS, THUNDERSCANS, TEMPLESCANS];
 
 		const panel  = document.getElementById("debug_panel");
 		const title  = document.getElementById("dbg_title");
@@ -41,8 +41,14 @@ const Debug = (
 				src => [
 					src.name,
 					src.check_type === "html_alt"
-						? { type: "html_alt", url: src.chapter_url(manga, chapter), alt: src.get_alt_text(manga, chapter) }
+						? {
+							type: "html_alt",
+							url: src.get_check_url ?
+								src.get_check_url(manga, chapter) : src.chapter_url(manga, chapter),
+							alt: src.get_alt_text(manga, chapter)
+						} 
 						: [src.chapter_url(manga, chapter)]
+
 				]
 			));
 

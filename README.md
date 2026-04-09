@@ -19,8 +19,6 @@ No more opening multiple tabs just to find one chapter.
 
 If you would like to get a scanlation added, create an issue.
 
-[Project currently on hiatus. Need to focus on studies for a while]
-
 ## Setup
 
 ### 1. Install dependencies
@@ -78,9 +76,11 @@ If you are the owner of the particular scanlations this project links to and wan
 Similarly if you want a scanlation to be added, u may create a new issue.
 
 ## ToDo
-[ ] Add temple scans
+[x] Add temple scans
 
-[ ] fetch titles and covers from scanlators only and allow searching ONLY of them
+[x] fetch titles and covers from scanlators only and allow searching ONLY of them
+
+[ ] chapters like 1.1, 1.2, 1.5, etc are not displayed
 
 [ ] Continue Reading feature
 

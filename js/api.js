@@ -1,69 +1,98 @@
 /*
-Data fetching via Jikan (MyAnimeList's unofficial API)
-Rate-limited to like 3 req/sec which is okayyy not bad. Since
+Data is now served from our own series.json (built by the scraper)
+instead of the Jikan/MAL API.
 
-I tried mangadex and jikan both (had a lot of issues with mangadex but it worked)
-butt both of em do not have many mangas/manhwas chapter list properly populated
-I did find MANY apis on github which manually scrape from anime-planet. 
-
-Making that api will be a LONG term goal currently its functional...
+Search: fuzzy-matches against title in the local dataset.
+Chapters: generated from max_chapter stored per series.
+          If max_chapter is null the chapter list is empty — UI will
+          show the manual chapter-number input instead.
 */
 
 const API = (
 	() => {
 
-		const BASE = "https://api.jikan.moe/v4";
+		let _series = null;
 
-		async function jikan_fetch(path)
+		async function _load_series()
 		{
-			const res = await fetch(BASE + path);
-			if (!res.ok) throw new Error(`Jikan HTTP ${res.status}`);
-			const json = await res.json();
-			if (json.status && !json.data) throw new Error(`Jikan: ${json.message || json.status}`);
-			return json;
+			if (_series) return _series;
+			const res = await fetch("data/series.json");
+			if (!res.ok) throw new Error(`Failed to load series.json (HTTP ${res.status})`);
+			_series = await res.json();
+			return _series;
 		}
 
 		async function search_manga(query)
 		{
-			const j = await jikan_fetch(`/manga?q=${encodeURIComponent(query)}&limit=10&sfw=false`);
-			if (!Array.isArray(j.data)) throw new Error("Unexpected Jikan response");
-			return j.data.map(parse_item);
+			const series = await _load_series();
+			const q = _normalise(query);
+			if (!q) return [];
+
+			const scored = [];
+			for (const s of series)
+			{
+				const norm = _normalise(s.title);
+				let score = 0;
+				if (norm === q) score = 3;   				// exact
+				else if (norm.startsWith(q)) score = 2;   	// prefix
+				else if (norm.includes(q)) score = 1;   	// substring
+				if (score > 0) scored.push({ score, s });
+			}
+
+			return scored
+				.sort((a, b) => b.score - a.score || a.s.title.localeCompare(b.s.title))
+				.slice(0, 10)
+				.map(({ s }) => _parse_item(s));
 		}
 
 		async function fetch_chapters(manga)
 		{
-			let count = manga.chapters;
-			if (!count) return [];
+			if (!manga.max_chapter) return [];
 
 			const chapters = [];
-			for (let i = count; i >= 1; i--)
+			for (let i = Math.floor(manga.max_chapter); i >= 1; i--)
 			{
-				chapters.push({ chapter: String(i), title: ""});
+				chapters.push({ chapter: String(i), title: "" });
 			}
 			return chapters;
 		}
 
-		function parse_item(item)
+		function _parse_item(s)
 		{
 			return {
-				id: String(item.mal_id),
-				mal_id: item.mal_id,
-				title: item.title_english || item.title || "Unknown",
-				cover: item.images?.jpg?.large_image_url || item.images?.jpg?.image_url || null,
-				status: normalise_status(item.status),
-				year: item.published?.prop?.from?.year || null,
-				chapters: item.chapters || 0,
-				tags: (item.genres || []).map(g => g.name).slice(0, 3),
+				id: s.title,                    // stable key (no MAL id anymore)
+				title: s.title,
+				cover: s.cover || null,
+				status: _normalise_status(s.status),
+				max_chapter: s.max_chapter ?? null,
+				sources: s.sources || [],
+				tags: [],
+				// source-specific fields used by modal sources
+				asura_slug:     s.slug && s.sources?.includes("Asura Scans")  ? s.slug : null,
+				adk_slug:       s.slug && s.sources?.includes("ADK Scans")    ? s.slug : null,
+				thunder_slug:   s.slug && s.sources?.includes("Thunder Scans")? s.slug : null,
+				temple_slug:    s.slug && s.sources?.includes("Temple Toons") ? s.slug : null,
+				demonic_slug:   s.slug && s.sources?.includes("Demonic Scans")? s.slug : null,
+				flame_id:       s.flame_series_id ?? null,
 			};
 		}
 
-		function normalise_status(s)
+		function _normalise(str)
+		{
+			return str.toLowerCase()
+				.normalize("NFKD")
+				.replace(/[^\w\s]/g, "")
+				.replace(/\s+/g, " ")
+				.trim();
+		}
+
+		function _normalise_status(s)
 		{
 			if (!s) return "unknown";
 			const l = s.toLowerCase();
-			if (l.includes("publishing")) return "ongoing";
-			if (l.includes("finished")) return "completed";
-			if (l.includes("hiatus")) return "hiatus";
+			if (l.includes("ongoing"))   return "ongoing";
+			if (l.includes("completed")) return "completed";
+			if (l.includes("hiatus"))    return "hiatus";
 			return "unknown";
 		}
 
