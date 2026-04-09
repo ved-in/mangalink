@@ -13,7 +13,7 @@ Also shows u a Google It option.
 
 const Modal = (() => {
 
-	const ALL_SOURCES = [ASURASCANS, DEMONICSCANS, ADKSCANS, THUNDERSCANS];
+	const ALL_SOURCES = [ASURASCANS, DEMONICSCANS, ADKSCANS, THUNDERSCANS, TEMPLESCANS];
 
 	let _on_visit = null;
 	let _was_visited = null;
@@ -64,7 +64,8 @@ const Modal = (() => {
 			{
 				url_map[src.name] = {
 					type: "html_alt",
-					url: src.chapter_url(manga, chapter),
+					url: src.get_check_url ?
+						src.get_check_url(manga, chapter) : src.chapter_url(manga, chapter),
 					alt: src.get_alt_text(manga, chapter),
 				};
 			}
