@@ -405,3 +405,15 @@ footer a:hover { color: var(--accent); }
   overflow-y: auto;
 }
 #debug_panel.open { transform: translateY(0); }
+
+#sort_btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
+    line-height: 1;
+}
+#sort_btn:hover { border-color: var(--accent); color: var(--accent); }

@@ -62,8 +62,11 @@
     <!-- RIGHT: Chapter list -->
     <div id="chapters_panel">
       <div class="chapters_header">
-        <div class="selected_title" id="selected_title">Select a title →</div>
-        <input type="text" id="chapter_search" placeholder="Jump to ch…" />
+          <div class="selected_title" id="selected_title">Select a title →</div>
+          <div style="display:flex;gap:6px;align-items:center;">
+              <input type="text" id="chapter_search" placeholder="Jump to ch…" />
+              <button id="sort_btn" title="Sort order">↓</button>
+          </div>
       </div>
       <div class="chapters_list" id="chapters_list">
         <div class="empty_state">

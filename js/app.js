@@ -20,6 +20,7 @@ const App = (
 
 		let current_manga = null;
 		let all_chapters = [];
+		let sort_asc = false;
 
 		const input = document.getElementById("search_input");
 		const search_btn = document.getElementById("search_btn");
@@ -40,6 +41,13 @@ const App = (
 				}
 			);
 
+			document.getElementById("sort_btn").addEventListener(
+				"click", () => {
+					sort_asc = !sort_asc;
+					document.getElementById("sort_btn").textContent = sort_asc ? "↑" : "↓";
+					filter_chapters();
+				}
+			);
 			search_btn.addEventListener("click", do_search);
 			input.addEventListener("keydown", e => { if (e.key === "Enter") do_search(); });
 			ch_filter.addEventListener("input", filter_chapters);
@@ -128,12 +136,13 @@ const App = (
 		function filter_chapters()
 		{
 			const q = ch_filter.value.trim().toLowerCase();
-			render_chapters(q
+			let filtered = q
 				? all_chapters.filter(ch =>
 					ch.chapter?.startsWith(q) ||
 					ch.title?.toLowerCase().includes(q))
-				: all_chapters
-			);
+				: [...all_chapters];
+			if (sort_asc) filtered.reverse();
+			render_chapters(filtered);
 		}
 
 		function toggle_bookmark(manga)
