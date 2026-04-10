@@ -86,7 +86,7 @@ Similarly if you want a scanlation to be added, u may create a new issue.
 
 [x] Setted up UptimeRobot to ping the render backend every 5minutes to prevent it from shutting down
 
-[ ] templetoons sometimes have chapters with some prefixes like `https://templetoons.com/comic/becoming-the-obsessive-male-leads-ex-wife/84459-chapter-6` that 84459 is destroying it.
+[x] templetoons sometimes have chapters with some prefixes like `https://templetoons.com/comic/becoming-the-obsessive-male-leads-ex-wife/84459-chapter-6` that 84459 is destroying it.
 
 [ ] Add Vortex Scans `https://vortexscans.org/`
 
@@ -96,7 +96,7 @@ Similarly if you want a scanlation to be added, u may create a new issue.
 
 [x] Add Violet Scans `https://violetscans.org/` -  for some series, series name and the slug does not match. Gonna change everything to save series slug along with sources in an object in `data/series.json`. Would be a long implementation
 
-[ ] Add github workflows to refresh series list... every 6 hours?
+[x] Add github workflows to refresh series list... every 6 hours?
 
 [ ] chapters like 1.1, 1.2, 1.5, etc are not displayed
 

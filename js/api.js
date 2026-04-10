@@ -47,12 +47,33 @@ const API = (
 
 		async function fetch_chapters(manga)
 		{
+			// Prefer the scraped chapter list for any source that has one,
+			// since it carries chapter_slug (needed for correct URLs on e.g. Temple Toons).
+			const source_chapters = manga.chapters || {};
+
+			const source_with_list = Object.keys(source_chapters)
+				.find(src => Array.isArray(source_chapters[src]) && source_chapters[src].length > 0);
+
+			if (source_with_list)
+			{
+				// { name: "Chapter 8", chapter_slug: "19220-chapter-8" }
+				// → { chapter: "8", title: "", chapter_slug: "19220-chapter-8" }
+				return source_chapters[source_with_list]
+					.map(entry => ({
+						chapter: String(entry.name).replace(/^Chapter\s*/i, "").trim(),
+						title: "",
+						chapter_slug: entry.chapter_slug || null,
+					}))
+					.reverse(); // show highest chapter first
+			}
+
+			// No scraped list — fall back to numeric stubs.
 			if (!manga.max_chapter) return [];
 
 			const chapters = [];
 			for (let i = Math.floor(manga.max_chapter); i >= 1; i--)
 			{
-				chapters.push({ chapter: String(i), title: "" });
+				chapters.push({ chapter: String(i), title: "", chapter_slug: null });
 			}
 			return chapters;
 		}
@@ -66,6 +87,7 @@ const API = (
 				status: _normalise_status(s.status),
 				max_chapter: s.max_chapter ?? null,
 				sources: s.sources || [],
+				chapters: s.chapters || {},     // per-source chapter lists (with chapter_slug)
 				tags: [],
 				// source-specific fields used by modal sources
 				asura_slug:     s.slug && s.sources?.includes("Asura Scans")  ? s.slug : null,

@@ -1,5 +1,5 @@
 /**
-Manga metadata scraper (title, slug, cover, sources, max_chapter)
+Manga metadata scraper (title, slug, cover, sources, chapters, max_chapter)
 
 - ADK Scans: Its paginated. Goes through all the pages and finds chapters through regex (WEIRDDDDDDDD HTML)
 - Asura Scans: Like I've said before... Asura IS THE GOATT. LITERALLY AN API!!! RAHHHHHHHHHHH
@@ -59,9 +59,19 @@ function merge(lists)
 					}
 				}
 
+				// Merge chapters: each source keeps its own chapter list
+				if (item.chapters)
+				{
+					if (!existing.chapters) existing.chapters = {};
+					for (const [src_name, ch_list] of Object.entries(item.chapters))
+					{
+						if (!(src_name in existing.chapters)) existing.chapters[src_name] = ch_list;
+					}
+				}
+
 				for (const [field, value] of Object.entries(item))
 				{
-                    if (!['title', 'slug', 'cover', 'sources', 'max_chapter'].includes(field) && existing[field] === undefined) {
+                    if (!['title', 'slug', 'cover', 'sources', 'chapters', 'max_chapter'].includes(field) && existing[field] === undefined) {
                         existing[field] = value;
                     }
                 }
@@ -71,6 +81,8 @@ function merge(lists)
 				const { slug, ...rest } = item;
 				// Ensure max_chapter key exists even if null
 				if (!('max_chapter' in rest)) rest.max_chapter = null;
+				// Ensure chapters key exists even if empty
+				if (!('chapters' in rest)) rest.chapters = {};
 				map.set(key, rest);
 			}
 		}
@@ -86,13 +98,13 @@ async function main()
 
 	const results = await Promise.allSettled(
 		[
-			scrape_adk(),
-			scrape_asura(),
-			scrape_demonic(),
+			//scrape_adk(),
+			//scrape_asura(),
+			//scrape_demonic(),
 			scrape_temple_toons(),
-			scrape_thunder(),
-			scrape_flame(),
-			scrape_violet(),
+			//scrape_thunder(),
+			//scrape_flame(),
+			//scrape_violet(),
 		]
 	);
 
@@ -142,6 +154,10 @@ async function main()
 	// Stats on max_chapter coverage
 	const with_chapter = merged.filter(s => s.max_chapter !== null && s.max_chapter !== undefined);
 	console.log(`\nmax_chapter populated: ${with_chapter.length}/${merged.length} series`);
+
+	// Stats on chapters coverage
+	const with_chapters = merged.filter(s => s.chapters && Object.keys(s.chapters).length > 0);
+	console.log(`chapters populated: ${with_chapters.length}/${merged.length} series`);
 
 	const out_dir = path.join(__dirname, '..', 'data');
 	const out_file = path.join(out_dir, 'series.json');
