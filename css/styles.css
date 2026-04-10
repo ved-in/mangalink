@@ -417,3 +417,10 @@ footer a:hover { color: var(--accent); }
     line-height: 1;
 }
 #sort_btn:hover { border-color: var(--accent); color: var(--accent); }
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.6rem;
+  gap: 0.25rem;
+}
