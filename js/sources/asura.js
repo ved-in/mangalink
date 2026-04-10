@@ -32,8 +32,16 @@ const ASURASCANS = {
 
 	chapter_url(manga, chapter)
 	{
-		if (!chapter.chapter) return this.series_url(manga);
-		const base = manga.sources?.["Asura Scans"] || `https://asurascans.com/comics/${this._to_slug(manga.title)}-75e30c62`;
-		return `${base.replace(/\/$/, "")}/chapter/${chapter.chapter}`;
+		const sourceBase = manga.sources?.["Asura Scans"];
+
+		if (sourceBase)
+		{
+			return `${sourceBase.replace(/\/$/, "")}-75e30c62/chapter/${chapter.chapter}`;
+		}
+		else
+		{
+			const fallbackBase = `https://asurascans.com/comics/${this._to_slug(manga.title)}-75e30c62`;
+			return `${fallbackBase.replace(/\/$/, "")}/chapter/${chapter.chapter}`;
+		}
 	}
 };
