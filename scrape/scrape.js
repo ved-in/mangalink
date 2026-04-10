@@ -99,11 +99,11 @@ async function main()
 	const results = await Promise.allSettled(
 		[
 			//scrape_adk(),
-			scrape_asura(),
+			//scrape_asura(),				// DONE
 			//scrape_demonic(),
-			//scrape_temple_toons(),
+			//scrape_temple_toons(),		// DONE
 			//scrape_thunder(),
-			//scrape_flame(),
+			scrape_flame(),					// DONE
 			//scrape_violet(),
 		]
 	);

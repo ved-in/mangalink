@@ -98,7 +98,7 @@ Similarly if you want a scanlation to be added, u may create a new issue.
 
 [x] Add github workflows to refresh series list... every 6 hours?
 
-[ ] chapters like 1.1, 1.2, 1.5, etc are not displayed
+[DOINGGG] chapters like 1.1, 1.2, 1.5, etc are not displayed
 
 [ ] Continue Reading feature
 
