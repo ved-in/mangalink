@@ -31,6 +31,7 @@ const Modal = (() => {
         "Temple Toons":  TEMPLESCANS,
         "Demonic Scans": DEMONICSCANS,
         "Flame Comics":  FLAMESCANS,
+        "Violet Scans":  VIOLETSCANS,
     };
 
     let _on_visit = null;
@@ -67,7 +68,7 @@ const Modal = (() => {
     function _active_sources(manga)
     {
         // Only show sources this series is actually listed on
-        const src_names = manga.sources || [];
+        const src_names = Object.keys(manga.sources || {});
         return src_names
             .map(n => SOURCE_MAP[n])
             .filter(Boolean);

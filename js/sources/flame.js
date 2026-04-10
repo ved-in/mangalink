@@ -21,7 +21,8 @@ const FLAMESCANS = {
 
     series_url(manga)
     {
-        if (manga.flame_id) return `https://flamecomics.xyz/series/${manga.flame_id}`;
+        if (manga.sources?.["Flame Comics"]) return manga.sources["Flame Comics"];
+        if (manga.flame_series_id) return `https://flamecomics.xyz/series/${manga.flame_series_id}`;
         // fallback: slug-based guess (less reliable)
         return `https://flamecomics.xyz/series/${this._to_slug(manga.title)}`;
     },

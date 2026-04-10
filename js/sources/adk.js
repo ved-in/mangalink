@@ -23,7 +23,7 @@ const ADKSCANS = {
 
 	series_url(manga)
     {
-		return `https://www.silentquill.net/${this._to_slug(manga.title)}/`;
+		return manga.sources?.["ADK Scans"] || `https://www.silentquill.net/${this._to_slug(manga.title)}/`;
 	},
 
 	chapter_url(manga, chapter)

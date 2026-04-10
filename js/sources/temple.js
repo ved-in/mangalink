@@ -34,7 +34,7 @@ const TEMPLESCANS = {
 	// Checked on the SERIES page, not the chapter page (chapter pages 403)
 	get_check_url(manga, _chapter)
 	{
-		return `https://templetoons.com/comic/${this._to_slug(manga.title)}`;
+		return manga.sources?.["Temple Toons"] || `https://templetoons.com/comic/${this._to_slug(manga.title)}`;
 	},
 
 	// The series page has thumbnails like: <img alt="Chapter 21" ...>
@@ -45,7 +45,7 @@ const TEMPLESCANS = {
 
 	series_url(manga)
 	{
-		return `https://templetoons.com/comic/${this._to_slug(manga.title)}`;
+		return manga.sources?.["Temple Toons"] || `https://templetoons.com/comic/${this._to_slug(manga.title)}`;
 	},
 
 	chapter_url(manga, chapter)

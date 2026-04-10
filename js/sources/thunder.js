@@ -31,7 +31,7 @@ const THUNDERSCANS = {
 
 	series_url(manga)
 	{
-		return `https://en-thunderscans.com/comics/${this._to_slug(manga.title)}/`;
+		return manga.sources?.["Thunder Scans"] || `https://en-thunderscans.com/comics/${this._to_slug(manga.title)}/`;
 	},
 
 	chapter_url(manga, chapter)

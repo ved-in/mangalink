@@ -115,7 +115,7 @@ const App = (
 			try
 			{
 				all_chapters = await API.fetch_chapters(manga);
-                console.log(`[MangaLink] "${manga.title}" — max_chapter: ${manga.max_chapter} | sources: ${manga.sources?.join(", ")}`);
+                console.log(`[MangaLink] "${manga.title}" — max_chapter: ${manga.max_chapter} | sources: ${Object.keys(manga.sources || {}).join(", ")}`);
 				Bookmarks.update_total(manga.id, all_chapters.length);
 				filter_chapters();
 			}

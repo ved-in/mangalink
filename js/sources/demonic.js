@@ -61,7 +61,7 @@ const DEMONICSCANS = {
 
 	series_url(manga)
 	{
-		return `https://demonicscans.org/manga/${this._to_web_slug(manga.title)}`;
+		return manga.sources?.["Demonic Scans"] || `https://demonicscans.org/manga/${this._to_web_slug(manga.title)}`;
 	},
 
 	chapter_url(manga, chapter)

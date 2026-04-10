@@ -25,12 +25,15 @@ const ASURASCANS = {
 
 	series_url(manga)
 	{
+		const url = manga.sources?.["Asura Scans"];
+		if (url) return url;
 		return `https://asurascans.com/comics/${this._to_slug(manga.title)}-75e30c62`;
 	},
 
 	chapter_url(manga, chapter)
 	{
 		if (!chapter.chapter) return this.series_url(manga);
-		return `https://asurascans.com/comics/${this._to_slug(manga.title)}-75e30c62/chapter/${chapter.chapter}`;
+		const base = manga.sources?.["Asura Scans"] || `https://asurascans.com/comics/${this._to_slug(manga.title)}-75e30c62`;
+		return `${base.replace(/\/$/, "")}/chapter/${chapter.chapter}`;
 	}
 };
