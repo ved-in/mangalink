@@ -94,7 +94,7 @@ Similarly if you want a scanlation to be added, u may create a new issue.
 
 [ ] Add Valir Scans `https://valirscans.org/`
 
-[ ] Add Violet Scans `https://violetscans.org/`
+[ ] Add Violet Scans `https://violetscans.org/` -  for some series, series name and the slug does not match. Gonna change everything to save series slug along with sources in an object in `data/series.json`. Would be a long implementation
 
 [ ] chapters like 1.1, 1.2, 1.5, etc are not displayed
 
