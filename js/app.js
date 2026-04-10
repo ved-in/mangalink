@@ -41,10 +41,15 @@ const App = (
 				}
 			);
 
+			let asc_desc_storage = localStorage.getItem("mangalink:sort_asc");
+			sort_asc = asc_desc_storage === "true";
+			document.getElementById("sort_btn").textContent = sort_asc ? "↑" : "↓";
+
 			document.getElementById("sort_btn").addEventListener(
 				"click", () => {
 					sort_asc = !sort_asc;
 					document.getElementById("sort_btn").textContent = sort_asc ? "↑" : "↓";
+					localStorage.setItem("mangalink:sort_asc", sort_asc);
 					filter_chapters();
 				}
 			);
@@ -112,7 +117,7 @@ const App = (
 				all_chapters = await API.fetch_chapters(manga);
                 console.log(`[MangaLink] "${manga.title}" — max_chapter: ${manga.max_chapter} | sources: ${manga.sources?.join(", ")}`);
 				Bookmarks.update_total(manga.id, all_chapters.length);
-				render_chapters(all_chapters);
+				filter_chapters();
 			}
 			catch (e)
 			{
