@@ -20,6 +20,7 @@ const { scrape_adk } = require('./sources/adk');
 const { scrape_demonic } = require('./sources/demonic');
 const { scrape_temple_toons } = require('./sources/temple');
 const { scrape_flame } = require('./sources/flame');
+const { scrape_violet } = require('./sources/violet');
 
 
 function normalise(title)
@@ -85,12 +86,13 @@ async function main()
 
 	const results = await Promise.allSettled(
 		[
-			scrape_adk(),
-			scrape_asura(),
-			scrape_demonic(),
-			scrape_temple_toons(),
-			scrape_thunder(),
-			scrape_flame(),
+			//scrape_adk(),
+			//scrape_asura(),
+			//scrape_demonic(),
+			//scrape_temple_toons(),
+			//scrape_thunder(),
+			//scrape_flame(),
+			scrape_violet(),
 		]
 	);
 
@@ -101,7 +103,8 @@ async function main()
 		'Demonic',
 		'Temple',
 		'Thunder',
-		'Flame'
+		'Flame',
+		'Violet'
 	];
 
 	for (let i = 0; i < results.length; i++)
