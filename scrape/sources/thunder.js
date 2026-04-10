@@ -25,12 +25,15 @@ function extract_thunder_cards(html)
 			const title = $(el).find('.tt').text().trim() || slug.replace(/-/g, ' ');
 			const cover = $(el).find('.limit img').attr('src');
 
+            const max_chapter = parse_chapter_label(epxs_vals[card_idx] || '');
+            const series_url = `https://en-thunderscans.com/comics/${slug}/`;
+
             seen_slugs.add(slug);
             cards.push({
                 title: decode_html_entities(title),
                 slug,
                 cover,
-                sources: ['Thunder Scans'],
+                sources: { 'Thunder Scans': series_url },
                 max_chapter,
             });
             card_idx++;

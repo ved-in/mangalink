@@ -43,9 +43,9 @@ function merge(lists)
 			if (map.has(key))
 			{
 				const existing = map.get(key);
-				for (const src of item.sources)
+				for (const [src_name, src_url] of Object.entries(item.sources))
 				{
-					if (!existing.sources.includes(src)) existing.sources.push(src);
+					if (!(src_name in existing.sources)) existing.sources[src_name] = src_url;
 				}
 				if (!existing.cover && item.cover) existing.cover = item.cover;
 
@@ -124,9 +124,9 @@ async function main()
 	const source_counts = {};
 	for (const series of merged)
 	{
-		for (const src of series.sources)
+		for (const src_name of Object.keys(series.sources))
 		{
-			source_counts[src] = (source_counts[src] || 0) + 1;
+			source_counts[src_name] = (source_counts[src_name] || 0) + 1;
 		}
 	}
 

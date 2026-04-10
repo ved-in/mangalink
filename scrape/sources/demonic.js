@@ -49,7 +49,7 @@ function extract_demonic_cards(html)
 					title: decode_html_entities(title), 
 					slug: slug, 
 					cover: cover, 
-					sources: ['Demonic Scans'],
+					sources: { 'Demonic Scans': `https://demonicscans.org/manga/${slug}` },
                     max_chapter,
 				}
 			);

@@ -59,7 +59,7 @@ async function scrape_flame()
                     title: decode_html_entities(title),
                     slug: slug,
                     cover: cover || null,
-                    sources: ['Flame Comics'],
+                    sources: { 'Flame Comics': slug },
                     flame_series_id: id,
                     max_chapter,
                 }

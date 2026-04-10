@@ -69,12 +69,14 @@ async function scrape_asura()
                 if (!isNaN(n)) max_chapter = n;
             }
 
+            const series_url = `https://asurascans.com/comics/${item.slug}`;
+
             series.push(
                 {
                     title: item.title,
                     slug: item.slug,
                     cover: item.cover || null,
-                    sources: ['Asura Scans'],
+                    sources: { 'Asura Scans': series_url },
                     max_chapter,
                 }
             );

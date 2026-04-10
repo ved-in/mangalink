@@ -66,7 +66,7 @@ async function scrape_adk()
                 }
 
                 // .epxs holds the latest chapter label, e.g. "Chapter 11.5 End"
-                const epxs_text = el.find('.epxs').text().trim();
+                const epxs_text = element.find('.epxs').text().trim();
                 const max_chapter = parse_chapter_label(epxs_text);
 
                 seen_slugs.add(slug);
@@ -74,7 +74,7 @@ async function scrape_adk()
                     title: decode_html_entities(title),
                     slug: href,
                     cover,
-                    sources: ['ADK Scans'],
+                    sources: { 'ADK Scans': href },
                     max_chapter,
                 });
             }

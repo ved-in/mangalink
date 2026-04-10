@@ -86,13 +86,14 @@ async function scrape_temple_toons()
                 max_chapter = ccount_matches[i];
             }
             
+            const series_url = `https://templetoons.com/comic/${slug}`;
             seen_slugs.add(slug);
             all_series.push(
                 {
                     title: decode_html_entities(title), 
-                    slug: `https://templetoons.com/comic/${slug}`, 
+                    slug: series_url, 
                     cover, 
-                    sources: ['Temple Toons'],
+                    sources: { 'Temple Toons': series_url },
                     max_chapter
                 }
             );
