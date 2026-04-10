@@ -32,16 +32,20 @@ const ASURASCANS = {
 
 	chapter_url(manga, chapter)
 	{
+		const HASH = "-75e30c62";
+		let base;
 		const sourceBase = manga.sources?.["Asura Scans"];
 
 		if (sourceBase)
 		{
-			return `${sourceBase.replace(/\/$/, "")}-75e30c62/chapter/${chapter.chapter}`;
+			let clean = sourceBase.replace(/\/$/, "").replace(/-75e30c62$/, "");
+			base = clean + HASH;
 		}
 		else
 		{
-			const fallbackBase = `https://asurascans.com/comics/${this._to_slug(manga.title)}-75e30c62`;
-			return `${fallbackBase.replace(/\/$/, "")}/chapter/${chapter.chapter}`;
+			base = `https://asurascans.com/comics/${this._to_slug(manga.title)}${HASH}`;
 		}
+		const slug = chapter.chapter_slugs?.["Asura Scans"] ?? chapter.chapter;
+		return `${base}/chapter/${slug}`;
 	}
 };

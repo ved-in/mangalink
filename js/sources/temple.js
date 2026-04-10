@@ -50,7 +50,7 @@ const TEMPLESCANS = {
 
 	chapter_url(manga, chapter)
 	{
-		const slug = chapter.chapter_slug || `chapter-${chapter.chapter}`;
+		const slug = chapter.chapter_slugs?.["Temple Toons"] || `chapter-${chapter.chapter}`;
 		return `${this.series_url(manga)}/${slug}`;
 	}
 };

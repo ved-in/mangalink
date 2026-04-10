@@ -99,9 +99,9 @@ async function main()
 	const results = await Promise.allSettled(
 		[
 			//scrape_adk(),
-			//scrape_asura(),
+			scrape_asura(),
 			//scrape_demonic(),
-			scrape_temple_toons(),
+			//scrape_temple_toons(),
 			//scrape_thunder(),
 			//scrape_flame(),
 			//scrape_violet(),

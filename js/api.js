@@ -54,27 +54,45 @@ const API = (
 			const source_with_list = Object.keys(source_chapters)
 				.find(src => Array.isArray(source_chapters[src]) && source_chapters[src].length > 0);
 
-			if (source_with_list)
+			const slug_map = {};
+			const special_chapters = new Set();
+
+			for (const [src, entries] of Object.entries(source_chapters))
 			{
-				// { name: "Chapter 8", chapter_slug: "19220-chapter-8" }
-				// → { chapter: "8", title: "", chapter_slug: "19220-chapter-8" }
-				return source_chapters[source_with_list]
-					.map(entry => ({
-						chapter: String(entry.name).replace(/^Chapter\s*/i, "").trim(),
-						title: "",
-						chapter_slug: entry.chapter_slug || null,
-					}))
-					.reverse(); // show highest chapter first
+				if (!Array.isArray(entries)) continue;
+				for (const entry of entries)
+				{
+					const key = String(entry.name).replace(/^Chapter\s*/i, "").trim();
+					if (!slug_map[key]) slug_map[key] = {};
+					slug_map[key][src] = entry.chapter_slug || null;
+					if (!Number.isInteger(parseFloat(key)) || String(parseInt(key)) !== key)
+					{
+						special_chapters.add(key);
+					}
+				}
 			}
 
-			// No scraped list — fall back to numeric stubs.
-			if (!manga.max_chapter) return [];
+			if (!manga.max_chapter) {
+				return Object.keys(slug_map)
+					.sort((a, b) => parseFloat(b) - parseFloat(a))
+					.map(ch => ({ chapter: ch, title: "", chapter_slug: slug_map[ch] }));
+			}
 
 			const chapters = [];
 			for (let i = Math.floor(manga.max_chapter); i >= 1; i--)
 			{
-				chapters.push({ chapter: String(i), title: "", chapter_slug: null });
+				const key = String(i);
+				chapters.push({ chapter: key, title: "", chapter_slugs: slug_map[key] ?? {} });
 			}
+
+			for (const key of Object.keys(slug_map)){
+				const n = parseFloat(key);
+				if (!Number.isInteger(n)) {
+					chapters.push({ chapter: key, title: "", chapter_slugs: slug_map[key] ?? {} });
+				}
+			}
+
+			chapters.sort((a, b) => parseFloat(b.chapter) - parseFloat(a.chapter));
 			return chapters;
 		}
 
