@@ -58,6 +58,7 @@ body::before {
 }
 
 .logo { font-family: var(--font_display); font-size: 1.7rem; letter-spacing: 2px; }
+.logo a { color: inherit; text-decoration: none; }
 .logo span { color: var(--accent); }
 .tagline { font-size: 0.72rem; color: var(--muted); font-family: var(--font_mono); letter-spacing: 1px; text-transform: uppercase; }
 
