@@ -169,6 +169,7 @@ async function main()
 
 	const elapsed = ((Date.now() - start_time) / 1000).toFixed(1);
 	console.log(`=== Done in ${elapsed}s ===`);
+	process.exit(0)
 }
 
 
