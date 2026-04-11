@@ -98,13 +98,13 @@ async function main()
 
 	const results = await Promise.allSettled(
 		[
-			scrape_adk(),					// DONE
+			//scrape_adk(),					// DONE
 			//scrape_asura(),				// DONE
-			//scrape_demonic(),
+			scrape_demonic(),				// DONE
 			//scrape_temple_toons(),		// DONE
-			scrape_thunder(),				// DONE
+			//scrape_thunder(),				// DONE
 			//scrape_flame(),				// DONE
-			scrape_violet(),				// DONE
+			//scrape_violet(),				// DONE
 		]
 	);
 

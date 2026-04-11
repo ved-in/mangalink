@@ -66,8 +66,11 @@ const DEMONICSCANS = {
 
 	chapter_url(manga, chapter)
 	{
+		if (!chapter.chapter && chapter.chapter !== 0) return this.series_url(manga);
+		const id = manga.demonic_id;
+		if (id) return `https://demonicscans.org/chaptered.php?manga=${id}&chapter=${chapter.chapter}`;
+		// fallback to title-based URL if no id
 		const slug = this._to_web_slug(manga.title);
-		if (!chapter.chapter) return this.series_url(manga);
 		return `https://demonicscans.org/title/${slug}/chapter/${chapter.chapter}/1`;
 	},
 };
