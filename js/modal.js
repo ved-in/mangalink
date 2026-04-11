@@ -143,9 +143,11 @@ const Modal = (() => {
         // Notes for users
         let note_for_user;
 
-        const is_thunder = src.name === "Thunder Scans";
+        const paywall = 
+			src.name === "Thunder Scans" ||
+			src.name === "Violet Scans";
         
-        if (is_thunder)  		{ note_for_user = `<span style="font-size:0.72rem;color:var(--danger, #ff6b6b);display:block;margin-top:2px;">⚠️ some chapters may not be free</span>` }
+        if (paywall)  			{ note_for_user = `<span style="font-size:0.72rem;color:var(--danger, #ff6b6b);display:block;margin-top:2px;">⚠️ some chapters may not be free</span>` }
         else                    { note_for_user = "" }
 
 		const badge_html = {
