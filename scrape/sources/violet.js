@@ -81,7 +81,12 @@ async function fetch_series_chapters(series_url)
             const num  = $(elem).attr('data-num');
             const href = $(elem).find('a[href]').first().attr('href');
             if (!num || !href) return;
-            chapters.push({ number: parseFloat(num), chapter_slug: href });
+            chapters.push(
+                {
+                    number: parseFloat(num),
+                    chapter_slug: href.replace(/\/$/, '').split('/').pop()
+                }
+            );
         });
 
         return chapters;

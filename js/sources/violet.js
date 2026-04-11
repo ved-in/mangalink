@@ -45,9 +45,8 @@ const VIOLETSCANS = {
 	{
 		if (!chapter.chapter) return this.series_url(manga);
 
-		// Non-integer chapters have the full URL stored as their slug
 		const slug = chapter.chapter_slugs?.["Violet Scans"];
-		if (slug) return slug;
+		if (slug) return `https://violetscans.org/${slug}/`;
 
 		return `https://violetscans.org/${this._series_slug(manga)}-chapter-${chapter.chapter}/`;
 	},
