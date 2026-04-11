@@ -47,13 +47,52 @@ const API = (
 
 		async function fetch_chapters(manga)
 		{
-			if (!manga.max_chapter) return [];
+			// Prefer the scraped chapter list for any source that has one,
+			// since it carries chapter_slug (needed for correct URLs on e.g. Temple Toons).
+			const source_chapters = manga.chapters || {};
+
+			const source_with_list = Object.keys(source_chapters)
+				.find(src => Array.isArray(source_chapters[src]) && source_chapters[src].length > 0);
+
+			const slug_map = {};
+			const special_chapters = new Set();
+
+			for (const [src, entries] of Object.entries(source_chapters))
+			{
+				if (!Array.isArray(entries)) continue;
+				for (const entry of entries)
+				{
+					const key = String(entry.name).replace(/^Chapter\s*/i, "").trim();
+					if (!slug_map[key]) slug_map[key] = {};
+					slug_map[key][src] = entry.chapter_slug || null;
+					if (!Number.isInteger(parseFloat(key)) || String(parseInt(key)) !== key)
+					{
+						special_chapters.add(key);
+					}
+				}
+			}
+
+			if (!manga.max_chapter) {
+				return Object.keys(slug_map)
+					.sort((a, b) => parseFloat(b) - parseFloat(a))
+					.map(ch => ({ chapter: ch, title: "", chapter_slug: slug_map[ch] }));
+			}
 
 			const chapters = [];
 			for (let i = Math.floor(manga.max_chapter); i >= 1; i--)
 			{
-				chapters.push({ chapter: String(i), title: "" });
+				const key = String(i);
+				chapters.push({ chapter: key, title: "", chapter_slugs: slug_map[key] ?? {} });
 			}
+
+			for (const key of Object.keys(slug_map)){
+				const n = parseFloat(key);
+				if (!Number.isInteger(n)) {
+					chapters.push({ chapter: key, title: "", chapter_slugs: slug_map[key] ?? {} });
+				}
+			}
+
+			chapters.sort((a, b) => parseFloat(b.chapter) - parseFloat(a.chapter));
 			return chapters;
 		}
 
@@ -66,6 +105,7 @@ const API = (
 				status: _normalise_status(s.status),
 				max_chapter: s.max_chapter ?? null,
 				sources: s.sources || [],
+				chapters: s.chapters || {},     // per-source chapter lists (with chapter_slug)
 				tags: [],
 				// source-specific fields used by modal sources
 				asura_slug:     s.slug && s.sources?.includes("Asura Scans")  ? s.slug : null,

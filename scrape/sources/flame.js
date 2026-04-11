@@ -1,76 +1,105 @@
-const { fetch, decode_html_entities } = require('./helpers');
+const { fetch, sleep, decode_html_entities } = require('./helpers');
+
+function strip_trailing_zeros(num_str)
+{
+    const n = parseFloat(num_str);
+    if (isNaN(n)) return num_str;
+    return n.toString();
+}
 
 async function scrape_flame()
 {
     console.log('[Flame] Starting...');
-    const all_series = [];
-    const seen_slugs = new Set();
 
-    try
+    // fetch buildId from homepage __NEXT_DATA__
+    // I love you https://github.com/keiyoushi/extensions-source
+
+    const home_res = await fetch('https://flamecomics.xyz');
+    const build_id_match = home_res.body.match(/"buildId"\s*:\s*"([^"]+)"/);
+    if (!build_id_match)
     {
-        const url = 'https://flamecomics.xyz/api/series';
-        const res = await fetch(url);
+        console.error('[Flame] Could not extract buildId');
+        return [];
+    }
+    const buildId = build_id_match[1];
+    console.log(`[Flame] buildId: ${buildId}`);
 
-        if (res.status !== 200)
-        {
-            console.error(`[Flame] HTTP ${res.status}`);
-            return [];
-        }
+    // fetch series list
+    const series_res = await fetch('https://flamecomics.xyz/api/series');
+    const series_list = JSON.parse(series_res.body);
+    console.log(`[Flame] Found ${series_list.length} series`);
 
-        let data;
+    const all_series = [];
+    for (const item of series_list)
+    {
+        const id = item.id;
+        const title = item.label;
+        if (!id || !title) continue;
+
+        console.log(`[Flame] Processing: ${title} (id=${id})`);
+
+        // Step 3: fetch chapter list + series info
+        const ch_url = `https://flamecomics.xyz/_next/data/${buildId}/series/${id}.json?id=${id}`;
+        let chapters = [];
+        let cover_url = null;
         try
         {
-            data = JSON.parse(res.body);
+            const ch_res = await fetch(ch_url);
+            if (ch_res.status === 200)
+            {
+                const ch_data = JSON.parse(ch_res.body);
+                const series_info = ch_data?.pageProps?.series;
+
+                if (series_info && series_info.cover)
+                {
+                    // Build absolute cover URL using CDN
+                    cover_url = `https://cdn.flamecomics.xyz/uploads/images/series/${id}/${series_info.cover}`;
+                }
+
+                const allChapters = (ch_data?.pageProps?.chapters || []).map(
+                    ch => (
+                        {
+                            name: String(ch.chapter),
+                            chapter_slug: ch.token,
+                            number: parseFloat(ch.chapter)
+                        }
+                    )
+                );
+                chapters = allChapters.map(
+                    ch => (
+                        {
+                            name: strip_trailing_zeros(ch.name),
+                            chapter_slug: ch.chapter_slug
+                        }
+                    )
+                );
+            }
         }
         catch (e)
         {
-            console.error(`[Flame] JSON parse error: ${e.message}`);
-            return [];
+            console.error(`[Flame] error: ${e.message}`);
+            return []
         }
 
-        if (!Array.isArray(data))
+        // Fallback cover if not found: use item.image (relative) and try to make absolute
+        if (!cover_url && item.image)
         {
-            console.error('[Flame] API did not return an array');
-            return [];
+            cover_url = `https://cdn.flamecomics.xyz/uploads/images/series/${id}/${item.image}`;
         }
 
-        for (const item of data)
-        {
-            const id = item.id;
-            const title = item.label;
-            if (!id || !title) continue;
-
-            const slug = `https://flamecomics.xyz/series/${id}`;
-            if (seen_slugs.has(slug)) continue;
-            seen_slugs.add(slug);
-
-            let cover = item.image;
-            if (cover && !cover.startsWith('http'))
+        all_series.push(
             {
-                cover = 'https://flamecomics.xyz/' + cover.replace(/^\/+/, '');
+                title: decode_html_entities(title),
+                slug: `https://flamecomics.xyz/series/${id}`,
+                cover: cover_url,
+                sources: { 'Flame Comics': `https://flamecomics.xyz/series/${id}` },
+                flame_series_id: id,
+                max_chapter: item.chapter_count ? parseFloat(item.chapter_count) : null,
+                chapters: { 'Flame Comics': chapters },
             }
-            // chapter_count comes back as a string in the API response
-            const max_chapter = item.chapter_count != null
-                ? parseFloat(item.chapter_count) || null
-                : null;
+        );
 
-            all_series.push(
-                {
-                    title: decode_html_entities(title),
-                    slug: slug,
-                    cover: cover || null,
-                    sources: { 'Flame Comics': slug },
-                    flame_series_id: id,
-                    max_chapter,
-                }
-            );
-        }
-
-        console.log(`[Flame] Found ${all_series.length} series.`);
-    }
-    catch (e)
-    {
-        console.error(`[Flame] Error: ${e.message}`);
+        await sleep(500); // rate limit, 2 req/s per the Tachiyomi extension
     }
 
     console.log(`[Flame] Done. Found ${all_series.length} series.`);

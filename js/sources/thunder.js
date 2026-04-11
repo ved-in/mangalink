@@ -37,6 +37,15 @@ const THUNDERSCANS = {
 	chapter_url(manga, chapter)
 	{
 		if (!chapter.chapter) return this.series_url(manga);
-		return `https://en-thunderscans.com/${this._to_slug(manga.title)}-chapter-${chapter.chapter}/`;
+
+		const slug = chapter.chapter_slugs?.["Thunder Scans"];
+		if (slug) return `https://en-thunderscans.com/${slug}/`;
+
+		const series_url = manga.sources?.["Thunder Scans"] || '';
+		const series_slug = series_url
+			? series_url.replace(/\/$/, '').split('/').pop().replace(/^\d+-/, '')
+			: this._to_slug(manga.title);
+
+		return `https://en-thunderscans.com/${series_slug}-chapter-${chapter.chapter}/`;
 	},
 };

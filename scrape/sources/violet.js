@@ -1,6 +1,12 @@
 const cheerio = require('cheerio');
 const { fetch, decode_html_entities, add_cards } = require('./helpers');
 
+function is_non_integer(num)
+{
+    const n = parseFloat(num);
+    return !isNaN(n) && (n % 1 !== 0 || n === 0);
+}
+
 function extract_violet_cards(html)
 {
     const cards = [];
@@ -52,11 +58,44 @@ function extract_violet_cards(html)
             cover,
             sources: { 'Violet Scans': url },
             max_chapter,
+            chapters: { 'Violet Scans': [] },
+            _series_url: url,
         });
         card_idx++;
     });
 
     return cards;
+}
+
+async function fetch_series_chapters(series_url)
+{
+    try
+    {
+        const res = await fetch(series_url);
+        if (res.status !== 200) return [];
+
+        const $ = cheerio.load(res.body);
+        const chapters = [];
+
+        $('#chapterlist ul li').each((_, elem) => {
+            const num  = $(elem).attr('data-num');
+            const href = $(elem).find('a[href]').first().attr('href');
+            if (!num || !href) return;
+            chapters.push(
+                {
+                    number: parseFloat(num),
+                    chapter_slug: href.replace(/\/$/, '').split('/').pop()
+                }
+            );
+        });
+
+        return chapters;
+    }
+    catch (e)
+    {
+        console.error(`[Violet] Failed chapters for ${series_url}: ${e.message}`);
+        return [];
+    }
 }
 
 async function scrape_violet()
@@ -105,6 +144,28 @@ async function scrape_violet()
         }
 
         page++;
+    }
+
+    const CONCURRENCY = 5;
+    console.log(`[Violet] Fetching non-integer chapters for ${all_series.length} series (concurrency=${CONCURRENCY})...`);
+
+    for (let i = 0; i < all_series.length; i += CONCURRENCY)
+    {
+        const batch = all_series.slice(i, i + CONCURRENCY);
+        await Promise.all(batch.map(
+            async (s) => {
+                const all_chapters = await fetch_series_chapters(s._series_url);
+                const filtered = all_chapters.filter(ch => is_non_integer(ch.number));
+                if (filtered.length) {
+                    s.chapters['Violet Scans'] = filtered.map(ch => ({
+                        name: String(ch.number),
+                        chapter_slug: ch.chapter_slug,
+                    }));
+                }
+                delete s._series_url;
+            }
+        ));
+        console.log(`[Violet] Chapters fetched: ${Math.min(i + CONCURRENCY, all_series.length)}/${all_series.length}`);
     }
 
     console.log(`[Violet] Done. Found ${all_series.length} series.`);
