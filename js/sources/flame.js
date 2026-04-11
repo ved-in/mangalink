@@ -17,28 +17,18 @@ const FLAMESCANS = {
     name: "Flame Comics",
     icon: "🔥",
     type: "fantl",
-    check_type: "always_found",   // skip the proxy check entirely
 
     series_url(manga)
     {
         if (manga.sources?.["Flame Comics"]) return manga.sources["Flame Comics"];
-        if (manga.flame_series_id) return `https://flamecomics.xyz/series/${manga.flame_series_id}`;
-        // fallback: slug-based guess (less reliable)
-        return `https://flamecomics.xyz/series/${this._to_slug(manga.title)}`;
+        if (manga.flame_id) return `https://flamecomics.xyz/series/${manga.flame_id}`;
+        return null;
     },
 
-    // We always link to the series page regardless of chapter
-    chapter_url(manga, _chapter)
-    {
-        return this.series_url(manga);
-    },
-
-    _to_slug(title)
-    {
-        return title.toLowerCase()
-            .replace(/[^a-z0-9\s-]/g, "")
-            .trim()
-            .replace(/\s+/g, "-")
-            .replace(/-+/g, "-");
-    },
+	chapter_url(manga, chapter)
+	{
+		const slug = chapter.chapter_slugs?.["Flame Comics"];
+		if (slug && manga.flame_id) return `https://flamecomics.xyz/series/${manga.flame_id}/${slug}`;
+		return this.series_url(manga);
+	},
 };

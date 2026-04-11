@@ -143,11 +143,9 @@ const Modal = (() => {
         // Notes for users
         let note_for_user;
 
-        const is_flame = src.name === "Flame Comics";
         const is_thunder = src.name === "Thunder Scans";
         
-        if      (is_flame)      { note_for_user = `<span style="font-size:0.72rem;color:var(--muted);display:block;margin-top:2px;">opens series page</span>` }
-        else if (is_thunder)    { note_for_user = `<span style="font-size:0.72rem;color:var(--danger, #ff6b6b);display:block;margin-top:2px;">⚠️ some chapters may not be free</span>` }
+        if (is_thunder)  		{ note_for_user = `<span style="font-size:0.72rem;color:var(--danger, #ff6b6b);display:block;margin-top:2px;">⚠️ some chapters may not be free</span>` }
         else                    { note_for_user = "" }
 
 		const badge_html = {

@@ -29,6 +29,15 @@ const ADKSCANS = {
 	chapter_url(manga, chapter)
     {
 		if (!chapter.chapter) return this.series_url(manga);
-		return `https://www.silentquill.net/${this._to_slug(manga.title)}-chapter-${chapter.chapter}/`;
+
+		const slug = chapter.chapter_slugs?.["ADK Scans"];
+		if (slug) return slug;
+
+		const series_url = manga.sources?.["ADK Scans"] || '';
+		const series_slug = series_url
+			? series_url.replace(/\/$/, '').split('/').pop()
+			: this._to_slug(manga.title);
+
+		return `https://www.silentquill.net/${series_slug}-chapter-${chapter.chapter}/`;
 	}
 };
