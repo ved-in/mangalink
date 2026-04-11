@@ -16,6 +16,49 @@ const { LRUCache } = require("lru-cache");
 const app = express();
 app.use(cors());
 
+// Allowlist of hostnames this proxy is permitted to reach.
+// Any request targeting a domain not in this set is rejected with 403.
+const ALLOWED_HOSTS = new Set([
+	"asurascans.com",
+	"www.asurascans.com",
+	"demonicscans.org",
+	"www.demonicscans.org",
+	"en-thunderscans.com",
+	"www.en-thunderscans.com",
+	"templetoons.com",
+	"www.templetoons.com",
+	"flamecomics.xyz",
+	"www.flamecomics.xyz",
+	"violetscans.org",
+	"www.violetscans.org",
+	"www.silentquill.net",   // ADK Scans
+	"silentquill.net",
+]);
+
+function is_allowed(raw_url)
+{
+	try
+	{
+		const { hostname } = new URL(raw_url);
+		return ALLOWED_HOSTS.has(hostname);
+	}
+	catch (_) { return false; }
+}
+
+function reject_disallowed(urls, res)
+{
+	for (const url of urls)
+	{
+		if (!is_allowed(url))
+		{
+			console.warn(`[BLOCKED] Rejected disallowed host in: ${url}`);
+			res.status(403).json({ error: `Host not allowed: ${new URL(url).hostname}` });
+			return true;
+		}
+	}
+	return false;
+}
+
 const CACHE_FILE = path.join(__dirname, "cache.json");
 const TTL_FOUND = 1000 * 60 * 60 * 6;  						// 6 hours  (chapter exists - stable)
 const TTL_MISSING = 1000 * 60 * 5;        					// 5 minutes (might get uploaded soon)
@@ -202,6 +245,8 @@ app.get(
 				return res.status(400).json({ error: "Invalid JSON array in 'urls' parameter" });
 			}
 
+			if (reject_disallowed(urls, res)) { clearTimeout(requestTimeout); return; }
+
 			for (const url of urls)
 			{
 				const cached = cache.get(url);
@@ -263,6 +308,8 @@ app.get(
 				clearTimeout(requestTimeout);
 				return res.status(400).json({ error: "Missing 'url' or 'alt' parameter" });
 			}
+
+			if (reject_disallowed([url], res)) { clearTimeout(requestTimeout); return; }
 
 			const cache_key = `html:${url}:${alt}`;
 			const cached = cache.get(cache_key);

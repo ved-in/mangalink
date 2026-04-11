@@ -111,7 +111,7 @@ async function scrape_demonic()
     const all_series = [];
     const seen_slugs = new Set();
 
-    const BATCH = 10;
+    const BATCH = 30;
     let list_num = 1;
     let stop = false;
 
@@ -146,7 +146,7 @@ async function scrape_demonic()
         list_num += BATCH;
     }
     
-    const CONCURRENCY = 5;
+    const CONCURRENCY = 1000;
     console.log(`[Demonic] Fetching chapter data for ${all_series.length} series (concurrency=${CONCURRENCY})...`);
 
     for (let i = 0; i < all_series.length; i += CONCURRENCY)
