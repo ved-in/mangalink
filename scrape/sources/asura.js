@@ -3,7 +3,7 @@ const { fetch } = require('./helpers');
 function is_non_integer(num)
 {
     const n = parseFloat(num);
-    return !isNaN(n) && n % 1 !== 0;
+    return !isNaN(n) && (n % 1 !== 0 || n === 0);
 }
 
 async function fetch_series_chapters(slug)
