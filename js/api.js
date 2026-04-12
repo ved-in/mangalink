@@ -51,11 +51,7 @@ const API = (
 			// since it carries chapter_slug (needed for correct URLs on e.g. Temple Toons).
 			const source_chapters = manga.chapters || {};
 
-			const source_with_list = Object.keys(source_chapters)
-				.find(src => Array.isArray(source_chapters[src]) && source_chapters[src].length > 0);
-
 			const slug_map = {};
-			const special_chapters = new Set();
 
 			for (const [src, entries] of Object.entries(source_chapters))
 			{
@@ -65,17 +61,13 @@ const API = (
 					const key = String(entry.name).replace(/^Chapter\s*/i, "").trim();
 					if (!slug_map[key]) slug_map[key] = {};
 					slug_map[key][src] = entry.chapter_slug || null;
-					if (!Number.isInteger(parseFloat(key)) || String(parseInt(key)) !== key)
-					{
-						special_chapters.add(key);
-					}
 				}
 			}
 
 			if (!manga.max_chapter) {
 				return Object.keys(slug_map)
 					.sort((a, b) => parseFloat(b) - parseFloat(a))
-					.map(ch => ({ chapter: ch, title: "", chapter_slug: slug_map[ch] }));
+					.map(ch => ({ chapter: ch, title: "", chapter_slugs: slug_map[ch] }));
 			}
 
 			const chapters = [];
@@ -98,22 +90,21 @@ const API = (
 
 		function _parse_item(s)
 		{
+			// series.json: s.sources is a dict { "Source Name": "https://..." }
+			const source_urls  = s.sources || {};
+			const source_names = Object.keys(source_urls);
+
 			return {
-				id: s.title,                    // stable key (no MAL id anymore)
+				id: s.title,
 				title: s.title,
 				cover: s.cover || null,
 				status: _normalise_status(s.status),
 				max_chapter: s.max_chapter ?? null,
-				sources: s.sources || [],
-				chapters: s.chapters || {},     // per-source chapter lists (with chapter_slug)
+				sources: source_names,               // array of names — used by modal, debug, console.log
+				source_urls,                         // dict name→url — used by each source module
+				chapters: s.chapters || {},          // per-source chapter lists (with chapter_slug)
 				tags: [],
-				// source-specific fields used by modal sources
-				asura_slug:     s.slug && s.sources?.includes("Asura Scans")  ? s.slug : null,
-				adk_slug:       s.slug && s.sources?.includes("ADK Scans")    ? s.slug : null,
-				thunder_slug:   s.slug && s.sources?.includes("Thunder Scans")? s.slug : null,
-				temple_slug:    s.slug && s.sources?.includes("Temple Toons") ? s.slug : null,
-				demonic_slug:   s.slug && s.sources?.includes("Demonic Scans")? s.slug : null,
-				flame_id:       s.flame_series_id ?? null,
+				flame_id: s.flame_series_id ?? null,
 			};
 		}
 

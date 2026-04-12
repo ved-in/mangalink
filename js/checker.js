@@ -1,172 +1,107 @@
 /*
-Just checks whether the chapter url actually EXISTS or not...
-Currently proxy hosted on localhost. We could use some 3rd party proxy like:
+ * Checker — verifies whether a chapter URL actually exists.
+ *
+ * We no longer run a dedicated proxy server. All checks go through
+ * public CORS proxies, tried in order until one succeeds.
+ *
+ * Proxy notes:
+ *   corsproxy.io  — best option, has server-side caching
+ *   corsfix.com   — good fallback
+ *
+ * Both hit rate limits under heavy use, but that's acceptable since
+ * checks are user-triggered and infrequent.
+ */
 
-https://corsproxy.io/?url=<url>			<= THIS is the BEST... It has CACHING!!!
-https://proxy.corsfix.com/?<url>
-https://corsproxy.org/?<url>
-https://cors-proxy.htmldriven.com/?url=<url>
+const Checker = (() => {
 
-Buttt these hit rate limits FAST
+	const PROXIES = [
+		url => `https://corsproxy.io/?url=${encodeURIComponent(url)}`,
+		url => `https://proxy.corsfix.com/?${url}`,
+	];
 
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⢤⣄⠀⠀⠀
-⠀⠀⢀⡤⠖⠒⠒⢤⡀⠀⠀⢫⢸⡡⡏⡇⠀⠀
-⠀⢀⡾⣤⣄⡀⠀⢀⠷⣄⢀⡼⠀⠑⠁⡇⠀⠀
-⠀⠸⣷⣾⣿⡇⠀⣿⣾⡟⣼⡧⠖⠒⠒⠓⠒⡆
-⠀⠀⠫⣉⠉⠀⠀⣉⣟⣸⠸⡀⠀⣀⣀⠀⠤⡇
-⠀⢀⡤⠚⠓⠒⠋⠁⡤⢍⡆⡏⠁⠀⠀⠀⠀⡇
-⠠⣏⠔⡆⠀⣀⡀⠀⡇⠀⠣⣽⡉⠁⠀⠉⠉⢹
-⠀⠀⠀⡇⡸⠁⠙⢄⠃⠀⠀⠈⠯⠭⠥⠤⠎⠉
-⠀⠀⠀⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+	const TIMEOUT_MS = 8000;
 
-
-*/
-
-const Checker = (
-	() => {
-		
-		const PROXY =
-			window.location.hostname === "localhost" ||
-			window.location.hostname === "127.0.0.1" ||
-			window.location.hostname === ""
-				? "http://localhost:3000"
-				: "https://mangalink.onrender.com";
-
-		// Public CORS proxies used as fallback if our server is down.
-		// Tried in order — first one that works wins.
-		const PUBLIC_PROXIES = [
-			url => `https://corsproxy.io/?url=${encodeURIComponent(url)}`,
-			url => `https://proxy.corsfix.com/?${url}`,
-		];
-
-		// Try fetching a URL through each public proxy in order.
-		// Returns the Response of the first one that succeeds, or null if all fail.
-		async function fetch_via_public_proxies(url)
-		{
-			for (const make_proxy_url of PUBLIC_PROXIES)
-			{
-				try
-				{
-					const res = await fetch(make_proxy_url(url), {
-						signal: AbortSignal.timeout(8000)
-					});
-					// 404 from the proxy = chapter genuinely missing, stop trying
-					if (res.status === 404) return res;
-					if (res.ok) return res;
-				}
-				catch (_) { /* proxy itself failed, try next */ }
+	// Fetch a URL through each proxy in order.
+	// Returns the first successful Response, or null if all fail.
+	async function _fetch_proxied(url) {
+		for (const make_url of PROXIES) {
+			try {
+				const res = await fetch(make_url(url), {
+					signal: AbortSignal.timeout(TIMEOUT_MS),
+				});
+				// 404 from the proxy means the origin actually 404'd — stop trying.
+				if (res.status === 404) return res;
+				if (res.ok) return res;
+			} catch {
+				// This proxy failed or timed out — try the next one.
 			}
-			return null;
 		}
+		return null;
+	}
 
-		// Fallback for check_url: hit the target URL directly via public proxies
-		// and check the response content-type / status.
-		async function check_url_via_fallback(url_array)
-		{
-			for (const url of url_array)
-			{
-				try
-				{
-					const res = await fetch_via_public_proxies(url);
-					if (!res) continue;
+	// Check one or more candidate URLs (tried in order).
+	// Returns "found" | "not_found" | "unknown".
+	async function check_url(url_array) {
+		for (const url of url_array) {
+			try {
+				const res = await _fetch_proxied(url);
+				if (!res) continue;
 
-					const contentType = res.headers.get("content-type") || "";
-					const isImage = /\.(webp|jpg|jpeg|png)$/i.test(url);
-					const exists = isImage
-						? contentType.includes("image")
-						: contentType.includes("text/html");
+				// Explicit 404 from origin = chapter doesn't exist.
+				if (res.status === 404) return "not_found";
 
-					if (exists) return "found";
-				}
-				catch (_) { /* try next url */ }
+				const content_type = res.headers.get("content-type") || "";
+				const is_image = /\.(webp|jpg|jpeg|png)$/i.test(url);
+				const exists = is_image
+					? content_type.includes("image")
+					: res.ok && content_type.includes("text/html");
+
+				if (exists) return "found";
+			} catch {
+				// Try next URL.
 			}
-			return "unknown";
 		}
+		return "not_found";
+	}
 
-		// Fallback for check_html_alt: fetch the page HTML via public proxies
-		// and look for the alt text directly in the browser.
-		async function check_html_alt_via_fallback({ url, alt })
+		async function check_html_alt({ url, alt })
 		{
 			try
 			{
-				const res = await fetch_via_public_proxies(url);
-				if (!res) return "unknown";
+				const res = await _fetch_proxied(url);
+				if (!res) return "not_found";
 
 				const html = await res.text();
 				return html.includes(`alt="${alt}"`) ? "found" : "not_found";
 			}
-			catch (_) { return "unknown"; }
+			catch (_) { return "not_found"; }
 		}
 
-		async function check_url(url_array)
-		{
-			try {
-				// url_array is now ['url1', 'url2']
-				const queryString = `?urls=${encodeURIComponent(JSON.stringify(url_array))}`;
-
-				const res = await fetch(`${PROXY}/check${queryString}`, {
-					signal: AbortSignal.timeout(5000) // Timeout of 20s
-				});
-
-				// 5xx = proxy is down (Render sleeping), treat as unknown not a definitive miss
-				if (res.status >= 500) return check_url_via_fallback(url_array);
-				if (!res.ok) return "not_found";
-
-				const data = await res.json();
-				return data.exists ? "found" : "not_found";
+	/*
+	 * Run checks for all sources in parallel, calling on_result(name, status)
+	 * as each one resolves.
+	 *
+	 * source_url_map shape:
+	 *   { [source_name]: string[]                  }  — URL list (check_url)
+	 *   { [source_name]: { type: "html_alt", url, alt } }
+	 *   { [source_name]: { type: "always_found" }  }  — e.g. Flame Comics
+	 */
+	function check_each(source_url_map, on_result) {
+		for (const [name, val] of Object.entries(source_url_map)) {
+			if (val?.type === "always_found") {
+				on_result(name, "browse");
+				continue;
 			}
-			catch (err)
-			{
-				// TypeError: Failed to fetch = proxy unreachable, try public proxies
-				console.error("Checker Error:", err);
-				return check_url_via_fallback(url_array);
-			}
+
+			const promise = val?.type === "html_alt"
+				? check_html_alt(val)
+				: check_url(val);
+
+			promise
+			.then(status => on_result(name, status))
+			.catch(() => on_result(name, "not_found"));
 		}
-
-		// For sources with check_type "html_alt": fetch the page HTML and
-		// look for an img whose alt attribute matches the expected string.
-		async function check_html_alt({ url, alt })
-		{
-			try {
-				const queryString = `?url=${url}&alt=${encodeURIComponent(alt)}`;
-
-				const res = await fetch(`${PROXY}/check-html${queryString}`, {
-					signal: AbortSignal.timeout(5000)
-				});
-
-				if (res.status >= 500) return check_html_alt_via_fallback({ url, alt });
-				if (!res.ok) return "not_found";
-
-				const data = await res.json();
-				return data.exists ? "found" : "not_found";
-			}
-			catch (err)
-			{
-				// TypeError: Failed to fetch = proxy unreachable, try public proxies
-				console.error("Checker (html_alt) Error:", err);
-				return check_html_alt_via_fallback({ url, alt });
-			}
-		}
-
-		function check_each(source_url_map, on_result)
-		{
-			for (const [name, val] of Object.entries(source_url_map))
-			{
-                // always_found = Flame Comics (can't check chapter URLs)
-                if (val?.type === "always_found")
-                {
-					on_result(name, "browse");
-					continue;
-                }
-
-				const promise = val?.type === "html_alt"
-					? check_html_alt(val)
-					: check_url(val);
-
-				promise.then(status => on_result(name, status));
-			}
-		}
-
-		return { check_url, check_each };
 	}
-)();
+
+	return { check_url, check_each };
+})();

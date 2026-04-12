@@ -1,47 +1,19 @@
-/*
-I was overcomplicating this.
-Instead of checking all the possible image urls WHICH THERE ARE MORE AND I WAS MISSING THEM
-
-The images of the chapters all have `alt` attribute of similar pattern like:
-"Martial Peak Chapter 3859 1"
-"Possessing Me: The Untouchable Outsider Chapter 18 1"
-
-which is of the pattern
-`${manga.title} Chapter ${chapter.chapter} {page_no}`
-
-Since I will not know which page_no exist, I can just check for the 1st image. Any scanlation will DEFINITELY have atleast one image xD
-
-⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⢉⣡⢤⣤⣤⣤⣤⣄⣈⡉⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⠟⠋⣀⣴⣮⠽⢾⣻⣞⣷⣟⣯⣿⠿⢿⠷⢦⣄⠙⠻⣿⣿⣿⣿⣿
-⣿⣿⣿⡿⠃⢀⣼⡿⠿⠿⣿⣜⠻⣿⣼⣿⡿⣃⣿⡿⠿⢿⣜⢣⡄⠘⢿⣿⣿⣿
-⣿⣿⠏⢀⠆⣽⡏⠀⠀⠊⠹⣿⡄⣿⣿⣿⢡⣿⡏⠀⠀⠂⢉⡧⢻ ⣦⡀⠻⣿⣿
-⣿⠏⢀⢣⢂⠹⣿⣤⣀⣴⣿⡟⡔⣿⣿⣿⢐⣿⣿⣤⣀⣤⣾⢓⣸⣿⣷⡄⠹⣿
-⡏⠠⡍⢆⠣⢆⡑⢋⠟⣭⠓⠈⣴⣿⣿⣿⣧⡨⢝⡛⠿⣙⢆⣵⣿⣿⣿⣳⡀⢹
-⠀⡜⡸⢌⠳⢌⠶⣉⢚⣀⢼⡺⣯⣟⣿⣿⣿⣿⣦⣌⣛⡻⠿⢿⣿⡿⣯⢿⡅⠀
-⠠⣑⠣⡜⡰⡘⢤⠛⣜⡹⣎⡷⣏⣿⢯⣿⣻⣿⣿⣿⣿⣷⣶⣾⣿⣳⢿⡾⣱⠀
-⠐⣨⠑⢦⡑⢍⠲⣩⠒⡵⢣⡻⣜⣳⢟⡾⣯⣟⡿⣯⢿⡿⣽⣻⣳⢯⣛⡾⡅⠂
-⡄⠰⣉⠦⣉⢎⡱⢂⡛⢬⢣⡝⢮⡝⣾⡹⢾⡭⢿⡽⣯⢟⡷⣫⡽⣞⢽⡚⠁⢰
-⣷⡄⠘⠴⡡⢎⡰⢩⠜⡡⢖⡹⢦⡹⢲⡝⢧⡻⣝⢾⡱⢯⡞⡵⣹⢜⡲⠁⢬⣾
-⣿⣿⣦⠈⠑⢪⡔⢣⡎⢱⠊⣴⢣⡜⢣⠚⣥⢳⡍⣮⠙⣧⠚⣵⢣⡎⠁⣴⣿⣿
-⣿⣿⣿⣷⣔⠈⠰⢣⠘⢦⡙⠀⣤⣶⣦⠀⢰⡆⠘⢌⡳⢌⠳⠂⠁⣠⣾⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣶⣤⣌⣀⠡⠀⠀⠂⠈⠐⠀⢀⠂⠈⢄⣂⣤⣷⣿⣿⣿⣿⣿⣿
-*/
-
 const DEMONICSCANS = {
 	name: "Demonic Scans",
 	icon: "😈",
 	type: "fantl",
 	check_type: "html_alt",
-	// check_type tells the proxy HOW to verify this source.
-	// "html_alt" = fetch the chapter_url page HTML and look for the alt text pattern.
 
-	_to_web_slug(title)
-	{
+	/*
+	 * Demonic's URL encoding is non-standard — special chars get double-percent-encoded.
+	 * This matches what their own site generates.
+	 */
+	_encode_slug(title) {
 		return title
 			.trim()
-			.replace(/-/g, "%25252D")
-			.replace(/:/g, "%253A")
-			.replace(/!/g, "%2521")
+			.replace(/-/g,  "%25252D")
+			.replace(/:/g,  "%253A")
+			.replace(/!/g,  "%2521")
 			.replace(/\[/g, "%255B")
 			.replace(/\]/g, "%255D")
 			.replace(/\(/g, "%2528")
@@ -51,26 +23,24 @@ const DEMONICSCANS = {
 			.replace(/[^a-zA-Z0-9\-%]/g, "");
 	},
 
-	// Returns the expected alt text of the first chapter image, e.g.:
-	//   "Martial Peak Chapter 3859 1" 								-> chapter 3859 pg 1 of the series "Martial Peak Chapter" 
-	//   "Possessing Me: The Untouchable Outsider Chapter 18 1" 	-> chapter 18 pg 1 of the series "Possessing Me: The Untouchable Outsider"
-	get_alt_text(manga, chapter)
-	{
+	// Expected alt text on the first chapter image — used for existence check.
+	get_alt_text(manga, chapter) {
 		return `${manga.title} Chapter ${chapter.chapter} 1`;
 	},
 
-	series_url(manga)
-	{
-		return manga.sources?.["Demonic Scans"] || `https://demonicscans.org/manga/${this._to_web_slug(manga.title)}`;
+	series_url(manga) {
+		return manga.source_urls?.["Demonic Scans"]
+			?? `https://demonicscans.org/manga/${this._encode_slug(manga.title)}`;
 	},
 
-	chapter_url(manga, chapter)
-	{
-		if (!chapter.chapter && chapter.chapter !== 0) return this.series_url(manga);
-		const id = manga.demonic_id;
-		if (id) return `https://demonicscans.org/chaptered.php?manga=${id}&chapter=${chapter.chapter}`;
-		// fallback to title-based URL if no id
-		const slug = this._to_web_slug(manga.title);
-		return `https://demonicscans.org/title/${slug}/chapter/${chapter.chapter}/1`;
+	chapter_url(manga, chapter) {
+		if (chapter.chapter == null) return this.series_url(manga);
+
+		// Prefer the numeric manga ID when we have it (cleaner URL, no encoding issues).
+		if (manga.demonic_id) {
+			return `https://demonicscans.org/chaptered.php?manga=${manga.demonic_id}&chapter=${chapter.chapter}`;
+		}
+
+		return `https://demonicscans.org/title/${this._encode_slug(manga.title)}/chapter/${chapter.chapter}/1`;
 	},
 };

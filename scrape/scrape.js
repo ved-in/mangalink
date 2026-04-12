@@ -40,6 +40,10 @@ function merge(lists)
 	{
 		for (const item of list)
 		{
+			if (!item.title || !item.title.trim()) {
+				console.warn(`[merge] Skipping entry with empty title (slug: ${item.slug ?? 'unknown'})`);
+				continue;
+			}
 			const key = normalise(item.title);
 			if (map.has(key))
 			{
@@ -169,6 +173,7 @@ async function main()
 
 	const elapsed = ((Date.now() - start_time) / 1000).toFixed(1);
 	console.log(`=== Done in ${elapsed}s ===`);
+	process.exit(0)
 }
 
 

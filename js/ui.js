@@ -120,7 +120,7 @@ const UI = (() => {
 	// ── Mark a chapter dot as read ───────────────────
 	function mark_chapter_read(chapter_num) {
 		document.querySelectorAll(".chapter_row").forEach(row => {
-			if (row.querySelector(".ch_num")?.textContent.includes(chapter_num)) {
+			if (row.querySelector(".ch_num")?.textContent.trim() === `Ch. ${chapter_num}`) {
 				row.querySelector(".read_dot")?.classList.add("read");
 			}
 		});
@@ -133,9 +133,53 @@ const UI = (() => {
 		});
 	}
 
+	// ── Bookmark list ────────────────────────────────
+	function render_bookmarks(list, container_id, { on_open, on_remove }) {
+		const el = document.getElementById(container_id);
+
+		if (!list.length) {
+			el.innerHTML = `<div class="empty_state"><div class="big_icon">🔖</div><p>No bookmarks yet.<br>Search a title and tap the ★ icon.</p></div>`;
+			return;
+		}
+
+		el.innerHTML = list.map(bm => {
+			const pct = bm.total_chapters ? Math.round((bm.read_count / bm.total_chapters) * 100) : 0;
+			const sc  = { ongoing: "status_ongoing", completed: "status_completed", hiatus: "status_hiatus" }[bm.status] || "";
+			const cover = bm.cover
+				? `<img class="manga_cover" src="${bm.cover}" loading="lazy" onerror="this.style.display='none'" />`
+				: `<div class="cover_placeholder">📕</div>`;
+			return `
+			<div class="bm_item">
+			  ${cover}
+			  <div class="bm_info">
+			    <div class="bm_title">${escape_html(bm.title)}</div>
+			    <div style="display:flex;align-items:center;gap:8px;margin-top:3px;">
+			      <span class="manga_status ${sc}">${bm.status || "unknown"}</span>
+			      <span class="bm_meta">${bm.read_count} / ${bm.total_chapters || "?"} read</span>
+			    </div>
+			    <div class="progress_bar"><div class="progress_fill" style="width:${pct}%"></div></div>
+			  </div>
+			  <div class="bm_actions">
+			    <button class="bm_remove" data-id="${bm.id}">✕</button>
+			    <button class="bm_open"   data-id="${bm.id}">Open →</button>
+			  </div>
+			</div>`;
+		}).join("");
+
+		el.querySelectorAll(".bm_open").forEach(btn =>
+			btn.addEventListener("click", () => on_open(btn.dataset.id))
+		);
+		el.querySelectorAll(".bm_remove").forEach(btn =>
+			btn.addEventListener("click", () => {
+				on_remove(btn.dataset.id);
+				render_bookmarks(Bookmarks.get_all(), container_id, { on_open, on_remove });
+			})
+		);
+	}
+
 	return {
 		show_skeletons, show_loading, show_error,
-		render_manga_results, render_chapter_list,
+		render_manga_results, render_chapter_list, render_bookmarks,
 		mark_chapter_read, refresh_bm_button,
 		escape_html,
 	};

@@ -1,51 +1,23 @@
-/*
-THE GOATTT
-but the hash... currently 75e30c62 keeps keeps keeps changing...
-No idea why but if I can find some pattern, I'll be happy af
-
-series url - https://asurascans.com/comics/solo-leveling-ragnarok-75e30c62
-chapter url - https://asurascans.com/comics/solo-leveling-ragnarok-75e30c62/chapter/67
-
-In this... if the chapter does not exist I get a CLEAR 404 status code...
-*/
-
 const ASURASCANS = {
 	name: "Asura Scans",
 	icon: "⚔️",
 	type: "fantl",
 
-	_to_slug(title)
-	{
-		return title.toLowerCase()
-			.replace(/[^a-z0-9\s-]/g, "")
-			.trim()
-			.replace(/\s+/g, "-")
-			.replace(/-+/g, "-");
+	// The known hash suffix. Stored here so it's easy to update when it rotates.
+	_HASH: "-75e30c62",
+
+	series_url(manga) {
+		return manga.source_urls?.["Asura Scans"]
+			?? `https://asurascans.com/comics/${slugify(manga.title)}${this._HASH}`;
 	},
 
-	series_url(manga)
-	{
-		const url = manga.sources?.["Asura Scans"];
-		if (url) return url;
-		return `https://asurascans.com/comics/${this._to_slug(manga.title)}-75e30c62`;
-	},
+	chapter_url(manga, chapter) {
+		const stored = manga.source_urls?.["Asura Scans"];
+		const base = stored
+			? stored.replace(/\/$/, "").replace(/-[0-9a-f]{8}$/, "") + this._HASH
+			: `https://asurascans.com/comics/${slugify(manga.title)}${this._HASH}`;
 
-	chapter_url(manga, chapter)
-	{
-		const HASH = "-75e30c62";
-		let base;
-		const sourceBase = manga.sources?.["Asura Scans"];
-
-		if (sourceBase)
-		{
-			let clean = sourceBase.replace(/\/$/, "").replace(/-75e30c62$/, "");
-			base = clean + HASH;
-		}
-		else
-		{
-			base = `https://asurascans.com/comics/${this._to_slug(manga.title)}${HASH}`;
-		}
 		const slug = chapter.chapter_slugs?.["Asura Scans"] ?? chapter.chapter;
 		return `${base}/chapter/${slug}`;
-	}
+	},
 };

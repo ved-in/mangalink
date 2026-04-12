@@ -34,6 +34,8 @@ const Modal = (() => {
         "Violet Scans":  VIOLETSCANS,
     };
 
+    const PAYWALL_SOURCES = new Set(["Thunder Scans", "Violet Scans"]);
+
     let _on_visit = null;
     let _was_visited = null;
     let _manga = null;
@@ -67,9 +69,8 @@ const Modal = (() => {
 
     function _active_sources(manga)
     {
-        // Only show sources this series is actually listed on
-        const src_names = Object.keys(manga.sources || {});
-        return src_names
+        // manga.sources is an array of source name strings, e.g. ["Asura Scans", "ADK Scans"]
+        return (manga.sources || [])
             .map(n => SOURCE_MAP[n])
             .filter(Boolean);
     }
@@ -140,15 +141,9 @@ const Modal = (() => {
 	function build_card(src, manga, chapter, availability, visited) {
 		const url = src.chapter_url(manga, chapter);
 
-        // Notes for users
-        let note_for_user;
-
-        const paywall = 
-			src.name === "Thunder Scans" ||
-			src.name === "Violet Scans";
-        
-        if (paywall)  			{ note_for_user = `<span style="font-size:0.72rem;color:var(--danger, #ff6b6b);display:block;margin-top:2px;">⚠️ some chapters may not be free</span>` }
-        else                    { note_for_user = "" }
+        const note_for_user = PAYWALL_SOURCES.has(src.name)
+            ? `<span class="paywall_note">⚠️ some chapters may not be free</span>`
+            : "";
 
 		const badge_html = {
 			checking:  `<span class="check_badge">checking…</span>`,

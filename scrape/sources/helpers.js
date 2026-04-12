@@ -2,7 +2,9 @@ const https = require('https');
 const http  = require('http');
 const zlib  = require('zlib');
 
-function fetch(url, opts = {}) {
+const MAX_REDIRECTS = 5;
+
+function _fetch_one(url, opts) {
   return new Promise((resolve, reject) => {
     const lib = url.startsWith('https') ? https : http;
     const options = {
@@ -16,9 +18,6 @@ function fetch(url, opts = {}) {
     };
 
     const req = lib.request(url, options, (res) => {
-      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        return fetch(res.headers.location, opts).then(resolve).catch(reject);
-      }
       const chunks = [];
       res.on('data', chunk => chunks.push(chunk));
       res.on('end', () => {
@@ -44,6 +43,20 @@ function fetch(url, opts = {}) {
     if (opts.body) req.write(opts.body);
     req.end();
   });
+}
+
+async function fetch(url, opts = {}) {
+  let current_url = url;
+  for (let hop = 0; hop <= MAX_REDIRECTS; hop++) {
+    const res = await _fetch_one(current_url, opts);
+    if (res.status >= 300 && res.status < 400 && res.headers.location) {
+      // Resolve relative redirects against the current URL
+      current_url = new URL(res.headers.location, current_url).href;
+      continue;
+    }
+    return res;
+  }
+  throw new Error(`Too many redirects (>${MAX_REDIRECTS}) for ${url}`);
 }
 
 function sleep(ms) {

@@ -115,7 +115,7 @@ const App = (
 			try
 			{
 				all_chapters = await API.fetch_chapters(manga);
-                console.log(`[MangaLink] "${manga.title}" — max_chapter: ${manga.max_chapter} | sources: ${Object.keys(manga.sources || {}).join(", ")}`);
+                console.log(`[MangaLink] "${manga.title}" — max_chapter: ${manga.max_chapter} | sources: ${manga.sources.join(", ")}`);
 				Bookmarks.update_total(manga.id, all_chapters.length);
 				filter_chapters();
 			}
@@ -159,10 +159,18 @@ const App = (
 
 		function render_bookmarks()
 		{
-			Bookmarks.render_list(
-				"bm_list", 
+			const bm_list = Bookmarks.get_all();
+			UI.render_bookmarks(
+				bm_list,
+				"bm_list",
 				{
-					on_open: bm => { switch_tab("search"); input.value = bm.title; do_search(); },
+					on_open: id => {
+						const bm = bm_list.find(b => b.id === id);
+						if (!bm) return;
+						switch_tab("search");
+						input.value = bm.title;
+						do_search();
+					},
 					on_remove: id => { Bookmarks.remove(id); UI.refresh_bm_button(id, false); },
 				}
 			);
