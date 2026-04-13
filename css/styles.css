@@ -425,3 +425,10 @@ footer a:hover { color: var(--accent); }
   margin-top: 0.6rem;
   gap: 0.25rem;
 }
+/* Paywall warning shown on Thunder Scans / Violet Scans source cards */
+.paywall_note {
+  font-size: 0.72rem;
+  color: var(--danger, #ff6b6b);
+  display: block;
+  margin-top: 2px;
+}
