@@ -232,17 +232,17 @@ async function main()
 
 	fs.writeFileSync(
 		path.join(out_dir, 'index.json'),
-		JSON.stringify(index),   // minified -- size matters here
+		JSON.stringify(index, null, 1),   // minified -- size matters here
 		'utf8'
 	);
-	console.log(`\nWrote index.json  (${(JSON.stringify(index).length / 1024).toFixed(0)} KB, ${index.length} entries)`);
+	console.log(`\nWrote index.json with ${index.length} entries)`);
 
 	// Write chunk files -- full series data split into groups of CHUNK_SIZE.
 	const n_chunks = Math.ceil(merged.length / CHUNK_SIZE);
 	for (let k = 0; k < n_chunks; k++) {
 		const chunk      = merged.slice(k * CHUNK_SIZE, (k + 1) * CHUNK_SIZE);
 		const chunk_file = path.join(chunks_dir, `chunk_${k}.json`);
-		fs.writeFileSync(chunk_file, JSON.stringify(chunk), 'utf8');
+		fs.writeFileSync(chunk_file, JSON.stringify(chunk, null, 1), 'utf8');
 	}
 	console.log(`Wrote ${n_chunks} chunk files -> data/chunks/chunk_0..${n_chunks - 1}.json`);
 
