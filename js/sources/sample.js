@@ -4,8 +4,8 @@
 // and fill in the site-specific details.
 //
 // Available helpers (from utils.js, loaded before all sources):
-//   slugify(title)          — lowercases, strips special chars, spaces → hyphens
-//   url_last_segment(url)   — extracts the last path segment from a URL
+//   slugify(title)          - lowercases, strips special chars, spaces → hyphens
+//   url_last_segment(url)   - extracts the last path segment from a URL
 //
 // If the default slugify() doesn't match the site's slug format,
 // override it with a local function in your source file.
@@ -16,13 +16,13 @@ const SampleSource = {
 	type: "fantl", // genre/type label, just for reference
 
 	// How the checker verifies chapter existence. Options:
-	//   (omit)          — plain HEAD/GET request against chapter_url
-	//   "html_alt"      — fetch a page and look for an <img alt="..."> match
-	//   "always_found"  — skip check entirely (e.g. when URLs are unguessable)
+	//   (omit)          - plain HEAD/GET request against chapter_url
+	//   "html_alt"      - fetch a page and look for an <img alt="..."> match
+	//   "always_found"  - skip check entirely (e.g. when URLs are unguessable)
 	//
 	// check_type: "html_alt",
 
-	// Required for check_type "html_alt" — return the expected alt text.
+	// Required for check_type "html_alt" - return the expected alt text.
 	// get_alt_text(manga, chapter) {
 	//   return `${manga.title} Chapter ${chapter.chapter} 1`;
 	// },

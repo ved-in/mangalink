@@ -34,13 +34,13 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet data/series.json || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet data/index.json data/chunks/ || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push updated series data
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/series.json
+          git add data/index.json data/chunks/
           git commit -m "chore: update series data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           git push
