@@ -21,12 +21,12 @@ const App = (
 		let current_manga = null;
 		let all_chapters = [];
 		let sort_asc = false;
+		let search_moved = false;
 
 		const input = document.getElementById("search_input");
 		const search_btn = document.getElementById("search_btn");
 		const container = document.getElementById("main_container");
 		const ch_filter = document.getElementById("chapter_search");
-		const sel_title = document.getElementById("selected_title");
 
 		async function init()
 		{
@@ -59,6 +59,35 @@ const App = (
 			document.querySelectorAll(".tab").forEach(tab => tab.addEventListener("click", () => switch_tab(tab.dataset.tab)));
 		}
 
+		function move_search_to_panel()
+		{
+			if (search_moved) return;
+			search_moved = true;
+
+			const searchOverlay = document.querySelector(".search_overlay");
+			const searchBoxOuter = document.querySelector(".search_box_outer");
+			const chaptersPanel = document.getElementById("chapters_panel");
+
+			if (!searchOverlay || !searchBoxOuter || !chaptersPanel) return;
+
+			searchOverlay.style.display = "none";
+
+			searchBoxOuter.classList.add("in_panel");
+			input.classList.add("in_panel");
+			search_btn.classList.add("in_panel");
+
+			const searchBoxInner = searchBoxOuter.querySelector(".search_box_inner");
+			searchBoxInner.style.gap = "1rem";
+			searchBoxInner.style.alignItems = "stretch";
+
+			const panelTop = document.createElement("div");
+			panelTop.className = "chapter_panel_top";
+			panelTop.appendChild(searchBoxOuter);
+			searchBoxOuter.style.display = "flex";
+
+			chaptersPanel.insertBefore(panelTop, chaptersPanel.firstChild);
+		}
+
 		function switch_tab(name)
 		{
 			document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.tab === name));
@@ -88,6 +117,7 @@ const App = (
 						on_bookmark: toggle_bookmark,
 					}
 				);
+				move_search_to_panel();
 			}
 			catch (e)
 			{
@@ -107,7 +137,7 @@ const App = (
 
 			current_manga = manga;
 			all_chapters = [];
-			sel_title.textContent = manga.title;
+			UI.render_manga_header(manga);
 			ch_filter.value = "";
 
 			UI.show_loading("chapters_list", "Loading chapters…");

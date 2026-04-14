@@ -133,10 +133,41 @@ const UI = (() => {
 		});
 	}
 
+	// ── Manga header (cover + title + status + chapters) ─
+	function render_manga_header(manga) {
+		const cover_el = document.getElementById("manga_header_cover");
+		const title_el = document.getElementById("manga_header_title");
+		const meta_el = document.getElementById("manga_header_meta");
+
+		if (!manga) {
+			title_el.textContent = "Select a title →";
+			meta_el.innerHTML = "";
+			cover_el.innerHTML = "";
+			return;
+		}
+
+		title_el.textContent = manga.title;
+
+		const status = manga.status || "unknown";
+		const chapter_text = manga.max_chapter ? `${manga.max_chapter} chapters` : "Chapter count unknown";
+		meta_el.innerHTML = `
+			<span class="manga_status ${status_class(status)}">${status}</span>
+			<span>·</span>
+			<span>${chapter_text}</span>
+		`;
+
+		if (manga.cover) {
+			cover_el.innerHTML = `<img src="${manga.cover}" alt="${escape_html(manga.title)}" onerror="this.parentElement.innerHTML='<div class=\\'cover_placeholder\\'>📕</div>'" />`;
+		} else {
+			cover_el.innerHTML = '<div class="cover_placeholder">📕</div>';
+		}
+	}
+
 	return {
 		show_skeletons, show_loading, show_error,
 		render_manga_results, render_chapter_list,
 		mark_chapter_read, refresh_bm_button,
+		render_manga_header,
 		escape_html,
 	};
 

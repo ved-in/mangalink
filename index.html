@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MangaLink - Find Where to Read</title>
+  <title>Manga Link - Find Where to Read</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <!-- Google tag (gtag.js) -->
@@ -19,38 +20,56 @@
 </script>
 <body>
 
-  <header id="site_header">
-    <div class="logo"><a href="/">Manga<span>Link</span></a></div>
-    <div class="tagline">find where to read - no piracy, just links</div>
-  </header>
-
-  <section class="hero">
-    <h1>Find <em>Where</em><br>to Read It</h1>
-    <p>Search any manga or manhwa - we'll check every source and show you where each chapter is available.</p>
-    <div class="search_wrap">
-      <input type="text" id="search_input" placeholder="e.g. Solo Leveling, Overgeared, Chainsaw Man…" autocomplete="off" />
-      <button id="search_btn">Search</button>
+<div class="home">
+  <div class="h-screen-wrap">
+    <div class="logo-center">
+      <span class="logo">MangaLink</span>
     </div>
-  </section>
+    <div class="hero_gallery">
+      <div class="img_wrapper wrapper_left">
+        <div class="gallery_img" style="background-image: url('public/left.jpg')"></div>
+      </div>
+      <div class="img_wrapper wrapper_right">
+        <div class="gallery_img" style="background-image: url('public/right.jpg')"></div>
+      </div>
+    </div>
+    <section class="search_overlay">
+      <div class="search_box_outer">
+        <div class="search_box_inner">
+          <input type="text" class="search_input"  id="search_input" placeholder="Search manga...">
+          <button class="search_btn" id="search_btn">Search</button>
+          <button class="bookmark_btn"><img src="public/book-marked.svg" alt="bookmark icon"></button>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <div class="container" id="main_container" style="display:none">
 
     <!-- LEFT: Search results + Bookmarks tabs -->
-    <div id="left_panel">
-      <div id="tabs">
+    <div class="left_panel" id="left_panel">
+      <div class="panel_header">
+        <span class="top_logo">MangaLink</span>
+      </div>
+      
+      <div class="panel_tabs" id="tabs">
         <button class="tab active" data-tab="search">Search</button>
         <button class="tab" data-tab="bookmarks">Bookmarks</button>
       </div>
 
-      <div id="search_view">
-        <div class="panel_title">Results</div>
+      <div id="search_view" class="panel_content">
+        <div class="content_header">
+          <span class="content_title">Results</span>
+        </div>
         <div id="results_list">
           <div class="empty_state"><p>Search for a title above</p></div>
         </div>
       </div>
 
-      <div id="bookmarks_view" style="display:none">
-        <div class="panel_title">Bookmarks</div>
+      <div id="bookmarks_view" class="panel_content" style="display:none">
+        <div class="content_header">
+          <span class="content_title">Bookmarks</span>
+        </div>
         <div id="bm_list">
           <div class="empty_state"><p>No bookmarks yet.<br>Search a title and tap the ★ icon.</p></div>
         </div>
@@ -58,26 +77,31 @@
     </div>
 
     <!-- RIGHT: Chapter list -->
-    <div id="chapters_panel">
-      <div class="chapters_header">
-          <div class="selected_title" id="selected_title">Select a title →</div>
-          <div style="display:flex;gap:6px;align-items:center;">
-              <input type="text" id="chapter_search" placeholder="Jump to ch…" />
-              <button id="sort_btn" title="Sort order">↓</button>
-          </div>
+    <div class="chapters_panel" id="chapters_panel">
+      <div class="manga_header" id="manga_header">
+        <div class="manga_header_cover" id="manga_header_cover"></div>
+        <div class="manga_header_info">
+          <div class="manga_header_title" id="manga_header_title">Select a title →</div>
+          <div class="manga_header_meta" id="manga_header_meta"></div>
+        </div>
       </div>
+
+      <div class="chapter_controls">
+        <input type="text" class="chapter_search" id="chapter_search" placeholder="Jump to ch…" />
+        <button class="sort_btn" id="sort_btn" title="Sort order">↓</button>
+      </div>
+
       <div class="chapters_list" id="chapters_list">
         <div class="empty_state">
-          <div class="big_icon">📖</div>
           <p>Pick a title on the left<br>to see its chapters</p>
         </div>
       </div>
     </div>
 
   </div>
-
+</div>
   <!-- DEBUG PANEL (toggle: Ctrl+Shift+D) -->
-  <div id="debug_panel">
+  <div class="debug_panel" id="debug_panel">
     <div class="dbg_header">
       <span class="dbg_label">Debug - Source URL Tester</span>
       <kbd class="dbg_hint_kbd">Ctrl+Shift+D to close</kbd>
@@ -93,7 +117,7 @@
   </div>
 
   <!-- SOURCES MODAL -->
-  <div id="modal">
+  <div class="modal" id="modal">
     <div class="modal_box">
       <div class="modal_head">
         <div>
@@ -112,11 +136,11 @@
     <div class="footer-content">
       <div class="footer-text">
         MangaLink does not host any content. All links point to third-party websites. &nbsp;·&nbsp;
-        Data scraped from supported scanlations</a>. &nbsp;·&nbsp;
+        Data scraped from supported scanlations. &nbsp;·&nbsp;
         Built for readers, by readers.
       </div>
       <div class="footer-github">
-        <a href="https://github.com/ved-in/mangalink" targ  et="_blank" rel="noopener noreferrer" class="github-link">
+        <a href="https://github.com/ved-in/mangalink" target="_blank" rel="noopener noreferrer" class="github-link">
           <svg height="20" viewBox="0 0 16 16" width="20" fill="currentColor" style="vertical-align:middle; margin-right:4px;">
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
           </svg>
