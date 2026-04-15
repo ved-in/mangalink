@@ -197,6 +197,7 @@ body::before {
 .status_ongoing   { background: rgba(46,204,138,0.15); color: var(--col_official); }
 .status_completed { background: rgba(91,156,246,0.15); color: var(--col_fantl); }
 .status_hiatus    { background: rgba(240,192,64,0.15);  color: var(--col_aggr); }
+.status_dropped   { background: rgba(220,80,80,0.15);   color: #e05555; }
 
 .card_actions { display: flex; align-items: flex-end; flex-shrink: 0; }
 .bm_btn { background: none; border: none; font-size: 1.05rem; cursor: pointer; color: var(--muted); padding: 2px 4px; line-height: 1; transition: color 0.15s, transform 0.1s; }

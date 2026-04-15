@@ -195,14 +195,15 @@ const API = (() => {
 			.trim();
 	}
 
-	// Map a raw status string to one of the four canonical values the UI knows about.
+	// Map a raw status string to one of the five canonical values the UI knows about.
 	function _normalise_status(s)
 	{
 		if (!s) return 'unknown';
 		const l = s.toLowerCase();
+		if (l.includes('dropped')   || l.includes('cancelled') || l.includes('canceled')) return 'dropped';
+		if (l.includes('hiatus'))    return 'hiatus';
 		if (l.includes('ongoing'))   return 'ongoing';
 		if (l.includes('completed')) return 'completed';
-		if (l.includes('hiatus'))    return 'hiatus';
 		return 'unknown';
 	}
 

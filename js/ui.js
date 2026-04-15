@@ -30,6 +30,7 @@ const UI = (() => {
 		if (s === "ongoing")   return "status_ongoing";
 		if (s === "completed") return "status_completed";
 		if (s === "hiatus")    return "status_hiatus";
+		if (s === "dropped")   return "status_dropped";
 		return "";
 	}
 
@@ -67,7 +68,7 @@ const UI = (() => {
 			: `<div class="cover_placeholder"></div>`}
         <div class="manga_info">
           <div class="manga_title">${escape_html(m.title)}</div>
-          <div class="manga_meta">${m.year || "??"} - ${m.tags.join(", ") || "-"}</div>
+          <div class="manga_meta">${m.max_chapter ? `Ch. ${m.max_chapter}` : ""}</div>
           <span class="manga_status ${status_class(m.status)}">${m.status || "unknown"}</span>
         </div>
         <div class="card_actions">
@@ -166,7 +167,7 @@ const UI = (() => {
 
 		el.innerHTML = list.map(bm => {
 			const pct   = bm.total_chapters ? Math.round((bm.read_count / bm.total_chapters) * 100) : 0;
-			const sc    = { ongoing: "status_ongoing", completed: "status_completed", hiatus: "status_hiatus" }[bm.status] || "";
+			const sc    = { ongoing: "status_ongoing", completed: "status_completed", hiatus: "status_hiatus", dropped: "status_dropped" }[bm.status] || "";
 			const cover = bm.cover
 				? `<img class="manga_cover" src="${bm.cover}" loading="lazy" onerror="this.style.display='none'" />`
 				: `<div class="cover_placeholder"></div>`;

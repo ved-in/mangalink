@@ -147,6 +147,32 @@ If you want your scanlation group added, open an issue.
 
 ---
 
+## CURRENT BUGS
+[ ] quick scan rewrites entire `index.json` and `scrape_state.json`. Should check for diffs and update according to that. just like github.
+
+[ ] many chapters have still `null` status after scraping their status. validate with the websites themselves
+
+[ ] duplicate entires in `scrape_state.json`:
+```json
+ "top-tier-providence-secretly-cultivate-for-a-thousand-years": {
+  "max_chapter": 257,
+  "status": null
+ },
+  "Top-Tier-Providence%253A-Secretly-Cultivate-for-a-Thousand-Years": {
+  "max_chapter": 256,
+  "status": null
+ }
+```
+Quick fix but im too lazy to fix it (just use series name!) 🥀
+
+[ ] add 2req/s limit in deep scan too `sleep(500)`. Again, im too lazy...
+
+Dont commit to main with that github workflows. need to make deepscan use rate limit too
+
+Comments (by ai 🥀) just for my pookie stinkwalker... Its all you for the next month
+
+And leave that `valirscans.js` as it is. Ill add it myself later when I'm back or if I give up in between that month
+
 ## ToDo
 [x] Add Temple Scans
 
