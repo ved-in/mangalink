@@ -166,6 +166,10 @@ If you want your scanlation group added, open an issue.
 
 [x] Add Violet Scans
 
+[ ] Replace `?? - -` in cards to show max chapter and `UNKNOWN` to show current status. Like `hiatus`, `drop`, `ongoing`, etc. May remove it if cannot get current status.
+
+[ ] Use proxies to check chapter lists which run parallely. Will be much faster this way
+
 [ ] Continue Reading feature
 
 [ ] Clear read history / bookmarks (per-series or all at once)

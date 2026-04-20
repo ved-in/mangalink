@@ -1,19 +1,28 @@
 /*
-Temple Toons
-https://templetoons.com
-
-Mainly GL manhwa.
-
-series url - https://templetoons.com/comic/{slug}
-	e.g. https://templetoons.com/comic/gl-murmur
-
-chapter url - https://templetoons.com/comic/{slug}/chapter-{n}
-	e.g. https://templetoons.com/comic/gl-murmur/chapter-21
-
-Chapter existence is checked by fetching the SERIES page and looking
-for alt="Chapter {n}" in the chapter list thumbnails, since chapter
-pages themselves block bot requests with 403.
-*/
+ * sources/temple.js -- Temple Toons  (primarily GL manhwa)
+ *
+ * Series URL format:
+ *   https://templetoons.com/comic/{series-slug}
+ *   e.g. https://templetoons.com/comic/our-temperature
+ *
+ * Chapter URL format:
+ *   https://templetoons.com/comic/{series-slug}/{chapter-slug}
+ *   e.g. https://templetoons.com/comic/our-temperature/chapter-12
+ *
+ * Chapter slugs are stored from the scraper (chapter.chapter_slugs["Temple Toons"])
+ * and used directly. If a slug is missing, we fall back to "chapter-{n}".
+ *
+ * CHECK METHOD:
+ *   check_type: "html_alt"
+ *   Temple Toons returns HTTP 403 when chapter pages are fetched by bots,
+ *   so a direct HEAD check on the chapter URL always fails. Instead, we fetch
+ *   the SERIES page (which is publicly accessible) and look for an img tag
+ *   with alt="Chapter {n}" -- these are the chapter thumbnail images that
+ *   appear in the chapter list on the series page.
+ *
+ *   get_check_url() returns the series page URL.
+ *   get_alt_text()  returns the expected alt attribute value for the chapter.
+ */
 
 const TEMPLESCANS = {
 	name: "Temple Toons",
@@ -21,36 +30,28 @@ const TEMPLESCANS = {
 	type: "gl",
 	check_type: "html_alt",
 
-	_to_slug(title)
-	{
-		return title
-			.toLowerCase()
-			.replace(/[^a-z0-9\s-]/g, "")
-			.trim()
-			.replace(/\s+/g, "-")
-			.replace(/-+/g, "-");
+	// Return the series page URL.
+	series_url(manga) {
+		return manga.source_urls?.["Temple Toons"]
+			?? `https://templetoons.com/comic/${slugify(manga.title)}`;
 	},
 
-	// Checked on the SERIES page, not the chapter page (chapter pages 403)
-	get_check_url(manga, _chapter)
-	{
-		return manga.sources?.["Temple Toons"] || `https://templetoons.com/comic/${this._to_slug(manga.title)}`;
+	// The page the Checker should fetch for the html_alt check.
+	// We use the series page because chapter pages return 403 to bots.
+	get_check_url(manga) {
+		return this.series_url(manga);
 	},
 
-	// The series page has thumbnails like: <img alt="Chapter 21" ...>
-	get_alt_text(_manga, chapter)
-	{
+	// The img alt attribute value that signals the chapter exists on the series page.
+	// Temple Toons renders chapter thumbnails as: <img alt="Chapter 21" ...>
+	get_alt_text(_manga, chapter) {
 		return `Chapter ${chapter.chapter}`;
 	},
 
-	series_url(manga)
-	{
-		return manga.sources?.["Temple Toons"] || `https://templetoons.com/comic/${this._to_slug(manga.title)}`;
-	},
-
-	chapter_url(manga, chapter)
-	{
-		const slug = chapter.chapter_slugs?.["Temple Toons"] || `chapter-${chapter.chapter}`;
+	// Return the chapter URL.
+	// Uses the scraped chapter slug when available, otherwise constructs "chapter-{n}".
+	chapter_url(manga, chapter) {
+		const slug = chapter.chapter_slugs?.["Temple Toons"] ?? `chapter-${chapter.chapter}`;
 		return `${this.series_url(manga)}/${slug}`;
-	}
+	},
 };

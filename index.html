@@ -150,7 +150,8 @@
     </div>
   </footer>
 
-  <!-- Sources must load before modal.js -->
+  <!-- Sources must load before modal.js. utils.js must be first. -->
+  <script src="js/sources/utils.js"></script>
   <script src="js/sources/asura.js"></script>
   <script src="js/sources/demonic.js"></script>
   <script src="js/sources/adk.js"></script>
@@ -160,7 +161,6 @@
   <script src="js/sources/violet.js"></script>
 
   <!-- Core modules -->
-  <script src="js/debug.js"></script>
   <script src="js/storage.js"></script>
   <script src="js/api.js"></script>
   <script src="js/checker.js"></script>

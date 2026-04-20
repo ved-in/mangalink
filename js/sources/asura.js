@@ -1,51 +1,55 @@
 /*
-THE GOATTT
-but the hash... currently 75e30c62 keeps keeps keeps changing...
-No idea why but if I can find some pattern, I'll be happy af
-
-series url - https://asurascans.com/comics/solo-leveling-ragnarok-75e30c62
-chapter url - https://asurascans.com/comics/solo-leveling-ragnarok-75e30c62/chapter/67
-
-In this... if the chapter does not exist I get a CLEAR 404 status code...
-*/
+ * sources/asura.js -- Asura Scans
+ *
+ * Series URL format:
+ *   https://asurascans.com/comics/{slug}-{8-char-hex-hash}
+ *   e.g. https://asurascans.com/comics/solo-leveling-75e30c62
+ *
+ * Chapter URL format:
+ *   {series_url}/chapter/{chapter_slug_or_number}
+ *   e.g. https://asurascans.com/comics/solo-leveling-75e30c62/chapter/200
+ *
+ * THE HASH PROBLEM:
+ *   Each series URL ends with an unpredictable 8-character hex hash (e.g. -75e30c62).
+ *   We store the correct URL in manga.source_urls["Asura Scans"] from the scraper,
+ *   so it is always accurate for known series. For series without a stored URL, we
+ *   fall back to a hardcoded hash (_HASH) that covers the vast majority of series.
+ *   The hash occasionally rotates; update _HASH if links start breaking.
+ *
+ * CHECK METHOD:
+ *   Asura returns a clean 404 for missing chapters, so a plain HEAD check works fine.
+ *   No special check_type is needed.
+ */
 
 const ASURASCANS = {
 	name: "Asura Scans",
 	icon: "⚔️",
 	type: "fantl",
 
-	_to_slug(title)
-	{
-		return title.toLowerCase()
-			.replace(/[^a-z0-9\s-]/g, "")
-			.trim()
-			.replace(/\s+/g, "-")
-			.replace(/-+/g, "-");
+	// Fallback hash appended to slugified titles when no stored URL is available.
+	// Update this if Asura rotates their hash and guessed URLs start 404-ing.
+	_HASH: "-75e30c62",
+
+	// Return the series page URL.
+	// Prefers the stored URL from the scraper; falls back to slugify + hash.
+	series_url(manga) {
+		return manga.source_urls?.["Asura Scans"]
+			?? `https://asurascans.com/comics/${slugify(manga.title)}${this._HASH}`;
 	},
 
-	series_url(manga)
-	{
-		const url = manga.sources?.["Asura Scans"];
-		if (url) return url;
-		return `https://asurascans.com/comics/${this._to_slug(manga.title)}-75e30c62`;
-	},
+	// Return the direct chapter URL.
+	// Rebuilds the base URL from the stored series URL, stripping the old hash
+	// and reattaching the current one, then appends the chapter slug or number.
+	chapter_url(manga, chapter) {
+		const stored = manga.source_urls?.["Asura Scans"];
+		const base = stored
+			// Remove trailing slash and old hash, then reattach current hash.
+			// This handles the case where Asura rotates the hash between scrape runs.
+			? stored.replace(/\/$/, "").replace(/-[0-9a-f]{8}$/, "") + this._HASH
+			: `https://asurascans.com/comics/${slugify(manga.title)}${this._HASH}`;
 
-	chapter_url(manga, chapter)
-	{
-		const HASH = "-75e30c62";
-		let base;
-		const sourceBase = manga.sources?.["Asura Scans"];
-
-		if (sourceBase)
-		{
-			let clean = sourceBase.replace(/\/$/, "").replace(/-75e30c62$/, "");
-			base = clean + HASH;
-		}
-		else
-		{
-			base = `https://asurascans.com/comics/${this._to_slug(manga.title)}${HASH}`;
-		}
+		// Use the scraped chapter slug when available (more reliable than the number).
 		const slug = chapter.chapter_slugs?.["Asura Scans"] ?? chapter.chapter;
 		return `${base}/chapter/${slug}`;
-	}
+	},
 };

@@ -1,50 +1,51 @@
 /*
-Thunder Scans
-https://en-thunderscans.com
-
-series url - https://en-thunderscans.com/comics/{slug}/ or sometimes https://en-thunderscans.com/comics/{num}-{slug}/
-	e.g. https://en-thunderscans.com/comics/a-wimps-strategy-guide-to-conquer-the-tower/
-	     https://en-thunderscans.com/comics/0086250808-i-got-the-weakest-class-dragon-tamer/
-
-chapter url - https://en-thunderscans.com/{slug}-chapter-{n}/
-	e.g. https://en-thunderscans.com/a-wimps-strategy-guide-to-conquer-the-tower-chapter-22/
-	     https://en-thunderscans.com/i-got-the-weakest-class-dragon-tamer-chapter-223/
-
-Chapter URLs use the clean slug (no numeric prefix) so noz
-Returns a proper 404 when the chapter doesn't exist, so no special check needed.
-*/
+ * sources/thunder.js -- Thunder Scans
+ *
+ * Series URL format:
+ *   https://en-thunderscans.com/comics/{slug}/
+ *   Some series have a numeric prefix on their slug:
+ *     https://en-thunderscans.com/comics/0086250808-some-title/
+ *
+ * Chapter URL format:
+ *   https://en-thunderscans.com/{clean-slug}-chapter-{n}/
+ *   The chapter URL always uses the slug WITHOUT any leading numeric prefix,
+ *   even when the series page URL has one.
+ *
+ * PAYWALL NOTE:
+ *   Some chapters on Thunder Scans require a subscription. The modal shows
+ *   a warning label on this source's card (handled in modal.js via PAYWALL_SOURCES).
+ *
+ * CHECK METHOD:
+ *   No special check_type -- Thunder returns a clean 404 for missing chapters,
+ *   so a plain HEAD check is sufficient.
+ */
 
 const THUNDERSCANS = {
 	name: "Thunder Scans",
 	icon: "⚡",
 	type: "fantl",
 
-	_to_slug(title)
-	{
-		return title
-			.toLowerCase()
-			.replace(/[^a-z0-9\s-]/g, "")
-			.trim()
-			.replace(/\s+/g, "-")
-			.replace(/-+/g, "-");
+	// Return the series page URL.
+	series_url(manga) {
+		return manga.source_urls?.["Thunder Scans"]
+			?? `https://en-thunderscans.com/comics/${slugify(manga.title)}/`;
 	},
 
-	series_url(manga)
-	{
-		return manga.sources?.["Thunder Scans"] || `https://en-thunderscans.com/comics/${this._to_slug(manga.title)}/`;
-	},
-
-	chapter_url(manga, chapter)
-	{
+	// Return the chapter URL.
+	// Priority: (1) stored chapter_slug, (2) constructed from the clean series slug + number.
+	chapter_url(manga, chapter) {
 		if (!chapter.chapter) return this.series_url(manga);
 
-		const slug = chapter.chapter_slugs?.["Thunder Scans"];
-		if (slug) return `https://en-thunderscans.com/${slug}/`;
+		// Use the exact slug stored by the scraper for decimal/non-integer chapters.
+		const chapter_slug = chapter.chapter_slugs?.["Thunder Scans"];
+		if (chapter_slug) return `https://en-thunderscans.com/${chapter_slug}/`;
 
-		const series_url = manga.sources?.["Thunder Scans"] || '';
-		const series_slug = series_url
-			? series_url.replace(/\/$/, '').split('/').pop().replace(/^\d+-/, '')
-			: this._to_slug(manga.title);
+		// Fallback: strip the numeric prefix from the series slug (if present)
+		// because chapter URLs never include that prefix.
+		// e.g. "0086250808-some-title" -> "some-title"
+		const series_slug = manga.source_urls?.["Thunder Scans"]
+			? url_last_segment(manga.source_urls["Thunder Scans"]).replace(/^\d+-/, "")
+			: slugify(manga.title);
 
 		return `https://en-thunderscans.com/${series_slug}-chapter-${chapter.chapter}/`;
 	},

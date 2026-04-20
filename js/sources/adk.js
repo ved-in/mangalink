@@ -1,43 +1,47 @@
 /*
-ADK Scans
-
-series url - https://www.silentquill.net/the-cursed-sword-masters-harem-life-by-the-sword-for-the-sword-cursed-sword-master/
-chapter url - https://www.silentquill.net/a-reincarnated-former-slave-forms-the-ultimate-harem-with-the-cheat-skill-myriad-forms-chapter-12/
-
-justttt like asurascans but WITHOUT that hex... phewww
-*/
+ * sources/adk.js -- ADK Scans  (hosted at silentquill.net)
+ *
+ * Series URL format:
+ *   https://www.silentquill.net/{series-slug}/
+ *   e.g. https://www.silentquill.net/the-cursed-sword-masters-harem-life/
+ *
+ * Chapter URL format:
+ *   https://www.silentquill.net/{series-slug}-chapter-{n}/
+ *   e.g. https://www.silentquill.net/the-cursed-sword-masters-harem-life-chapter-12/
+ *
+ * For decimal chapters (e.g. 11.5), the stored chapter_slug from the scraper
+ * is used because the URL pattern for non-integers varies.
+ *
+ * CHECK METHOD:
+ *   Silentquill returns a clean 404 for missing chapters, so no special check type needed.
+ */
 
 const ADKSCANS = {
 	name: "ADK Scans",
 	icon: "☄️",
 	type: "fantl",
 
-	_to_slug(title)
-    {
-		return title.toLowerCase()
-			.replace(/[^a-z0-9\s-]/g, "")
-			.trim()
-			.replace(/\s+/g, "-")
-			.replace(/-+/g, "-");
+	// Return the series page URL.
+	series_url(manga) {
+		return manga.source_urls?.["ADK Scans"]
+			?? `https://www.silentquill.net/${slugify(manga.title)}/`;
 	},
 
-	series_url(manga)
-    {
-		return manga.sources?.["ADK Scans"] || `https://www.silentquill.net/${this._to_slug(manga.title)}/`;
-	},
-
-	chapter_url(manga, chapter)
-    {
+	// Return the chapter URL.
+	// Priority: (1) stored chapter_slug from the scraper, (2) constructed from series slug + number.
+	chapter_url(manga, chapter) {
 		if (!chapter.chapter) return this.series_url(manga);
 
-		const slug = chapter.chapter_slugs?.["ADK Scans"];
-		if (slug) return `https://www.silentquill.net/${slug}/`;
+		// Use the exact slug stored by the scraper if we have it.
+		const chapter_slug = chapter.chapter_slugs?.["ADK Scans"];
+		if (chapter_slug) return `https://www.silentquill.net/${chapter_slug}/`;
 
-		const series_url = manga.sources?.["ADK Scans"] || '';
-		const series_slug = series_url
-			? series_url.replace(/\/$/, '').split('/').pop()
-			: this._to_slug(manga.title);
+		// Fallback: extract the series slug from the stored series URL,
+		// or derive it from the title if no URL is stored.
+		const series_slug = manga.source_urls?.["ADK Scans"]
+			? url_last_segment(manga.source_urls["ADK Scans"])
+			: slugify(manga.title);
 
 		return `https://www.silentquill.net/${series_slug}-chapter-${chapter.chapter}/`;
-	}
+	},
 };
