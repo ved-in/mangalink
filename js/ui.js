@@ -30,6 +30,7 @@ const UI = (() => {
 		if (s === "ongoing")   return "status_ongoing";
 		if (s === "completed") return "status_completed";
 		if (s === "hiatus")    return "status_hiatus";
+		if (s === "dropped")   return "status_dropped";
 		return "";
 	}
 
@@ -62,15 +63,15 @@ const UI = (() => {
 
 		el.innerHTML = mangas.map(m => `
       <div class="manga_card" data-id="${m.id}">
-        ${m.cover
+        <div class="manga_cover_wrap">
+          ${m.cover
 			? `<img class="manga_cover" src="${m.cover}" loading="lazy" onerror="this.style.display='none'" />`
 			: `<div class="cover_placeholder"></div>`}
+        </div>
         <div class="manga_info">
           <div class="manga_title">${escape_html(m.title)}</div>
-          <div class="manga_meta">${m.year || "??"} - ${m.tags.join(", ") || "-"}</div>
+          <div class="manga_meta">${m.max_chapter ? `Ch. ${m.max_chapter}` : ""}</div>
           <span class="manga_status ${status_class(m.status)}">${m.status || "unknown"}</span>
-        </div>
-        <div class="card_actions">
           <button class="bm_btn ${is_bookmarked(m.id) ? "bookmarked" : ""}" data-id="${m.id}">&#9733;</button>
         </div>
       </div>`).join("");
@@ -127,7 +128,7 @@ const UI = (() => {
         <span class="read_dot ${is_read(ch.chapter) ? "read" : ""}"></span>
         <span class="ch_num">${ch.chapter ? `Ch. ${ch.chapter}` : "Oneshot"}</span>
         <span class="ch_title">${ch.title ? `- ${escape_html(ch.title)}` : ""}</span>
-        <button class="find_btn">Sources -></button>
+        <button class="find_btn">Sources</button>
       </div>`).join("");
 
 		el.querySelectorAll(".find_btn").forEach((btn, i) => {
@@ -166,31 +167,32 @@ const UI = (() => {
 
 		el.innerHTML = list.map(bm => {
 			const pct   = bm.total_chapters ? Math.round((bm.read_count / bm.total_chapters) * 100) : 0;
-			const sc    = { ongoing: "status_ongoing", completed: "status_completed", hiatus: "status_hiatus" }[bm.status] || "";
+			const sc    = { ongoing: "status_ongoing", completed: "status_completed", hiatus: "status_hiatus", dropped: "status_dropped" }[bm.status] || "";
 			const cover = bm.cover
-				? `<img class="manga_cover" src="${bm.cover}" loading="lazy" onerror="this.style.display='none'" />`
-				: `<div class="cover_placeholder"></div>`;
+				? `<img class="bm_cover" src="${bm.cover}" loading="lazy" onerror="this.style.display='none'" />`
+				: `<div class="bm_cover_placeholder"></div>`;
 			return `
-			<div class="bm_item">
-			  ${cover}
+			<div class="bm_item" data-id="${bm.id}">
+			  <div class="bm_cover_wrap">
+			    ${cover}
+			  </div>
 			  <div class="bm_info">
 			    <div class="bm_title">${escape_html(bm.title)}</div>
-			    <div style="display:flex;align-items:center;gap:8px;margin-top:3px;">
-			      <span class="manga_status ${sc}">${bm.status || "unknown"}</span>
-			      <span class="bm_meta">${bm.read_count} / ${bm.total_chapters || "?"} read</span>
-			    </div>
+			    <span class="bm_meta">${bm.read_count} / ${bm.total_chapters || "?"} read</span>
 			    <div class="progress_bar"><div class="progress_fill" style="width:${pct}%"></div></div>
-			  </div>
-			  <div class="bm_actions">
-			    <button class="bm_remove" data-id="${bm.id}">x</button>
-			    <button class="bm_open"   data-id="${bm.id}">Open -></button>
+			    <div class="bm_actions">
+			      <button class="bm_remove" data-id="${bm.id}">x</button>
+			    </div>
 			  </div>
 			</div>`;
 		}).join("");
 
-		el.querySelectorAll(".bm_open").forEach(btn =>
-			btn.addEventListener("click", () => on_open(btn.dataset.id))
-		);
+		el.querySelectorAll(".bm_item").forEach(item => {
+			item.addEventListener("click", e => {
+				if (e.target.classList.contains("bm_remove")) return;
+				on_open(item.dataset.id, item);
+			});
+		});
 		el.querySelectorAll(".bm_remove").forEach(btn =>
 			btn.addEventListener("click", () => {
 				on_remove(btn.dataset.id);

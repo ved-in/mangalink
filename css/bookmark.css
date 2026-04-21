@@ -1,0 +1,878 @@
+/* === BOOKMARK PAGE CSS === */
+/* Includes all search.css styles plus bookmark-specific styles below */
+
+/* === ROOT VARIABLES === */
+:root {
+  --bg: #000 !important;
+  --surface: #111 !important;
+  --surface_strong: #181818 !important;
+  --card: #1a1a1a !important;
+  --ink: #fff !important;
+  --ink_soft: #ccc !important;
+  --ink_muted: #888 !important;
+  --border: #222 !important;
+  --border_strong: #333 !important;
+  --accent: #fff !important;
+  --accent_soft: #ccc !important;
+  --col_official: #fff !important;
+  --col_fantl: #fff !important;
+  --col_aggr: #fff !important;
+}
+
+/* === RESETS === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* === SEARCH INPUT 2 === */
+.search_input_2 {
+  background: #000;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 0.5rem 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+  outline: none;
+  width: 200px;
+  border-radius: 0;
+  transition: background 0.2s ease;
+}
+
+/* === SEARCH BTN 2 === */
+.search_btn_2 {
+  background: #fff;
+  color: #000;
+  border: 3px solid #fff;
+  border-radius: 0;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  padding: 0.5rem 1rem;
+}
+
+.search_btn_2:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* === TOP LOGO === */
+.top_logo {
+  font-family: 'Valimo RMX', sans-serif !important;
+  font-weight: normal !important;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* === CONTAINER === */
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  transition: grid-template-columns 0.3s ease;
+  align-items: start;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+}
+
+.container.manga_selected {
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+}
+
+/* === LEFT PANEL === */
+.left_panel {
+  background: var(--surface_strong);
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* === PANEL HEADER === */
+.panel_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 2px solid var(--bg);
+  flex-shrink: 0;
+  gap: 1rem;
+}
+
+/* === HEADER SEARCH === */
+.header_search {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  align-items: center;
+  position: relative;
+}
+
+/* === PANEL CONTENT === */
+.panel_content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === CONTENT HEADER === */
+.content_header {
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 3px solid #000;
+  flex-shrink: 0;
+}
+
+.content_title {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #000;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* === RESULTS LIST & BOOKMARKS LIST === */
+#results_list, #bm_list {
+  flex: 1;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  align-content: start;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border_strong) var(--bg);
+}
+
+/* === MANGA CARD === */
+.manga_card {
+  position: relative;
+  display: block;
+  background: transparent;
+  border: 2px solid var(--border);
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  min-height: 220px;
+}
+
+.manga_card:hover {
+  border-color: var(--ink);
+}
+
+.manga_card.selected {
+  border-color: var(--ink) !important;
+  border-width: 3px;
+}
+
+/* === MANGA COVER WRAP === */
+.manga_cover_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--border_strong);
+}
+
+.manga_cover,
+.cover_placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--border_strong);
+}
+
+/* === MANGA INFO === */
+.manga_info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  z-index: 1;
+}
+
+.manga_info .bm_btn {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+}
+
+/* === MANGA TITLE & META === */
+.manga_title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0.2rem;
+}
+
+.manga_meta {
+  font-size: 0.75rem;
+  color: #ccc;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* === MANGA STATUS === */
+.manga_status {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 0.65rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ccc !important;
+}
+
+/* === BOOKMARK BUTTON (STAR) === */
+.bm_btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.bm_btn:hover { color: #FFD700; }
+.bm_btn.bookmarked { color: #FFD700 !important; }
+
+/* === CHAPTERS PANEL === */
+.chapters_panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* === CHAPTER CONTROLS === */
+.chapter_controls {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+  padding: 1rem;
+  border-bottom: 3px solid #fff;
+  background: #181818;
+}
+
+/* === CHAPTER SEARCH === */
+.chapter_search {
+  background: #000;
+  border: 3px solid #fff;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+  outline: none;
+  transition: background 0.15s ease;
+  flex: 1;
+}
+
+.chapter_search:focus { background: #111; }
+.chapter_search::placeholder { color: #888; }
+
+/* === SORT BUTTON === */
+.sort_btn {
+  padding: 0.6rem 1rem;
+  background: #fff;
+  border: 3px solid #fff;
+  color: #000;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.sort_btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* === CHAPTERS LIST === */
+.chapters_list {
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #333 #000;
+}
+
+/* === CHAPTER ROW === */
+.chapter_row {
+  display: grid;
+  grid-template-columns: auto auto minmax(0,1fr) auto;
+  gap: 1rem;
+  align-items: center;
+  border-bottom: 2px solid #fff;
+  padding: 1rem 1.2rem;
+  transition: background 0.15s ease;
+}
+
+.chapter_row:hover { background: #111; }
+
+/* === READ DOT === */
+.read_dot { width: 10px; height: 10px; border-radius: 50%; background: #333; }
+.read_dot.read { background: #fff !important; }
+
+/* === CHAPTER NUMBER & TITLE === */
+.ch_num {
+  font-size: 0.85rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+  color: #fff;
+}
+
+.ch_title {
+  color: #888;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* === FIND BUTTON === */
+.find_btn {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 0.75rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.find_btn:hover {
+  background: #000 !important;
+  color: #fff !important;
+  border: 3px solid #fff;
+}
+
+/* === EMPTY STATE === */
+.empty_state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #888;
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: 'IBM Plex Mono', monospace;
+  grid-column: 1 / -1;
+}
+
+.empty_state .big_icon { font-size: 2.5rem; margin-bottom: 1rem; }
+
+/* === FOOTER (HIDDEN) === */
+footer { display: none; }
+
+/* === MODAL === */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal.open { display: flex; }
+
+.modal_box {
+  width: 100%;
+  max-width: 600px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #000;
+  border: 4px solid #fff;
+}
+
+.modal_head {
+  padding: 1.5rem;
+  background: #fff;
+  border-bottom: 4px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal_chapter_label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #444 !important;
+  text-transform: uppercase;
+}
+
+.modal_title_text {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.close_btn {
+  background: #000;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  font-family: 'Archivo Black', sans-serif;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.close_btn:hover {
+  background: #ff0000;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.modal_body {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.2rem;
+  background: #000;
+}
+
+/* === SOURCE ITEMS === */
+.source_item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  border: 3px solid #333;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.source_item:hover {
+  border-color: #fff;
+}
+
+.source_icon_wrap {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  font-size: 3.5rem;
+  font-family: 'Archivo Black', sans-serif;
+  color: #fff;
+  border-bottom: 2px solid #333;
+}
+
+.source_info {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  background: #000;
+  border-top: 2px solid #333;
+}
+.source_item:hover .source_info {
+  border-top-color: #fff;
+}
+
+.source_name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-bottom: 0.5rem;
+}
+
+.source_badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+/* === SOURCE BADGES === */
+.visited_badge, .found_badge, .browse_badge {
+  background: #fff;
+  color: #000;
+  padding: 3px 8px;
+  font-size: 0.65rem;
+  border-radius: 0px;
+  font-weight: 800;
+  font-family: 'Archivo Black', sans-serif;
+  text-transform: uppercase;
+}
+
+.check_badge {
+  color: #fff;
+  background: #333;
+  padding: 3px 8px;
+  font-size: 0.65rem;
+  border-radius: 0px;
+  font-weight: 800;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+/* === GOOGLE SECTION === */
+.google_section {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 3px solid #333;
+  text-align: center;
+}
+
+.google_section .ext_link {
+  display: inline-block;
+  background: #fff;
+  color: #000 !important;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 900;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  border: 3px solid #000;
+}
+
+.google_section .ext_link:hover {
+  background: #000;
+  color: #fff !important;
+  border-color: #fff;
+}
+
+/* === SPINNER === */
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #333;
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.source_checking {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* ======================= */
+/* === BOOKMARK SPECIFIC === */
+/* ======================= */
+
+/* === BOOKMARK ITEM === */
+.bm_item {
+  position: relative;
+  display: block;
+  background: transparent;
+  border: 2px solid var(--border);
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.bm_item:hover {
+  border-color: var(--ink);
+}
+
+.bm_item.selected {
+  border-color: var(--ink) !important;
+  border-width: 3px;
+}
+
+/* === BOOKMARK COVER WRAP === */
+.bm_cover_wrap {
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+.bm_cover, .bm_cover_placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--border_strong);
+}
+
+/* === BOOKMARK INFO === */
+.bm_info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  z-index: 1;
+}
+
+/* === BOOKMARK TITLE === */
+.bm_title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0.2rem;
+}
+
+/* === BOOKMARK META === */
+.bm_meta {
+  font-size: 0.75rem;
+  color: #ccc;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* === BOOKMARK ACTIONS === */
+.bm_actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.bm_actions .bm_open {
+  background: #fff;
+  color: #000;
+  border: 3px solid #fff;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+}
+
+.bm_actions .bm_open:hover {
+  background: #000;
+  color: #fff;
+}
+
+.bm_actions .bm_remove {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.bm_actions .bm_remove:hover {
+  color: #ccc;
+}
+
+/* === PROGRESS BAR === */
+.progress_bar {
+  height: 6px;
+  background: #333;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.progress_fill {
+  height: 100%;
+  background: #fff;
+}
+
+/* === MANGA HEADER === */
+.manga_header {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  padding: 1.2rem;
+  border-bottom: 3px solid #fff;
+  background: #181818;
+}
+
+.manga_header_cover {
+  flex-shrink: 0;
+  width: 90px;
+  height: 130px;
+  background: #181818;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.manga_header_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.manga_header_title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.manga_header_meta {
+  font-size: 0.75rem;
+  color: #888;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* === SUGGESTION DROPDOWN === */
+.suggestions_box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 5px;
+  background: #000;
+  border: 3px solid #fff;
+  z-index: 100;
+  display: none;
+  flex-direction: column;
+  max-width: calc(100vw - 40px);
+  max-height: 180px;
+  overflow-y: auto;
+  overflow-x: auto;
+  box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.2);
+}
+.suggestions_box::-webkit-scrollbar { width: 8px; }
+.suggestions_box::-webkit-scrollbar-thumb { background: #fff; }
+.suggestion_item {
+  padding: 12px 15px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 2px solid #333;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.suggestion_item:last-child { border-bottom: none; }
+.suggestion_item:hover, .suggestion_item.active { background: #fff; color: #000; padding-left: 20px; }
+
+/* === MOBILE LAYOUT === */
+.mobile_back_btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .panel_header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+  .header_search {
+    width: 100%;
+  }
+  .search_input_2 {
+    flex: 1;
+    width: 100%;
+    max-width: none;
+  }
+  .container.manga_selected {
+    grid-template-columns: 0px 1fr !important;
+  }
+  .container.manga_selected .left_panel {
+    border: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .manga_header {
+    flex-wrap: wrap;
+  }
+  .mobile_back_btn {
+    display: inline-block !important;
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+    padding: 0.5rem;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .modal_box {
+    margin: 1rem;
+    max-width: calc(100% - 2rem);
+  }
+  .modal_head {
+    padding: 1rem;
+  }
+  .modal_body {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+  .source_icon_wrap {
+    font-size: 2.2rem;
+  }
+  .source_name {
+    font-size: 0.85rem;
+  }
+}
+
+/* === TABLET LAYOUT === */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container.manga_selected {
+    grid-template-columns: minmax(0, 1fr) 320px;
+  }
+  
+  .panel_header {
+    padding: 12px 15px;
+  }
+
+  .search_input_2 {
+    width: 140px; 
+  }
+
+  .modal_box {
+    max-width: 85vw;
+  }
+}

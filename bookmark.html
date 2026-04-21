@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookmarks - MangaLink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/bookmark.css" />
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7639EMYFSH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7639EMYFSH');
+</script>
+<body>
+
+<div class="container" id="main_container">
+  <div class="left_panel" id="left_panel">
+    <div class="panel_header">
+      <a href="/" class="top_logo">MangaLink</a>
+      <div class="header_search">
+        <input type="text" autocomplete="off" class="search_input_2" id="search_input_2" placeholder="Filter bookmarks..." style="border-color: white; color: white">
+        <button class="search_btn_2" id="search_btn_2" style="border-color: white; background: white; color: #000;">FILTER</button>
+        <button class="search_btn_2 result_nav_btn" title="Go to Search" style="padding: 0.5rem 0.8rem; display: flex; align-items: center; justify-content: center;" onclick="window.location.href='/search-result.html'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+      </div>
+    </div>
+    
+    <div id="search_view" class="panel_content" style="display:none">
+      <div class="content_header">
+        <span class="content_title">Results</span>
+      </div>
+      <div id="results_list">
+        <div class="empty_state"><p>Search for a title above</p></div>
+      </div>
+    </div>
+
+    <div id="bookmarks_view" class="panel_content">
+      <div class="content_header">
+        <span class="content_title">Bookmarks</span>
+      </div>
+      <div id="bm_list">
+        <div class="empty_state"><p>No bookmarks yet.<br>Search a title and tap the ★ icon.</p></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="chapters_panel" id="chapters_panel" style="display: none;">
+    <div class="manga_header" id="manga_header">
+      <button class="mobile_back_btn" id="mobile_back_btn">← BACK TO LIST</button>
+      <div class="manga_header_cover" id="manga_header_cover"></div>
+      <div class="manga_header_info">
+        <div class="manga_header_title" id="manga_header_title">Select a title →</div>
+        <div class="manga_header_meta" id="manga_header_meta"></div>
+      </div>
+    </div>
+
+    <div class="chapter_controls" style="display: none;" id="chapter_controls">
+      <input type="text" autocomplete="off" class="chapter_search" id="chapter_search" placeholder="Jump to ch…" />
+      <button class="sort_btn" id="sort_btn" title="Sort order">↓</button>
+    </div>
+
+    <div class="chapters_list" id="chapters_list">
+    </div>
+  </div>
+</div>
+
+  <!-- SOURCES MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal_box">
+      <div class="modal_head">
+        <div>
+          <div class="modal_chapter_label" id="modal_chapter_label">Chapter</div>
+          <div class="modal_title_text" id="modal_title">Title</div>
+        </div>
+        <button class="close_btn" id="close_modal">✕</button>
+      </div>
+      <div class="modal_body" id="modal_body">
+        <div class="source_checking"><div class="spinner"></div><br>Checking sources…</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-text">
+        MangaLink does not host any content. All links point to third-party websites. &nbsp;·&nbsp;
+        Data scraped from supported scanlations. &nbsp;·&nbsp;
+        Built for readers, by readers.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sources must load before modal.js. utils.js must be first. -->
+  <script src="js/sources/utils.js"></script>
+  <script src="js/sources/asura.js"></script>
+  <script src="js/sources/demonic.js"></script>
+  <script src="js/sources/adk.js"></script>
+  <script src="js/sources/thunder.js"></script>
+  <script src="js/sources/temple.js"></script>
+  <script src="js/sources/flame.js"></script>
+  <script src="js/sources/violet.js"></script>
+
+  <!-- Core modules -->
+  <script src="js/storage.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/checker.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/bookmarks.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

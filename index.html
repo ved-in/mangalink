@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7639EMYFSH"></script>
@@ -36,101 +36,14 @@
     <section class="search_overlay">
       <div class="search_box_outer">
         <div class="search_box_inner">
-          <input type="text" class="search_input"  id="search_input" placeholder="Search manga...">
+          <input type="text" class="search_input" id="search_input" placeholder="Search manga..." autocomplete="off">
           <button class="search_btn" id="search_btn">Search</button>
-          <button class="bookmark_btn"><img src="public/book-marked.svg" alt="bookmark icon"></button>
+          <button class="bookmark_btn" id="bookmark_btn_home"><img src="public/book-marked.svg" alt="bookmark icon"></button>
         </div>
       </div>
     </section>
   </div>
-
-  <div class="container" id="main_container" style="display:none">
-
-    <!-- LEFT: Search results + Bookmarks tabs -->
-    <div class="left_panel" id="left_panel">
-      <div class="panel_header">
-        <span class="top_logo">MangaLink</span>
-      </div>
-      
-      <div class="panel_tabs" id="tabs">
-        <button class="tab active" data-tab="search">Search</button>
-        <button class="tab" data-tab="bookmarks">Bookmarks</button>
-      </div>
-
-      <div id="search_view" class="panel_content">
-        <div class="content_header">
-          <span class="content_title">Results</span>
-        </div>
-        <div id="results_list">
-          <div class="empty_state"><p>Search for a title above</p></div>
-        </div>
-      </div>
-
-      <div id="bookmarks_view" class="panel_content" style="display:none">
-        <div class="content_header">
-          <span class="content_title">Bookmarks</span>
-        </div>
-        <div id="bm_list">
-          <div class="empty_state"><p>No bookmarks yet.<br>Search a title and tap the ★ icon.</p></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- RIGHT: Chapter list -->
-    <div class="chapters_panel" id="chapters_panel">
-      <div class="manga_header" id="manga_header">
-        <div class="manga_header_cover" id="manga_header_cover"></div>
-        <div class="manga_header_info">
-          <div class="manga_header_title" id="manga_header_title">Select a title →</div>
-          <div class="manga_header_meta" id="manga_header_meta"></div>
-        </div>
-      </div>
-
-      <div class="chapter_controls">
-        <input type="text" class="chapter_search" id="chapter_search" placeholder="Jump to ch…" />
-        <button class="sort_btn" id="sort_btn" title="Sort order">↓</button>
-      </div>
-
-      <div class="chapters_list" id="chapters_list">
-        <div class="empty_state">
-          <p>Pick a title on the left<br>to see its chapters</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
 </div>
-  <!-- DEBUG PANEL (toggle: Ctrl+Shift+D) -->
-  <div class="debug_panel" id="debug_panel">
-    <div class="dbg_header">
-      <span class="dbg_label">Debug - Source URL Tester</span>
-      <kbd class="dbg_hint_kbd">Ctrl+Shift+D to close</kbd>
-    </div>
-    <div class="dbg_inputs">
-      <input type="text" id="dbg_title"   placeholder="Manga title" />
-      <input type="text" id="dbg_chapter" placeholder="Chapter" />
-      <button id="dbg_check_btn" class="dbg_check">+ Check</button>
-    </div>
-    <div id="dbg_output">
-      <div class="dbg_hint">Enter a title and chapter number to preview source URLs.</div>
-    </div>
-  </div>
-
-  <!-- SOURCES MODAL -->
-  <div class="modal" id="modal">
-    <div class="modal_box">
-      <div class="modal_head">
-        <div>
-          <div class="modal_chapter_label" id="modal_chapter_label">Chapter</div>
-          <div class="modal_title_text" id="modal_title">Title</div>
-        </div>
-        <button class="close_btn" id="close_modal">✕</button>
-      </div>
-      <div class="modal_body" id="modal_body">
-        <div class="source_checking"><div class="spinner"></div><br>Checking sources…</div>
-      </div>
-    </div>
-  </div>
 
   <footer>
     <div class="footer-content">
@@ -139,35 +52,24 @@
         Data scraped from supported scanlations. &nbsp;·&nbsp;
         Built for readers, by readers.
       </div>
-      <div class="footer-github">
-        <a href="https://github.com/ved-in/mangalink" target="_blank" rel="noopener noreferrer" class="github-link">
-          <svg height="20" viewBox="0 0 16 16" width="20" fill="currentColor" style="vertical-align:middle; margin-right:4px;">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-          </svg>
-          GitHub
-        </a>
-      </div>
     </div>
   </footer>
 
-  <!-- Sources must load before modal.js. utils.js must be first. -->
-  <script src="js/sources/utils.js"></script>
-  <script src="js/sources/asura.js"></script>
-  <script src="js/sources/demonic.js"></script>
-  <script src="js/sources/adk.js"></script>
-  <script src="js/sources/thunder.js"></script>
-  <script src="js/sources/temple.js"></script>
-  <script src="js/sources/flame.js"></script>
-  <script src="js/sources/violet.js"></script>
-
-  <!-- Core modules -->
   <script src="js/storage.js"></script>
   <script src="js/api.js"></script>
-  <script src="js/checker.js"></script>
-  <script src="js/ui.js"></script>
-  <script src="js/modal.js"></script>
-  <script src="js/bookmarks.js"></script>
   <script src="js/app.js"></script>
-
+  <script>
+    document.getElementById('search_btn').addEventListener('click', () => {
+      const q = document.getElementById('search_input').value;
+      if (q) {
+        window.location.href = '/search-result.html?q=' + encodeURIComponent(q);
+      } else {
+        window.location.href = '/search-result.html';
+      }
+    });
+    document.getElementById('bookmark_btn_home').addEventListener('click', () => {
+      window.location.href = '/bookmark.html';
+    });
+  </script>
 </body>
 </html>
