@@ -1,7 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/search-result", "destination": "/search-result.html" },
-    { "source": "/bookmark", "destination": "/bookmark.html" },
-    { "source": "/((?!.*\\.).*)", "destination": "/index.html" }
-  ]
-}
