@@ -14,6 +14,10 @@
  *   sort_asc       -- whether chapters are sorted ascending (oldest first)
  */
 
+const BASE = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
+	? ''
+	: '/mangalink';
+
 const App = (
 	() => {
 
@@ -238,14 +242,14 @@ const App = (
 			// Logo click goes back to homepage
 			if (top_logo && home_wrap) {
 				top_logo.addEventListener("click", () => {
-					window.location.href = '/';
+					window.location.href = BASE + '/';
 				});
 			}
 
 			// Bookmark button (homepage)
 			if (bookmark_btn) {
 				bookmark_btn.addEventListener("click", () => {
-					window.location.href = '/bookmark.html';
+					window.location.href = BASE + '/bookmark.html';
 				});
 			}
 
@@ -294,7 +298,7 @@ const App = (
 
 			// If we are on the homepage (no container), redirect!
 			if (!container && !document.getElementById("results_list")) {
-				window.location.href = '/search-result.html?q=' + encodeURIComponent(q);
+				window.location.href = BASE + '/search-result.html?q=' + encodeURIComponent(q);
 				return;
 			}
 
