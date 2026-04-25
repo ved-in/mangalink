@@ -27,7 +27,7 @@
 
 const { extract_with_fallback }                   = require('./patterns');
 const { fetch_all_chapters, parse_chapter_slug_to_number } = require('./chapters');
-const { http_get, sleep, decode_html_entities,
+const { http_get_with_retry, sleep, decode_html_entities,
         normalise_title, normalise_status }        = require('../../lib/helpers');
 
 // Parallel chapter fetches per batch. Keep small to stay polite.
@@ -51,7 +51,7 @@ async function scrape_temple_toons(opts = {})
 	let html;
 	try
 	{
-		const { status, body } = await http_get('https://templetoons.com/comics');
+		const { status, body } = await http_get_with_retry('https://templetoons.com/comics');
 		if (status !== 200)
 		{
 			console.error(`[Temple] Listing page returned HTTP ${status}`);
@@ -102,9 +102,12 @@ async function scrape_temple_toons(opts = {})
 		const series_url  = `https://templetoons.com/comic/${series_slug}`;
 		const state_entry = state ? state[normalise_title(title)] : null;
 
-		// Skip the chapter fetch if the chapter count matches the previous run.
-		// new_count must not be null -- if we can't confirm it's unchanged we refetch.
-		const skip_detail = !!(state_entry && new_count !== null && state_entry.max_chapter === new_count);
+		// Skip the chapter fetch if nothing changed since the previous run.
+		// We check chapter_count first (exact), then fall back to max_chapter
+		// comparison in case chapter_count wasn't extractable from the listing page.
+		const chapter_count_unchanged = new_count !== null && state_entry?.chapter_count === new_count;
+		const max_chapter_unchanged   = new_count === null && state_entry?.max_chapter != null;
+		const skip_detail = !!(state_entry && (chapter_count_unchanged || max_chapter_unchanged));
 
 		all_series.push({
 			title:         decode_html_entities(title),
@@ -122,11 +125,13 @@ async function scrape_temple_toons(opts = {})
 
 	// ── Step 4: fetch chapters in batches ─────────────────────────────────────
 
-	console.log(`[Temple] Fetching chapters for ${all_series.length} series...`);
+	const to_fetch_count = all_series.filter(s => !s._skip_detail).length;
+	console.log(`[Temple] Fetching chapters for ${to_fetch_count}/${all_series.length} series...`);
 
 	for (let i = 0; i < all_series.length; i += CONCURRENCY)
 	{
-		const batch = all_series.slice(i, i + CONCURRENCY);
+		const batch     = all_series.slice(i, i + CONCURRENCY);
+		const has_fetch = batch.some(s => !s._skip_detail);
 
 		await Promise.all(batch.map(async (s) =>
 		{
@@ -156,7 +161,8 @@ async function scrape_temple_toons(opts = {})
 		}));
 
 		console.log(`[Temple] Chapters: ${Math.min(i + CONCURRENCY, all_series.length)}/${all_series.length}`);
-		if (i + CONCURRENCY < all_series.length) await sleep(REQ_DELAY_MS);
+		// Only sleep between batches that made real network requests.
+		if (has_fetch && i + CONCURRENCY < all_series.length) await sleep(REQ_DELAY_MS);
 	}
 
 	// Clean up temporary fields.

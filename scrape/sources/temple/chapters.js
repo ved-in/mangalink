@@ -21,7 +21,7 @@
  * index 0 is chapter 1 (makes front-end rendering order natural).
  */
 
-const { http_get } = require('../../lib/helpers');
+const { http_get_with_retry } = require('../../lib/helpers');
 
 // Regex for a chapter_name + chapter_slug pair in the single-escaped HTML.
 // Matches:  \"chapter_name\":\"Name\"...\"chapter_slug\":\"slug\"
@@ -40,7 +40,7 @@ async function fetch_all_chapters(series_url)
 {
 	try
 	{
-		const { status, body } = await http_get(series_url);
+		const { status, body } = await http_get_with_retry(series_url);
 		if (status !== 200) return [];
 
 		const chapters = [];

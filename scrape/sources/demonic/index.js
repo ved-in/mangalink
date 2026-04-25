@@ -30,9 +30,9 @@
  * normalised-title entries used by API scrapers.
  */
 
-const { extract_demonic_cards }    = require('./listing');
-const { fetch_non_integer_chapters } = require('./chapters');
-const { http_get, sleep }          = require('../../lib/helpers');
+const { extract_demonic_cards }      = require('./listing');
+const { fetch_chapter_data }         = require('./chapters');
+const { http_get_with_retry, sleep } = require('../../lib/helpers');
 
 // Statuses that mean a series will never gain new chapters.
 // These are excluded from the stop-streak check and from chapter fetches.
@@ -73,7 +73,7 @@ async function scrape_demonic(opts = {})
 		let cards = [];
 		try
 		{
-			const { status, body } = await http_get(url);
+			const { status, body } = await http_get_with_retry(url);
 			if (status === 200) cards = extract_demonic_cards(body);
 		}
 		catch (e)
@@ -94,9 +94,12 @@ async function scrape_demonic(opts = {})
 		{
 			const page_has_change = cards.some(card =>
 			{
-				const prev = state[card.slug];
+				const prev = state[card.slug]; // slug is already lowercased by listing.js
 				if (prev && TERMINAL_STATUSES.has(prev.status)) return false;
-				return !prev || prev.max_chapter !== card.max_chapter;
+				// A card is changed if the listing shows a chapter we haven't stored yet.
+				// Use > (not !==) so decimal sub-chapters in state don't cause false positives:
+				// if state has 200.5 and listing shows 200, 200 > 200.5 is false -> unchanged.
+				return !prev || card.max_chapter > (prev.max_chapter ?? -1);
 			});
 
 			if (page_has_change)
@@ -116,6 +119,8 @@ async function scrape_demonic(opts = {})
 		}
 
 		// Accumulate new series, skipping terminal-status ones and duplicates.
+		// Unchanged series are included with a null chapters sentinel so that
+		// write_chunks preserves their existing chapter data without re-fetching.
 		for (const card of cards)
 		{
 			if (seen_slugs.has(card.slug)) continue;
@@ -123,6 +128,8 @@ async function scrape_demonic(opts = {})
 			if (prev && TERMINAL_STATUSES.has(prev.status)) continue;
 
 			seen_slugs.add(card.slug);
+			if (prev && !(card.max_chapter > (prev.max_chapter ?? -1)))
+				card.chapters['Demonic Scans'] = null; // sentinel: keep existing chapters
 			all_series.push(card);
 		}
 
@@ -138,7 +145,7 @@ async function scrape_demonic(opts = {})
 		? all_series.filter(s =>
 		{
 			const prev = state[s.slug.toLowerCase()] ?? state[s.slug];
-			return !prev || prev.max_chapter !== s.max_chapter;
+			return !prev || s.max_chapter > (prev.max_chapter ?? -1);
 		})
 		: all_series;
 
@@ -150,9 +157,10 @@ async function scrape_demonic(opts = {})
 
 		await Promise.all(batch.map(async (s) =>
 		{
-			const chapters = await fetch_non_integer_chapters(s._series_url);
-			if (chapters.length > 0)
-				s.chapters['Demonic Scans'] = chapters;
+			const { chapters, status } = await fetch_chapter_data(s._series_url);
+			if (chapters.length > 0) s.chapters['Demonic Scans'] = chapters;
+			// Status isn't available on the listing page -- apply it from the series page.
+			if (status && !s.status) s.status = status;
 		}));
 
 		console.log(`[Demonic] Chapters: ${Math.min(i + CONCURRENCY, to_fetch.length)}/${to_fetch.length}`);

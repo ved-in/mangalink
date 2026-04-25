@@ -151,7 +151,7 @@ function merge(lists, existing)
 			{
 				// ── Add a brand-new series ────────────────────────────────────
 				// Remove internal scraper fields that shouldn't reach the output.
-				const { slug, chapter_count, ...rest } = item;
+				const { slug, ...rest } = item;
 
 				if (!('max_chapter' in rest)) rest.max_chapter = null;
 				if (!('chapters'    in rest)) rest.chapters    = {};

@@ -48,7 +48,7 @@ function extract_demonic_cards(html)
 		if (!link.length) return;
 
 		const href = link.attr('href');
-		const slug = href.replace('/manga/', '').replace(/\/$/, '');
+		const slug = href.replace('/manga/', '').replace(/\/$/, '').toLowerCase();
 		if (seen_slugs.has(slug)) return;
 
 		// Title: prefer the anchor's title= attribute -- text content is often

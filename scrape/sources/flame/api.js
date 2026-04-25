@@ -27,7 +27,7 @@
  * the front-end cannot reconstruct chapter URLs from the number alone.
  */
 
-const { http_get } = require('../../lib/helpers');
+const { http_get_with_retry } = require('../../lib/helpers');
 
 /**
  * Extract the current Next.js buildId from the Flame Comics homepage.
@@ -38,7 +38,7 @@ const { http_get } = require('../../lib/helpers');
  */
 async function fetch_build_id()
 {
-	const { status, body } = await http_get('https://flamecomics.xyz');
+	const { status, body } = await http_get_with_retry('https://flamecomics.xyz');
 	if (status !== 200) throw new Error(`Homepage returned HTTP ${status}`);
 
 	const match = body.match(/"buildId"\s*:\s*"([^"]+)"/);
@@ -56,7 +56,7 @@ async function fetch_build_id()
  */
 async function fetch_all_series()
 {
-	const { status, body } = await http_get('https://flamecomics.xyz/api/series');
+	const { status, body } = await http_get_with_retry('https://flamecomics.xyz/api/series');
 	if (status !== 200) throw new Error(`Series list returned HTTP ${status}`);
 
 	return JSON.parse(body);
@@ -77,7 +77,7 @@ async function fetch_series_detail(series_id, build_id)
 
 	try
 	{
-		const { status, body } = await http_get(url);
+		const { status, body } = await http_get_with_retry(url);
 		if (status !== 200) return { cover: null, chapters: [] };
 
 		const data        = JSON.parse(body);

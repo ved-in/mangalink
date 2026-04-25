@@ -36,30 +36,52 @@
  */
 
 const cheerio = require('cheerio');
-const { http_get, sleep, decode_html_entities, add_cards,
+const { http_get_with_retry, sleep, decode_html_entities, add_cards,
         is_non_integer_chapter, parse_chapter_label } = require('./helpers');
 
 // ── Card parsing ──────────────────────────────────────────────────────────────
 
 /**
- * Read the canonical status out of a card element's CSS class list.
- * The theme stores it as e.g. "status-ongoing", "status-completed".
- * Returns null when none of the known classes are present.
+ * Read the series status from a card element.
+ *
+ * The theme uses two different patterns depending on the fork:
+ *
+ *   Pattern A (older forks): CSS class on the card or an inner element.
+ *     e.g. <div class="bsx status-ongoing">  or  <span class="status-ongoing">
+ *
+ *   Pattern B (Thunder, Violet, ADK): a dedicated status div with a dot span.
+ *     <div class="status">
+ *       <span class="status-dot Ongoing"></span> <i>Ongoing</i>
+ *     </div>
+ *     The status word is the second class on the span AND the text of the <i> tag.
+ *     We read the <i> tag text since it's the most straightforward.
+ *
+ * Returns null when neither pattern matches.
  */
 function extract_status_from_card($el, $)
 {
-	// Check the card's own class first (most common location).
+	// Pattern B: <div class="status"> ... <i>Ongoing</i>
+	const status_text = $el.find('div.status i').first().text().trim();
+	if (status_text)
+	{
+		const l = status_text.toLowerCase();
+		if (l === 'ongoing')   return 'Ongoing';
+		if (l === 'completed') return 'Completed';
+		if (l === 'hiatus')    return 'Hiatus';
+		if (l === 'dropped')   return 'Dropped';
+	}
+
+	// Pattern A: status class on the card element itself or an inner element.
 	const own_cls = $el.attr('class') || '';
 	if (own_cls.includes('status-ongoing'))   return 'Ongoing';
 	if (own_cls.includes('status-completed')) return 'Completed';
 	if (own_cls.includes('status-hiatus'))    return 'Hiatus';
 	if (own_cls.includes('status-dropped'))   return 'Dropped';
 
-	// Some theme forks put the status class on an inner span instead.
 	let found = null;
 	$el.find('[class*="status-"]').each((_, el) =>
 	{
-		if (found) return; // stop after first match
+		if (found) return;
 		const c = $(el).attr('class') || '';
 		if (c.includes('status-ongoing'))   found = 'Ongoing';
 		if (c.includes('status-completed')) found = 'Completed';
@@ -101,12 +123,13 @@ function extract_wp_cards(html, source_name, base_url, seen_slugs, slug_from_hre
 		const href = link.attr('href');
 		if (!href) return;
 
-		// Derive the dedup slug from the href.
-		// Default: grab the path segment after /comics/ (Thunder/Violet pattern).
-		// Sites can override this via slug_from_href (ADK uses /manga/).
-		const raw_slug = slug_from_href
+		// Derive the dedup slug from the href, always lowercased.
+		// Lowercase is critical: state keys are written lowercase in build_state(),
+		// so the lookup in the incremental check must also use lowercase.
+		const raw_slug = (slug_from_href
 			? slug_from_href(href)
-			: (href.match(/\/comics\/([^\/]+)\/?/)?.[1] ?? null);
+			: (href.match(/\/comics\/([^\/]+)\/?/)?.[1] ?? null)
+		)?.toLowerCase();
 
 		if (!raw_slug || seen_slugs.has(raw_slug)) { card_idx++; return; }
 
@@ -165,7 +188,7 @@ async function fetch_non_integer_chapters(series_url, source_name)
 {
 	try
 	{
-		const { status, body } = await http_get(series_url);
+		const { status, body } = await http_get_with_retry(series_url);
 		if (status !== 200) return [];
 
 		const $        = cheerio.load(body);
@@ -218,9 +241,10 @@ async function scrape_wp_site(config)
 	const {
 		name,
 		listing_url,
-		slug_from_href = null,
-		state          = null,
-		req_delay_ms   = 500,
+		slug_from_href  = null,
+		state           = null,
+		req_delay_ms    = 500,
+		status_override = null, // when set, overrides per-card status extraction
 	} = config;
 
 	// How many consecutive unchanged pages before we assume nothing new is left.
@@ -247,7 +271,7 @@ async function scrape_wp_site(config)
 		let body;
 		try
 		{
-			const res = await http_get(url);
+			const res = await http_get_with_retry(url);
 			if (res.status !== 200)
 			{
 				console.error(`[${name}] HTTP ${res.status} on page ${page} -- stopping.`);
@@ -285,8 +309,10 @@ async function scrape_wp_site(config)
 			const page_has_new_or_changed = cards.some(card =>
 			{
 				const prev = state[card.slug];
-				// A card is "changed" if it's not in state, or its max_chapter differs.
-				return !prev || prev.max_chapter !== card.max_chapter;
+				// A card is "changed" only if the listing shows a chapter newer than stored.
+				// Use > not !== so decimal sub-chapters in state (e.g. 200.5) don't cause
+				// false positives when the listing shows the integer chapter (200).
+				return !prev || card.max_chapter > (prev.max_chapter ?? -1);
 			});
 
 			if (page_has_new_or_changed)
@@ -307,6 +333,10 @@ async function scrape_wp_site(config)
 			}
 		}
 
+		// Apply status_override if set (used by ADK per-filter fetches).
+		if (status_override)
+			for (const card of cards) card.status = status_override;
+
 		const added = add_cards(cards, all_series, seen_slugs);
 		console.log(`[${name}] Page ${page}: ${cards.length} cards, ${added} new, total=${all_series.length}`);
 
@@ -321,13 +351,33 @@ async function scrape_wp_site(config)
 
 	const CONCURRENCY = 5;
 
+	// A series needs a chapter re-fetch if it is brand-new (not in state) OR
+	// if its max_chapter actually changed. For sites where max_chapter is null
+	// on the listing page (e.g. epxs values are unavailable), we fall back to
+	// treating any series already in state as unchanged -- the stop-streak above
+	// already ensured we only collected series from pages that had real changes.
 	const to_fetch = state
 		? all_series.filter(s =>
 		{
 			const prev = state[s.slug];
-			return !prev || prev.max_chapter !== s.max_chapter;
+			if (!prev) return true;                          // brand new -- always fetch
+			// Use > not !== so decimal sub-chapters in state don't cause false positives.
+			// If max_chapter is null (epxs unavailable), trust the stop-streak check.
+			return s.max_chapter !== null && s.max_chapter > (prev.max_chapter ?? -1);
 		})
 		: all_series;
+
+	// Mark unchanged series with a null chapters sentinel so write_chunks
+	// preserves their existing chapter data rather than overwriting with [].
+	if (state)
+	{
+		const to_fetch_set = new Set(to_fetch.map(s => s.slug));
+		for (const s of all_series)
+		{
+			if (!to_fetch_set.has(s.slug))
+				s.chapters[name] = null;
+		}
+	}
 
 	console.log(`[${name}] Fetching chapters for ${to_fetch.length}/${all_series.length} changed series (concurrency=${CONCURRENCY})...`);
 

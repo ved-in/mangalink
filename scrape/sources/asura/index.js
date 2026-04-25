@@ -94,13 +94,27 @@ async function scrape_asura(opts = {})
 				const prev = state[normalise_title(item.title)];
 				if (prev && prev.chapter_count === new_count)
 				{
+					// Still include unchanged series so they survive the merge.
+					// Use null chapters sentinel -- write_chunks will preserve the
+					// existing chapter list from the stored chunk file.
+					series.push({
+						title:         item.title,
+						slug:          item.slug,
+						cover:         item.cover || null,
+						status:        normalise_status(item.status),
+						sources:       { 'Asura Scans': `https://asurascans.com/comics/${item.slug}` },
+						max_chapter:   max_ch,
+						chapter_count: new_count,
+						chapters:      { 'Asura Scans': null }, // null = keep existing chapters
+						_slug:         null, // skip chapter re-fetch
+					});
 					unchanged++;
 					if (unchanged >= STOP_STREAK)
 					{
 						console.log(`[Asura] ${STOP_STREAK} consecutive unchanged -- stopping early.`);
 						break outer;
 					}
-					continue; // skip this series -- chapters haven't changed
+					continue;
 				}
 				unchanged = 0; // reset streak on any changed series
 			}
@@ -124,11 +138,12 @@ async function scrape_asura(opts = {})
 	// ── Phase 2: fetch non-integer chapter slugs ───────────────────────────────
 	// Run in small parallel batches with a sleep between each to stay rate-limited.
 
-	console.log(`[Asura] Fetching non-integer chapters for ${series.length} series (concurrency=${CONCURRENCY})...`);
+	const to_fetch = series.filter(s => s._slug != null);
+	console.log(`[Asura] Fetching non-integer chapters for ${to_fetch.length} series (concurrency=${CONCURRENCY})...`);
 
-	for (let i = 0; i < series.length; i += CONCURRENCY)
+	for (let i = 0; i < to_fetch.length; i += CONCURRENCY)
 	{
-		const batch = series.slice(i, i + CONCURRENCY);
+		const batch = to_fetch.slice(i, i + CONCURRENCY);
 
 		await Promise.all(batch.map(async (s) =>
 		{
@@ -146,9 +161,12 @@ async function scrape_asura(opts = {})
 			delete s._slug; // clean up the temporary field
 		}));
 
-		console.log(`[Asura] Chapters: ${Math.min(i + CONCURRENCY, series.length)}/${series.length}`);
-		if (i + CONCURRENCY < series.length) await sleep(REQ_DELAY_MS);
+		console.log(`[Asura] Chapters: ${Math.min(i + CONCURRENCY, to_fetch.length)}/${to_fetch.length}`);
+		if (i + CONCURRENCY < to_fetch.length) await sleep(REQ_DELAY_MS);
 	}
+
+	// Clean up _slug from unchanged series too.
+	for (const s of series) delete s._slug;
 
 	console.log(`[Asura] Done. Found ${series.length} series.`);
 	return series;

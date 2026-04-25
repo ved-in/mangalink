@@ -20,7 +20,7 @@
  *     can be reconstructed on the front-end.
  */
 
-const { http_get } = require('../../lib/helpers');
+const { http_get_with_retry } = require('../../lib/helpers');
 
 const API_BASE = 'https://api.asurascans.com/api';
 
@@ -34,7 +34,7 @@ async function fetch_series_page(offset)
 {
 	const url = `${API_BASE}/series?sort=latest&order=desc&limit=20&offset=${offset}`;
 
-	const { status, body } = await http_get(url);
+	const { status, body } = await http_get_with_retry(url);
 	if (status !== 200) throw new Error(`HTTP ${status}`);
 
 	const json = JSON.parse(body);
@@ -53,7 +53,7 @@ async function fetch_chapter_list(slug)
 {
 	try
 	{
-		const { status, body } = await http_get(`${API_BASE}/series/${slug}/chapters`);
+		const { status, body } = await http_get_with_retry(`${API_BASE}/series/${slug}/chapters`);
 		if (status !== 200) return [];
 
 		const json = JSON.parse(body);

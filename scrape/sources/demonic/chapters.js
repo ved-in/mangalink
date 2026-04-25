@@ -1,7 +1,7 @@
 /**
  * scrape/sources/demonic/chapters.js
  *
- * Fetches non-integer chapters for a single Demonic Scans series page.
+ * Fetches non-integer chapters AND status for a single Demonic Scans series page.
  *
  * ── Why only non-integer chapters? ───────────────────────────────────────────
  *
@@ -12,29 +12,31 @@
  * and the chapter number. We only need to explicitly store non-integer chapters
  * (12.5, 0/prologue) because their URLs cannot be guessed from the number alone.
  *
- * ── Extraction ────────────────────────────────────────────────────────────────
+ * ── Status extraction ─────────────────────────────────────────────────────────
  *
- * The series page contains the same <a class="chplinks"> anchors as the listing
- * card, with the same ?manga={id}&chapter={num} href format. We collect all
- * chapter numbers, deduplicate, and filter to non-integers only.
+ * The listing pages don't expose status, but the series page does:
+ *   <li style="...">Status</li>
+ *   <li>Ongoing</li>
+ *
+ * We extract it here during the chapter fetch so we don't need an extra request.
  */
 
 const cheerio = require('cheerio');
-const { http_get, is_non_integer_chapter } = require('../../lib/helpers');
+const { http_get_with_retry, is_non_integer_chapter, normalise_status } = require('../../lib/helpers');
 
 /**
- * Fetch and return non-integer chapters for one Demonic series.
+ * Fetch non-integer chapters and status for one Demonic series.
  *
  * @param {string} series_url  Full URL of the series page.
- * @returns {Promise<Array<{ name: string, chapter_number: number }>>}
- *          Empty array on any network or parse error.
+ * @returns {Promise<{ chapters: Array, status: string|null }>}
+ *          chapters is empty array on error; status is null if not found.
  */
-async function fetch_non_integer_chapters(series_url)
+async function fetch_chapter_data(series_url)
 {
 	try
 	{
-		const { status, body } = await http_get(series_url);
-		if (status !== 200) return [];
+		const { status: http_status, body } = await http_get_with_retry(series_url);
+		if (http_status !== 200) return { chapters: [], status: null };
 
 		const $        = cheerio.load(body);
 		const seen     = new Set();
@@ -56,13 +58,25 @@ async function fetch_non_integer_chapters(series_url)
 			});
 		});
 
-		return chapters;
+		// Extract status: find the <li> that says "Status" then read the next sibling.
+		let series_status = null;
+		$('li').each((_, li) =>
+		{
+			if ($(li).text().trim() === 'Status')
+			{
+				const next_text = $(li).next('li').text().trim();
+				if (next_text) series_status = normalise_status(next_text);
+				return false; // stop iterating
+			}
+		});
+
+		return { chapters, status: series_status };
 	}
 	catch (e)
 	{
 		console.error(`[Demonic] Chapter fetch failed for ${series_url}: ${e.message}`);
-		return [];
+		return { chapters: [], status: null };
 	}
 }
 
-module.exports = { fetch_non_integer_chapters };
+module.exports = { fetch_chapter_data };

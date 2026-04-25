@@ -205,6 +205,7 @@ function parse_chapter_label(text)
 module.exports =
 {
 	http_get,
+	http_get_with_retry: http_get, // alias -- retry logic is built into http_get
 	sleep,
 	decode_html_entities,
 	normalise_title,

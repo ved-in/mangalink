@@ -87,7 +87,7 @@ function build_state(merged, raw_by_src)
 {
 	const state = {};
 
-	// Title-keyed entries: one per unique series, written from the merged array.
+	// Title-keyed entries from the full merged catalogue.
 	for (const series of merged)
 	{
 		if (!series.title) continue;
@@ -100,29 +100,33 @@ function build_state(merged, raw_by_src)
 		};
 	}
 
-	// Slug-keyed entries: one per HTML-scraper series.
-	// These give Demonic/Thunder/Violet/ADK an O(1) lookup by their card slug
-	// rather than having to normalise titles to find their state entry.
-	const HTML_SOURCES = ['Demonic Scans', 'Thunder Scans', 'Violet Scans', 'ADK Scans'];
-
-	for (const src_name of HTML_SOURCES)
+	// Slug-keyed entries: iterate ALL sources from the merged array.
+	// We reconstruct slugs from the sources URLs rather than from raw_by_src
+	// so that series not scraped this run still get a slug key in state.
+	const HTML_SOURCE_PATTERNS =
 	{
-		const list = raw_by_src[src_name] || [];
-		for (const item of list)
+		'Demonic Scans': url => url.replace('https://demonicscans.org/manga/', '').replace(/\/$/, '').toLowerCase(),
+		'Thunder Scans': url => url.match(/\/comics\/([^\/]+)\/?/)?.[1]?.toLowerCase() ?? null,
+		'Violet Scans':  url => url.match(/\/comics\/([^\/]+)\/?/)?.[1]?.toLowerCase() ?? null,
+		// ADK series URLs are https://www.silentquill.net/{slug}/ -- no /manga/ segment.
+		'ADK Scans':     url => url.replace(/^https?:\/\/[^\/]+\//, '').replace(/\/$/, '').toLowerCase() || null,
+	};
+
+	for (const series of merged)
+	{
+		if (!series.sources) continue;
+		for (const [src_name, src_url] of Object.entries(series.sources))
 		{
-			if (!item.slug) continue;
+			const extractor = HTML_SOURCE_PATTERNS[src_name];
+			if (!extractor) continue;
 
-			// Skip if the slug is the same string as the normalised title --
-			// that key already exists from the title-keyed loop above.
-			if (item.slug === normalise_title(item.title)) continue;
+			const slug = extractor(src_url);
+			if (!slug || state[slug]) continue;
 
-			// Skip if this slug key is already set (e.g. same series on two sources).
-			if (state[item.slug]) continue;
-
-			state[item.slug.toLowerCase()] =
+			state[slug] =
 			{
-				max_chapter: item.max_chapter ?? null,
-				status:      item.status      || null,
+				max_chapter: series.max_chapter ?? null,
+				status:      series.status      || null,
 			};
 		}
 	}
