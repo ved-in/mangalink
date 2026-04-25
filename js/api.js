@@ -76,7 +76,7 @@ const API = (() => {
 
 	// Search for manga by title. Loads index.json on first call.
 	// Scoring: exact match = 3, prefix match = 2, substring = 1.
-	// Returns up to 10 results, sorted by score then alphabetically.
+	// Returns up to 25 results, sorted by score then alphabetically.
 	async function search_manga(query)
 	{
 		const index = await _load_index();
@@ -96,8 +96,15 @@ const API = (() => {
 
 		return scored
 			.sort((a, b) => b.score - a.score || a.entry.t.localeCompare(b.entry.t))
-			.slice(0, 10)
+			.slice(0, 25)
 			.map(({ entry }) => _parse_index_entry(entry));
+	}
+
+	async function get_manga(id) {
+		const index = await _load_index();
+		const entry = index.find(e => e.t === id);
+		if (entry) return _parse_index_entry(entry);
+		throw new Error("Manga not found in index");
 	}
 
 	// Fetch the full chapter list for a manga.
@@ -195,17 +202,18 @@ const API = (() => {
 			.trim();
 	}
 
-	// Map a raw status string to one of the four canonical values the UI knows about.
+	// Map a raw status string to one of the five canonical values the UI knows about.
 	function _normalise_status(s)
 	{
 		if (!s) return 'unknown';
 		const l = s.toLowerCase();
+		if (l.includes('dropped')   || l.includes('cancelled') || l.includes('canceled')) return 'dropped';
+		if (l.includes('hiatus'))    return 'hiatus';
 		if (l.includes('ongoing'))   return 'ongoing';
 		if (l.includes('completed')) return 'completed';
-		if (l.includes('hiatus'))    return 'hiatus';
 		return 'unknown';
 	}
 
-	return { search_manga, fetch_chapters };
+	return { search_manga, fetch_chapters, get_manga };
 
 })();

@@ -1,4 +1,34 @@
-# Removed currently cuz im realizing im slamming their websites with scraping every 2 hours
-# Will add updated more efficient workflows and scrape.js which would only do like 2req/s for deep scans (ran every 2 days?)
-# and would mark series with dropped n all to reduce the fetch requests... demonicscans.org has >13k fetch requests sent every 2 hours with the implementation...
-# thats not supporting scanlations, that destroying them...
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+ 
+jobs:
+  quick-update:
+    name: Quick update
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.ACTIONS_PAT }}
+ 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+ 
+      - name: Install dependencies
+        run: npm ci
+ 
+      - name: Run quick scrape
+        run: node scrape/scrape.js --quick
+ 
+      - name: Commit updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/index.json data/chunks/ data/scrape_state.json
+          git diff --cached --quiet || git commit -m "chore: quick update [skip ci]"
+          git push

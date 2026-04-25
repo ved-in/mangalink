@@ -183,18 +183,22 @@ const Modal = (() => {
 		const visited_html = visited ? `<span class="visited_badge">visited</span>` : "";
 		const extra_class  = availability === "not_found" ? " not_found" : availability === "checking" ? " checking" : "";
 
+		let acronym = src.name.split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
+		if (acronym.length < 2) acronym = src.name.substring(0, 2).toUpperCase();
+
 		return `
       <a href="${url}" target="_blank" rel="noopener noreferrer"
          class="source_item${visited ? " visited" : ""}${extra_class}"
          data-site="${src.name}" data-ch="${UI.escape_html(chapter.chapter || "oneshot")}">
-        <div class="source_left">
-          <div class="source_icon">${src.icon}</div>
-          <div class="source_name">${src.name}${note_for_user}</div>
+        <div class="source_icon_wrap">
+          <div class="source_icon text_icon">${acronym}</div>
         </div>
-        <div class="source_right">
-          ${visited_html}
-          ${badge_html}
-          <span style="color:var(--muted);font-size:0.8rem;">-></span>
+        <div class="source_info">
+          <div class="source_name">${src.name}${note_for_user}</div>
+          <div class="source_badges">
+            ${visited_html}
+            ${badge_html}
+          </div>
         </div>
       </a>`;
 	}
@@ -213,7 +217,7 @@ const Modal = (() => {
 	function google_section(manga, chapter) {
 		const q = encodeURIComponent(`${manga.title} chapter ${chapter.chapter || 1} read online`);
 		return `<div class="google_section">
-      <a href="https://www.google.com/search?q=${q}" target="_blank" class="ext_link">Google search -></a>
+      <a href="https://www.google.com/search?q=${q}" target="_blank" class="ext_link">Google search</a>
     </div>`;
 	}
 
