@@ -1,5 +1,1136 @@
 [
  {
+  "title": "ION",
+  "cover": "https://readermc.org/images/thumbnails/ION.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/ION"
+  },
+  "max_chapter": 6,
+  "demonic_id": "10807",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Ipaasha",
+  "cover": "https://readermc.org/images/thumbnails/Ipaasha.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Ipaasha"
+  },
+  "max_chapter": 0,
+  "demonic_id": "10808",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
+  "title": "Ippo",
+  "cover": "https://readermc.org/images/thumbnails/Ippo.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Ippo"
+  },
+  "max_chapter": 1,
+  "demonic_id": "10809",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
+  "title": "Iranai Skill wo Kaitorimasu",
+  "cover": "https://readermc.org/images/thumbnails/Iranai Skill wo Kaitorimasu.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Iranai-Skill-wo-Kaitorimasu"
+  },
+  "max_chapter": 17.1,
+  "demonic_id": "12627",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "17.1",
+     "chapter_number": 17.1
+    },
+    {
+     "name": "16.2",
+     "chapter_number": 16.2
+    },
+    {
+     "name": "16.1",
+     "chapter_number": 16.1
+    }
+   ]
+  }
+ },
+ {
+  "title": "IRIS – Lady with a Smartphone",
+  "cover": "https://readermc.org/images/thumbnails/IRIS – Lady with a Smartphone.jpg",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/IRIS-%25E2%2580%2593-Lady-with-a-Smartphone"
+  },
+  "max_chapter": 148,
+  "demonic_id": "10811",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
+  "title": "Iris – Lady With A Smartphone [ALL CHAPTERS]",
+  "cover": "https://readermc.org/images/thumbnails/Iris – Lady With A Smartphone [ALL CHAPTERS].webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Iris-%25E2%2580%2593-Lady-With-A-Smartphone-%255BALL-CHAPTERS%255D"
+  },
+  "max_chapter": 148,
+  "demonic_id": "11100",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Iris Zero",
+  "cover": "https://readermc.org/images/thumbnails/Iris Zero.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Iris-Zero"
+  },
+  "max_chapter": 43,
+  "demonic_id": "10810",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "38.5",
+     "chapter_number": 38.5
+    },
+    {
+     "name": "34.2",
+     "chapter_number": 34.2
+    },
+    {
+     "name": "33.5",
+     "chapter_number": 33.5
+    },
+    {
+     "name": "33.005",
+     "chapter_number": 33.005
+    },
+    {
+     "name": "32.5",
+     "chapter_number": 32.5
+    },
+    {
+     "name": "32.005",
+     "chapter_number": 32.005
+    },
+    {
+     "name": "27.5",
+     "chapter_number": 27.5
+    },
+    {
+     "name": "27.005",
+     "chapter_number": 27.005
+    },
+    {
+     "name": "21.5",
+     "chapter_number": 21.5
+    },
+    {
+     "name": "20.5",
+     "chapter_number": 20.5
+    }
+   ]
+  }
+ },
+ {
+  "title": "Iriya no Sora, UFO no Natsu",
+  "cover": "https://readermc.org/images/thumbnails/Iriya no Sora, UFO no Natsu.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Iriya-no-Sora%252C-UFO-no-Natsu"
+  },
+  "max_chapter": 1,
+  "demonic_id": "10812",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "IRL Quest",
+  "cover": "https://cdn.flamecomics.xyz/uploads/images/series/57/thumbnail.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Flame Comics": "https://flamecomics.xyz/series/57"
+  },
+  "flame_series_id": 57,
+  "max_chapter": 203,
+  "chapters": {
+   "Flame Comics": [
+    {
+     "name": "193",
+     "chapter_slug": "e7a9d6c6c5d5211b"
+    },
+    {
+     "name": "192",
+     "chapter_slug": "48916a2a71f340b1"
+    },
+    {
+     "name": "191",
+     "chapter_slug": "d5c70648bbfa0a2f"
+    },
+    {
+     "name": "190",
+     "chapter_slug": "0213bbe1f2360045"
+    },
+    {
+     "name": "189",
+     "chapter_slug": "2d51d01b6ea0f13b"
+    },
+    {
+     "name": "188",
+     "chapter_slug": "d6459ba4e717a14d"
+    },
+    {
+     "name": "187",
+     "chapter_slug": "226dfba732b666c8"
+    },
+    {
+     "name": "186",
+     "chapter_slug": "b5511d80874e3052"
+    },
+    {
+     "name": "185",
+     "chapter_slug": "f4e8ab7b7820d47c"
+    },
+    {
+     "name": "184",
+     "chapter_slug": "30bd82863740d542"
+    },
+    {
+     "name": "183",
+     "chapter_slug": "fdc3f13c308ef13d"
+    },
+    {
+     "name": "182",
+     "chapter_slug": "48582250a6b7ff23"
+    },
+    {
+     "name": "181",
+     "chapter_slug": "7d154d58cde47d01"
+    },
+    {
+     "name": "180",
+     "chapter_slug": "b2bdcf34c0bfa5b3"
+    },
+    {
+     "name": "179",
+     "chapter_slug": "4e1180947c2a47e8"
+    },
+    {
+     "name": "178",
+     "chapter_slug": "77decacd80af7601"
+    },
+    {
+     "name": "177",
+     "chapter_slug": "d7a4d3240e5eaca5"
+    },
+    {
+     "name": "176",
+     "chapter_slug": "53187b5d5ecc6b7c"
+    },
+    {
+     "name": "175",
+     "chapter_slug": "dccbdeafa3c733f6"
+    },
+    {
+     "name": "174",
+     "chapter_slug": "c17daf393ee672ec"
+    },
+    {
+     "name": "173",
+     "chapter_slug": "ee81345b2c9d0797"
+    },
+    {
+     "name": "172",
+     "chapter_slug": "eeaf60050b9ac0ef"
+    },
+    {
+     "name": "171",
+     "chapter_slug": "2b48c4303ea7e8e7"
+    },
+    {
+     "name": "170",
+     "chapter_slug": "d7c678f22d61be7f"
+    },
+    {
+     "name": "169",
+     "chapter_slug": "d7346bba020fa602"
+    },
+    {
+     "name": "168",
+     "chapter_slug": "3bd749188ec23f34"
+    },
+    {
+     "name": "167",
+     "chapter_slug": "be8c4375c8cfb93c"
+    },
+    {
+     "name": "166",
+     "chapter_slug": "dc1ca8f8cc4fb2d1"
+    },
+    {
+     "name": "165",
+     "chapter_slug": "edc1ce34b6ba778f"
+    },
+    {
+     "name": "164.1",
+     "chapter_slug": "718f890b4699f8e7"
+    },
+    {
+     "name": "164.09",
+     "chapter_slug": "4fe020e45734d003"
+    },
+    {
+     "name": "164.08",
+     "chapter_slug": "45fe40c3f7ba757b"
+    },
+    {
+     "name": "164.07",
+     "chapter_slug": "4497171b6a4a95bf"
+    },
+    {
+     "name": "164.06",
+     "chapter_slug": "1fd40121758c2859"
+    },
+    {
+     "name": "164.05",
+     "chapter_slug": "9f160212fb51dfc1"
+    },
+    {
+     "name": "164.04",
+     "chapter_slug": "f225355f286b095d"
+    },
+    {
+     "name": "164.03",
+     "chapter_slug": "f1434f773fd4e116"
+    },
+    {
+     "name": "164.02",
+     "chapter_slug": "f656575d5132bc0f"
+    },
+    {
+     "name": "164.01",
+     "chapter_slug": "516b2f56078236c2"
+    },
+    {
+     "name": "164",
+     "chapter_slug": "bec43eb07ca5e6c3"
+    },
+    {
+     "name": "163",
+     "chapter_slug": "d5db6b61e5878f7c"
+    },
+    {
+     "name": "162",
+     "chapter_slug": "7505f1ddf4d58eff"
+    },
+    {
+     "name": "161",
+     "chapter_slug": "5ec5d8b013f87e0e"
+    },
+    {
+     "name": "160",
+     "chapter_slug": "f84dc99f6e6ee738"
+    },
+    {
+     "name": "159",
+     "chapter_slug": "385ef1a9c36a6865"
+    },
+    {
+     "name": "158",
+     "chapter_slug": "849aa9e98c59a776"
+    },
+    {
+     "name": "157",
+     "chapter_slug": "73ecbfba0b38d8ac"
+    },
+    {
+     "name": "156",
+     "chapter_slug": "a998a19346d4112d"
+    },
+    {
+     "name": "155",
+     "chapter_slug": "4a18dc041937fb51"
+    },
+    {
+     "name": "154",
+     "chapter_slug": "c2f03aabce7ce881"
+    },
+    {
+     "name": "153",
+     "chapter_slug": "a334ab61296b22d6"
+    },
+    {
+     "name": "152",
+     "chapter_slug": "9524adb8972987da"
+    },
+    {
+     "name": "151",
+     "chapter_slug": "d83f6052fea61d2c"
+    },
+    {
+     "name": "150",
+     "chapter_slug": "fc17b3bb0a5b4027"
+    },
+    {
+     "name": "149",
+     "chapter_slug": "f1bc64f1ac7c0313"
+    },
+    {
+     "name": "148",
+     "chapter_slug": "143f60cadb159036"
+    },
+    {
+     "name": "147",
+     "chapter_slug": "e74d203abcc68a48"
+    },
+    {
+     "name": "146",
+     "chapter_slug": "8e38375a567e7464"
+    },
+    {
+     "name": "145",
+     "chapter_slug": "e7ac6b0186c319ed"
+    },
+    {
+     "name": "144",
+     "chapter_slug": "01b77565a7ea82ae"
+    },
+    {
+     "name": "143",
+     "chapter_slug": "f5458408a322c098"
+    },
+    {
+     "name": "142",
+     "chapter_slug": "6913ee26247e7396"
+    },
+    {
+     "name": "141",
+     "chapter_slug": "f9aad0a1c508c5bb"
+    },
+    {
+     "name": "140",
+     "chapter_slug": "57fad97f473ac040"
+    },
+    {
+     "name": "139",
+     "chapter_slug": "d6803b588e7bcf3d"
+    },
+    {
+     "name": "138",
+     "chapter_slug": "d841e7343c8bc8b5"
+    },
+    {
+     "name": "137",
+     "chapter_slug": "241ed1b4836c2053"
+    },
+    {
+     "name": "136",
+     "chapter_slug": "c2146d33b67051fe"
+    },
+    {
+     "name": "135",
+     "chapter_slug": "0a2190c41b21a570"
+    },
+    {
+     "name": "134",
+     "chapter_slug": "4a50773d08bdb8df"
+    },
+    {
+     "name": "133",
+     "chapter_slug": "cebf4a1fa0ae0554"
+    },
+    {
+     "name": "132",
+     "chapter_slug": "6dbef872ad74626a"
+    },
+    {
+     "name": "131",
+     "chapter_slug": "b97ac7955e552dc5"
+    },
+    {
+     "name": "130",
+     "chapter_slug": "8081b0e19aea5928"
+    },
+    {
+     "name": "129",
+     "chapter_slug": "74c297114258c0cb"
+    },
+    {
+     "name": "128",
+     "chapter_slug": "72fc0eded5aebd0a"
+    },
+    {
+     "name": "127",
+     "chapter_slug": "737941308e04f1dc"
+    },
+    {
+     "name": "126",
+     "chapter_slug": "19555db47dcb3752"
+    },
+    {
+     "name": "125",
+     "chapter_slug": "87ab988091ab4ca0"
+    },
+    {
+     "name": "124",
+     "chapter_slug": "35c70bd73b06e065"
+    },
+    {
+     "name": "123",
+     "chapter_slug": "0855f72fd10eceab"
+    },
+    {
+     "name": "122",
+     "chapter_slug": "5ac14dc96fb2a22f"
+    },
+    {
+     "name": "121",
+     "chapter_slug": "3ffa983f7d90687b"
+    },
+    {
+     "name": "120",
+     "chapter_slug": "05e886b36c58c5a7"
+    },
+    {
+     "name": "119",
+     "chapter_slug": "715434fb65e94442"
+    },
+    {
+     "name": "118",
+     "chapter_slug": "1508246f726eff40"
+    },
+    {
+     "name": "117",
+     "chapter_slug": "8e3ba64eafabbec1"
+    },
+    {
+     "name": "116",
+     "chapter_slug": "37cf87f0df7fe7d7"
+    },
+    {
+     "name": "115",
+     "chapter_slug": "67ea416711de1c3d"
+    },
+    {
+     "name": "114",
+     "chapter_slug": "800ba9e7cf8e17e6"
+    },
+    {
+     "name": "113",
+     "chapter_slug": "63f09aa01b5a944e"
+    },
+    {
+     "name": "112",
+     "chapter_slug": "8b02c539005dbd83"
+    },
+    {
+     "name": "111",
+     "chapter_slug": "dc87712d2d7e0d82"
+    },
+    {
+     "name": "110",
+     "chapter_slug": "51b0d68a973a1392"
+    },
+    {
+     "name": "109",
+     "chapter_slug": "41d7a3f9fd647186"
+    },
+    {
+     "name": "108",
+     "chapter_slug": "d7d611064bcef02d"
+    },
+    {
+     "name": "107",
+     "chapter_slug": "794bbfa92ff6d9e8"
+    },
+    {
+     "name": "106",
+     "chapter_slug": "0ac3e1bfefecefef"
+    },
+    {
+     "name": "105",
+     "chapter_slug": "18bd386c56d18740"
+    },
+    {
+     "name": "104",
+     "chapter_slug": "7f9b0771c77aa1bd"
+    },
+    {
+     "name": "103",
+     "chapter_slug": "be32f4a2a7a6be77"
+    },
+    {
+     "name": "102",
+     "chapter_slug": "c777a2fa1b06a4b6"
+    },
+    {
+     "name": "101",
+     "chapter_slug": "1cbf16e228fc5ce8"
+    },
+    {
+     "name": "100",
+     "chapter_slug": "f15193d9edd5c5f4"
+    },
+    {
+     "name": "99",
+     "chapter_slug": "57ae372351141858"
+    },
+    {
+     "name": "98",
+     "chapter_slug": "d881e1659a94fab8"
+    },
+    {
+     "name": "97",
+     "chapter_slug": "6dec6969b4584468"
+    },
+    {
+     "name": "96",
+     "chapter_slug": "9903eeaae66ad3a2"
+    },
+    {
+     "name": "95",
+     "chapter_slug": "c4b2ce92eb7d17dc"
+    },
+    {
+     "name": "94",
+     "chapter_slug": "5d87d09146bfe577"
+    },
+    {
+     "name": "93",
+     "chapter_slug": "683f936c38456a86"
+    },
+    {
+     "name": "92",
+     "chapter_slug": "280f8f37684f052f"
+    },
+    {
+     "name": "91",
+     "chapter_slug": "7c0e3d8b6c0bc850"
+    },
+    {
+     "name": "90",
+     "chapter_slug": "d312466c5a47a62a"
+    },
+    {
+     "name": "89",
+     "chapter_slug": "246584041b8b32ef"
+    },
+    {
+     "name": "88",
+     "chapter_slug": "b0e64bcf8a2f2915"
+    },
+    {
+     "name": "87",
+     "chapter_slug": "42b0c56328f5f738"
+    },
+    {
+     "name": "86",
+     "chapter_slug": "2605ad06e8feda8b"
+    },
+    {
+     "name": "85",
+     "chapter_slug": "ef5d0602162535ce"
+    },
+    {
+     "name": "84",
+     "chapter_slug": "f09bfddf2fabad77"
+    },
+    {
+     "name": "83",
+     "chapter_slug": "00f3d04dbd90a791"
+    },
+    {
+     "name": "82",
+     "chapter_slug": "30363e2c9f71e638"
+    },
+    {
+     "name": "81",
+     "chapter_slug": "0b3ea99a4d0daa10"
+    },
+    {
+     "name": "80",
+     "chapter_slug": "54fd42f763d567c7"
+    },
+    {
+     "name": "79",
+     "chapter_slug": "d22444d270796829"
+    },
+    {
+     "name": "78",
+     "chapter_slug": "b0fbc5fc5d14aa3d"
+    },
+    {
+     "name": "77",
+     "chapter_slug": "879b35daff50f403"
+    },
+    {
+     "name": "76",
+     "chapter_slug": "2542a8c3f0b07129"
+    },
+    {
+     "name": "75",
+     "chapter_slug": "611da24bc03e76d6"
+    },
+    {
+     "name": "74",
+     "chapter_slug": "e91eeed40583fb30"
+    },
+    {
+     "name": "73",
+     "chapter_slug": "d153399bad254df5"
+    },
+    {
+     "name": "72",
+     "chapter_slug": "ed7fe44bc049c4ca"
+    },
+    {
+     "name": "71",
+     "chapter_slug": "11e8622a0fd0fe97"
+    },
+    {
+     "name": "70",
+     "chapter_slug": "65b04adcb9aee7de"
+    },
+    {
+     "name": "69",
+     "chapter_slug": "53d7acd4d8b9b545"
+    },
+    {
+     "name": "68",
+     "chapter_slug": "762e5eac7f83de45"
+    },
+    {
+     "name": "67",
+     "chapter_slug": "7bafb3f22437dc54"
+    },
+    {
+     "name": "66",
+     "chapter_slug": "bd9574fbca5554e0"
+    },
+    {
+     "name": "65",
+     "chapter_slug": "34b9bdd71e66ef2a"
+    },
+    {
+     "name": "64",
+     "chapter_slug": "ed64787b73c54186"
+    },
+    {
+     "name": "63",
+     "chapter_slug": "b8845cc73f8b0645"
+    },
+    {
+     "name": "62",
+     "chapter_slug": "21652992e16b6538"
+    },
+    {
+     "name": "61",
+     "chapter_slug": "3e5102687c922fbf"
+    },
+    {
+     "name": "60",
+     "chapter_slug": "e32f6d5d273f6e2c"
+    },
+    {
+     "name": "59",
+     "chapter_slug": "fc4d8ae8c24600c2"
+    },
+    {
+     "name": "58",
+     "chapter_slug": "c9735743eccf3cb7"
+    },
+    {
+     "name": "57",
+     "chapter_slug": "aa17629eb9375f39"
+    },
+    {
+     "name": "56",
+     "chapter_slug": "41efa3657bfd77f1"
+    },
+    {
+     "name": "55",
+     "chapter_slug": "32c477a6934ef67c"
+    },
+    {
+     "name": "54",
+     "chapter_slug": "365af8c4f8b98528"
+    },
+    {
+     "name": "53",
+     "chapter_slug": "7ffa4fe75bd72dba"
+    },
+    {
+     "name": "52",
+     "chapter_slug": "f09cc0fbcf9ae5ff"
+    },
+    {
+     "name": "51",
+     "chapter_slug": "a56bb4043a4ce32e"
+    },
+    {
+     "name": "50",
+     "chapter_slug": "8b92f88a795ef7ea"
+    },
+    {
+     "name": "49",
+     "chapter_slug": "3b0ca32de7ff9872"
+    },
+    {
+     "name": "48",
+     "chapter_slug": "2eeac03cc3608e1d"
+    },
+    {
+     "name": "47",
+     "chapter_slug": "1ac8e3cfee1d0946"
+    },
+    {
+     "name": "46",
+     "chapter_slug": "23ee49dc4691b163"
+    },
+    {
+     "name": "45",
+     "chapter_slug": "10fba2a7b7fb9823"
+    },
+    {
+     "name": "44",
+     "chapter_slug": "c487856f820f2472"
+    },
+    {
+     "name": "43",
+     "chapter_slug": "12c564252e2a6c53"
+    },
+    {
+     "name": "42",
+     "chapter_slug": "0e4bab91d6b5e087"
+    },
+    {
+     "name": "41",
+     "chapter_slug": "1921c045065662d2"
+    },
+    {
+     "name": "40",
+     "chapter_slug": "f413c39ba963694a"
+    },
+    {
+     "name": "39",
+     "chapter_slug": "b1789f069d3fd876"
+    },
+    {
+     "name": "38",
+     "chapter_slug": "633f3597403bb687"
+    },
+    {
+     "name": "37",
+     "chapter_slug": "a636ddf2747060ab"
+    },
+    {
+     "name": "36",
+     "chapter_slug": "54bc0c276621a790"
+    },
+    {
+     "name": "35",
+     "chapter_slug": "47a62660245a7d44"
+    },
+    {
+     "name": "34",
+     "chapter_slug": "5e4d889f7d19ffdc"
+    },
+    {
+     "name": "33",
+     "chapter_slug": "3c0c04874b8c048b"
+    },
+    {
+     "name": "32",
+     "chapter_slug": "f8bd0a5656e6f29b"
+    },
+    {
+     "name": "31",
+     "chapter_slug": "7533da4c1c19a250"
+    },
+    {
+     "name": "30",
+     "chapter_slug": "7bf839d6d1c2cc19"
+    },
+    {
+     "name": "29",
+     "chapter_slug": "ffbfde06d31c5f3d"
+    },
+    {
+     "name": "28",
+     "chapter_slug": "866ea5886f24ab41"
+    },
+    {
+     "name": "27",
+     "chapter_slug": "89a4c33f53a7c76c"
+    },
+    {
+     "name": "26",
+     "chapter_slug": "4f108bbb7ddee48d"
+    },
+    {
+     "name": "25",
+     "chapter_slug": "1009e3a5bd5f5da9"
+    },
+    {
+     "name": "24",
+     "chapter_slug": "0e38f52c77773eea"
+    },
+    {
+     "name": "23",
+     "chapter_slug": "4c7a4fce688ba71c"
+    },
+    {
+     "name": "22",
+     "chapter_slug": "6dea2c51e9ff79b6"
+    },
+    {
+     "name": "21",
+     "chapter_slug": "67862f301e500ab8"
+    },
+    {
+     "name": "20",
+     "chapter_slug": "8960dbc8ce4606e2"
+    },
+    {
+     "name": "19",
+     "chapter_slug": "b7af4b8eca093138"
+    },
+    {
+     "name": "18",
+     "chapter_slug": "ffaedc434c47efd0"
+    },
+    {
+     "name": "17",
+     "chapter_slug": "fb360594707c55c0"
+    },
+    {
+     "name": "16",
+     "chapter_slug": "ebf62e3f76f59d73"
+    },
+    {
+     "name": "15",
+     "chapter_slug": "4087602c21e02df9"
+    },
+    {
+     "name": "14",
+     "chapter_slug": "97cfe50ac5d941f7"
+    },
+    {
+     "name": "13",
+     "chapter_slug": "a03c7b8eed48fd95"
+    },
+    {
+     "name": "12",
+     "chapter_slug": "3b89550691f18c24"
+    },
+    {
+     "name": "11",
+     "chapter_slug": "711a38ff303b41d3"
+    },
+    {
+     "name": "10",
+     "chapter_slug": "4860580601a78585"
+    },
+    {
+     "name": "9",
+     "chapter_slug": "a18da01b94847678"
+    },
+    {
+     "name": "8",
+     "chapter_slug": "7c28611c41416d89"
+    },
+    {
+     "name": "7",
+     "chapter_slug": "2293899dbc3aafc2"
+    },
+    {
+     "name": "6",
+     "chapter_slug": "c19d3e3bdbdbc354"
+    },
+    {
+     "name": "5",
+     "chapter_slug": "b6a5f453c9b82b16"
+    },
+    {
+     "name": "4",
+     "chapter_slug": "dca3a31bd38607ce"
+    },
+    {
+     "name": "3",
+     "chapter_slug": "21f73a977371f5dc"
+    },
+    {
+     "name": "2",
+     "chapter_slug": "070962c4962f6e72"
+    },
+    {
+     "name": "1",
+     "chapter_slug": "6c35d20862e3950a"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Iron Knight",
+  "cover": "https://readermc.org/images/thumbnails/Iron Knight.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Iron-Knight"
+  },
+  "max_chapter": 17,
+  "demonic_id": "10813",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "5.005",
+     "chapter_number": 5.005
+    },
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
+  "title": "Iron Ladies",
+  "cover": "https://readermc.org/images/thumbnails/Iron Ladies.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Iron-Ladies"
+  },
+  "max_chapter": 776,
+  "demonic_id": "91",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "464.5",
+     "chapter_number": 464.5
+    },
+    {
+     "name": "461.5",
+     "chapter_number": 461.5
+    },
+    {
+     "name": "308.42",
+     "chapter_number": 308.42
+    },
+    {
+     "name": "308.1",
+     "chapter_number": 308.1
+    },
+    {
+     "name": "308.01",
+     "chapter_number": 308.01
+    },
+    {
+     "name": "262.5",
+     "chapter_number": 262.5
+    },
+    {
+     "name": "35.5",
+     "chapter_number": 35.5
+    }
+   ]
+  }
+ },
+ {
+  "title": "Iron Ladies: Saint Tooka",
+  "cover": "https://readermc.org/images/thumbnails/Iron Ladies  Saint Tooka.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Iron-Ladies%253A-Saint-Tooka"
+  },
+  "max_chapter": 3,
+  "demonic_id": "1012",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Iron Lungs",
+  "cover": "https://readermc.org/images/thumbnails/Iron Lungs.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Iron-Lungs"
+  },
+  "max_chapter": 5,
+  "demonic_id": "1222",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Is a Mother in Her 30s Like Me Alright?",
+  "cover": "https://readermc.org/images/thumbnails/Is a Mother in Her 30s Like Me Alright .webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Is-a-Mother-in-Her-30s-Like-Me-Alright%253F"
+  },
+  "max_chapter": 52,
+  "demonic_id": "11357",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "48.5",
+     "chapter_number": 48.5
+    },
+    {
+     "name": "44.5",
+     "chapter_number": 44.5
+    },
+    {
+     "name": "42.5",
+     "chapter_number": 42.5
+    },
+    {
+     "name": "25.5",
+     "chapter_number": 25.5
+    },
+    {
+     "name": "21.5",
+     "chapter_number": 21.5
+    },
+    {
+     "name": "18.5",
+     "chapter_number": 18.5
+    },
+    {
+     "name": "13.5",
+     "chapter_number": 13.5
+    }
+   ]
+  }
+ },
+ {
   "title": "Is It Odd That I Became an Adventurer Even If I Graduated From the Witchcraft Institute?",
   "cover": "https://readermc.org/images/thumbnails/Is It Odd That I Became an Adventurer Even If I Graduated From the Witchcraft Institute .webp",
   "status": null,
@@ -39,12 +1170,12 @@
  },
  {
   "title": "Is It Okay for a Delusional Sister to Fall in Love with a Young Monk?",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/12/247563788202.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201680%202400'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/is-it-okay-for-a-delusional-sister-to-fall-in-love-with-a-young-monk/"
   },
-  "max_chapter": 14,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": [
     {
@@ -61,7 +1192,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/is-it-really-okay-to-be-loved-this-much/"
   },
-  "max_chapter": 30,
+  "max_chapter": 31,
   "chapters": {
    "Violet Scans": []
   }
@@ -1858,12 +2989,12 @@
  },
  {
   "title": "Isekai Love Hotel: This Room is a Harem",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/12/isekai-love-hotel-this-room-is-a-harem-cover-1767102165.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201381%201920'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/isekai-love-hotel-this-room-is-a-harem/"
   },
-  "max_chapter": 5,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": []
   }
@@ -1945,10 +3076,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Isekai-ni-Otosareta%25E2%2580%25A6-Jouka-wa-Kihon%2521"
   },
-  "max_chapter": 32,
+  "max_chapter": 33.1,
   "demonic_id": "11412",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "33.1",
+     "chapter_number": 33.1
+    },
     {
      "name": "30.2",
      "chapter_number": 30.2
@@ -2128,7 +3263,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Isekai-Nonbiri-Nouka"
   },
-  "max_chapter": 293,
+  "max_chapter": 300,
   "demonic_id": "12447",
   "chapters": {
    "Demonic Scans": [
@@ -2162,7 +3297,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Isekai-Ryouridou"
   },
-  "max_chapter": 69,
+  "max_chapter": 71,
   "demonic_id": "12754",
   "chapters": {
    "Demonic Scans": [
@@ -2925,10 +4060,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Isshun-de-Chiryou-shiteita-no-ni-Yakudatazu-to-Tsuihousareta-Tensai-Chiyushi%252C-Yami-Healer-to-shite-Tanoshiku-Ikiru"
   },
-  "max_chapter": 30.3,
+  "max_chapter": 31.1,
   "demonic_id": "13371",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "31.1",
+     "chapter_number": 31.1
+    },
     {
      "name": "30.3",
      "chapter_number": 30.3
@@ -3515,12 +4654,12 @@
  },
  {
   "title": "It Turns Out that I have a Fiancée, but She is the Famous “Villainess” of the School. What Should I Do?",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/06/Cover_finace2.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%203456%204928'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/it-turns-out-that-i-have-a-fiancee-but-she-is-the-famous-villainess-of-the-school-what-should-i-do/"
   },
-  "max_chapter": 12.2,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": [
     {
@@ -3597,7 +4736,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/IT-TURNS-OUT-THAT-I-HAVE-BEEN-INVINCIBLE-FOR-A-LONG-TIME"
   },
-  "max_chapter": 122,
+  "max_chapter": 193,
   "demonic_id": "12753",
   "chapters": {
    "Demonic Scans": [
@@ -4659,7 +5798,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/It%2527s-voice-phishing%252C-but-it%2527s-a-life-reversal"
   },
-  "max_chapter": 77,
+  "max_chapter": 79,
   "demonic_id": "12572",
   "chapters": {
    "Demonic Scans": []
@@ -5496,10 +6635,18 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/iyoubinbou%252C-Jou-wo-Tateru-%25252D-Kaitaku-Gakuen-no-Rettousei-na-no-ni%252C-Joukyuu%25252Dshoku-no-Skill-to-Mahou-ga-Subete-Tsukaemasu"
   },
-  "max_chapter": 37,
+  "max_chapter": 39.2,
   "demonic_id": "11548",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "39.2",
+     "chapter_number": 39.2
+    },
+    {
+     "name": "39.1",
+     "chapter_number": 39.1
+    },
     {
      "name": "31.2",
      "chapter_number": 31.2
@@ -5732,7 +6879,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Jade-of-the-Eight-Gates"
   },
-  "max_chapter": 41,
+  "max_chapter": 42,
   "demonic_id": "13426",
   "chapters": {
    "Demonic Scans": []
@@ -8086,16 +9233,7 @@
   "max_chapter": 265,
   "demonic_id": "10970",
   "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "95.002",
-     "chapter_number": 95.002
-    },
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
+   "Demonic Scans": []
   }
  },
  {
@@ -9635,12 +10773,12 @@
  },
  {
   "title": "Jukai No Majo",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/06/172_upscayl_2x_digital-art-4x.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%20980'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/jukai-no-majo/"
   },
-  "max_chapter": 1,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": []
   }
@@ -9808,7 +10946,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Jungle-Juice",
    "Flame Comics": "https://flamecomics.xyz/series/24"
   },
-  "max_chapter": 198,
+  "max_chapter": 200,
   "demonic_id": "1138",
   "chapters": {
    "Demonic Scans": [
@@ -9822,6 +10960,14 @@
     }
    ],
    "Flame Comics": [
+    {
+     "name": "199",
+     "chapter_slug": "721c70c43435e8d1"
+    },
+    {
+     "name": "198",
+     "chapter_slug": "b3b80dcd57b21088"
+    },
     {
      "name": "197",
      "chapter_slug": "66fa9d2e7a1b2a5a"
@@ -10642,7 +11788,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Just-a-Cat"
   },
-  "max_chapter": 56,
+  "max_chapter": 57,
   "demonic_id": "13146",
   "chapters": {
    "Demonic Scans": []
@@ -10655,7 +11801,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Just-Graduated-into-the-Apocalypse%253A-Starting-with-Trillions-as-a-Tycoon"
   },
-  "max_chapter": 8,
+  "max_chapter": 10,
   "demonic_id": "13627",
   "chapters": {
    "Demonic Scans": []
@@ -10711,7 +11857,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Justice-Served"
   },
-  "max_chapter": 56,
+  "max_chapter": 58,
   "demonic_id": "12792",
   "chapters": {
    "Demonic Scans": [
@@ -10874,11 +12020,15 @@
    "Demonic Scans": "https://demonicscans.org/manga/Juvenile-Prison",
    "Flame Comics": "https://flamecomics.xyz/series/140"
   },
-  "max_chapter": 92,
+  "max_chapter": 93,
   "demonic_id": "12373",
   "chapters": {
    "Demonic Scans": [],
    "Flame Comics": [
+    {
+     "name": "90",
+     "chapter_slug": "d873012efe891c2e"
+    },
     {
      "name": "89",
      "chapter_slug": "e41901eec569b006"
@@ -11241,12 +12391,12 @@
  },
  {
   "title": "Jyanome-san Wants to Smile!",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/08/Eres_un_disenador_202604121347.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201792%202400'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/jyanome-san-wants-to-smile/"
   },
-  "max_chapter": 5,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": []
   }
@@ -12302,7 +13452,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Kagurabachi"
   },
-  "max_chapter": 118,
+  "max_chapter": 119,
   "demonic_id": "12007",
   "chapters": {
    "Demonic Scans": [
@@ -13951,7 +15101,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Kaiten-no-Albus"
   },
-  "max_chapter": 85,
+  "max_chapter": 86,
   "demonic_id": "12927",
   "chapters": {
    "Demonic Scans": []
@@ -15243,7 +16393,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Kamigami-no-Kennou-wo-Ayatsurishi-Mono-%257ENouryoku-Suuchi-%25220%2522-de-Sagesumareteiru-Ore-da-ga%252C-Jitsu-wa-Sekai-Saikyou-no-Ikkaku%257E"
   },
-  "max_chapter": 27,
+  "max_chapter": 28,
   "demonic_id": "13495",
   "chapters": {
    "Demonic Scans": []
@@ -16050,7 +17200,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Kanan%25252Dsama-wa-Akumade-Choroi"
   },
-  "max_chapter": 175,
+  "max_chapter": 176,
   "demonic_id": "11469",
   "chapters": {
    "Demonic Scans": [
@@ -16549,7 +17699,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Kanojo%252C-Okarishimasu"
   },
-  "max_chapter": 421,
+  "max_chapter": 422,
   "demonic_id": "11406",
   "chapters": {
    "Demonic Scans": [
@@ -18276,7 +19426,7 @@
  },
  {
   "title": "Kariel the Warrior",
-  "cover": "https://en-thunderscans.com/wp-content/uploads/2025/08/2025-08-06-06-47-28-1754506048147-207x300.jpg",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2025/08/2026-04-24-07-52-38-1777060358817-207x300.webp",
   "status": null,
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/kariel-the-warrior/"
@@ -19062,10 +20212,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Kaya%25252Dchan-wa-kowakunai"
   },
-  "max_chapter": 46.1,
+  "max_chapter": 46.2,
   "demonic_id": "11537",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "46.2",
+     "chapter_number": 46.2
+    },
     {
      "name": "46.1",
      "chapter_number": 46.1
@@ -20286,7 +21440,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Kengan-Omega"
   },
-  "max_chapter": 350,
+  "max_chapter": 352,
   "demonic_id": "2251",
   "chapters": {
    "Demonic Scans": [
@@ -20983,8 +22137,8 @@
   "chapters": {
    "Demonic Scans": [
     {
-     "name": "30.5",
-     "chapter_number": 30.5
+     "name": "30.005",
+     "chapter_number": 30.005
     }
    ]
   }
@@ -21107,7 +22261,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Kidnapped-Dragons",
    "Thunder Scans": "https://en-thunderscans.com/comics/kidnapped-dragons/"
   },
-  "max_chapter": 37,
+  "max_chapter": 39,
   "chapters": {
    "Asura Scans": [],
    "Demonic Scans": [],
@@ -21186,7 +22340,20 @@
   "max_chapter": 9,
   "demonic_id": "2285",
   "chapters": {
-   "Demonic Scans": []
+   "Demonic Scans": [
+    {
+     "name": "6.005",
+     "chapter_number": 6.005
+    },
+    {
+     "name": "1.005",
+     "chapter_number": 1.005
+    },
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
   }
  },
  {
@@ -21336,7 +22503,12 @@
   "max_chapter": 69,
   "demonic_id": "2295",
   "chapters": {
-   "Demonic Scans": []
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
   }
  },
  {
@@ -21398,7 +22570,12 @@
   "max_chapter": 30,
   "demonic_id": "2299",
   "chapters": {
-   "Demonic Scans": []
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
   }
  },
  {
@@ -21727,12 +22904,7 @@
   "max_chapter": 4,
   "demonic_id": "2325",
   "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
+   "Demonic Scans": []
   }
  },
  {
@@ -22807,10 +23979,18 @@
     {
      "name": "Chapter 24",
      "chapter_slug": "chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "chapter-25"
+    },
+    {
+     "name": "Chapter 25.5",
+     "chapter_slug": "chapter-255"
     }
    ]
   },
-  "max_chapter": 24
+  "max_chapter": 255
  },
  {
   "title": "Killer Killer",
@@ -22837,7 +24017,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Killer-Peter"
   },
-  "max_chapter": 125,
+  "max_chapter": 126,
   "demonic_id": "11895",
   "chapters": {
    "Demonic Scans": [
@@ -22855,7 +24035,7 @@
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/killer-pietro"
   },
-  "max_chapter": 125,
+  "max_chapter": 126,
   "chapters": {
    "Asura Scans": [
     {
@@ -22958,7 +24138,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Kim-Ohjin%2527s-Adventures-with-Strange-Animals"
   },
-  "max_chapter": 50,
+  "max_chapter": 51,
   "demonic_id": "13202",
   "chapters": {
    "Demonic Scans": []
@@ -24950,7 +26130,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/King-of-Beasts"
   },
-  "max_chapter": 47,
+  "max_chapter": 48,
   "demonic_id": "13375",
   "chapters": {
    "Demonic Scans": [
@@ -25830,7 +27010,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Kingdom"
   },
-  "max_chapter": 871,
+  "max_chapter": 872,
   "demonic_id": "68",
   "chapters": {
    "Demonic Scans": [
@@ -27378,6 +28558,10 @@
     {
      "name": "Chapter 39",
      "chapter_slug": "chapter-39"
+    },
+    {
+     "name": "Chapter 40",
+     "chapter_slug": "chapter-40"
     }
    ]
   },
@@ -27439,440 +28623,5 @@
     }
    ]
   }
- },
- {
-  "title": "Kiss Shite! Esper Girl",
-  "cover": "https://readermc.org/images/thumbnails/Kiss Shite! Esper Girl.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Kiss-Shite%2521-Esper-Girl"
-  },
-  "max_chapter": 5,
-  "demonic_id": "2550",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "3.001",
-     "chapter_number": 3.001
-    }
-   ]
-  }
- },
- {
-  "title": "Kiss Sixth Senses",
-  "cover": "https://readermc.org/images/thumbnails/Kiss Sixth Senses.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Kiss-Sixth-Senses"
-  },
-  "max_chapter": 97,
-  "demonic_id": "2551",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Kiss to Koukai",
-  "cover": "https://readermc.org/images/thumbnails/Kiss to Koukai.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Kiss-to-Koukai"
-  },
-  "max_chapter": 5,
-  "demonic_id": "2553",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Kiss to My Prince",
-  "cover": "https://readermc.org/images/thumbnails/Kiss to My Prince.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Kiss-to-My-Prince"
-  },
-  "max_chapter": 22.1,
-  "demonic_id": "2554",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "22.1",
-     "chapter_number": 22.1
-    },
-    {
-     "name": "4.1",
-     "chapter_number": 4.1
-    }
-   ]
-  }
- },
- {
-  "title": "Kiss Tokidoki Kiss Tokoro ni Yori Kiss",
-  "cover": "https://readermc.org/images/thumbnails/Kiss Tokidoki Kiss Tokoro ni Yori Kiss.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Kiss-Tokidoki-Kiss-Tokoro-ni-Yori-Kiss"
-  },
-  "max_chapter": 1,
-  "demonic_id": "2555",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Kiss wa 0 Toki wo Sugite kara",
-  "cover": "https://readermc.org/images/thumbnails/Kiss wa 0 Toki wo Sugite kara.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Kiss-wa-0-Toki-wo-Sugite-kara"
-  },
-  "max_chapter": 2,
-  "demonic_id": "2556",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Kiss wa Me ni Shite",
-  "cover": "https://readermc.org/images/thumbnails/Kiss wa Me ni Shite.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Kiss-wa-Me-ni-Shite"
-  },
-  "max_chapter": 6,
-  "demonic_id": "2557",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Kiss x Miss",
-  "cover": "https://readermc.org/images/thumbnails/Kiss x Miss.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Kiss-x-Miss"
-  },
-  "max_chapter": 0,
-  "demonic_id": "2558",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  }
- },
- {
-  "title": "Kiss XXXX",
-  "cover": "https://readermc.org/images/thumbnails/Kiss XXXX.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Kiss-XXXX"
-  },
-  "max_chapter": 12,
-  "demonic_id": "2560",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "2.2",
-     "chapter_number": 2.2
-    }
-   ]
-  }
- },
- {
-  "title": "Kiss Yori mo Ijiwaru",
-  "cover": "https://readermc.org/images/thumbnails/Kiss Yori mo Ijiwaru.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Kiss-Yori-mo-Ijiwaru"
-  },
-  "max_chapter": 6,
-  "demonic_id": "2561",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Kiss, Zekkou, Kiss",
-  "cover": "https://readermc.org/images/thumbnails/Kiss, Zekkou, Kiss.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Kiss%252C-Zekkou%252C-Kiss"
-  },
-  "max_chapter": 4.005,
-  "demonic_id": "2562",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "4.005",
-     "chapter_number": 4.005
-    }
-   ]
-  }
- },
- {
-  "title": "Kiss, Zekkou, Kiss Bokura no Baai",
-  "cover": "https://readermc.org/images/thumbnails/Kiss, Zekkou, Kiss Bokura no Baai.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Kiss%252C-Zekkou%252C-Kiss-Bokura-no-Baai"
-  },
-  "max_chapter": 10,
-  "demonic_id": "2563",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Kiss/Hug",
-  "cover": "https://readermc.org/images/thumbnails/Kiss Hug.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Kiss%252FHug"
-  },
-  "max_chapter": 14,
-  "demonic_id": "2564",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Kissing You Before Going To Bed",
-  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/0b449993-a9db-4e24-842d-e53769d0d683.png",
-  "status": "Ongoing",
-  "sources": {
-   "Temple Toons": "https://templetoons.com/comic/kissing-you-before-going-to-bed"
-  },
-  "chapters": {
-   "Temple Toons": [
-    {
-     "name": "Chapter 1",
-     "chapter_slug": "82293-chapter-1"
-    },
-    {
-     "name": "Chapter 2",
-     "chapter_slug": "16548-chapter-2"
-    },
-    {
-     "name": "Chapter 3",
-     "chapter_slug": "95285-chapter-3"
-    },
-    {
-     "name": "Chapter 4",
-     "chapter_slug": "69194-chapter-4"
-    },
-    {
-     "name": "Chapter 5",
-     "chapter_slug": "30784-chapter-5"
-    },
-    {
-     "name": "Chapter 6",
-     "chapter_slug": "68574-chapter-6"
-    },
-    {
-     "name": "Chapter 7",
-     "chapter_slug": "99261-chapter-7"
-    },
-    {
-     "name": "Chapter 8",
-     "chapter_slug": "37529-chapter-8"
-    },
-    {
-     "name": "Chapter 9",
-     "chapter_slug": "17911-chapter-9"
-    },
-    {
-     "name": "Chapter 10",
-     "chapter_slug": "56645-chapter-10"
-    },
-    {
-     "name": "Chapter 11",
-     "chapter_slug": "37874-chapter-11"
-    },
-    {
-     "name": "Chapter 12",
-     "chapter_slug": "84734-chapter-12"
-    },
-    {
-     "name": "Chapter 13",
-     "chapter_slug": "12701-chapter-13"
-    },
-    {
-     "name": "Chapter 14",
-     "chapter_slug": "52813-chapter-14"
-    },
-    {
-     "name": "Chapter 15",
-     "chapter_slug": "89712-chapter-15"
-    },
-    {
-     "name": "Chapter 16",
-     "chapter_slug": "14275-chapter-16"
-    },
-    {
-     "name": "Chapter 17",
-     "chapter_slug": "76791-chapter-17"
-    },
-    {
-     "name": "Chapter 18",
-     "chapter_slug": "33061-chapter-18"
-    },
-    {
-     "name": "Chapter 19",
-     "chapter_slug": "30148-chapter-19"
-    },
-    {
-     "name": "Chapter 20",
-     "chapter_slug": "95688-chapter-20"
-    },
-    {
-     "name": "Chapter 21",
-     "chapter_slug": "chapter-21"
-    },
-    {
-     "name": "Chapter 22",
-     "chapter_slug": "chapter-22"
-    },
-    {
-     "name": "Chapter 23",
-     "chapter_slug": "chapter-23"
-    },
-    {
-     "name": "Chapter 24",
-     "chapter_slug": "chapter-24"
-    },
-    {
-     "name": "Chapter 25",
-     "chapter_slug": "chapter-25"
-    },
-    {
-     "name": "Chapter 26",
-     "chapter_slug": "chapter-26"
-    },
-    {
-     "name": "Chapter 27",
-     "chapter_slug": "chapter-27"
-    },
-    {
-     "name": "Chapter 28",
-     "chapter_slug": "chapter-28"
-    },
-    {
-     "name": "Chapter 29",
-     "chapter_slug": "chapter-29"
-    },
-    {
-     "name": "Chapter 30",
-     "chapter_slug": "chapter-30"
-    },
-    {
-     "name": "Chapter 31",
-     "chapter_slug": "chapter-31"
-    },
-    {
-     "name": "Chapter 32",
-     "chapter_slug": "chapter-32"
-    },
-    {
-     "name": "Chapter 33",
-     "chapter_slug": "chapter-33"
-    },
-    {
-     "name": "Chapter 34",
-     "chapter_slug": "chapter-34"
-    },
-    {
-     "name": "Chapter 35",
-     "chapter_slug": "chapter-35"
-    },
-    {
-     "name": "Chapter 36",
-     "chapter_slug": "chapter-36"
-    },
-    {
-     "name": "Chapter 37",
-     "chapter_slug": "chapter-37"
-    },
-    {
-     "name": "Chapter 38",
-     "chapter_slug": "chapter-38"
-    },
-    {
-     "name": "Chapter 39",
-     "chapter_slug": "chapter-39"
-    },
-    {
-     "name": "Chapter 40",
-     "chapter_slug": "chapter-40"
-    },
-    {
-     "name": "Chapter 41",
-     "chapter_slug": "chapter-41"
-    },
-    {
-     "name": "Chapter 42",
-     "chapter_slug": "chapter-42"
-    },
-    {
-     "name": "Chapter 43",
-     "chapter_slug": "chapter-43"
-    },
-    {
-     "name": "Chapter 44",
-     "chapter_slug": "chapter-44"
-    },
-    {
-     "name": "Chapter 45",
-     "chapter_slug": "chapter-45"
-    },
-    {
-     "name": "Chapter 46",
-     "chapter_slug": "chapter-46"
-    },
-    {
-     "name": "Chapter 47",
-     "chapter_slug": "chapter-47"
-    },
-    {
-     "name": "Chapter 48",
-     "chapter_slug": "chapter-48"
-    },
-    {
-     "name": "Chapter 49",
-     "chapter_slug": "chapter-49"
-    },
-    {
-     "name": "Chapter 50",
-     "chapter_slug": "chapter-50"
-    },
-    {
-     "name": "Chapter 51",
-     "chapter_slug": "chapter-51"
-    },
-    {
-     "name": "Chapter 52",
-     "chapter_slug": "chapter-52"
-    },
-    {
-     "name": "Chapter 53",
-     "chapter_slug": "chapter-53"
-    },
-    {
-     "name": "Chapter 54",
-     "chapter_slug": "chapter-54"
-    },
-    {
-     "name": "Chapter 55",
-     "chapter_slug": "chapter-55"
-    },
-    {
-     "name": "Chapter 55.5",
-     "chapter_slug": "chapter-55-5"
-    }
-   ]
-  },
-  "max_chapter": 55
  }
 ]

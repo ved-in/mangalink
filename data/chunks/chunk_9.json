@@ -1,5 +1,282 @@
 [
  {
+  "title": "Otasuke Miko Miko-chan",
+  "cover": "https://readermc.org/images/thumbnails/Otasuke Miko Miko-chan.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Otasuke-Miko-Miko%25252Dchan"
+  },
+  "max_chapter": 10.005,
+  "demonic_id": "5040",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "10.005",
+     "chapter_number": 10.005
+    }
+   ]
+  }
+ },
+ {
+  "title": "Othello",
+  "cover": "https://readermc.org/images/thumbnails/Othello.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Othello"
+  },
+  "max_chapter": 3,
+  "demonic_id": "5041",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Othello (IKEZAWA Satomi)",
+  "cover": "https://readermc.org/images/thumbnails/Othello (IKEZAWA Satomi).webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Othello-%2528IKEZAWA-Satomi%2529"
+  },
+  "max_chapter": 16,
+  "demonic_id": "5042",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Othello (Shoujo)",
+  "cover": "https://readermc.org/images/thumbnails/Othello (Shoujo).webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Othello-%2528Shoujo%2529"
+  },
+  "max_chapter": 28,
+  "demonic_id": "5043",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Othello Tsukamoto Youichi",
+  "cover": "https://readermc.org/images/thumbnails/Othello Tsukamoto Youichi.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Othello-Tsukamoto-Youichi"
+  },
+  "max_chapter": 4,
+  "demonic_id": "5044",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Other World Warrior",
+  "cover": "https://readermc.org/images/thumbnails/Other World Warrior.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Other-World-Warrior",
+   "Thunder Scans": "https://en-thunderscans.com/comics/other-world-warrior/"
+  },
+  "max_chapter": 298,
+  "demonic_id": "52",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "193.2",
+     "chapter_number": 193.2
+    }
+   ],
+   "Thunder Scans": []
+  }
+ },
+ {
+  "title": "Otherworldly Evil Monarch",
+  "cover": "https://readermc.org/images/thumbnails/Otherworldly Evil Monarch.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Otherworldly-Evil-Monarch"
+  },
+  "max_chapter": 235,
+  "demonic_id": "173",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Otherworldly Magical Daoist Priest",
+  "cover": "https://readermc.org/images/thumbnails/Otherworldly Magical Daoist Priest.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Otherworldly-Magical-Daoist-Priest"
+  },
+  "max_chapter": 50,
+  "demonic_id": "11356",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Otherworldly Record of the Magic Stone - Aisha's Salvation",
+  "cover": "https://readermc.org/images/thumbnails/Otherworldly Record of the Magic Stone - Aisha 's Salvation.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Otherworldly-Record-of-the-Magic-Stone-%25252D-Aisha%255C%2527s-Salvation"
+  },
+  "max_chapter": 3,
+  "demonic_id": "11567",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Otherworldly Skeleton Evolution",
+  "cover": "https://cdn.asurascans.com/asura-images/covers/otherworldly-skeleton-evolution.cd1d5b.webp",
+  "status": "Hiatus",
+  "sources": {
+   "Asura Scans": "https://asurascans.com/comics/otherworldly-skeleton-evolution"
+  },
+  "max_chapter": 13,
+  "chapters": {
+   "Asura Scans": []
+  }
+ },
+ {
+  "title": "Oto X Maho",
+  "cover": "https://readermc.org/images/thumbnails/Oto X Maho.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Oto-X-Maho"
+  },
+  "max_chapter": 20,
+  "demonic_id": "5045",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "11.1",
+     "chapter_number": 11.1
+    },
+    {
+     "name": "5.1",
+     "chapter_number": 5.1
+    }
+   ]
+  }
+ },
+ {
+  "title": "Otogi Matsuri",
+  "cover": "https://readermc.org/images/thumbnails/Otogi Matsuri.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Otogi-Matsuri"
+  },
+  "max_chapter": 73,
+  "demonic_id": "5048",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Otogi Moyou Ayanishiki",
+  "cover": "https://readermc.org/images/thumbnails/Otogi Moyou Ayanishiki.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Otogi-Moyou-Ayanishiki"
+  },
+  "max_chapter": 21,
+  "demonic_id": "5049",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Otogi Story Tenshi no Shippo",
+  "cover": "https://readermc.org/images/thumbnails/Otogi Story Tenshi no Shippo.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Otogi-Story-Tenshi-no-Shippo"
+  },
+  "max_chapter": 6,
+  "demonic_id": "5050",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
+  "title": "Otogi Taisen Fantasma",
+  "cover": "https://readermc.org/images/thumbnails/Otogi Taisen Fantasma.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Otogi-Taisen-Fantasma"
+  },
+  "max_chapter": 9,
+  "demonic_id": "5051",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Otogi Zoshi",
+  "cover": "https://readermc.org/images/thumbnails/Otogi Zoshi.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Otogi-Zoshi"
+  },
+  "max_chapter": 10,
+  "demonic_id": "5052",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Otogibanashi de Himitsu no Kiss",
+  "cover": "https://readermc.org/images/thumbnails/Otogibanashi de Himitsu no Kiss.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Otogibanashi-de-Himitsu-no-Kiss"
+  },
+  "max_chapter": 4,
+  "demonic_id": "5053",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Otogibanashi Wo Anata Ni: Tsukiyo No Maihime",
+  "cover": "https://readermc.org/images/thumbnails/Otogibanashi Wo Anata Ni  Tsukiyo No Maihime.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Otogibanashi-Wo-Anata-Ni%253A-Tsukiyo-No-Maihime"
+  },
+  "max_chapter": 3.5,
+  "demonic_id": "5055",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "3.5",
+     "chapter_number": 3.5
+    }
+   ]
+  }
+ },
+ {
+  "title": "Otogimoyou Ayanishiki Futatabi",
+  "cover": "https://readermc.org/images/thumbnails/Otogimoyou Ayanishiki Futatabi.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Otogimoyou-Ayanishiki-Futatabi"
+  },
+  "max_chapter": 13,
+  "demonic_id": "5056",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Otoko Hime to Mahou no Lamp",
   "cover": "https://readermc.org/images/thumbnails/Otoko Hime to Mahou no Lamp.webp",
   "status": null,
@@ -1151,7 +1428,64 @@
   "max_chapter": 112,
   "demonic_id": "5107",
   "chapters": {
-   "Demonic Scans": []
+   "Demonic Scans": [
+    {
+     "name": "104.5",
+     "chapter_number": 104.5
+    },
+    {
+     "name": "95.5",
+     "chapter_number": 95.5
+    },
+    {
+     "name": "86.5",
+     "chapter_number": 86.5
+    },
+    {
+     "name": "51.6",
+     "chapter_number": 51.6
+    },
+    {
+     "name": "51.5",
+     "chapter_number": 51.5
+    },
+    {
+     "name": "44.5",
+     "chapter_number": 44.5
+    },
+    {
+     "name": "43.5",
+     "chapter_number": 43.5
+    },
+    {
+     "name": "27.5",
+     "chapter_number": 27.5
+    },
+    {
+     "name": "26.5",
+     "chapter_number": 26.5
+    },
+    {
+     "name": "25.5",
+     "chapter_number": 25.5
+    },
+    {
+     "name": "23.5",
+     "chapter_number": 23.5
+    },
+    {
+     "name": "22.5",
+     "chapter_number": 22.5
+    },
+    {
+     "name": "14.5",
+     "chapter_number": 14.5
+    },
+    {
+     "name": "14.1",
+     "chapter_number": 14.1
+    }
+   ]
   }
  },
  {
@@ -1897,10 +2231,14 @@
     {
      "name": "Chapter 13",
      "chapter_slug": "chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "chapter-14"
     }
    ]
   },
-  "max_chapter": 13
+  "max_chapter": 14
  },
  {
   "title": "Our Time of Dawn",
@@ -2430,7 +2768,7 @@
    "Asura Scans": "https://asurascans.com/comics/overgeared",
    "Demonic Scans": "https://demonicscans.org/manga/Overgeared"
   },
-  "max_chapter": 318,
+  "max_chapter": 320,
   "chapters": {
    "Asura Scans": [
     {
@@ -2684,7 +3022,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Overlord-of-Insects"
   },
-  "max_chapter": 112,
+  "max_chapter": 113,
   "demonic_id": "12231",
   "chapters": {
    "Demonic Scans": [
@@ -2869,7 +3207,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/overtime-salaryman-reincarnates-as-a-hero/"
   },
-  "max_chapter": 40,
+  "max_chapter": 41,
   "chapters": {
    "Thunder Scans": []
   }
@@ -3253,7 +3591,12 @@
   "max_chapter": 31,
   "demonic_id": "5198",
   "chapters": {
-   "Demonic Scans": []
+   "Demonic Scans": [
+    {
+     "name": "3.1",
+     "chapter_number": 3.1
+    }
+   ]
   }
  },
  {
@@ -4337,7 +4680,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Part%25252DTime-Grim-Reaper"
   },
-  "max_chapter": 44,
+  "max_chapter": 47,
   "demonic_id": "13213",
   "chapters": {
    "Demonic Scans": [
@@ -4583,7 +4926,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Past-Life-Returner-%2528Remake-2022%2529"
   },
-  "max_chapter": 168,
+  "max_chapter": 169,
   "demonic_id": "13136",
   "chapters": {
    "Demonic Scans": []
@@ -4635,7 +4978,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Path-of-the-Shaman"
   },
-  "max_chapter": 157,
+  "max_chapter": 160,
   "demonic_id": "311",
   "chapters": {
    "Demonic Scans": [
@@ -4975,7 +5318,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Peerless-Battle-Spirit"
   },
-  "max_chapter": 717,
+  "max_chapter": 718,
   "demonic_id": "114",
   "chapters": {
    "Demonic Scans": [
@@ -5579,9 +5922,14 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/perfect-number/"
   },
-  "max_chapter": 17,
+  "max_chapter": 18.5,
   "chapters": {
-   "Thunder Scans": []
+   "Thunder Scans": [
+    {
+     "name": "18.5",
+     "chapter_slug": "perfect-number-chapter-18-5"
+    }
+   ]
   }
  },
  {
@@ -5591,7 +5939,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/perfect-revenge/"
   },
-  "max_chapter": 34,
+  "max_chapter": 35,
   "chapters": {
    "Violet Scans": []
   }
@@ -5770,7 +6118,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Perhaps-Invincible"
   },
-  "max_chapter": 57,
+  "max_chapter": 58,
   "demonic_id": "12812",
   "chapters": {
    "Demonic Scans": [
@@ -5783,12 +6131,12 @@
  },
  {
   "title": "Persephonia",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/11/7b3a464e-e5fc-4174-afa1-58c8e2f0269f.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201454%202048'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/persephonia/"
   },
-  "max_chapter": 23,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": [
     {
@@ -6413,7 +6761,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Physician-return"
   },
-  "max_chapter": 55,
+  "max_chapter": 56,
   "demonic_id": "11286",
   "chapters": {
    "Demonic Scans": []
@@ -6515,7 +6863,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Pick-Me-Up"
   },
-  "max_chapter": 196,
+  "max_chapter": 198,
   "demonic_id": "11699",
   "chapters": {
    "Demonic Scans": []
@@ -6528,7 +6876,7 @@
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/pick-me-up-infinite-gacha"
   },
-  "max_chapter": 196,
+  "max_chapter": 198,
   "chapters": {
    "Asura Scans": []
   }
@@ -7816,7 +8164,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Player",
    "Thunder Scans": "https://en-thunderscans.com/comics/player/"
   },
-  "max_chapter": 253,
+  "max_chapter": 255,
   "demonic_id": "379",
   "chapters": {
    "Demonic Scans": [
@@ -7933,7 +8281,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/player-of-the-fallen-noble-family/"
   },
-  "max_chapter": 40,
+  "max_chapter": 42,
   "chapters": {
    "Thunder Scans": []
   }
@@ -8165,7 +8513,7 @@
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/player-who-cant-level-up"
   },
-  "max_chapter": 221,
+  "max_chapter": 225,
   "chapters": {
    "Asura Scans": []
   }
@@ -8178,7 +8526,7 @@
    "Asura Scans": "https://asurascans.com/comics/player-who-returned-10000-years-later",
    "Demonic Scans": "https://demonicscans.org/manga/Player-Who-Returned-10%252C000-Years-Later"
   },
-  "max_chapter": 152,
+  "max_chapter": 153,
   "chapters": {
    "Asura Scans": [],
    "Demonic Scans": [
@@ -8276,7 +8624,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/please-cooperate-with-the-s-class-duties/"
   },
-  "max_chapter": 29,
+  "max_chapter": 30,
   "chapters": {
    "Violet Scans": []
   }
@@ -8511,10 +8859,14 @@
     {
      "name": "Chapter 20",
      "chapter_slug": "chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "chapter-21"
     }
    ]
   },
-  "max_chapter": 20
+  "max_chapter": 21
  },
  {
   "title": "Please Get Out of My Household",
@@ -9183,7 +9535,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/plus-99-Wooden-stick"
   },
-  "max_chapter": 191,
+  "max_chapter": 194,
   "demonic_id": "11992",
   "chapters": {
    "Demonic Scans": [
@@ -10707,12 +11059,7 @@
   "max_chapter": 7,
   "demonic_id": "5443",
   "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "3.1",
-     "chapter_number": 3.1
-    }
-   ]
+   "Demonic Scans": []
   }
  },
  {
@@ -11103,7 +11450,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Prepaid-Dragon-King-Tanks-Everything%2521"
   },
-  "max_chapter": 40,
+  "max_chapter": 41,
   "demonic_id": "13291",
   "chapters": {
    "Demonic Scans": []
@@ -11294,7 +11641,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/preventing-the-gangster-male-leads-blackening/"
   },
-  "max_chapter": 35,
+  "max_chapter": 36,
   "chapters": {
    "Violet Scans": []
   }
@@ -11573,7 +11920,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Pride-Of-The-Blade"
   },
-  "max_chapter": 47,
+  "max_chapter": 48,
   "demonic_id": "11649",
   "chapters": {
    "Demonic Scans": [
@@ -11710,7 +12057,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Primordial-Ten-Fiends%253A-Others-Tame-Beasts%252C-I-Tame-Beast-Girls"
   },
-  "max_chapter": 146,
+  "max_chapter": 153,
   "demonic_id": "13285",
   "chapters": {
    "Demonic Scans": []
@@ -11749,7 +12096,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/princess-cherry-shall-we-use-this-tonight/"
   },
-  "max_chapter": 26,
+  "max_chapter": 28,
   "chapters": {
    "Violet Scans": []
   }
@@ -12073,7 +12420,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Princess-Hurricane"
   },
-  "max_chapter": 104,
+  "max_chapter": 105,
   "demonic_id": "12289",
   "chapters": {
    "Demonic Scans": []
@@ -12325,7 +12672,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/princess-svetas-political-marriage/"
   },
-  "max_chapter": 77,
+  "max_chapter": 78,
   "chapters": {
    "Violet Scans": []
   }
@@ -13000,7 +13347,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/prisoners-of-twilight-town/"
   },
-  "max_chapter": 31,
+  "max_chapter": 34,
   "chapters": {
    "Thunder Scans": [
     {
@@ -13096,7 +13443,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Project-Mars",
    "Thunder Scans": "https://en-thunderscans.com/comics/project-mars/"
   },
-  "max_chapter": 34,
+  "max_chapter": 35,
   "demonic_id": "13201",
   "chapters": {
    "Demonic Scans": [],
@@ -13274,7 +13621,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/prosecutor-kim-seo-jin/"
   },
-  "max_chapter": 32,
+  "max_chapter": 33,
   "chapters": {
    "Thunder Scans": []
   }
@@ -16048,12 +16395,12 @@
  },
  {
   "title": "Pure 0.01 mm",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/06/310338804216.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201792%202400'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/pure-0-01-mm/"
   },
-  "max_chapter": 54,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": []
   }
@@ -18182,7 +18529,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Raising-Villains-the-Right-Way",
    "Thunder Scans": "https://en-thunderscans.com/comics/raising-villains-the-right-way/"
   },
-  "max_chapter": 30,
+  "max_chapter": 32,
   "chapters": {
    "Asura Scans": [],
    "Demonic Scans": [],
@@ -18859,7 +19206,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Ranger-Reject"
   },
-  "max_chapter": 211,
+  "max_chapter": 213,
   "demonic_id": "775",
   "chapters": {
    "Demonic Scans": []
@@ -18872,7 +19219,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Ranker-Game-%257EBASKETBALL-SHOW%257E"
   },
-  "max_chapter": 42,
+  "max_chapter": 43,
   "demonic_id": "13398",
   "chapters": {
    "Demonic Scans": []
@@ -18885,10 +19232,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Ranker-Who-Lives-A-Second-Time"
   },
-  "max_chapter": 217,
+  "max_chapter": 220,
   "demonic_id": "47",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "217.5",
+     "chapter_number": 217.5
+    },
     {
      "name": "207.5",
      "chapter_number": 207.5
@@ -18977,7 +19328,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Ranker%2527s-Return-%2528Remake%2529"
   },
-  "max_chapter": 239,
+  "max_chapter": 240,
   "demonic_id": "5654",
   "chapters": {
    "Demonic Scans": [
@@ -19331,7 +19682,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Rappa-%25252D-Yankee-Ninpuuchou"
   },
-  "max_chapter": 47,
+  "max_chapter": 48,
   "demonic_id": "13013",
   "chapters": {
    "Demonic Scans": []
@@ -20130,7 +20481,7 @@
  },
  {
   "title": "Ready Shoot, For Love [Complete Edition]",
-  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/2c56237c-0cd6-4ede-bbb7-6a8fb950228f.webp",
+  "cover": "https://media.templetoons.com/file/terms54/covers/2038516b-bb7b-42fe-a11c-bb7d88ed83d6.png",
   "status": "Ongoing",
   "sources": {
    "Temple Toons": "https://templetoons.com/comic/ready-shoot-for-love-complete-edition"
@@ -20320,10 +20671,22 @@
     {
      "name": "Chapter 45",
      "chapter_slug": "chapter-45"
+    },
+    {
+     "name": "Chapter 46",
+     "chapter_slug": "chapter-46"
+    },
+    {
+     "name": "Chapter 47",
+     "chapter_slug": "chapter-47"
+    },
+    {
+     "name": "Chapter 48",
+     "chapter_slug": "chapter-48"
     }
    ]
   },
-  "max_chapter": 45
+  "max_chapter": 48
  },
  {
   "title": "Real",
@@ -20454,7 +20817,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Real-Man"
   },
-  "max_chapter": 242,
+  "max_chapter": 247,
   "demonic_id": "357",
   "chapters": {
    "Demonic Scans": [
@@ -20589,7 +20952,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Reality-Quest"
   },
-  "max_chapter": 200,
+  "max_chapter": 202,
   "demonic_id": "12102",
   "chapters": {
    "Demonic Scans": [
@@ -20835,7 +21198,7 @@
    "Asura Scans": "https://asurascans.com/comics/reaper-of-the-drifting-moon",
    "Demonic Scans": "https://demonicscans.org/manga/Reaper-of-the-Drifting-Moon"
   },
-  "max_chapter": 134,
+  "max_chapter": 135,
   "chapters": {
    "Asura Scans": [
     {
@@ -21193,6 +21556,18 @@
   }
  },
  {
+  "title": "Rebellious Innocence",
+  "cover": "https://violetscans.org/wp-content/uploads/2026/04/2026-04-17-08-40-43-1776458443963-231x300.jpg",
+  "status": null,
+  "sources": {
+   "Violet Scans": "https://violetscans.org/comics/rebellious-innocence/"
+  },
+  "max_chapter": 1,
+  "chapters": {
+   "Violet Scans": []
+  }
+ },
+ {
   "title": "Rebirth",
   "cover": "https://readermc.org/images/thumbnails/Rebirth.webp",
   "status": null,
@@ -21349,7 +21724,7 @@
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/rebirth-of-the-divine-demon"
   },
-  "max_chapter": 38,
+  "max_chapter": 39,
   "chapters": {
    "Asura Scans": []
   }
@@ -22328,7 +22703,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/rebirth-of-the-thief-who-roamed-the-world/"
   },
-  "max_chapter": 13,
+  "max_chapter": 15,
   "chapters": {
    "Thunder Scans": []
   }
@@ -22358,7 +22733,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/rebirth-of-the-ultimate-war-god/"
   },
-  "max_chapter": 17,
+  "max_chapter": 18.9,
   "chapters": {
    "Thunder Scans": []
   }
@@ -22448,7 +22823,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Rebirth%253A-Limitless-System"
   },
-  "max_chapter": 17,
+  "max_chapter": 18,
   "demonic_id": "13430",
   "chapters": {
    "Demonic Scans": []
@@ -22486,7 +22861,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/reborn-after-the-eight-empresses-betrayed-me-now-ill-make-them-regret-it/"
   },
-  "max_chapter": 17,
+  "max_chapter": 19,
   "chapters": {
    "Thunder Scans": []
   }
@@ -22498,10 +22873,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Reborn-as-a-Barbarian%2521-Conquering-Another-World-Starting-from-a-Defeated-Battle"
   },
-  "max_chapter": 8.1,
+  "max_chapter": 8.2,
   "demonic_id": "12684",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "8.2",
+     "chapter_number": 8.2
+    },
     {
      "name": "8.1",
      "chapter_number": 8.1
@@ -23069,7 +23448,7 @@
    "Asura Scans": "https://asurascans.com/comics/reborn-as-the-enemy-prince",
    "Demonic Scans": "https://demonicscans.org/manga/Reborn-as-the-Enemy-Prince"
   },
-  "max_chapter": 107,
+  "max_chapter": 109,
   "chapters": {
    "Asura Scans": [],
    "Demonic Scans": [
@@ -23088,7 +23467,7 @@
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/reborn-as-the-heavenly-demon"
   },
-  "max_chapter": 116,
+  "max_chapter": 118,
   "chapters": {
    "Asura Scans": [
     {
@@ -23228,7 +23607,7 @@
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/reborn-on-the-demonic-cult-battlefield"
   },
-  "max_chapter": 34,
+  "max_chapter": 35,
   "chapters": {
    "Asura Scans": []
   }
@@ -23240,7 +23619,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/reborn-ranker-gravity-user/"
   },
-  "max_chapter": 186,
+  "max_chapter": 187,
   "chapters": {
    "Thunder Scans": []
   }
@@ -23252,7 +23631,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Reborn-Ranker-%25E2%2580%2593-Gravity-User-%2528Manga%2529"
   },
-  "max_chapter": 162,
+  "max_chapter": 164,
   "demonic_id": "11580",
   "chapters": {
    "Demonic Scans": []
@@ -23265,7 +23644,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Reborn-Rich"
   },
-  "max_chapter": 195,
+  "max_chapter": 199,
   "demonic_id": "12973",
   "chapters": {
    "Demonic Scans": [
@@ -23575,7 +23954,7 @@
    "Thunder Scans": "https://en-thunderscans.com/comics/records-of-the-swordsman-scholar/",
    "Flame Comics": "https://flamecomics.xyz/series/94"
   },
-  "max_chapter": 199,
+  "max_chapter": 200,
   "demonic_id": "12743",
   "chapters": {
    "Demonic Scans": [
@@ -23699,7 +24078,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Red-Blue"
   },
-  "max_chapter": 188,
+  "max_chapter": 190,
   "demonic_id": "11230",
   "chapters": {
    "Demonic Scans": []
@@ -23874,7 +24253,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Red-Shirt"
   },
-  "max_chapter": 53,
+  "max_chapter": 55,
   "demonic_id": "13226",
   "chapters": {
    "Demonic Scans": [
@@ -23918,7 +24297,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Red-Storm"
   },
-  "max_chapter": 454,
+  "max_chapter": 456,
   "demonic_id": "99",
   "chapters": {
    "Demonic Scans": [
@@ -24343,7 +24722,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/regressed-genius-creates-mythic-items/"
   },
-  "max_chapter": 77,
+  "max_chapter": 79,
   "chapters": {
    "Thunder Scans": []
   }
@@ -24356,11 +24735,15 @@
    "Demonic Scans": "https://demonicscans.org/manga/Regressing-As-The-Reincarnated-Bastard-Of-The-Sword-Clan",
    "Flame Comics": "https://flamecomics.xyz/series/154"
   },
-  "max_chapter": 91,
+  "max_chapter": 92,
   "demonic_id": "12628",
   "chapters": {
    "Demonic Scans": [],
    "Flame Comics": [
+    {
+     "name": "92",
+     "chapter_slug": "f420b785bacb245c"
+    },
     {
      "name": "91",
      "chapter_slug": "91df5c2898f8d784"
@@ -24839,7 +25222,7 @@
    "Asura Scans": "https://asurascans.com/comics/regression-of-the-yong-clan-heir",
    "Demonic Scans": "https://demonicscans.org/manga/Regression-of-the-Yong-Clan-Heir"
   },
-  "max_chapter": 51,
+  "max_chapter": 53,
   "chapters": {
    "Asura Scans": [
     {
@@ -24888,7 +25271,7 @@
    "Asura Scans": "https://asurascans.com/comics/regressor-of-the-fallen-family",
    "Demonic Scans": "https://demonicscans.org/manga/Regressor-of-the-Fallen-family"
   },
-  "max_chapter": 129,
+  "max_chapter": 130,
   "chapters": {
    "Asura Scans": [],
    "Demonic Scans": [
@@ -24992,7 +25375,7 @@
    "Asura Scans": "https://asurascans.com/comics/regressors-life-after-retirement",
    "Demonic Scans": "https://demonicscans.org/manga/Regressor%2527s-Life-After-Retirement"
   },
-  "max_chapter": 94,
+  "max_chapter": 95,
   "chapters": {
    "Asura Scans": [],
    "Demonic Scans": [
@@ -25012,7 +25395,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Rehabilitation-Classroom",
    "Thunder Scans": "https://en-thunderscans.com/comics/rehabilitation-classroom/"
   },
-  "max_chapter": 46,
+  "max_chapter": 50,
   "demonic_id": "12989",
   "chapters": {
    "Demonic Scans": [],
@@ -25147,10 +25530,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Reincarnated-as-a-Dragon%255C%2527s-Egg"
   },
-  "max_chapter": 49.1,
+  "max_chapter": 49.2,
   "demonic_id": "12415",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "49.2",
+     "chapter_number": 49.2
+    },
     {
      "name": "49.1",
      "chapter_number": 49.1
@@ -25246,7 +25633,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Reincarnated-as-a-Genius-Prodigy-of-a-Prestigious-Family"
   },
-  "max_chapter": 86,
+  "max_chapter": 89,
   "demonic_id": "12616",
   "chapters": {
    "Demonic Scans": []
@@ -25358,7 +25745,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/reincarnated-as-the-grand-dukes-third-son/"
   },
-  "max_chapter": 26,
+  "max_chapter": 28,
   "chapters": {
    "Thunder Scans": []
   }
@@ -25397,7 +25784,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Reincarnated-as-the-Strongest-Monster-Eater%253A-Revenge-on-the-Tyrant-Dragon",
    "Thunder Scans": "https://en-thunderscans.com/comics/reincarnated-as-the-strongest-monster-eater-revenge-on-the-tyrant-dragon/"
   },
-  "max_chapter": 39,
+  "max_chapter": 41,
   "demonic_id": "13591",
   "chapters": {
    "Demonic Scans": [],
@@ -25448,7 +25835,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Reincarnated-Escort-Warrior",
    "Thunder Scans": "https://en-thunderscans.com/comics/reincarnated-escort-warrior/"
   },
-  "max_chapter": 148,
+  "max_chapter": 150,
   "chapters": {
    "Asura Scans": [],
    "Demonic Scans": [
@@ -25588,7 +25975,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/reincarnated-streamer/"
   },
-  "max_chapter": 45,
+  "max_chapter": 46,
   "chapters": {
    "Thunder Scans": []
   }
@@ -25671,12 +26058,12 @@
  },
  {
   "title": "Reincarnated. The Sword Saint Who Became A Shota Prince To His Former Disciples ~ I Don’t Want My Former Disciples To Find Out",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/06/Eres_un_disenador_202604121855.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201792%202400'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/reincarnated-the-sword-saint-who-became-a-shota-prince-to-his-former-disciples-i-dont-want-my-former-disciples-to-find-out/"
   },
-  "max_chapter": 18,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": [
     {
@@ -26023,7 +26410,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/reincarnation-of-the-divine-demon/"
   },
-  "max_chapter": 37,
+  "max_chapter": 39,
   "chapters": {
    "Thunder Scans": []
   }
@@ -26036,7 +26423,7 @@
    "Asura Scans": "https://asurascans.com/comics/reincarnation-of-the-fist-king",
    "Demonic Scans": "https://demonicscans.org/manga/Reincarnation-of-the-Fist-King"
   },
-  "max_chapter": 47,
+  "max_chapter": 49,
   "chapters": {
    "Asura Scans": [],
    "Demonic Scans": []
@@ -26051,7 +26438,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Reincarnation-Of-The-Heavenly-Demon",
    "Thunder Scans": "https://en-thunderscans.com/comics/reincarnation-of-the-heavenly-demon/"
   },
-  "max_chapter": 117,
+  "max_chapter": 118,
   "demonic_id": "12213",
   "chapters": {
    "Demonic Scans": [],
@@ -26912,7 +27299,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Reincarnation-Path-of-The-Underworld-King"
   },
-  "max_chapter": 124,
+  "max_chapter": 125,
   "demonic_id": "11949",
   "chapters": {
    "Demonic Scans": []
@@ -26952,7 +27339,7 @@
    "Asura Scans": "https://asurascans.com/comics/reincarnator",
    "Demonic Scans": "https://demonicscans.org/manga/Reincarnator"
   },
-  "max_chapter": 128,
+  "max_chapter": 129,
   "chapters": {
    "Asura Scans": [
     {
@@ -26971,7 +27358,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Reincarnator-%2528Manhwa%2529"
   },
-  "max_chapter": 128,
+  "max_chapter": 130,
   "demonic_id": "12093",
   "chapters": {
    "Demonic Scans": [
@@ -26993,7 +27380,7 @@
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/reincarnators-stream"
   },
-  "max_chapter": 45,
+  "max_chapter": 46,
   "chapters": {
    "Asura Scans": []
   }
@@ -27534,6 +27921,18 @@
      "chapter_number": 77.5
     }
    ],
+   "Violet Scans": []
+  }
+ },
+ {
+  "title": "Remarrying My Ex-Husband I Killed",
+  "cover": "https://violetscans.org/wp-content/uploads/2026/04/2026-04-23-03-03-01-1776956581398-231x300.jpg",
+  "status": null,
+  "sources": {
+   "Violet Scans": "https://violetscans.org/comics/i-will-remarry-the-ex-husband-i-killed/"
+  },
+  "max_chapter": 1,
+  "chapters": {
    "Violet Scans": []
   }
  },
@@ -28317,341 +28716,6 @@
   "demonic_id": "5797",
   "chapters": {
    "Demonic Scans": []
-  }
- },
- {
-  "title": "Rensou no Aria",
-  "cover": "https://readermc.org/images/thumbnails/Rensou no Aria.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Rensou-no-Aria"
-  },
-  "max_chapter": 5,
-  "demonic_id": "5798",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Rental Effort",
-  "cover": "https://readermc.org/images/thumbnails/Rental Effort.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Rental-Effort"
-  },
-  "max_chapter": 39,
-  "demonic_id": "13005",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Rental Hearts",
-  "cover": "https://readermc.org/images/thumbnails/Rental Hearts.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Rental-Hearts"
-  },
-  "max_chapter": 1,
-  "demonic_id": "5799",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Rental Hero",
-  "cover": "https://readermc.org/images/thumbnails/Rental Hero.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Rental-Hero"
-  },
-  "max_chapter": 99,
-  "demonic_id": "11960",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Rental Magica",
-  "cover": "https://readermc.org/images/thumbnails/Rental Magica.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Rental-Magica"
-  },
-  "max_chapter": 6,
-  "demonic_id": "5800",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Rental Magica from Solomon",
-  "cover": "https://readermc.org/images/thumbnails/Rental Magica from Solomon.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Rental-Magica-from-Solomon"
-  },
-  "max_chapter": 1,
-  "demonic_id": "5801",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Repent and Be Saved",
-  "cover": "https://readermc.org/images/thumbnails/Repent and Be Saved.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Repent-and-Be-Saved"
-  },
-  "max_chapter": 1,
-  "demonic_id": "11329",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Replay",
-  "cover": "https://readermc.org/images/thumbnails/Replay.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Replay"
-  },
-  "max_chapter": 15,
-  "demonic_id": "5802",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Replica",
-  "cover": "https://readermc.org/images/thumbnails/Replica.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Replica"
-  },
-  "max_chapter": 7,
-  "demonic_id": "5803",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Repure",
-  "cover": "https://readermc.org/images/thumbnails/Repure.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Repure"
-  },
-  "max_chapter": 1,
-  "demonic_id": "5804",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Requiem Chronicle",
-  "cover": "https://en-thunderscans.com/wp-content/uploads/2024/09/2024-09-15-03-37-40-1726414660284-210x300.jpg",
-  "status": null,
-  "sources": {
-   "Thunder Scans": "https://en-thunderscans.com/comics/requiem-chronicle/"
-  },
-  "max_chapter": 6,
-  "chapters": {
-   "Thunder Scans": []
-  }
- },
- {
-  "title": "Requiem of Subdued Souls",
-  "cover": "https://cdn.asurascans.com/asura-images/covers/requiem-of-subdued-souls.acd397.webp",
-  "status": "Dropped",
-  "sources": {
-   "Asura Scans": "https://asurascans.com/comics/requiem-of-subdued-souls",
-   "Demonic Scans": "https://demonicscans.org/manga/Requiem-of-Subdued-Souls"
-  },
-  "max_chapter": 50,
-  "chapters": {
-   "Asura Scans": [
-    {
-     "name": "0",
-     "chapter_slug": "751a5262-adac-4b43-af9d-218f8ea4e862"
-    }
-   ],
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  },
-  "demonic_id": "12591"
- },
- {
-  "title": "Requiem of the Shogun",
-  "cover": "https://readermc.org/images/thumbnails/Requiem of the Shogun.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Requiem-of-the-Shogun"
-  },
-  "max_chapter": 15,
-  "demonic_id": "5805",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Requiem: Retribution",
-  "cover": "https://readermc.org/images/thumbnails/Requiem  Retribution.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Requiem%253A-Retribution"
-  },
-  "max_chapter": 0,
-  "demonic_id": "1755",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  }
- },
- {
-  "title": "ReRe Hello",
-  "cover": "https://readermc.org/images/thumbnails/ReRe Hello.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/ReRe-Hello"
-  },
-  "max_chapter": 43.5,
-  "demonic_id": "5806",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "43.5",
-     "chapter_number": 43.5
-    },
-    {
-     "name": "43.1",
-     "chapter_number": 43.1
-    },
-    {
-     "name": "15.5",
-     "chapter_number": 15.5
-    },
-    {
-     "name": "11.5",
-     "chapter_number": 11.5
-    },
-    {
-     "name": "8.5",
-     "chapter_number": 8.5
-    },
-    {
-     "name": "3.5",
-     "chapter_number": 3.5
-    }
-   ]
-  }
- },
- {
-  "title": "Rescue System",
-  "cover": "https://readermc.org/images/thumbnails/Rescue System.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Rescue-System"
-  },
-  "max_chapter": 73,
-  "demonic_id": "11283",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Reset",
-  "cover": "https://readermc.org/images/thumbnails/Reset.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Reset"
-  },
-  "max_chapter": 6,
-  "demonic_id": "5807",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Reset Life of Regression Police",
-  "cover": "https://readermc.org/images/thumbnails/Reset Life of Regression Police.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Reset-Life-of-Regression-Police"
-  },
-  "max_chapter": 153,
-  "demonic_id": "12100",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Resetting Lady",
-  "cover": "https://readermc.org/images/thumbnails/Resetting Lady.jpg",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Resetting-Lady"
-  },
-  "max_chapter": 140,
-  "demonic_id": "12917",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Resident Evil Umbrella Chronicles",
-  "cover": "https://readermc.org/images/thumbnails/Resident Evil Umbrella Chronicles.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Resident-Evil-Umbrella-Chronicles"
-  },
-  "max_chapter": 2,
-  "demonic_id": "5808",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Resident Evil: Death Island",
-  "cover": "https://readermc.org/images/thumbnails/Resident Evil  Death Island.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Resident-Evil%253A-Death-Island"
-  },
-  "max_chapter": 8.2,
-  "demonic_id": "12200",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "8.2",
-     "chapter_number": 8.2
-    },
-    {
-     "name": "8.1",
-     "chapter_number": 8.1
-    },
-    {
-     "name": "7.2",
-     "chapter_number": 7.2
-    },
-    {
-     "name": "7.1",
-     "chapter_number": 7.1
-    },
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
   }
  }
 ]

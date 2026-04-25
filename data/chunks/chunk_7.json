@@ -1,5 +1,415 @@
 [
  {
+  "title": "Mahou Gakuen Lunar!",
+  "cover": "https://readermc.org/images/thumbnails/Mahou Gakuen Lunar!.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-Gakuen-Lunar%2521"
+  },
+  "max_chapter": 11,
+  "demonic_id": "2992",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Mahou Gyoushounin Roma",
+  "cover": "https://readermc.org/images/thumbnails/Mahou Gyoushounin Roma.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-Gyoushounin-Roma"
+  },
+  "max_chapter": 24,
+  "demonic_id": "2993",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Mahou Kabushikigaisha",
+  "cover": "https://readermc.org/images/thumbnails/Mahou Kabushikigaisha.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-Kabushikigaisha"
+  },
+  "max_chapter": 2,
+  "demonic_id": "2994",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Mahou no Iroha",
+  "cover": "https://readermc.org/images/thumbnails/Mahou no Iroha.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-no-Iroha"
+  },
+  "max_chapter": 17,
+  "demonic_id": "2995",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Mahou no Kagami ni Sasayaite",
+  "cover": "https://readermc.org/images/thumbnails/Mahou no Kagami ni Sasayaite.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-no-Kagami-ni-Sasayaite"
+  },
+  "max_chapter": 4,
+  "demonic_id": "2997",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Mahou no Te ni Notte",
+  "cover": "https://readermc.org/images/thumbnails/Mahou no Te ni Notte.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-no-Te-ni-Notte"
+  },
+  "max_chapter": 7,
+  "demonic_id": "2998",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Mahou no Tenshi Creamy Mami",
+  "cover": "https://readermc.org/images/thumbnails/Mahou no Tenshi Creamy Mami.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-no-Tenshi-Creamy-Mami"
+  },
+  "max_chapter": 2,
+  "demonic_id": "2999",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Mahou Senshi Louie",
+  "cover": "https://readermc.org/images/thumbnails/Mahou Senshi Louie.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-Senshi-Louie"
+  },
+  "max_chapter": 2,
+  "demonic_id": "3000",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Mahou Sensou",
+  "cover": "https://readermc.org/images/thumbnails/Mahou Sensou.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-Sensou"
+  },
+  "max_chapter": 12,
+  "demonic_id": "3001",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "8.005",
+     "chapter_number": 8.005
+    },
+    {
+     "name": "4.005",
+     "chapter_number": 4.005
+    }
+   ]
+  }
+ },
+ {
+  "title": "Mahou Shoujo Gakuen no Suketto Kyoushi",
+  "cover": "https://readermc.org/images/thumbnails/Mahou Shoujo Gakuen no Suketto Kyoushi.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-Shoujo-Gakuen-no-Suketto-Kyoushi"
+  },
+  "max_chapter": 26.2,
+  "demonic_id": "3002",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "26.2",
+     "chapter_number": 26.2
+    },
+    {
+     "name": "26.1",
+     "chapter_number": 26.1
+    },
+    {
+     "name": "25.3",
+     "chapter_number": 25.3
+    },
+    {
+     "name": "25.2",
+     "chapter_number": 25.2
+    },
+    {
+     "name": "25.1",
+     "chapter_number": 25.1
+    },
+    {
+     "name": "24.3",
+     "chapter_number": 24.3
+    },
+    {
+     "name": "24.2",
+     "chapter_number": 24.2
+    },
+    {
+     "name": "24.1",
+     "chapter_number": 24.1
+    },
+    {
+     "name": "23.3",
+     "chapter_number": 23.3
+    },
+    {
+     "name": "23.2",
+     "chapter_number": 23.2
+    },
+    {
+     "name": "23.1",
+     "chapter_number": 23.1
+    },
+    {
+     "name": "22.4",
+     "chapter_number": 22.4
+    },
+    {
+     "name": "22.3",
+     "chapter_number": 22.3
+    },
+    {
+     "name": "22.2",
+     "chapter_number": 22.2
+    },
+    {
+     "name": "22.1",
+     "chapter_number": 22.1
+    },
+    {
+     "name": "21.2",
+     "chapter_number": 21.2
+    },
+    {
+     "name": "21.1",
+     "chapter_number": 21.1
+    },
+    {
+     "name": "20.2",
+     "chapter_number": 20.2
+    },
+    {
+     "name": "20.1",
+     "chapter_number": 20.1
+    },
+    {
+     "name": "19.4",
+     "chapter_number": 19.4
+    },
+    {
+     "name": "19.3",
+     "chapter_number": 19.3
+    },
+    {
+     "name": "19.2",
+     "chapter_number": 19.2
+    },
+    {
+     "name": "19.1",
+     "chapter_number": 19.1
+    },
+    {
+     "name": "18.3",
+     "chapter_number": 18.3
+    },
+    {
+     "name": "18.2",
+     "chapter_number": 18.2
+    },
+    {
+     "name": "18.1",
+     "chapter_number": 18.1
+    },
+    {
+     "name": "17.3",
+     "chapter_number": 17.3
+    },
+    {
+     "name": "17.2",
+     "chapter_number": 17.2
+    },
+    {
+     "name": "17.1",
+     "chapter_number": 17.1
+    },
+    {
+     "name": "16.2",
+     "chapter_number": 16.2
+    },
+    {
+     "name": "16.1",
+     "chapter_number": 16.1
+    },
+    {
+     "name": "15.3",
+     "chapter_number": 15.3
+    },
+    {
+     "name": "15.2",
+     "chapter_number": 15.2
+    },
+    {
+     "name": "15.1",
+     "chapter_number": 15.1
+    },
+    {
+     "name": "14.4",
+     "chapter_number": 14.4
+    },
+    {
+     "name": "14.3",
+     "chapter_number": 14.3
+    },
+    {
+     "name": "14.2",
+     "chapter_number": 14.2
+    },
+    {
+     "name": "14.1",
+     "chapter_number": 14.1
+    },
+    {
+     "name": "13.2",
+     "chapter_number": 13.2
+    },
+    {
+     "name": "13.1",
+     "chapter_number": 13.1
+    },
+    {
+     "name": "12.4",
+     "chapter_number": 12.4
+    },
+    {
+     "name": "12.3",
+     "chapter_number": 12.3
+    },
+    {
+     "name": "12.2",
+     "chapter_number": 12.2
+    },
+    {
+     "name": "12.1",
+     "chapter_number": 12.1
+    },
+    {
+     "name": "11.3",
+     "chapter_number": 11.3
+    },
+    {
+     "name": "11.2",
+     "chapter_number": 11.2
+    },
+    {
+     "name": "11.1",
+     "chapter_number": 11.1
+    },
+    {
+     "name": "10.2",
+     "chapter_number": 10.2
+    },
+    {
+     "name": "10.1",
+     "chapter_number": 10.1
+    },
+    {
+     "name": "1.1",
+     "chapter_number": 1.1
+    }
+   ]
+  }
+ },
+ {
+  "title": "Mahou Shoujo Kazumi Magica - The Innocent Malice",
+  "cover": "https://readermc.org/images/thumbnails/Mahou Shoujo Kazumi Magica - The Innocent Malice.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-Shoujo-Kazumi-Magica-%25252D-The-Innocent-Malice"
+  },
+  "max_chapter": 18,
+  "demonic_id": "3003",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Mahou Shoujo Kokone wa Kakukatariki",
+  "cover": "https://readermc.org/images/thumbnails/Mahou Shoujo Kokone wa Kakukatariki.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-Shoujo-Kokone-wa-Kakukatariki"
+  },
+  "max_chapter": 9,
+  "demonic_id": "3004",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Mahou Shoujo Lyrical Nanoha - The reason why we are in love (Doujinshi)",
+  "cover": "https://readermc.org/images/thumbnails/Mahou Shoujo Lyrical Nanoha - The reason why we are in love (Doujinshi).webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-Shoujo-Lyrical-Nanoha-%25252D-The-reason-why-we-are-in-love-%2528Doujinshi%2529"
+  },
+  "max_chapter": 0,
+  "demonic_id": "3005",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
+  "title": "Mahou Shoujo Lyrical Nanoha - Vivid",
+  "cover": "https://readermc.org/images/thumbnails/Mahou Shoujo Lyrical Nanoha - Vivid.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Mahou-Shoujo-Lyrical-Nanoha-%25252D-Vivid"
+  },
+  "max_chapter": 62,
+  "demonic_id": "3006",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "23.005",
+     "chapter_number": 23.005
+    },
+    {
+     "name": "19.5",
+     "chapter_number": 19.5
+    },
+    {
+     "name": "12.1",
+     "chapter_number": 12.1
+    }
+   ]
+  }
+ },
+ {
   "title": "Mahou Shoujo Lyrical Nanoha A's",
   "cover": "https://readermc.org/images/thumbnails/Mahou Shoujo Lyrical Nanoha A's.webp",
   "status": null,
@@ -896,7 +1306,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Mairimashita%2521-Iruma%25252Dkun"
   },
-  "max_chapter": 439,
+  "max_chapter": 441,
   "demonic_id": "192",
   "chapters": {
    "Demonic Scans": [
@@ -2413,10 +2823,18 @@
     {
      "name": "Chapter 23",
      "chapter_slug": "chapter-23"
+    },
+    {
+     "name": "Chapter 24",
+     "chapter_slug": "chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "chapter-25"
     }
    ]
   },
-  "max_chapter": 23
+  "max_chapter": 25
  },
  {
   "title": "Malicious Code",
@@ -2908,7 +3326,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Manager-Kim"
   },
-  "max_chapter": 233,
+  "max_chapter": 238,
   "demonic_id": "12109",
   "chapters": {
    "Demonic Scans": []
@@ -5046,7 +5464,12 @@
   "max_chapter": 1.1,
   "demonic_id": "3172",
   "chapters": {
-   "Demonic Scans": []
+   "Demonic Scans": [
+    {
+     "name": "1.1",
+     "chapter_number": 1.1
+    }
+   ]
   }
  },
  {
@@ -6013,7 +6436,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/marriage-begins-with-an-interview/"
   },
-  "max_chapter": 25,
+  "max_chapter": 26,
   "chapters": {
    "Violet Scans": []
   }
@@ -6050,7 +6473,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/marriage-time-difference/"
   },
-  "max_chapter": 21,
+  "max_chapter": 23,
   "chapters": {
    "Violet Scans": []
   }
@@ -6629,7 +7052,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Martial-Evolution%253A-Start-by-Awakening-the-King-of-Monsters"
   },
-  "max_chapter": 119,
+  "max_chapter": 123,
   "demonic_id": "13175",
   "chapters": {
    "Demonic Scans": []
@@ -7067,7 +7490,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Martial-Wild-West"
   },
-  "max_chapter": 118,
+  "max_chapter": 121,
   "demonic_id": "11636",
   "chapters": {
    "Demonic Scans": [
@@ -7503,12 +7926,12 @@
  },
  {
   "title": "Mashiro-chan Wants to Do It Even If It’s with a Fake Boyfriend",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/06/978850224737.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201792%202400'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/mashiro-chan-wants-to-do-it-even-if-its-with-a-fake-boyfriend/"
   },
-  "max_chapter": 22,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": [
     {
@@ -7944,7 +8367,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Master%253A-This-rebellious-disciple-is-definitely-not-the-Holy-Son"
   },
-  "max_chapter": 177,
+  "max_chapter": 179,
   "demonic_id": "11930",
   "chapters": {
    "Demonic Scans": [
@@ -8477,7 +8900,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Max-Level-Player"
   },
-  "max_chapter": 133,
+  "max_chapter": 135,
   "demonic_id": "11751",
   "chapters": {
    "Demonic Scans": [
@@ -10250,10 +10673,18 @@
     {
      "name": "Chapter 116",
      "chapter_slug": "chapter-116"
+    },
+    {
+     "name": "Chapter 117",
+     "chapter_slug": "chapter-117"
+    },
+    {
+     "name": "Chapter 118",
+     "chapter_slug": "chapter-118"
     }
    ]
   },
-  "max_chapter": 116
+  "max_chapter": 118
  },
  {
   "title": "Megalomania",
@@ -12112,7 +12543,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/memoir-of-the-god-of-war/"
   },
-  "max_chapter": 250,
+  "max_chapter": 251,
   "chapters": {
    "Thunder Scans": [
     {
@@ -12145,7 +12576,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Memoir-Of-The-King-Of-War"
   },
-  "max_chapter": 249,
+  "max_chapter": 250,
   "demonic_id": "409",
   "chapters": {
    "Demonic Scans": [
@@ -12276,7 +12707,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Memory-in-the-Maze"
   },
-  "max_chapter": 54,
+  "max_chapter": 55,
   "demonic_id": "12653",
   "chapters": {
    "Demonic Scans": []
@@ -12367,7 +12798,32 @@
   "max_chapter": 31,
   "demonic_id": "3362",
   "chapters": {
-   "Demonic Scans": []
+   "Demonic Scans": [
+    {
+     "name": "23.5",
+     "chapter_number": 23.5
+    },
+    {
+     "name": "21.5",
+     "chapter_number": 21.5
+    },
+    {
+     "name": "19.5",
+     "chapter_number": 19.5
+    },
+    {
+     "name": "15.5",
+     "chapter_number": 15.5
+    },
+    {
+     "name": "11.5",
+     "chapter_number": 11.5
+    },
+    {
+     "name": "7.5",
+     "chapter_number": 7.5
+    }
+   ]
   }
  },
  {
@@ -12952,10 +13408,14 @@
     {
      "name": "Chapter 69",
      "chapter_slug": "chapter-69"
+    },
+    {
+     "name": "Chapter 70",
+     "chapter_slug": "chapter-70"
     }
    ]
   },
-  "max_chapter": 69
+  "max_chapter": 70
  },
  {
   "title": "Merry Unbalance Christmas",
@@ -13192,7 +13652,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Metaphor%253A-ReFantazio"
   },
-  "max_chapter": 15,
+  "max_chapter": 16,
   "demonic_id": "12999",
   "chapters": {
    "Demonic Scans": []
@@ -13257,7 +13717,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/meteor-the-savior-of-blinding-speed/"
   },
-  "max_chapter": 22,
+  "max_chapter": 24,
   "chapters": {
    "Thunder Scans": []
   }
@@ -13269,7 +13729,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Meteor%253A-The-Supersonic-Savior"
   },
-  "max_chapter": 18,
+  "max_chapter": 23,
   "demonic_id": "13666",
   "chapters": {
    "Demonic Scans": []
@@ -13734,7 +14194,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Mia-Returns"
   },
-  "max_chapter": 39,
+  "max_chapter": 40,
   "demonic_id": "13472",
   "chapters": {
    "Demonic Scans": []
@@ -14975,52 +15435,7 @@
   "max_chapter": 24,
   "demonic_id": "3427",
   "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "3.4",
-     "chapter_number": 3.4
-    },
-    {
-     "name": "3.3",
-     "chapter_number": 3.3
-    },
-    {
-     "name": "3.1",
-     "chapter_number": 3.1
-    },
-    {
-     "name": "2.9",
-     "chapter_number": 2.9
-    },
-    {
-     "name": "2.8",
-     "chapter_number": 2.8
-    },
-    {
-     "name": "2.7",
-     "chapter_number": 2.7
-    },
-    {
-     "name": "2.6",
-     "chapter_number": 2.6
-    },
-    {
-     "name": "2.4",
-     "chapter_number": 2.4
-    },
-    {
-     "name": "2.3",
-     "chapter_number": 2.3
-    },
-    {
-     "name": "2.2",
-     "chapter_number": 2.2
-    },
-    {
-     "name": "2.1",
-     "chapter_number": 2.1
-    }
-   ]
+   "Demonic Scans": []
   }
  },
  {
@@ -15295,7 +15710,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/milady-memoirs-of-a-villainess/"
   },
-  "max_chapter": 26,
+  "max_chapter": 28,
   "chapters": {
    "Violet Scans": []
   }
@@ -16510,7 +16925,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/missed-my-happy-ending-met-the-demon-grand-duke/"
   },
-  "max_chapter": 29,
+  "max_chapter": 31,
   "chapters": {
    "Violet Scans": []
   }
@@ -16625,7 +17040,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Mistaken-for-a-Wicked-Woman%2521"
   },
-  "max_chapter": 73,
+  "max_chapter": 74,
   "demonic_id": "13055",
   "chapters": {
    "Demonic Scans": []
@@ -18543,12 +18958,12 @@
  },
  {
   "title": "Mocked as a Sidelined Editor, I Ended Up Living Together with a Pair of Twin High School Girls.",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/06/df1f8f40-1a95-4d71-b5a8-c30759f0bc35_upscayl_2x_digital-art-4x.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202110%203000'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/after-being-mocked-for-being-a-sideline-editor-i-ended-up-living-with-twin-high-school-girls/"
   },
-  "max_chapter": 11,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": [
     {
@@ -19122,20 +19537,7 @@
   "max_chapter": 34.5,
   "demonic_id": "3598",
   "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "34.5",
-     "chapter_number": 34.5
-    },
-    {
-     "name": "15.5",
-     "chapter_number": 15.5
-    },
-    {
-     "name": "10.5",
-     "chapter_number": 10.5
-    }
-   ]
+   "Demonic Scans": []
   }
  },
  {
@@ -19207,7 +19609,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Mofumofu-to-Isekai-Bouken-Meshi"
   },
-  "max_chapter": 8,
+  "max_chapter": 10,
   "demonic_id": "12848",
   "chapters": {
    "Demonic Scans": [
@@ -20021,7 +20423,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Monarch-of-Supreme-Beings"
   },
-  "max_chapter": 16,
+  "max_chapter": 22,
   "demonic_id": "11786",
   "chapters": {
    "Demonic Scans": [
@@ -20631,7 +21033,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Monster-Eater",
    "Thunder Scans": "https://en-thunderscans.com/comics/monster-eater/"
   },
-  "max_chapter": 107,
+  "max_chapter": 109,
   "demonic_id": "12378",
   "chapters": {
    "Demonic Scans": [
@@ -22315,7 +22717,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/monsters-are-stopped-by-monsters/"
   },
-  "max_chapter": 18,
+  "max_chapter": 20,
   "chapters": {
    "Thunder Scans": []
   }
@@ -22354,7 +22756,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Mood-Disorder",
    "Thunder Scans": "https://en-thunderscans.com/comics/mood-disorder/"
   },
-  "max_chapter": 70,
+  "max_chapter": 73,
   "demonic_id": "13389",
   "chapters": {
    "Demonic Scans": [
@@ -22390,7 +22792,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/MookHyang-%25252D-Dark-Lady"
   },
-  "max_chapter": 284,
+  "max_chapter": 286,
   "demonic_id": "157",
   "chapters": {
    "Demonic Scans": [
@@ -24600,7 +25002,7 @@
    "Asura Scans": "https://asurascans.com/comics/mount-hua-sects-genius-phantom-swordsman",
    "Demonic Scans": "https://demonicscans.org/manga/Mount-Hua-Sect%2527s-Genius-Phantom-Swordsman"
   },
-  "max_chapter": 56,
+  "max_chapter": 58,
   "chapters": {
    "Asura Scans": [],
    "Demonic Scans": [
@@ -25070,7 +25472,7 @@
    "Asura Scans": "https://asurascans.com/comics/mr-devourer-please-act-like-a-final-boss",
    "Demonic Scans": "https://demonicscans.org/manga/Mr-Devourer%252C-Please-Act-Like-a-Final-Boss"
   },
-  "max_chapter": 121,
+  "max_chapter": 123,
   "chapters": {
    "Asura Scans": [
     {
@@ -26212,7 +26614,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Murim-Psychopath",
    "Thunder Scans": "https://en-thunderscans.com/comics/murim-psycopath/"
   },
-  "max_chapter": 21,
+  "max_chapter": 23,
   "chapters": {
    "Asura Scans": [
     {
@@ -27135,12 +27537,12 @@
  },
  {
   "title": "My Bait Is The Girls",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/06/Cover.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%203602%205120'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/my-bait-is-the-girls/"
   },
-  "max_chapter": 10.5,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": [
     {
@@ -27909,12 +28311,12 @@
  },
  {
   "title": "My Broken Justice Weighs Love and Sin on the Scales in a Looping Parallel World",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/06/Eres_un_disenador_202604120746_upscayl_2x_digital-art-4x-scaled.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201911%202560'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/my-broken-justice-weighs-love-and-sin-on-the-scales-in-a-looping-parallel-world/"
   },
-  "max_chapter": 17,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": []
   }
@@ -28552,7 +28954,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/my-dangerous-neighbor/"
   },
-  "max_chapter": 10,
+  "max_chapter": 16,
   "chapters": {
    "Violet Scans": []
   }
@@ -28713,12 +29115,12 @@
  },
  {
   "title": "My Daughters, S-Rank Adventurers, Have a Severe Obsession With Their Father",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/09/Eres_un_disenador_202604121150_upscayl_1x_digital-art-4x.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201792%202400'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/my-daughters-s-rank-adventurers-have-a-severe-obsession-with-their-father/"
   },
-  "max_chapter": 58,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": [
     {
@@ -28747,7 +29149,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/my-dead-wife-came-back/"
   },
-  "max_chapter": 27,
+  "max_chapter": 29,
   "chapters": {
    "Violet Scans": []
   }
@@ -29223,7 +29625,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/My-Disciples-Are-All-Big-Villains"
   },
-  "max_chapter": 497,
+  "max_chapter": 501,
   "demonic_id": "13062",
   "chapters": {
    "Demonic Scans": [
@@ -29269,7 +29671,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/My-Disciples-Cultivate%252C-While-I-Slack-Off%2521"
   },
-  "max_chapter": 166,
+  "max_chapter": 167,
   "demonic_id": "11891",
   "chapters": {
    "Demonic Scans": [
@@ -29419,359 +29821,6 @@
   },
   "max_chapter": 5,
   "demonic_id": "3828",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "My Family is Obsessed with Me [ALL CHAPTERS]",
-  "cover": "https://readermc.org/images/thumbnails/My Family is Obsessed with Me [ALL CHAPTERS].webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/My-Family-is-Obsessed-with-Me-%255BALL-CHAPTERS%255D"
-  },
-  "max_chapter": 85,
-  "demonic_id": "11109",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "My Father Became a Cute VTuber Girl!",
-  "cover": "https://readermc.org/images/thumbnails/My Father Became a Cute VTuber Girl!.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/My-Father-Became-a-Cute-VTuber-Girl%2521"
-  },
-  "max_chapter": 19,
-  "demonic_id": "3829",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "17.5",
-     "chapter_number": 17.5
-    },
-    {
-     "name": "7.5",
-     "chapter_number": 7.5
-    },
-    {
-     "name": "5.8",
-     "chapter_number": 5.8
-    },
-    {
-     "name": "5.7",
-     "chapter_number": 5.7
-    },
-    {
-     "name": "5.6",
-     "chapter_number": 5.6
-    },
-    {
-     "name": "5.5",
-     "chapter_number": 5.5
-    },
-    {
-     "name": "3.5",
-     "chapter_number": 3.5
-    },
-    {
-     "name": "2.5",
-     "chapter_number": 2.5
-    }
-   ]
-  }
- },
- {
-  "title": "My Father, the Possessive Demi-God",
-  "cover": "https://violetscans.org/wp-content/uploads/2025/10/2025-12-21-04-02-40-1766332960311-210x300.jpg",
-  "status": null,
-  "sources": {
-   "Violet Scans": "https://violetscans.org/comics/my-father-the-possessive-demi-god/"
-  },
-  "max_chapter": 136,
-  "chapters": {
-   "Violet Scans": []
-  }
- },
- {
-  "title": "My Fathers Journal",
-  "cover": "https://readermc.org/images/thumbnails/My Fathers Journal.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/My-Fathers-Journal"
-  },
-  "max_chapter": 2,
-  "demonic_id": "3830",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "My Favorite Girl",
-  "cover": "https://readermc.org/images/thumbnails/My Favorite Girl.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/My-Favorite-Girl"
-  },
-  "max_chapter": 4,
-  "demonic_id": "3831",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "My Female Disciples are all Future Masters of the Heavens [ALL CHAPTERS]",
-  "cover": "https://readermc.org/images/thumbnails/My Female Disciples are all Future Masters of the Heavens [ALL CHAPTERS].webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/My-Female-Disciples-are-all-Future-Masters-of-the-Heavens-%255BALL-CHAPTERS%255D"
-  },
-  "max_chapter": 0,
-  "demonic_id": "11196",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  }
- },
- {
-  "title": "My Fiancé in Name Only Is Actually in Love with Me",
-  "cover": "https://violetscans.org/wp-content/uploads/2025/12/2025-12-16-03-55-36-1765900536258-212x300.jpg",
-  "status": null,
-  "sources": {
-   "Violet Scans": "https://violetscans.org/comics/my-fiance-in-name-only-is-actually-in-love-with-me/"
-  },
-  "max_chapter": 30,
-  "chapters": {
-   "Violet Scans": []
-  }
- },
- {
-  "title": "My Fiance is in Love with My Little Sister",
-  "cover": "https://readermc.org/images/thumbnails/My Fiance is in Love with My Little Sister.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/My-Fiance-is-in-Love-with-My-Little-Sister"
-  },
-  "max_chapter": 21.2,
-  "demonic_id": "3832",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "21.2",
-     "chapter_number": 21.2
-    },
-    {
-     "name": "21.1",
-     "chapter_number": 21.1
-    },
-    {
-     "name": "19.3",
-     "chapter_number": 19.3
-    },
-    {
-     "name": "19.2",
-     "chapter_number": 19.2
-    },
-    {
-     "name": "19.1",
-     "chapter_number": 19.1
-    },
-    {
-     "name": "14.2",
-     "chapter_number": 14.2
-    },
-    {
-     "name": "14.1",
-     "chapter_number": 14.1
-    },
-    {
-     "name": "13.5",
-     "chapter_number": 13.5
-    },
-    {
-     "name": "13.2",
-     "chapter_number": 13.2
-    },
-    {
-     "name": "13.1",
-     "chapter_number": 13.1
-    },
-    {
-     "name": "12.5",
-     "chapter_number": 12.5
-    },
-    {
-     "name": "11.2",
-     "chapter_number": 11.2
-    },
-    {
-     "name": "11.1",
-     "chapter_number": 11.1
-    },
-    {
-     "name": "10.3",
-     "chapter_number": 10.3
-    },
-    {
-     "name": "10.2",
-     "chapter_number": 10.2
-    },
-    {
-     "name": "10.1",
-     "chapter_number": 10.1
-    },
-    {
-     "name": "7.2",
-     "chapter_number": 7.2
-    },
-    {
-     "name": "7.1",
-     "chapter_number": 7.1
-    },
-    {
-     "name": "4.2",
-     "chapter_number": 4.2
-    },
-    {
-     "name": "4.1",
-     "chapter_number": 4.1
-    },
-    {
-     "name": "2.2",
-     "chapter_number": 2.2
-    },
-    {
-     "name": "2.1",
-     "chapter_number": 2.1
-    },
-    {
-     "name": "1.2",
-     "chapter_number": 1.2
-    },
-    {
-     "name": "1.1",
-     "chapter_number": 1.1
-    },
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  }
- },
- {
-  "title": "My first love childhood friend is back as a zombie!?",
-  "cover": "https://readermc.org/images/thumbnails/My first love childhood friend is back as a zombie! .webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/My-first-love-childhood-friend-is-back-as-a-zombie%2521%253F"
-  },
-  "max_chapter": 7.5,
-  "demonic_id": "11012",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "7.5",
-     "chapter_number": 7.5
-    }
-   ]
-  }
- },
- {
-  "title": "My Galpals are Comming of Age",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/12/922783405640.webp",
-  "status": null,
-  "sources": {
-   "ADK Scans": "https://www.silentquill.net/my-galpals-are-comming-of-age/"
-  },
-  "max_chapter": 6.5,
-  "chapters": {
-   "ADK Scans": [
-    {
-     "name": "6.5",
-     "chapter_slug": "my-galpals-are-comming-of-age-chapter-6-5"
-    }
-   ]
-  }
- },
- {
-  "title": "My Gift LVL 9999 Unlimited Gacha",
-  "cover": "https://readermc.org/images/thumbnails/My Gift LVL 9999 Unlimited Gacha.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/My-Gift-LVL-9999-Unlimited-Gacha"
-  },
-  "max_chapter": 196,
-  "demonic_id": "1165",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "192.5",
-     "chapter_number": 192.5
-    },
-    {
-     "name": "87.5",
-     "chapter_number": 87.5
-    },
-    {
-     "name": "58.1",
-     "chapter_number": 58.1
-    },
-    {
-     "name": "37.5",
-     "chapter_number": 37.5
-    },
-    {
-     "name": "23.5",
-     "chapter_number": 23.5
-    },
-    {
-     "name": "8.5",
-     "chapter_number": 8.5
-    }
-   ]
-  }
- },
- {
-  "title": "My Girl",
-  "cover": "https://readermc.org/images/thumbnails/My Girl.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/My-Girl"
-  },
-  "max_chapter": 27,
-  "demonic_id": "3833",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "My Girl Is A Dragon Princess",
-  "cover": "https://readermc.org/images/thumbnails/My Girl Is A Dragon Princess.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/My-Girl-Is-A-Dragon-Princess"
-  },
-  "max_chapter": 194,
-  "demonic_id": "3835",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "My Girl SAHARA Mizu",
-  "cover": "https://readermc.org/images/thumbnails/My Girl SAHARA Mizu.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/My-Girl-SAHARA-Mizu"
-  },
-  "max_chapter": 44,
-  "demonic_id": "3836",
   "chapters": {
    "Demonic Scans": []
   }

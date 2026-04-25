@@ -76,7 +76,7 @@ const API = (() => {
 
 	// Search for manga by title. Loads index.json on first call.
 	// Scoring: exact match = 3, prefix match = 2, substring = 1.
-	// Returns up to 10 results, sorted by score then alphabetically.
+	// Returns up to 25 results, sorted by score then alphabetically.
 	async function search_manga(query)
 	{
 		const index = await _load_index();
@@ -96,7 +96,7 @@ const API = (() => {
 
 		return scored
 			.sort((a, b) => b.score - a.score || a.entry.t.localeCompare(b.entry.t))
-			.slice(0, 10)
+			.slice(0, 25)
 			.map(({ entry }) => _parse_index_entry(entry));
 	}
 

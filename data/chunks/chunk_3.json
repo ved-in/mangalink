@@ -1,5 +1,208 @@
 [
  {
+  "title": "Gakuen Babe",
+  "cover": "https://readermc.org/images/thumbnails/Gakuen Babe.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Gakuen-Babe"
+  },
+  "max_chapter": 4,
+  "demonic_id": "9667",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Gal Can't Be Kind to Otaku!?",
+  "cover": "https://readermc.org/images/thumbnails/Gal Can’t Be Kind to Otaku! .webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Gal-Can%2527t-Be-Kind-to-Otaku%2521%253F"
+  },
+  "max_chapter": 57,
+  "demonic_id": "11321",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "10.6",
+     "chapter_number": 10.6
+    },
+    {
+     "name": "10.5",
+     "chapter_number": 10.5
+    },
+    {
+     "name": "10.4",
+     "chapter_number": 10.4
+    },
+    {
+     "name": "10.3",
+     "chapter_number": 10.3
+    },
+    {
+     "name": "10.2",
+     "chapter_number": 10.2
+    },
+    {
+     "name": "10.1",
+     "chapter_number": 10.1
+    },
+    {
+     "name": "9.4",
+     "chapter_number": 9.4
+    },
+    {
+     "name": "9.3",
+     "chapter_number": 9.3
+    },
+    {
+     "name": "9.2",
+     "chapter_number": 9.2
+    },
+    {
+     "name": "9.1",
+     "chapter_number": 9.1
+    },
+    {
+     "name": "8.2",
+     "chapter_number": 8.2
+    },
+    {
+     "name": "8.1",
+     "chapter_number": 8.1
+    },
+    {
+     "name": "1.2",
+     "chapter_number": 1.2
+    },
+    {
+     "name": "1.1",
+     "chapter_number": 1.1
+    }
+   ]
+  }
+ },
+ {
+  "title": "Gamaran Shura",
+  "cover": "https://readermc.org/images/thumbnails/Gamaran Shura.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Gamaran-Shura"
+  },
+  "max_chapter": 25,
+  "demonic_id": "684",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "22.1",
+     "chapter_number": 22.1
+    }
+   ]
+  }
+ },
+ {
+  "title": "Gambling 1945",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2025/03/2025-03-19-10-15-26-1742379326083-231x300.jpg",
+  "status": null,
+  "sources": {
+   "Thunder Scans": "https://en-thunderscans.com/comics/gambling-1945/"
+  },
+  "max_chapter": 27,
+  "chapters": {
+   "Thunder Scans": [
+    {
+     "name": "0",
+     "chapter_slug": "gambling-1945-chapter-0"
+    }
+   ]
+  }
+ },
+ {
+  "title": "Game Invades World",
+  "cover": "https://readermc.org/images/thumbnails/Game Invades World.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Game-Invades-World"
+  },
+  "max_chapter": 30,
+  "demonic_id": "1578",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0.1",
+     "chapter_number": 0.1
+    }
+   ]
+  }
+ },
+ {
+  "title": "Game Master CEO Trapped in a VR World",
+  "cover": "https://readermc.org/images/thumbnails/Game Master CEO Trapped in a VR World.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Game-Master-CEO-Trapped-in-a-VR-World",
+   "Thunder Scans": "https://en-thunderscans.com/comics/game-master-ceo-trapped-in-a-vr-world/"
+  },
+  "max_chapter": 30,
+  "demonic_id": "12073",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ],
+   "Thunder Scans": []
+  }
+ },
+ {
+  "title": "Game of Champions",
+  "cover": "https://readermc.org/images/thumbnails/Game of Champions.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Game-of-Champions"
+  },
+  "max_chapter": 4,
+  "demonic_id": "11272",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Game Sekai no mobu akuyaku ni tensei shita node Last bos wo mezashite mita",
+  "cover": "https://readermc.org/images/thumbnails/Game Sekai no mobu akuyaku ni tensei shita node Last bos wo mezashite mita.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Game-Sekai-no-mobu-akuyaku-ni-tensei-shita-node-Last-bos-wo-mezashite-mita"
+  },
+  "max_chapter": 4.4,
+  "demonic_id": "13450",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "4.4",
+     "chapter_number": 4.4
+    },
+    {
+     "name": "4.3",
+     "chapter_number": 4.3
+    },
+    {
+     "name": "4.2",
+     "chapter_number": 4.2
+    },
+    {
+     "name": "4.1",
+     "chapter_number": 4.1
+    },
+    {
+     "name": "1.1",
+     "chapter_number": 1.1
+    }
+   ]
+  }
+ },
+ {
   "title": "Game Sekai Tensei Dankatsu Gamer wa Dungeon Shuukatsu no Susume o Hajime kara Play suru",
   "cover": "https://readermc.org/images/thumbnails/Game Sekai Tensei Dankatsu Gamer wa Dungeon Shuukatsu no Susume o Hajime kara Play suru.jpg",
   "status": null,
@@ -903,7 +1106,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Gatekeeper-Of-The-Boundless-World"
   },
-  "max_chapter": 150,
+  "max_chapter": 153,
   "demonic_id": "12921",
   "chapters": {
    "Demonic Scans": []
@@ -1562,7 +1765,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Gendai-Dungeon-Life-no-Tsuzuki-wa-Isekai-Open-World-de%2521"
   },
-  "max_chapter": 24,
+  "max_chapter": 27,
   "demonic_id": "13208",
   "chapters": {
    "Demonic Scans": [
@@ -1818,7 +2021,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Genius-Blacksmith%2527s-Game"
   },
-  "max_chapter": 49,
+  "max_chapter": 50,
   "demonic_id": "13505",
   "chapters": {
    "Demonic Scans": []
@@ -1882,7 +2085,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Genius-Grandson-of-the-Loan-Shark-King"
   },
-  "max_chapter": 99,
+  "max_chapter": 101,
   "demonic_id": "12746",
   "chapters": {
    "Demonic Scans": [
@@ -1937,7 +2140,7 @@
    "Asura Scans": "https://asurascans.com/comics/genius-of-the-unique-lineage",
    "Demonic Scans": "https://demonicscans.org/manga/Genius-of-the-Unique-Lineage"
   },
-  "max_chapter": 152,
+  "max_chapter": 152.1,
   "chapters": {
    "Asura Scans": [
     {
@@ -1946,6 +2149,10 @@
     }
    ],
    "Demonic Scans": [
+    {
+     "name": "152.1",
+     "chapter_number": 152.1
+    },
     {
      "name": "0",
      "chapter_number": 0
@@ -3261,7 +3468,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Ghost-Story-Club-%2528-Remake-%2529",
    "Flame Comics": "https://flamecomics.xyz/series/155"
   },
-  "max_chapter": 78,
+  "max_chapter": 82,
   "demonic_id": "12522",
   "chapters": {
    "Demonic Scans": [],
@@ -4758,14 +4965,22 @@
  },
  {
   "title": "Girls Zombie Party",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/06/Eres_un_disenador_202604122138.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201792%202400'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/girls-zombie-party/"
   },
-  "max_chapter": 30,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": [
+    {
+     "name": "30.6",
+     "chapter_slug": "girls-zombie-party-chapter-30-6"
+    },
+    {
+     "name": "30.5",
+     "chapter_slug": "girls-zombie-party-chapter-30-5"
+    },
     {
      "name": "26.5",
      "chapter_slug": "girls-zombie-party-chapter-26-5"
@@ -4913,6 +5128,107 @@
   "chapters": {
    "Demonic Scans": []
   }
+ },
+ {
+  "title": "GL MURMUR",
+  "cover": "https://media.templetoons.com/file/terms54/covers/999633b6-45bc-4c49-ab33-3642edf79ed2.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/gl-murmur"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "chapter-22"
+    }
+   ]
+  },
+  "max_chapter": 22
  },
  {
   "title": "Glass Goshi no Kioku",
@@ -5115,7 +5431,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Global-Martial-Arts",
    "Thunder Scans": "https://en-thunderscans.com/comics/global-martial-arts/"
   },
-  "max_chapter": 356,
+  "max_chapter": 358,
   "demonic_id": "133",
   "chapters": {
    "Demonic Scans": [
@@ -5375,7 +5691,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Goblin-Slayer"
   },
-  "max_chapter": 107,
+  "max_chapter": 108,
   "demonic_id": "570",
   "chapters": {
    "Demonic Scans": [
@@ -5648,7 +5964,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/God-of-Blackfield",
    "Thunder Scans": "https://en-thunderscans.com/comics/god-of-blackfield/"
   },
-  "max_chapter": 314,
+  "max_chapter": 315,
   "demonic_id": "153",
   "chapters": {
    "Demonic Scans": [],
@@ -5708,7 +6024,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/God-of-Martial-Arts"
   },
-  "max_chapter": 1143,
+  "max_chapter": 1150,
   "demonic_id": "15",
   "chapters": {
    "Demonic Scans": [
@@ -7759,7 +8075,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/God%25252Dlevel-Assassin%252C-I%2527m-the-Shadow"
   },
-  "max_chapter": 105,
+  "max_chapter": 108,
   "demonic_id": "12950",
   "chapters": {
    "Demonic Scans": [
@@ -7777,7 +8093,7 @@
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/god-tier-extras-ultimate-guide-remake"
   },
-  "max_chapter": 52,
+  "max_chapter": 53,
   "chapters": {
    "Asura Scans": []
   }
@@ -9659,7 +9975,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/goddess-of-abundance-and-the-genius-rogue-apostle/"
   },
-  "max_chapter": 38,
+  "max_chapter": 40,
   "chapters": {
    "Thunder Scans": []
   }
@@ -9671,7 +9987,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/goddess-of-fortune/"
   },
-  "max_chapter": 1,
+  "max_chapter": 7,
   "chapters": {
    "Violet Scans": []
   }
@@ -10645,7 +10961,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/GOLDEN-MAN"
   },
-  "max_chapter": 63,
+  "max_chapter": 67,
   "demonic_id": "12284",
   "chapters": {
    "Demonic Scans": []
@@ -10967,12 +11283,12 @@
  },
  {
   "title": "Good Night Fumi-san",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/06/Eres_un_disenador_202604121207.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201792%202400'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/good-night-fumi-san-2/"
   },
-  "max_chapter": 54,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": [
     {
@@ -11461,7 +11777,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Gray-Ash%253A-A-New-Life-in-the-Dungeon-City"
   },
-  "max_chapter": 32,
+  "max_chapter": 33,
   "demonic_id": "13569",
   "chapters": {
    "Demonic Scans": []
@@ -11474,7 +11790,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/gray-ash-the-dismissed-knight-begins-anew-in-the-dungeon-city/"
   },
-  "max_chapter": 33,
+  "max_chapter": 34,
   "chapters": {
    "Thunder Scans": []
   }
@@ -11563,7 +11879,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Great-Sage-of-100-Magic-Stones"
   },
-  "max_chapter": 40,
+  "max_chapter": 42,
   "demonic_id": "13471",
   "chapters": {
    "Demonic Scans": []
@@ -12432,7 +12748,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/green-light/"
   },
-  "max_chapter": 63,
+  "max_chapter": 64,
   "chapters": {
    "Violet Scans": []
   }
@@ -12770,7 +13086,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Guard-pass"
   },
-  "max_chapter": 153,
+  "max_chapter": 158,
   "demonic_id": "9955",
   "chapters": {
    "Demonic Scans": []
@@ -12926,7 +13242,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Guide-to-be-King-of-the-Dead"
   },
-  "max_chapter": 62,
+  "max_chapter": 64,
   "demonic_id": "11856",
   "chapters": {
    "Demonic Scans": []
@@ -12962,12 +13278,12 @@
  },
  {
   "title": "Guilty Circle",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/09/00.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201125%201600'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/guilty-circle/"
   },
-  "max_chapter": 194.5,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": [
     {
@@ -15151,12 +15467,12 @@
  },
  {
   "title": "Hakiri-san wants to be your very own Grim Reaper",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/06/Eres_un_disenador_202604121239.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201792%202400'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/hakiri-san-wants-to-be-your-very-own-grim-reaper/"
   },
-  "max_chapter": 7,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": []
   }
@@ -16568,7 +16884,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Handyman-Saitou-in-Another-World"
   },
-  "max_chapter": 152,
+  "max_chapter": 159,
   "demonic_id": "11517",
   "chapters": {
    "Demonic Scans": [
@@ -16785,7 +17101,52 @@
   "max_chapter": 210,
   "demonic_id": "10115",
   "chapters": {
-   "Demonic Scans": []
+   "Demonic Scans": [
+    {
+     "name": "174.1",
+     "chapter_number": 174.1
+    },
+    {
+     "name": "164.5",
+     "chapter_number": 164.5
+    },
+    {
+     "name": "152.1",
+     "chapter_number": 152.1
+    },
+    {
+     "name": "141.5",
+     "chapter_number": 141.5
+    },
+    {
+     "name": "107.5",
+     "chapter_number": 107.5
+    },
+    {
+     "name": "80.5",
+     "chapter_number": 80.5
+    },
+    {
+     "name": "68.5",
+     "chapter_number": 68.5
+    },
+    {
+     "name": "57.5",
+     "chapter_number": 57.5
+    },
+    {
+     "name": "50.5",
+     "chapter_number": 50.5
+    },
+    {
+     "name": "46.5",
+     "chapter_number": 46.5
+    },
+    {
+     "name": "38.5",
+     "chapter_number": 38.5
+    }
+   ]
   }
  },
  {
@@ -20327,7 +20688,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/HEALING-LIFE-THROUGH-CAMPING-IN-ANOTHER-WORLD"
   },
-  "max_chapter": 102,
+  "max_chapter": 105,
   "demonic_id": "12265",
   "chapters": {
    "Demonic Scans": []
@@ -20527,7 +20888,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Heart%25252DPounding-Cute-Poem",
    "Thunder Scans": "https://en-thunderscans.com/comics/heart-pounding-cute-poem/"
   },
-  "max_chapter": 50,
+  "max_chapter": 52,
   "demonic_id": "13104",
   "chapters": {
    "Demonic Scans": [],
@@ -20698,11 +21059,19 @@
    "Demonic Scans": "https://demonicscans.org/manga/Heavenly-Demon-Cultivation-Simulation",
    "Flame Comics": "https://flamecomics.xyz/series/51"
   },
-  "max_chapter": 175,
+  "max_chapter": 178,
   "demonic_id": "11022",
   "chapters": {
    "Demonic Scans": [],
    "Flame Comics": [
+    {
+     "name": "174",
+     "chapter_slug": "6e178ed37f4fc410"
+    },
+    {
+     "name": "173",
+     "chapter_slug": "2177adecc1841a69"
+    },
     {
      "name": "172",
      "chapter_slug": "93fac91da5c7f759"
@@ -21431,7 +21800,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Heavenly-Demon-Tavern",
    "Thunder Scans": "https://en-thunderscans.com/comics/heavenly-demon-tavern/"
   },
-  "max_chapter": 66,
+  "max_chapter": 67,
   "demonic_id": "13132",
   "chapters": {
    "Demonic Scans": [],
@@ -21472,7 +21841,7 @@
    "Asura Scans": "https://asurascans.com/comics/heavenly-grand-archives-young-master",
    "Demonic Scans": "https://demonicscans.org/manga/Heavenly-Grand-Archive%2527s-Young-Master"
   },
-  "max_chapter": 173,
+  "max_chapter": 175,
   "chapters": {
    "Asura Scans": [],
    "Demonic Scans": []
@@ -21783,10 +22152,42 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Hell-Mode%253A-Yarikomi-Suki-no-Gamer-wa-Hai-Settei-no-Isekai-de-Musou-Suru"
   },
-  "max_chapter": 96.19,
+  "max_chapter": 96.28,
   "demonic_id": "11407",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "96.28",
+     "chapter_number": 96.28
+    },
+    {
+     "name": "96.27",
+     "chapter_number": 96.27
+    },
+    {
+     "name": "96.26",
+     "chapter_number": 96.26
+    },
+    {
+     "name": "96.25",
+     "chapter_number": 96.25
+    },
+    {
+     "name": "96.24",
+     "chapter_number": 96.24
+    },
+    {
+     "name": "96.23",
+     "chapter_number": 96.23
+    },
+    {
+     "name": "96.219",
+     "chapter_number": 96.219
+    },
+    {
+     "name": "96.211",
+     "chapter_number": 96.211
+    },
     {
      "name": "96.19",
      "chapter_number": 96.19
@@ -21810,6 +22211,10 @@
     {
      "name": "96.14",
      "chapter_number": 96.14
+    },
+    {
+     "name": "96.1",
+     "chapter_number": 96.1
     },
     {
      "name": "95.1",
@@ -22423,7 +22828,7 @@
    "Asura Scans": "https://asurascans.com/comics/helmut-the-forsaken-child",
    "Demonic Scans": "https://demonicscans.org/manga/Helmut%253A-The-Forsaken-Child"
   },
-  "max_chapter": 129,
+  "max_chapter": 130,
   "chapters": {
    "Asura Scans": [],
    "Demonic Scans": [
@@ -22954,10 +23359,14 @@
     {
      "name": "Chapter 44",
      "chapter_slug": "chapter-44"
+    },
+    {
+     "name": "Chapter 45",
+     "chapter_slug": "chapter-45"
     }
    ]
   },
-  "max_chapter": 44
+  "max_chapter": 45
  },
  {
   "title": "Her Majesty's Swarm",
@@ -23086,6 +23495,19 @@
   },
   "max_chapter": 37,
   "demonic_id": "10244",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Hero Covered: Saving the World With Dark Hereditary Skills",
+  "cover": "https://readermc.org/images/thumbnails/Hero Covered  Saving the World With Dark Hereditary Skills.webp",
+  "status": null,
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/Hero-Covered%253A-Saving-the-World-With-Dark-Hereditary-Skills"
+  },
+  "max_chapter": 46,
+  "demonic_id": "13670",
   "chapters": {
    "Demonic Scans": []
   }
@@ -23949,7 +24371,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Hero-Killer"
   },
-  "max_chapter": 258,
+  "max_chapter": 260,
   "demonic_id": "929",
   "chapters": {
    "Demonic Scans": []
@@ -25044,7 +25466,20 @@
   "max_chapter": 2,
   "demonic_id": "10266",
   "chapters": {
-   "Demonic Scans": []
+   "Demonic Scans": [
+    {
+     "name": "1.2",
+     "chapter_number": 1.2
+    },
+    {
+     "name": "1.1",
+     "chapter_number": 1.1
+    },
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
   }
  },
  {
@@ -25224,7 +25659,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/Hidden-House-in-the-Apocalypse",
    "Thunder Scans": "https://en-thunderscans.com/comics/hidden-house-in-the-apocalypse/"
   },
-  "max_chapter": 94,
+  "max_chapter": 96,
   "demonic_id": "12316",
   "chapters": {
    "Demonic Scans": [
@@ -25376,7 +25811,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/High-Class"
   },
-  "max_chapter": 63,
+  "max_chapter": 67,
   "demonic_id": "12676",
   "chapters": {
    "Demonic Scans": [
@@ -25398,7 +25833,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/High-Martial-Arts%253A-Genius-Is-Only-the-Threshold-to-Meeting-Me%2521"
   },
-  "max_chapter": 16,
+  "max_chapter": 18,
   "demonic_id": "13576",
   "chapters": {
    "Demonic Scans": []
@@ -25436,7 +25871,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/High-School-Conquest%253A-War-Against-the-Bullies"
   },
-  "max_chapter": 45,
+  "max_chapter": 46,
   "demonic_id": "13080",
   "chapters": {
    "Demonic Scans": []
@@ -25500,12 +25935,12 @@
  },
  {
   "title": "High School Hack and Slash",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/08/High-School-Hack-and-Slash.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201156%201660'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/high-school-hack-and-slash/"
   },
-  "max_chapter": 5,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": [
     {
@@ -25556,7 +25991,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/High-School-Musical-Genius-Is-Paganini-Reincarnated"
   },
-  "max_chapter": 89,
+  "max_chapter": 91,
   "demonic_id": "12525",
   "chapters": {
    "Demonic Scans": []
@@ -25641,7 +26076,7 @@
  },
  {
   "title": "High Society",
-  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/6c46d500-7e01-487b-845e-b18e593a68e0.webp",
+  "cover": "https://media.templetoons.com/file/terms54/covers/4d48f235-e0b1-4bd8-b7d0-b3c67e93a8a8.webp",
   "status": "Ongoing",
   "sources": {
    "Temple Toons": "https://templetoons.com/comic/high-society",
@@ -25940,11 +26375,19 @@
     {
      "name": "Chapter 73",
      "chapter_slug": "chapter-73"
+    },
+    {
+     "name": "Chapter 74",
+     "chapter_slug": "chapter-74"
+    },
+    {
+     "name": "Chapter 75",
+     "chapter_slug": "chapter-75"
     }
    ],
    "Violet Scans": []
   },
-  "max_chapter": 74
+  "max_chapter": 75
  },
  {
   "title": "High Speed!",
@@ -25966,7 +26409,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/high-martial-world-one-hand-to-overwhelm-three-thousand-emperors/"
   },
-  "max_chapter": 22,
+  "max_chapter": 25,
   "chapters": {
    "Thunder Scans": []
   }
@@ -26085,12 +26528,7 @@
   "max_chapter": 7,
   "demonic_id": "10304",
   "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "1.5",
-     "chapter_number": 1.5
-    }
-   ]
+   "Demonic Scans": []
   }
  },
  {
@@ -26337,12 +26775,12 @@
  },
  {
   "title": "Hikaru to Hikaru",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/06/1749464776-6468-i485664.jpg",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20281%20400'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/hikaru-to-hikaru/"
   },
-  "max_chapter": 19,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": []
   }
@@ -27809,7 +28247,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/Hirotta-Mono-Ha-Taisetsu-Ni-Shimasho-Kookami-Ni-Kinirareta-Otoko-No-Teni-Monogatari"
   },
-  "max_chapter": 2,
+  "max_chapter": 3,
   "demonic_id": "13156",
   "chapters": {
    "Demonic Scans": []
@@ -27851,10 +28289,18 @@
     {
      "name": "Chapter 7",
      "chapter_slug": "chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "chapter-9"
     }
    ]
   },
-  "max_chapter": 7
+  "max_chapter": 9
  },
  {
   "title": "Hisho no Jouken",
@@ -27892,7 +28338,16 @@
   "max_chapter": 16,
   "demonic_id": "10377",
   "chapters": {
-   "Demonic Scans": []
+   "Demonic Scans": [
+    {
+     "name": "1.2",
+     "chapter_number": 1.2
+    },
+    {
+     "name": "1.1",
+     "chapter_number": 1.1
+    }
+   ]
   }
  },
  {
@@ -28860,12 +29315,12 @@
  },
  {
   "title": "Holy Liquid Blacksmith with Eroranta",
-  "cover": "https://www.silentquill.net/wp-content/uploads/2025/09/01-164.webp",
+  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201365%201920'%3E%3C/svg%3E",
   "status": null,
   "sources": {
    "ADK Scans": "https://www.silentquill.net/holy-liquid-blacksmith-with-eroranta/"
   },
-  "max_chapter": 6.5,
+  "max_chapter": null,
   "chapters": {
    "ADK Scans": [
     {
@@ -28934,394 +29389,6 @@
   "demonic_id": "10429",
   "chapters": {
    "Demonic Scans": []
-  }
- },
- {
-  "title": "Home",
-  "cover": "https://readermc.org/images/thumbnails/Home.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Home"
-  },
-  "max_chapter": 13,
-  "demonic_id": "10430",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Home Centre Sales Clerk's Life in Another World ~with the titles -",
-  "cover": "https://readermc.org/images/thumbnails/Home Centre Sales Clerk’s Life in Another World ~with the titles - “DIY Master”, “Green Master” and “Pet Master”~.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Home-Centre-Sales-Clerk%2527s-Life-in-Another-World-%257Ewith-the-titles-%25252D-%2522DIY-Master%2522%252C-%2522Green-Master%2522-and-%2522Pet-Master%2522%257E"
-  },
-  "max_chapter": 12.1,
-  "demonic_id": "1566",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "12.1",
-     "chapter_number": 12.1
-    },
-    {
-     "name": "11.2",
-     "chapter_number": 11.2
-    },
-    {
-     "name": "11.1",
-     "chapter_number": 11.1
-    },
-    {
-     "name": "10.2",
-     "chapter_number": 10.2
-    },
-    {
-     "name": "10.1",
-     "chapter_number": 10.1
-    },
-    {
-     "name": "9.2",
-     "chapter_number": 9.2
-    },
-    {
-     "name": "9.1",
-     "chapter_number": 9.1
-    },
-    {
-     "name": "6.5",
-     "chapter_number": 6.5
-    },
-    {
-     "name": "4.2",
-     "chapter_number": 4.2
-    },
-    {
-     "name": "4.1",
-     "chapter_number": 4.1
-    }
-   ]
-  }
- },
- {
-  "title": "Home Plate Villain",
-  "cover": "https://readermc.org/images/thumbnails/Home Plate Villain.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Home-Plate-Villain"
-  },
-  "max_chapter": 189,
-  "demonic_id": "12206",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Homeless",
-  "cover": "https://readermc.org/images/thumbnails/Homeless.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Homeless"
-  },
-  "max_chapter": 237,
-  "demonic_id": "496",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Homeless Tensei: Isekai De Jiyuu Sugiru Majutsu Jisoku Seikatsu",
-  "cover": "https://readermc.org/images/thumbnails/Homeless Tensei  Isekai De Jiyuu Sugiru Majutsu Jisoku Seikatsu.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Homeless-Tensei%253A-Isekai-De-Jiyuu-Sugiru-Majutsu-Jisoku-Seikatsu"
-  },
-  "max_chapter": 29,
-  "demonic_id": "10432",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "28.2",
-     "chapter_number": 28.2
-    },
-    {
-     "name": "28.1",
-     "chapter_number": 28.1
-    },
-    {
-     "name": "27.2",
-     "chapter_number": 27.2
-    },
-    {
-     "name": "27.1",
-     "chapter_number": 27.1
-    },
-    {
-     "name": "26.2",
-     "chapter_number": 26.2
-    },
-    {
-     "name": "26.1",
-     "chapter_number": 26.1
-    },
-    {
-     "name": "23.2",
-     "chapter_number": 23.2
-    },
-    {
-     "name": "23.1",
-     "chapter_number": 23.1
-    },
-    {
-     "name": "22.2",
-     "chapter_number": 22.2
-    },
-    {
-     "name": "22.1",
-     "chapter_number": 22.1
-    },
-    {
-     "name": "20.1",
-     "chapter_number": 20.1
-    },
-    {
-     "name": "19.2",
-     "chapter_number": 19.2
-    },
-    {
-     "name": "19.1",
-     "chapter_number": 19.1
-    },
-    {
-     "name": "18.2",
-     "chapter_number": 18.2
-    },
-    {
-     "name": "18.1",
-     "chapter_number": 18.1
-    },
-    {
-     "name": "17.2",
-     "chapter_number": 17.2
-    },
-    {
-     "name": "17.1",
-     "chapter_number": 17.1
-    },
-    {
-     "name": "16.2",
-     "chapter_number": 16.2
-    },
-    {
-     "name": "16.1",
-     "chapter_number": 16.1
-    },
-    {
-     "name": "14.2",
-     "chapter_number": 14.2
-    },
-    {
-     "name": "14.1",
-     "chapter_number": 14.1
-    },
-    {
-     "name": "13.2",
-     "chapter_number": 13.2
-    },
-    {
-     "name": "13.1",
-     "chapter_number": 13.1
-    },
-    {
-     "name": "12.5",
-     "chapter_number": 12.5
-    },
-    {
-     "name": "12.2",
-     "chapter_number": 12.2
-    },
-    {
-     "name": "11.2",
-     "chapter_number": 11.2
-    },
-    {
-     "name": "11.1",
-     "chapter_number": 11.1
-    },
-    {
-     "name": "10.2",
-     "chapter_number": 10.2
-    },
-    {
-     "name": "10.1",
-     "chapter_number": 10.1
-    },
-    {
-     "name": "9.2",
-     "chapter_number": 9.2
-    },
-    {
-     "name": "9.1",
-     "chapter_number": 9.1
-    },
-    {
-     "name": "8.2",
-     "chapter_number": 8.2
-    },
-    {
-     "name": "8.1",
-     "chapter_number": 8.1
-    },
-    {
-     "name": "7.2",
-     "chapter_number": 7.2
-    },
-    {
-     "name": "7.1",
-     "chapter_number": 7.1
-    },
-    {
-     "name": "6.3",
-     "chapter_number": 6.3
-    },
-    {
-     "name": "6.2",
-     "chapter_number": 6.2
-    },
-    {
-     "name": "6.1",
-     "chapter_number": 6.1
-    },
-    {
-     "name": "5.2",
-     "chapter_number": 5.2
-    },
-    {
-     "name": "5.1",
-     "chapter_number": 5.1
-    },
-    {
-     "name": "4.2",
-     "chapter_number": 4.2
-    },
-    {
-     "name": "4.1",
-     "chapter_number": 4.1
-    },
-    {
-     "name": "3.2",
-     "chapter_number": 3.2
-    },
-    {
-     "name": "3.1",
-     "chapter_number": 3.1
-    },
-    {
-     "name": "2.2",
-     "chapter_number": 2.2
-    },
-    {
-     "name": "2.1",
-     "chapter_number": 2.1
-    },
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  }
- },
- {
-  "title": "Homemade Home",
-  "cover": "https://readermc.org/images/thumbnails/Homemade Home.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Homemade-Home"
-  },
-  "max_chapter": 2.2,
-  "demonic_id": "10433",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "2.2",
-     "chapter_number": 2.2
-    },
-    {
-     "name": "2.1",
-     "chapter_number": 2.1
-    },
-    {
-     "name": "1.3",
-     "chapter_number": 1.3
-    },
-    {
-     "name": "1.2",
-     "chapter_number": 1.2
-    },
-    {
-     "name": "1.1",
-     "chapter_number": 1.1
-    }
-   ]
-  }
- },
- {
-  "title": "Homunculus",
-  "cover": "https://readermc.org/images/thumbnails/Homunculus.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Homunculus"
-  },
-  "max_chapter": 15,
-  "demonic_id": "10434",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Homura-sensei Is Probably Unpopular",
-  "cover": "https://readermc.org/images/thumbnails/Homura-sensei Is Probably Unpopular.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Homura%25252Dsensei-Is-Probably-Unpopular"
-  },
-  "max_chapter": 42,
-  "demonic_id": "10435",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Honegoe Monogatari",
-  "cover": "https://readermc.org/images/thumbnails/Honegoe Monogatari.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Honegoe-Monogatari"
-  },
-  "max_chapter": 5,
-  "demonic_id": "10436",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Honestly, This 13th Regression Is Getting Tough",
-  "cover": "https://readermc.org/images/thumbnails/Honestly, This 13th Regression Is Getting Tough.webp",
-  "status": null,
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/Honestly%252C-This-13th-Regression-Is-Getting-Tough",
-   "Thunder Scans": "https://en-thunderscans.com/comics/honestly-this-13th-regression-is-getting-tough/"
-  },
-  "max_chapter": 39,
-  "demonic_id": "13386",
-  "chapters": {
-   "Demonic Scans": [],
-   "Thunder Scans": [
-    {
-     "name": "0",
-     "chapter_slug": "honestly-this-13th-regression-is-getting-tough-chapter-0"
-    }
-   ]
   }
  }
 ]
