@@ -8,214 +8,197 @@ But the alternative (bookmarking six different scanlator sites and checking each
 
 MangaLink is a middle ground. It doesn't host any content. It just checks some of the scanlator sites if they have the chapter/serues you're looking for and gives you a direct link to go read it there - on the scanlators' own sites, with their own ads, supporting their work.
 
-Just search for a series, pick a chapter, and MangaLink shows you:
-
-* Which scanlator sites have that chapter
-* A direct link straight to it
-* Bookmark and read-tracking support so you can pick up where you left off (no continue reading feature for now)
-
-(read tracking uses localStorage - not synced across devices yet. Will add an account feature)
-
-We will be adding aggregators as a source option because you cannot really add ALL the scanlations so many of the series/chapters u want to read may not e available. But currently there are no aggregators added.
-
-We will also add a feature which detects if you use an ad blocker and depending on its response, you will only be seeing the aggregators. Sending traffic to scanlators when you are using ad-blockers is destructive.
-
-If you want a scanlation group added, open an issue.
+**[→ Try it live](https://ved-in.github.io/mangalink/)**
 
 ---
 
-## Setup
+## What it does
 
-### 1. Install dependencies
-```
+Search any manga or manhwa title and MangaLink will:
+
+- Show you which scanlator sites have it
+- Give you a direct link to each available chapter
+- Track what you've read and let you bookmark series (stored in localStorage)
+
+---
+
+## Supported sources
+
+| Source | Type |
+|---|---|
+| [Asura Scans](https://asuracomic.net/) | Scanlator |
+| [Demonic Scans](https://demonicscans.org/) | Scanlator |
+| [Flame Comics](https://flamecomics.xyz/) | Scanlator |
+| [Thunder Scans](https://thunderscans.net/) | Scanlator |
+| [Temple Toons](https://templetoons.com/) | Scanlator |
+| [Violet Scans](https://violetscans.com/) | Scanlator |
+| [ADK Scans / SilentQuill](https://silentquill.net/) | Scanlator |
+
+Want a source added? [Open an issue](https://github.com/ved-in/mangalink/issues/new?template=new_source.md).
+
+---
+
+## Local setup
+
+```bash
 npm install
 ```
+In `index.html` change `const BASE = '/mangalink';` with `const BASE = '';` similarly in `js/app.js` - will need to add a toggle for deployment and local testing
 
-### 2. Start the proxy server
+Then open `index.html` with a local server. Live Server in VS Code works great, or:
+
+```bash
+npx serve .
 ```
-node server.js
-```
-The proxy runs on `http://localhost:3000`. It verifies chapter availability server-side and enforces a host allowlist - only the scanlator domains this project explicitly supports can be reached through it.
 
-### 3. Open the app
-Open `index.html` in your browser (Live Server in VS Code works great, or just double-click it).
-
-### Debug panel
-The Jikan/MAL API doesn't cover most series that scanlators work on. Until a proper scraper-based search API exists, you can use the debug panel (`Ctrl+Shift+D`) to test sources directly.
+> The app is fully static - no backend required. Chapter availability is checked client-side via each source's own URLs.
 
 ---
 
 ## Adding a new source
 
-Adding a source involves two parts: the **frontend source** (builds URLs, tells the app how to check availability) and the **scraper** (pulls series metadata so the source appears in search results).
+Adding a source involves two parts: the **frontend source** (builds URLs, tells the app how to check chapter availability) and the **scraper** (pulls series metadata so the source appears in search results). If you find having to repeat a function which already exists in some other scraper, feel free to add it to `scrape/lib/` for easy editing later on.
 
 ### 1. Frontend source (`js/sources/`)
 
-Create `js/sources/your_source.js` following the pattern in `js/sources/sample.js`. Key things to implement:
+Copy `js/sources/sample.js` and implement:
 
 - `name` - display name shown in the UI
 - `series_url(manga)` - URL to the series page
 - `chapter_url(manga, chapter)` - URL to a specific chapter; use `chapter.chapter_slugs?.["Your Source Name"]` when the site uses non-standard slugs
-- `check_type` / `get_test_urls()` / `get_alt_text()` - how the proxy should verify the chapter exists (see `sample.js` for options)
-- `_to_slug(title)` - title-to-URL-slug conversion, adjust per site
+- `check_type` / `get_test_urls()` / `get_alt_text()` - how the checker should verify the chapter exists (see `sample.js` for options)
+- `_to_slug(title)` - title-to-URL-slug conversion; adjust per site
 
-Then wire it up in `index.html`:
-```html
-<script src="js/sources/your_source.js"></script>  <!-- before modal.js -->
-```
-
-And add it to `ALL_SOURCES` in `js/modal.js`.
-
-Finally, add the source's hostname(s) to the `ALLOWED_HOSTS` set in `server.js` so the proxy will allow requests to it.
+Then register it in `index.html` (before `modal.js`) and add it to `ALL_SOURCES` in `js/modal.js`.
 
 ### 2. Scraper (`scrape/sources/`)
 
-Create `scrape/sources/your_source.js`. The scraper runs on a schedule (via GitHub Actions) and populates `data/series.json` - this is what powers search. Each series object has a generic structure:
+Create a folder under `scrape/sources/your_source/`. The scraper runs on a schedule via GitHub Actions and populates `data/index.json` - this powers search. Each series object looks like:
 
 ```js
 {
   title: "Series Title",
-  slug: "series-slug",        // used for deduplication
+  slug: "series-slug",
   cover: "https://...",
-  sources: { "Your Source": "https://yoursite.com/manga/series-slug" },
+  sources: ["Your Source"],
   max_chapter: 42,
-  chapters: {
-    "Your Source": [
-      { name: "1.5", chapter_slug: "chapter-1-5" },  // only needed for non-integer or slug-dependent chapters
-    ]
+  status: "ongoing",
+  chapter_slugs: {
+    "Your Source": { "1.5": "chapter-1-5" }  // only for non-integer chapters
   }
 }
 ```
 
-Use the helpers from `scrape/sources/helpers.js` (`fetch`, `sleep`, `decode_html_entities`, `add_cards`)
+Use the helpers from `scrape/lib/helpers.js` (`fetch_html`, `sleep`, `normalise_title`, etc.), then import and call your scraper in `scrape/scrape.js`.
 
-Then import and call your scraper in `scrape/scrape.js` alongside the others.
-
-Note: Refer to the different scrapers before adding one. You can modify the structure however you like for eg., `flame_series_id` used for flamescans. Try not to store chapter_slugs for all the series if possible. BUT YOU WILL HAVE TO STORE THEM FOR CHAPTERS WHCIH ARE NOT NATURAL NUMBERS (1, 2, 3...). However if necessary, you can. For eg., `flamescans` having weird hexes for chapters.
+> Note: Only store `chapter_slugs` when chapters aren't natural numbers (1, 2, 3…). See `flame` for an example with hex-based chapter IDs.
 
 ---
 
 ## File structure
+
 ```
 mangalink/
-├── index.html
-├── server.js                  ← Node proxy: chapter availability + host allowlist
+├── index.html               ← homepage / landing
+├── search-result.html       ← search & chapter browser
+├── bookmark.html            ← bookmarks page
 ├── package.json
 │
 ├── css/
-│   └── styles.css
+│   ├── home.css             ← landing page styles
+│   ├── search.css           ← search results page styles
+│   └── bookmark.css         ← bookmarks page styles
 │
 ├── js/
-│   ├── app.js                 ← main controller
-│   ├── api.js                 ← series/chapter data + chapter slug resolution
-│   ├── checker.js             ← proxy client (chapter existence checks)
-│   ├── modal.js               ← sources modal, ALL_SOURCES registry
-│   ├── bookmarks.js           ← bookmark + read tracking state
-│   ├── storage.js             ← localStorage persistence
-│   ├── ui.js                  ← DOM rendering helpers
-│   └── debug.js               ← debug panel (Ctrl+Shift+D)
+│   ├── app.js               ← main controller, routing, search
+│   ├── api.js               ← index search + chapter data
+│   ├── checker.js           ← client-side chapter availability checks
+│   ├── modal.js             ← sources modal, ALL_SOURCES registry
+│   ├── bookmarks.js         ← bookmark + read tracking state
+│   ├── storage.js           ← localStorage persistence
+│   ├── ui.js                ← DOM rendering helpers
 │   └── sources/
-│       ├── sample.js          ← template - start here for new sources
-│       ├── asura.js           ← Asura Scans
-│       ├── thunder.js         ← Thunder Scans
-│       ├── temple.js          ← Temple Toons
-│       ├── flame.js           ← Flame Comics
-│       ├── violet.js          ← Violet Scans
-│       ├── demonic.js         ← Demonic Scans
-│       └── adk.js             ← ADK Scans (SilentQuill)
+│       ├── sample.js        ← template - start here for new sources
+│       ├── utils.js         ← shared slug/URL helpers
+│       ├── asura.js
+│       ├── thunder.js
+│       ├── temple.js
+│       ├── flame.js
+│       ├── violet.js
+│       ├── demonic.js
+│       └── adk.js
 │
-└── scrape/
-    ├── scrape.js              ← entry point: runs all scrapers, merges, writes series.json
-    └── sources/
-        ├── helpers.js         ← shared fetch, sleep, HTML entity decode, dedup utils
-        ├── asura.js
-        ├── thunder.js
-        ├── temple.js
-        ├── flame.js
-        ├── violet.js
-        ├── demonic.js
-        └── adk.js
+├── scrape/
+│   ├── scrape.js            ← entry point: runs all scrapers, writes data/
+│   ├── lib/
+│   │   ├── helpers.js       ← shared fetch, sleep, dedup utils
+│   │   └── merge.js         ← index merging logic
+│   └── sources/
+│       ├── asura/
+│       ├── thunder/
+│       ├── temple/
+│       ├── flame/
+│       ├── violet/
+│       ├── demonic/
+│       └── adk/
+│
+├── data/
+│   ├── index.json           ← full series index (auto-generated)
+│   ├── scrape_state.json    ← scraper state for incremental updates
+│   └── chunks/              ← index split into chunks for faster loading
+│
+└── public/
+    └── ...                  ← images and icons
 ```
 
 ---
 
-## Removal / addition of a source
+## How the scraper works
 
-If you're the owner of a scanlation group linked here and want it removed, open an issue and it'll be done promptly.
+Two GitHub Actions jobs keep the data fresh:
 
-If you want your scanlation group added, open an issue.
+**Quick update** (every 2 hours) - runs `node scrape/scrape.js --quick`. Each scraper stops as soon as it hits a streak of unchanged series, so only a small fraction of the catalogue is fetched per run. New chapters and status changes appear within hours.
+
+The scraper writes to `data/index.json` and `data/chunks/`, then commits back to the repo. GitHub Pages redeploys automatically.
 
 ---
 
-## CURRENT BUGS
-[ ] quick scan rewrites entire `index.json` and `scrape_state.json`. Should check for diffs and update according to that. just like github.
+## To-do
 
-[ ] many chapters have still `null` status after scraping their status. validate with the websites themselves
+**New sources requested**
+- [ ] Drake Scans ([#26](https://github.com/ved-in/mangalink/issues/26))
+- [ ] Weeb Central ([#3](https://github.com/ved-in/mangalink/issues/3))
+- [ ] Vortex Scans ([#8](https://github.com/ved-in/mangalink/issues/8))
+- [ ] Reset Scans ([#7](https://github.com/ved-in/mangalink/issues/7))
+- [ ] MangaNato ([#10](https://github.com/ved-in/mangalink/issues/10))
+- [ ] MangaBat ([#9](https://github.com/ved-in/mangalink/issues/9))
+- [ ] MangaZ ([#4](https://github.com/ved-in/mangalink/issues/4))
+- [ ] Valir Scans ([#6](https://github.com/ved-in/mangalink/issues/6)) - Unable to implement as of now due to cloudfare.
 
-[ ] duplicate entires in `scrape_state.json`:
-```json
- "top-tier-providence-secretly-cultivate-for-a-thousand-years": {
-  "max_chapter": 257,
-  "status": null
- },
-  "Top-Tier-Providence%253A-Secretly-Cultivate-for-a-Thousand-Years": {
-  "max_chapter": 256,
-  "status": null
- }
-```
-Quick fix but im too lazy to fix it (just use series name!) 🥀
+**Features**
+- [ ] Clear read history / bookmarks (per-series or all at once)
+- [ ] Recently updated section in home-page
+- [ ] Filter by genre, status, year
+- [ ] GitHub link and About page ([#14](https://github.com/ved-in/mangalink/issues/14))
+- [ ] Aggregator toggle - let users choose scanlators only, aggregators only, or both (with ad-blocker disclaimer)
+- [ ] Cross-device sync (accounts)
+- [ ] MAL export
 
-[ ] add 2req/s limit in deep scan too `sleep(500)`. Again, im too lazy...
+**Scraper**
+- [ ] Some series with `null` status still exists. See the issue and fix accordingly.
 
-Dont commit to main with that github workflows. need to make deepscan use rate limit too
+**Long term**
+- [ ] Mobile app
+- [ ] CLI tool
 
-Comments (by ai 🥀) just for my pookie stinkwalker... Its all you for the next month
+---
 
-And leave that `valirscans.js` as it is. Ill add it myself later when I'm back or if I give up in between that month
+## Removal / takedown
 
-## ToDo
-[x] Add Temple Scans
+If you're the owner of a scanlation group listed here and want it removed, [open an issue](https://github.com/ved-in/mangalink/issues) and it'll be done promptly.
 
-[x] Fetch titles and covers from scanlators and search only within them
+---
 
-[x] Server-side cache
+## License
 
-[x] Proxy with fallback to CORS proxy for client-side requests
-
-[x] UptimeRobot pinging to keep Render backend alive
-
-[x] Fix Temple Toons chapter URL prefixes (e.g. `84459-chapter-6`)
-
-[x] Add GitHub Actions workflow to refresh series list (runs every 2 hours)
-
-[x] Support decimal chapters (1.1, 1.2, 1.5, etc.)
-
-[x] Add Violet Scans
-
-[ ] Replace `?? - -` in cards to show max chapter and `UNKNOWN` to show current status. Like `hiatus`, `drop`, `ongoing`, etc. May remove it if cannot get current status.
-
-[ ] Use proxies to check chapter lists which run parallely. Will be much faster this way
-
-[ ] Continue Reading feature
-
-[ ] Clear read history / bookmarks (per-series or all at once)
-
-[ ] ask users to choose either of 3 options - show only aggregators, only scanlators, both aggregators and scanlators WITH disclaimer for not using ad blockers with scanlators
-
-[ ] Filter by genre, status, year, etc.
-
-[ ] Add Vortex Scans `https://vortexscans.org/`
-
-[ ] Add Reset Scans `https://reset-scans.org/`
-
-[ ] Add Valir Scans `https://valirscans.org/`
-
-
-## Long term
-[ ] Series names in Jikan API often don't match scanlator slugs - no clean fix yet. Ideally, search would be driven entirely by scraped data from the scanlators themselves.
-
-[ ] Browser extension
-
-[ ] Mobile app
-
-[ ] CLI tool (Python or Rust, might take this chance to learn rust)
+MIT

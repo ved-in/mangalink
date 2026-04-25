@@ -14,9 +14,7 @@
  *   sort_asc       -- whether chapters are sorted ascending (oldest first)
  */
 
-const BASE = (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
-	? ''
-	: '/mangalink';
+const BASE = '/mangalink';
 
 const App = (
 	() => {
