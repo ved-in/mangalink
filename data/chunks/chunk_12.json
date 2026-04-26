@@ -1,5 +1,31 @@
 [
  {
+  "title": "The Grand Duchess of the North Was Secretly a Villainess",
+  "cover": "https://readermc.org/images/thumbnails/The Grand Duchess of the North Was Secretly a Villainess.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/the-grand-duchess-of-the-north-was-secretly-a-villainess"
+  },
+  "max_chapter": 102,
+  "demonic_id": "11292",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "45.5",
+     "chapter_number": 45.5
+    },
+    {
+     "name": "43.5",
+     "chapter_number": 43.5
+    },
+    {
+     "name": "42.5",
+     "chapter_number": 42.5
+    }
+   ]
+  }
+ },
+ {
   "title": "The Grand Duke Woke Up in a Strange Place",
   "cover": "https://violetscans.org/wp-content/uploads/2026/04/2026-04-09-01-30-09-1775741409935-210x300.png",
   "status": "Ongoing",
@@ -8802,7 +8828,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-male-leads-are-trapped-in-my-house/"
   },
-  "max_chapter": 56,
+  "max_chapter": 57,
   "chapters": {
    "Violet Scans": [
     {
@@ -10196,7 +10222,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-murderer"
   },
-  "max_chapter": 62,
+  "max_chapter": 63,
   "demonic_id": "12994",
   "chapters": {
    "Demonic Scans": []
@@ -15496,7 +15522,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-regressed-princess-became-the-tyrants-personal-chef/"
   },
-  "max_chapter": 45,
+  "max_chapter": 46,
   "chapters": {
    "Violet Scans": []
   }
@@ -25588,7 +25614,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-villainess-who-returned-in-time-vows-to-stay-pure/"
   },
-  "max_chapter": 41,
+  "max_chapter": 42,
   "chapters": {
    "Violet Scans": []
   }
@@ -31614,7 +31640,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/there-is-no-mercy/"
   },
-  "max_chapter": 86,
+  "max_chapter": 87,
   "chapters": {
    "Violet Scans": []
   }
@@ -38799,7 +38825,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/true-education"
   },
-  "max_chapter": 240,
+  "max_chapter": 241,
   "demonic_id": "1208",
   "chapters": {
    "Demonic Scans": [
@@ -41680,28 +41706,6 @@
     {
      "name": "5.1",
      "chapter_number": 5.1
-    }
-   ]
-  }
- },
- {
-  "title": "Umineko no Naku Koro ni Ep 2",
-  "cover": "https://readermc.org/images/thumbnails/Umineko no Naku Koro ni Ep 2.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-ep-2"
-  },
-  "max_chapter": 26.002,
-  "demonic_id": "6952",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "26.002",
-     "chapter_number": 26.002
-    },
-    {
-     "name": "26.001",
-     "chapter_number": 26.001
     }
    ]
   }

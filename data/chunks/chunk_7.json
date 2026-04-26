@@ -1,5 +1,18 @@
 [
  {
+  "title": "Mahoroba no Yobigoe",
+  "cover": "https://readermc.org/images/thumbnails/Mahoroba no Yobigoe.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/mahoroba-no-yobigoe"
+  },
+  "max_chapter": 1,
+  "demonic_id": "2990",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Mahou ga Toketa Asa ni",
   "cover": "https://readermc.org/images/thumbnails/Mahou ga Toketa Asa ni.webp",
   "status": "Ongoing",
@@ -6453,7 +6466,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/marriage-begins-with-an-interview/"
   },
-  "max_chapter": 26,
+  "max_chapter": 27,
   "chapters": {
    "Violet Scans": []
   }
@@ -7070,7 +7083,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/martial-evolution%253a-start-by-awakening-the-king-of-monsters"
   },
-  "max_chapter": 124,
+  "max_chapter": 125,
   "demonic_id": "13175",
   "chapters": {
    "Demonic Scans": []
@@ -29841,21 +29854,5 @@
     }
    ]
   }
- },
- {
-  "title": "My Exclusive Tower Guide",
-  "cover": "https://cdn.asurascans.com/asura-images/covers/my-exclusive-tower-guide.f49132.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Asura Scans": "https://asurascans.com/comics/my-exclusive-tower-guide",
-   "Demonic Scans": "https://demonicscans.org/manga/my-exclusive-tower-guide"
-  },
-  "max_chapter": 113,
-  "chapter_count": 113,
-  "chapters": {
-   "Asura Scans": [],
-   "Demonic Scans": []
-  },
-  "demonic_id": "12253"
  }
 ]

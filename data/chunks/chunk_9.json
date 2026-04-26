@@ -1,5 +1,18 @@
 [
  {
+  "title": "Otaku The Loser",
+  "cover": "https://readermc.org/images/thumbnails/Otaku The Loser.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/otaku-the-loser"
+  },
+  "max_chapter": 7,
+  "demonic_id": "5038",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Otameshi RPG",
   "cover": "https://readermc.org/images/thumbnails/Otameshi RPG.webp",
   "status": "Ongoing",
@@ -11952,7 +11965,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/pride-of-the-blade"
   },
-  "max_chapter": 48,
+  "max_chapter": 49,
   "demonic_id": "11649",
   "chapters": {
    "Demonic Scans": [
@@ -12089,7 +12102,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/primordial-ten-fiends%253a-others-tame-beasts%252c-i-tame-beast-girls"
   },
-  "max_chapter": 154,
+  "max_chapter": 155,
   "demonic_id": "13285",
   "chapters": {
    "Demonic Scans": []
@@ -21600,7 +21613,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/rebellious-innocence/"
   },
-  "max_chapter": 1,
+  "max_chapter": 2,
   "chapters": {
    "Violet Scans": []
   }
@@ -25562,7 +25575,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/reincarnated-alchemy-girl%2527s-slow-life"
   },
-  "max_chapter": 25,
+  "max_chapter": 26,
   "demonic_id": "12833",
   "chapters": {
    "Demonic Scans": [
@@ -28750,19 +28763,6 @@
      "chapter_number": 4.001
     }
    ]
-  }
- },
- {
-  "title": "Rensen - Hana no Koe Yowa",
-  "cover": "https://readermc.org/images/thumbnails/Rensen - Hana no Koe Yowa.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/rensen-%25252d-hana-no-koe-yowa"
-  },
-  "max_chapter": 5,
-  "demonic_id": "5796",
-  "chapters": {
-   "Demonic Scans": []
   }
  }
 ]

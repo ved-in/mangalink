@@ -21137,10 +21137,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/apex-future-martial-arts"
   },
-  "max_chapter": 314,
+  "max_chapter": 314.5,
   "demonic_id": "11683",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "314.5",
+     "chapter_number": 314.5
+    },
     {
      "name": "241.5",
      "chapter_number": 241.5
@@ -22909,7 +22913,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/aristocrats-revenge/"
   },
-  "max_chapter": 58,
+  "max_chapter": 59,
   "chapters": {
    "Thunder Scans": [
     {

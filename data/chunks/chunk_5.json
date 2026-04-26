@@ -1,5 +1,18 @@
 [
  {
+  "title": "Inzak",
+  "cover": "https://readermc.org/images/thumbnails/Inzak.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inzak"
+  },
+  "max_chapter": 1,
+  "demonic_id": "10806",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "ION",
   "cover": "https://readermc.org/images/thumbnails/ION.webp",
   "status": "Ongoing",
@@ -13466,7 +13479,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/kagurabachi"
   },
-  "max_chapter": 119,
+  "max_chapter": 120,
   "demonic_id": "12007",
   "chapters": {
    "Demonic Scans": [
@@ -28631,24 +28644,6 @@
   "demonic_id": "2548",
   "chapters": {
    "Demonic Scans": []
-  }
- },
- {
-  "title": "Kiss no Tsuchuu",
-  "cover": "https://readermc.org/images/thumbnails/Kiss no Tsuchuu.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/kiss-no-tsuchuu"
-  },
-  "max_chapter": 5.5,
-  "demonic_id": "2549",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "5.5",
-     "chapter_number": 5.5
-    }
-   ]
   }
  }
 ]

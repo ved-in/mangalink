@@ -1,5 +1,27 @@
 [
  {
+  "title": "Umineko no Naku Koro ni Ep 2",
+  "cover": "https://readermc.org/images/thumbnails/Umineko no Naku Koro ni Ep 2.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-ep-2"
+  },
+  "max_chapter": 26.002,
+  "demonic_id": "6952",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "26.002",
+     "chapter_number": 26.002
+    },
+    {
+     "name": "26.001",
+     "chapter_number": 26.001
+    }
+   ]
+  }
+ },
+ {
   "title": "Umineko No Naku Koro Ni Ep 3 :Banquet of the Golden Witch",
   "cover": "https://readermc.org/images/thumbnails/Umineko No Naku Koro Ni Ep 3  Banquet of the Golden Witch.webp",
   "status": "Ongoing",
@@ -15397,7 +15419,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/yancha-gal-no-anjou%25252dsan"
   },
-  "max_chapter": 220,
+  "max_chapter": 221,
   "demonic_id": "12969",
   "chapters": {
    "Demonic Scans": [

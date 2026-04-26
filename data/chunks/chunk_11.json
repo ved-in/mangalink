@@ -1,5 +1,18 @@
 [
  {
+  "title": "Single Wizard's Dormitory Apartment",
+  "cover": "https://readermc.org/images/thumbnails/Single Wizard's Dormitory Apartment.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/single-wizard%2527s-dormitory-apartment"
+  },
+  "max_chapter": 34,
+  "demonic_id": "6608",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Sins of the Gods",
   "cover": "https://readermc.org/images/thumbnails/Sins of the Gods.webp",
   "status": "Ongoing",
@@ -11665,7 +11678,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/spy-x-family"
   },
-  "max_chapter": 132,
+  "max_chapter": 133,
   "demonic_id": "1340",
   "chapters": {
    "Demonic Scans": [
@@ -14168,7 +14181,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/starting-the-second-part-of-this-broken-world/"
   },
-  "max_chapter": 35,
+  "max_chapter": 36,
   "chapters": {
    "Violet Scans": []
   }
@@ -18545,7 +18558,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/supreme-academy-genius"
   },
-  "max_chapter": 70,
+  "max_chapter": 72,
   "demonic_id": "13534",
   "chapters": {
    "Demonic Scans": []
@@ -36585,7 +36598,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-chick-class-hunter-is-being-filial/"
   },
-  "max_chapter": 66,
+  "max_chapter": 67,
   "chapters": {
    "Violet Scans": []
   }
@@ -39859,7 +39872,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-dukes-wife-obsession/"
   },
-  "max_chapter": 63,
+  "max_chapter": 64,
   "chapters": {
    "Violet Scans": []
   }
@@ -39900,7 +39913,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-dutiful-kid-who-saved-the-villainous-family/"
   },
-  "max_chapter": 26,
+  "max_chapter": 27,
   "chapters": {
    "Violet Scans": []
   }
@@ -44801,32 +44814,6 @@
   "max_chapter": 30,
   "chapters": {
    "Thunder Scans": []
-  }
- },
- {
-  "title": "The Grand Duchess of the North Was Secretly a Villainess",
-  "cover": "https://readermc.org/images/thumbnails/The Grand Duchess of the North Was Secretly a Villainess.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/the-grand-duchess-of-the-north-was-secretly-a-villainess"
-  },
-  "max_chapter": 102,
-  "demonic_id": "11292",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "45.5",
-     "chapter_number": 45.5
-    },
-    {
-     "name": "43.5",
-     "chapter_number": 43.5
-    },
-    {
-     "name": "42.5",
-     "chapter_number": 42.5
-    }
-   ]
   }
  }
 ]

@@ -1,5 +1,23 @@
 [
  {
+  "title": "Kiss no Tsuchuu",
+  "cover": "https://readermc.org/images/thumbnails/Kiss no Tsuchuu.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/kiss-no-tsuchuu"
+  },
+  "max_chapter": 5.5,
+  "demonic_id": "2549",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "5.5",
+     "chapter_number": 5.5
+    }
+   ]
+  }
+ },
+ {
   "title": "Kiss Shite! Esper Girl",
   "cover": "https://readermc.org/images/thumbnails/Kiss Shite! Esper Girl.webp",
   "status": "Ongoing",
@@ -12840,7 +12858,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/leaving-for-my-younger-husbands-future-a-divorce-decision/"
   },
-  "max_chapter": 101,
+  "max_chapter": 103,
   "chapters": {
    "Violet Scans": []
   }
@@ -17228,7 +17246,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/life-as-the-grand-dukes-daughter-in-law-is-too-easy/"
   },
-  "max_chapter": 35,
+  "max_chapter": 36,
   "chapters": {
    "Violet Scans": []
   }
@@ -25991,19 +26009,6 @@
      "chapter_number": 50.5
     }
    ]
-  }
- },
- {
-  "title": "Mahoroba no Yobigoe",
-  "cover": "https://readermc.org/images/thumbnails/Mahoroba no Yobigoe.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/mahoroba-no-yobigoe"
-  },
-  "max_chapter": 1,
-  "demonic_id": "2990",
-  "chapters": {
-   "Demonic Scans": []
   }
  }
 ]

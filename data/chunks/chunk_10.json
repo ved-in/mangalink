@@ -1,5 +1,18 @@
 [
  {
+  "title": "Rensen - Hana no Koe Yowa",
+  "cover": "https://readermc.org/images/thumbnails/Rensen - Hana no Koe Yowa.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/rensen-%25252d-hana-no-koe-yowa"
+  },
+  "max_chapter": 5,
+  "demonic_id": "5796",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Rensou Mode",
   "cover": "https://readermc.org/images/thumbnails/Rensou Mode.webp",
   "status": "Ongoing",
@@ -29053,19 +29066,6 @@
   },
   "max_chapter": 111,
   "demonic_id": "6606",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Single Wizard's Dormitory Apartment",
-  "cover": "https://readermc.org/images/thumbnails/Single Wizard's Dormitory Apartment.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/single-wizard%2527s-dormitory-apartment"
-  },
-  "max_chapter": 34,
-  "demonic_id": "6608",
   "chapters": {
    "Demonic Scans": []
   }

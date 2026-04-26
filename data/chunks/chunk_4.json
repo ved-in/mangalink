@@ -73,7 +73,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/home-plate-villain"
   },
-  "max_chapter": 190,
+  "max_chapter": 191,
   "demonic_id": "12206",
   "chapters": {
    "Demonic Scans": []
@@ -6239,7 +6239,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/i-became-the-contract-mother-of-the-grim-reaper-dukes-family-and-they-became-obsessed-with-me/"
   },
-  "max_chapter": 60,
+  "max_chapter": 61,
   "chapters": {
    "Violet Scans": []
   }
@@ -6277,6 +6277,18 @@
    "Violet Scans": "https://violetscans.org/comics/i-became-the-despised-granddaughter-of-the-powerful-martial-arts-family/"
   },
   "max_chapter": 114,
+  "chapters": {
+   "Violet Scans": []
+  }
+ },
+ {
+  "title": "I Became the Duke’s Mistress",
+  "cover": "https://violetscans.org/wp-content/uploads/2026/04/2026-04-26-06-06-16-1777226776788-231x300.jpeg",
+  "status": "Ongoing",
+  "sources": {
+   "Violet Scans": "https://violetscans.org/comics/i-became-the-dukes-mistress/"
+  },
+  "max_chapter": null,
   "chapters": {
    "Violet Scans": []
   }
@@ -13097,7 +13109,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i-really-don%2527t-want-to-be-reborn"
   },
-  "max_chapter": 468,
+  "max_chapter": 470,
   "demonic_id": "12918",
   "chapters": {
    "Demonic Scans": [
@@ -15759,7 +15771,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/i-underestimated-my-oshis-attachment/"
   },
-  "max_chapter": 135,
+  "max_chapter": 136,
   "chapters": {
    "Violet Scans": []
   }
@@ -17859,7 +17871,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i-was-mistaken-as-a-monstrous-genius-actor"
   },
-  "max_chapter": 95,
+  "max_chapter": 96,
   "demonic_id": "12566",
   "chapters": {
    "Demonic Scans": [
@@ -24064,7 +24076,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/im-being-raised-by-villains/"
   },
-  "max_chapter": 140,
+  "max_chapter": 141,
   "chapters": {
    "Violet Scans": []
   }
@@ -24813,7 +24825,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i%2527m-really-not-the-demon-god%2527s-lackey"
   },
-  "max_chapter": 189,
+  "max_chapter": 190,
   "demonic_id": "1382",
   "chapters": {
    "Demonic Scans": [
@@ -33390,19 +33402,6 @@
      "chapter_number": 0
     }
    ]
-  }
- },
- {
-  "title": "Inzak",
-  "cover": "https://readermc.org/images/thumbnails/Inzak.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/inzak"
-  },
-  "max_chapter": 1,
-  "demonic_id": "10806",
-  "chapters": {
-   "Demonic Scans": []
   }
  }
 ]

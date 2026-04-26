@@ -1,5 +1,21 @@
 [
  {
+  "title": "My Exclusive Tower Guide",
+  "cover": "https://cdn.asurascans.com/asura-images/covers/my-exclusive-tower-guide.f49132.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Asura Scans": "https://asurascans.com/comics/my-exclusive-tower-guide",
+   "Demonic Scans": "https://demonicscans.org/manga/my-exclusive-tower-guide"
+  },
+  "max_chapter": 113,
+  "chapter_count": 113,
+  "chapters": {
+   "Asura Scans": [],
+   "Demonic Scans": []
+  },
+  "demonic_id": "12253"
+ },
+ {
   "title": "My Fair Neighbor",
   "cover": "https://readermc.org/images/thumbnails/My Fair Neighbor.webp",
   "status": "Ongoing",
@@ -3230,7 +3246,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/my-possession-became-a-ghost-story/"
   },
-  "max_chapter": 29,
+  "max_chapter": 30,
   "chapters": {
    "Violet Scans": []
   }
@@ -27256,7 +27272,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/only-i-know-about-%2522leveling-up%2522-in-this-world"
   },
-  "max_chapter": 1,
+  "max_chapter": 2,
   "demonic_id": "13343",
   "chapters": {
    "Demonic Scans": []
@@ -31459,19 +31475,6 @@
   },
   "max_chapter": 63,
   "demonic_id": "5037",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Otaku The Loser",
-  "cover": "https://readermc.org/images/thumbnails/Otaku The Loser.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/otaku-the-loser"
-  },
-  "max_chapter": 7,
-  "demonic_id": "5038",
   "chapters": {
    "Demonic Scans": []
   }
