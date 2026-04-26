@@ -2,7 +2,10 @@ on:
   schedule:
     - cron: '0 */2 * * *'
   workflow_dispatch:
- 
+
+permissions:
+  contents: write
+
 jobs:
   quick-update:
     name: Quick update
@@ -27,8 +30,8 @@ jobs:
  
       - name: Commit updated data
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/index.json data/chunks/ data/scrape_state.json
           git diff --cached --quiet || git commit -m "chore: quick update [skip ci]"
-          git push https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
+          git push origin ${{ github.ref_name }}
