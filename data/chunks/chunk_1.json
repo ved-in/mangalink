@@ -27381,10 +27381,14 @@
    "Flame Comics": "https://flamecomics.xyz/series/148"
   },
   "flame_series_id": 148,
-  "max_chapter": 62,
+  "max_chapter": 63,
   "chapter_count": 62,
   "chapters": {
    "Flame Comics": [
+    {
+     "name": "63",
+     "chapter_slug": "46b78bd8075f054e"
+    },
     {
      "name": "62",
      "chapter_slug": "7f42736c04a8f155"
