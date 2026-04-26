@@ -1,5 +1,18 @@
 [
  {
+  "title": "Rensou Mode",
+  "cover": "https://readermc.org/images/thumbnails/Rensou Mode.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/rensou-mode"
+  },
+  "max_chapter": 1,
+  "demonic_id": "5797",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Rensou no Aria",
   "cover": "https://readermc.org/images/thumbnails/Rensou no Aria.webp",
   "status": "Ongoing",
@@ -2218,7 +2231,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/return-of-the-immortal-monk"
   },
-  "max_chapter": 38,
+  "max_chapter": 40,
   "demonic_id": "13188",
   "chapters": {
    "Demonic Scans": []
@@ -7760,7 +7773,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/s%25252dclass-hunter-heals-with-monsters",
    "Thunder Scans": "https://en-thunderscans.com/comics/s-class-hunter-heals-with-monsters/"
   },
-  "max_chapter": 43,
+  "max_chapter": 44,
   "demonic_id": "13379",
   "chapters": {
    "Demonic Scans": [
@@ -29053,19 +29066,6 @@
   },
   "max_chapter": 34,
   "demonic_id": "6608",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Sins of the Gods",
-  "cover": "https://readermc.org/images/thumbnails/Sins of the Gods.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/sins-of-the-gods"
-  },
-  "max_chapter": 14,
-  "demonic_id": "12928",
   "chapters": {
    "Demonic Scans": []
   }

@@ -1,5 +1,36 @@
 [
  {
+  "title": "Umineko No Naku Koro Ni Ep 3 :Banquet of the Golden Witch",
+  "cover": "https://readermc.org/images/thumbnails/Umineko No Naku Koro Ni Ep 3  Banquet of the Golden Witch.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-ep-3-%253abanquet-of-the-golden-witch"
+  },
+  "max_chapter": 22,
+  "demonic_id": "6944",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Umineko no Naku Koro ni Ep 4: Alliance of the Golden Witch",
+  "cover": "https://readermc.org/images/thumbnails/Umineko no Naku Koro ni Ep 4  Alliance of the Golden Witch.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-ep-4%253a-alliance-of-the-golden-witch"
+  },
+  "max_chapter": 29,
+  "demonic_id": "6953",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "26.003",
+     "chapter_number": 26.003
+    }
+   ]
+  }
+ },
+ {
   "title": "Umineko no Naku Koro ni Episode 2",
   "cover": "https://readermc.org/images/thumbnails/Umineko no Naku Koro ni Episode 2.webp",
   "status": "Ongoing",
@@ -846,7 +877,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/unemployed-gye-baeksun"
   },
-  "max_chapter": 224,
+  "max_chapter": 226,
   "demonic_id": "13240",
   "chapters": {
    "Demonic Scans": []
@@ -4948,7 +4979,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/veteran-of-the-apocalypse"
   },
-  "max_chapter": 42,
+  "max_chapter": 43,
   "demonic_id": "13547",
   "chapters": {
    "Demonic Scans": []
@@ -6088,7 +6119,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/violets-poisoned-words/"
   },
-  "max_chapter": 2,
+  "max_chapter": 20,
   "chapters": {
    "Violet Scans": []
   }
@@ -8064,7 +8095,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/water-magician"
   },
-  "max_chapter": 38,
+  "max_chapter": 39,
   "demonic_id": "13480",
   "chapters": {
    "Demonic Scans": [
@@ -10626,7 +10657,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/why-are-you-obsessed-when-i-reject-your-favor/"
   },
-  "max_chapter": 86,
+  "max_chapter": 87,
   "chapters": {
    "Violet Scans": []
   }

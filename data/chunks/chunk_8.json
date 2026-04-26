@@ -1,5 +1,18 @@
 [
  {
+  "title": "My Fair Neighbor",
+  "cover": "https://readermc.org/images/thumbnails/My Fair Neighbor.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/my-fair-neighbor"
+  },
+  "max_chapter": 5,
+  "demonic_id": "3828",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "My Family is Obsessed with Me [ALL CHAPTERS]",
   "cover": "https://readermc.org/images/thumbnails/My Family is Obsessed with Me [ALL CHAPTERS].webp",
   "status": "Ongoing",
@@ -31459,19 +31472,6 @@
   },
   "max_chapter": 7,
   "demonic_id": "5038",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Otameshi RPG",
-  "cover": "https://readermc.org/images/thumbnails/Otameshi RPG.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/otameshi-rpg"
-  },
-  "max_chapter": 7,
-  "demonic_id": "5039",
   "chapters": {
    "Demonic Scans": []
   }

@@ -1,5 +1,35 @@
 [
  {
+  "title": "The Grand Duke Woke Up in a Strange Place",
+  "cover": "https://violetscans.org/wp-content/uploads/2026/04/2026-04-09-01-30-09-1775741409935-210x300.png",
+  "status": "Ongoing",
+  "sources": {
+   "Violet Scans": "https://violetscans.org/comics/the-grand-duke-woke-up-in-a-strange-place/"
+  },
+  "max_chapter": 22,
+  "chapters": {
+   "Violet Scans": []
+  }
+ },
+ {
+  "title": "The Gray Mark",
+  "cover": "https://readermc.org/images/thumbnails/The Gray Mark.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/the-gray-mark"
+  },
+  "max_chapter": 76,
+  "demonic_id": "12553",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
   "title": "The Gray World is Colored by the Eyes of God: Rising from the Weakest to the Strongest with the Status That Only I Can See",
   "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201792%202400'%3E%3C/svg%3E",
   "status": "Ongoing",
@@ -1059,7 +1089,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-guild%2527s-strongest-receptionist"
   },
-  "max_chapter": 43,
+  "max_chapter": 57,
   "demonic_id": "13259",
   "chapters": {
    "Demonic Scans": []
@@ -5927,7 +5957,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-knight-of-embers"
   },
-  "max_chapter": 230,
+  "max_chapter": 234,
   "demonic_id": "580",
   "chapters": {
    "Demonic Scans": []
@@ -8983,7 +9013,7 @@
    "Asura Scans": "https://asurascans.com/comics/the-martial-genius-who-remembers-everything",
    "Thunder Scans": "https://en-thunderscans.com/comics/the-martial-genius-who-remembers-everything/"
   },
-  "max_chapter": 1,
+  "max_chapter": 5,
   "chapter_count": 1,
   "chapters": {
    "Asura Scans": [],
@@ -16522,7 +16552,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-reincarnation-of-god%25252dlevel-crafting"
   },
-  "max_chapter": 16,
+  "max_chapter": 19,
   "demonic_id": "13671",
   "chapters": {
    "Demonic Scans": []
@@ -17931,7 +17961,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-runaway-countess-has-returned/"
   },
-  "max_chapter": 51,
+  "max_chapter": 52,
   "chapters": {
    "Violet Scans": []
   }
@@ -19480,7 +19510,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-shaman%2527s-blade"
   },
-  "max_chapter": 92,
+  "max_chapter": 93,
   "demonic_id": "12467",
   "chapters": {
    "Demonic Scans": []
@@ -21446,7 +21476,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-strongest-tamer-returned-from-another-world-with-his-childhood-friend-as-his-familiar"
   },
-  "max_chapter": 68,
+  "max_chapter": 70,
   "demonic_id": "12590",
   "chapters": {
    "Demonic Scans": []
@@ -23647,7 +23677,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-turn%25252dbound-mage"
   },
-  "max_chapter": 52,
+  "max_chapter": 53,
   "demonic_id": "13566",
   "chapters": {
    "Demonic Scans": []
@@ -30933,7 +30963,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-world%2527s-best-sect-of-dependency"
   },
-  "max_chapter": 85,
+  "max_chapter": 86,
   "demonic_id": "11775",
   "chapters": {
    "Demonic Scans": []
@@ -32407,7 +32437,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/this-emperor-runs-a-marriage-scam/"
   },
-  "max_chapter": 13,
+  "max_chapter": 20,
   "chapters": {
    "Violet Scans": []
   }
@@ -41656,37 +41686,6 @@
     {
      "name": "26.001",
      "chapter_number": 26.001
-    }
-   ]
-  }
- },
- {
-  "title": "Umineko No Naku Koro Ni Ep 3 :Banquet of the Golden Witch",
-  "cover": "https://readermc.org/images/thumbnails/Umineko No Naku Koro Ni Ep 3  Banquet of the Golden Witch.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-ep-3-%253abanquet-of-the-golden-witch"
-  },
-  "max_chapter": 22,
-  "demonic_id": "6944",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Umineko no Naku Koro ni Ep 4: Alliance of the Golden Witch",
-  "cover": "https://readermc.org/images/thumbnails/Umineko no Naku Koro ni Ep 4  Alliance of the Golden Witch.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-ep-4%253a-alliance-of-the-golden-witch"
-  },
-  "max_chapter": 29,
-  "demonic_id": "6953",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "26.003",
-     "chapter_number": 26.003
     }
    ]
   }

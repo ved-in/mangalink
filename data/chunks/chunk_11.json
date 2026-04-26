@@ -1,5 +1,18 @@
 [
  {
+  "title": "Sins of the Gods",
+  "cover": "https://readermc.org/images/thumbnails/Sins of the Gods.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/sins-of-the-gods"
+  },
+  "max_chapter": 14,
+  "demonic_id": "12928",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Sir Tigers Table",
   "cover": "https://readermc.org/images/thumbnails/Sir Tigers Table.webp",
   "status": "Ongoing",
@@ -89,7 +102,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/sisters%25252din%25252dlaw%252c-i%2527m-really-not-stupid-anymore"
   },
-  "max_chapter": 44,
+  "max_chapter": 45,
   "demonic_id": "13546",
   "chapters": {
    "Demonic Scans": []
@@ -3060,7 +3073,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/solo-farming-in-the-tower",
    "Thunder Scans": "https://en-thunderscans.com/comics/solo-farming-in-the-tower/"
   },
-  "max_chapter": 122,
+  "max_chapter": 123,
   "chapter_count": 123,
   "chapters": {
    "Asura Scans": [
@@ -15503,7 +15516,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/strength-through-adversity%252c-my-cultivation-knows-no-limits"
   },
-  "max_chapter": 119,
+  "max_chapter": 120,
   "demonic_id": "12791",
   "chapters": {
    "Demonic Scans": [
@@ -15692,7 +15705,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/striving-for-the-luxury-liner%2521%2521-%257eget-that-rich-isekai-life-with-a-ship-summoning-skill%257e"
   },
-  "max_chapter": 62,
+  "max_chapter": 63,
   "demonic_id": "769",
   "chapters": {
    "Demonic Scans": []
@@ -29837,6 +29850,40 @@
   "chapter_count": null
  },
  {
+  "title": "That Summer Like Wildflowers",
+  "cover": "https://media.templetoons.com/file/terms54/covers/c17df1fd-cad0-4a32-90b1-10afda231d8e.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/that-summer-like-wildflowers"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 01",
+     "chapter_slug": "chapter-01"
+    },
+    {
+     "name": "Chapter 02",
+     "chapter_slug": "chapter-02"
+    },
+    {
+     "name": "Chapter 03",
+     "chapter_slug": "chapter-03"
+    },
+    {
+     "name": "Chapter 04",
+     "chapter_slug": "chapter-04"
+    },
+    {
+     "name": "Chapter 05",
+     "chapter_slug": "chapter-05"
+    }
+   ]
+  },
+  "max_chapter": 5,
+  "chapter_count": null
+ },
+ {
   "title": "That Time I Got Reincarnated as a Disappointing Prince",
   "cover": "https://readermc.org/images/thumbnails/That Time I Got Reincarnated as a Disappointing Prince.webp",
   "status": "Ongoing",
@@ -30699,7 +30746,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-abandoned-lady-wants-to-love-your-secret/"
   },
-  "max_chapter": 16,
+  "max_chapter": 17,
   "chapters": {
    "Violet Scans": []
   }
@@ -38603,7 +38650,7 @@
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/the-demon-king-overrun-by-heroes"
   },
-  "max_chapter": 26,
+  "max_chapter": 27,
   "chapter_count": 26,
   "chapters": {
    "Asura Scans": []
@@ -38766,7 +38813,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-demonic-warrior"
   },
-  "max_chapter": 70,
+  "max_chapter": 72,
   "demonic_id": "12979",
   "chapters": {
    "Demonic Scans": []
@@ -44778,36 +44825,6 @@
     {
      "name": "42.5",
      "chapter_number": 42.5
-    }
-   ]
-  }
- },
- {
-  "title": "The Grand Duke Woke Up in a Strange Place",
-  "cover": "https://violetscans.org/wp-content/uploads/2026/04/2026-04-09-01-30-09-1775741409935-210x300.png",
-  "status": "Ongoing",
-  "sources": {
-   "Violet Scans": "https://violetscans.org/comics/the-grand-duke-woke-up-in-a-strange-place/"
-  },
-  "max_chapter": 22,
-  "chapters": {
-   "Violet Scans": []
-  }
- },
- {
-  "title": "The Gray Mark",
-  "cover": "https://readermc.org/images/thumbnails/The Gray Mark.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/the-gray-mark"
-  },
-  "max_chapter": 76,
-  "demonic_id": "12553",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
     }
    ]
   }

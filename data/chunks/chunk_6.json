@@ -18150,7 +18150,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/limited-extra-time/"
   },
-  "max_chapter": 109,
+  "max_chapter": 110,
   "chapters": {
    "Violet Scans": []
   }
@@ -21561,6 +21561,48 @@
   }
  },
  {
+  "title": "Love Comes in a Moonlit Night",
+  "cover": "https://media.templetoons.com/file/terms54/covers/034998b8-168b-4dec-891b-5ea8a2f018d3.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/love-comes-in-a-moonlit-night"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "chapter-7"
+    }
+   ]
+  },
+  "max_chapter": 7,
+  "chapter_count": null
+ },
+ {
   "title": "Love Comic",
   "cover": "https://readermc.org/images/thumbnails/Love Comic.webp",
   "status": "Ongoing",
@@ -22450,7 +22492,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/love-starts-with-parenting/"
   },
-  "max_chapter": 13,
+  "max_chapter": 14,
   "chapters": {
    "Violet Scans": []
   }
@@ -25944,19 +25986,6 @@
   },
   "max_chapter": 1,
   "demonic_id": "2990",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Mahou ga Toketa Asa ni",
-  "cover": "https://readermc.org/images/thumbnails/Mahou ga Toketa Asa ni.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/mahou-ga-toketa-asa-ni"
-  },
-  "max_chapter": 5,
-  "demonic_id": "2991",
   "chapters": {
    "Demonic Scans": []
   }

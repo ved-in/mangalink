@@ -1,5 +1,18 @@
 [
  {
+  "title": "Otameshi RPG",
+  "cover": "https://readermc.org/images/thumbnails/Otameshi RPG.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/otameshi-rpg"
+  },
+  "max_chapter": 7,
+  "demonic_id": "5039",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Otasuke Miko Miko-chan",
   "cover": "https://readermc.org/images/thumbnails/Otasuke Miko Miko-chan.webp",
   "status": "Ongoing",
@@ -9551,7 +9564,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/plus-99-wooden-stick"
   },
-  "max_chapter": 194,
+  "max_chapter": 196,
   "demonic_id": "11992",
   "chapters": {
    "Demonic Scans": [
@@ -27423,7 +27436,7 @@
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/reincarnators-stream"
   },
-  "max_chapter": 46,
+  "max_chapter": 47,
   "chapter_count": 46,
   "chapters": {
    "Asura Scans": []
@@ -28748,19 +28761,6 @@
   },
   "max_chapter": 5,
   "demonic_id": "5796",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Rensou Mode",
-  "cover": "https://readermc.org/images/thumbnails/Rensou Mode.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/rensou-mode"
-  },
-  "max_chapter": 1,
-  "demonic_id": "5797",
   "chapters": {
    "Demonic Scans": []
   }

@@ -1,5 +1,18 @@
 [
  {
+  "title": "Mahou ga Toketa Asa ni",
+  "cover": "https://readermc.org/images/thumbnails/Mahou ga Toketa Asa ni.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/mahou-ga-toketa-asa-ni"
+  },
+  "max_chapter": 5,
+  "demonic_id": "2991",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Mahou Gakuen Lunar!",
   "cover": "https://readermc.org/images/thumbnails/Mahou Gakuen Lunar!.webp",
   "status": "Ongoing",
@@ -12588,7 +12601,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/memoir-of-the-king-of-war"
   },
-  "max_chapter": 250,
+  "max_chapter": 251,
   "demonic_id": "409",
   "chapters": {
    "Demonic Scans": [
@@ -26679,7 +26692,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/murim%2527s-youngest-miracle-demon-doctor"
   },
-  "max_chapter": 68,
+  "max_chapter": 70,
   "demonic_id": "13565",
   "chapters": {
    "Demonic Scans": []
@@ -29844,18 +29857,5 @@
    "Demonic Scans": []
   },
   "demonic_id": "12253"
- },
- {
-  "title": "My Fair Neighbor",
-  "cover": "https://readermc.org/images/thumbnails/My Fair Neighbor.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/my-fair-neighbor"
-  },
-  "max_chapter": 5,
-  "demonic_id": "3828",
-  "chapters": {
-   "Demonic Scans": []
-  }
  }
 ]
