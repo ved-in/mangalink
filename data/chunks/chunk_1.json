@@ -7065,10 +7065,19 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/boundary-labyrinth-and-magician-of-alien-world"
   },
-  "max_chapter": 91,
+  "max_chapter": 92.2,
   "demonic_id": "535",
   "chapters": {
-   "Demonic Scans": []
+   "Demonic Scans": [
+    {
+     "name": "92.2",
+     "chapter_number": 92.2
+    },
+    {
+     "name": "92.1",
+     "chapter_number": 92.1
+    }
+   ]
   }
  },
  {
