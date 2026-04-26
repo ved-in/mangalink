@@ -51,7 +51,7 @@ async function scrape_adk(opts = {})
 
 	for (const status_filter of STATUS_FILTERS)
 	{
-		const listing_url = `https://www.silentquill.net/manga/?status=${status_filter}&type&order=latest&page=`;
+		const listing_url = `https://www.silentquill.net/manga/?status=${status_filter}&order=latest&page=`;
 		const results     = await scrape_wp_site({
 			name:           `ADK Scans`,
 			listing_url,

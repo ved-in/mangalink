@@ -70,7 +70,7 @@ const UI = (() => {
         </div>
         <div class="manga_info">
           <div class="manga_title">${escape_html(m.title)}</div>
-          <div class="manga_meta">${m.max_chapter ? `Ch. ${m.max_chapter}` : ""}</div>
+          <div class="manga_meta">${m.max_chapter ? `Ch. ${m.max_chapter}` : ""}</div>
           <span class="manga_status ${status_class(m.status)}">${m.status || "unknown"}</span>
           <button class="bm_btn ${is_bookmarked(m.id) ? "bookmarked" : ""}" data-id="${m.id}">&#9733;</button>
         </div>
@@ -90,6 +90,7 @@ const UI = (() => {
 
 	// Render a list of chapter rows into a container.
 	// If the chapter list is empty (max_chapter unknown), shows a manual chapter input instead.
+	// Chapters are rendered in batches of 80 and more are appended as the user scrolls.
 	function render_chapter_list(chapters, container_id, { is_read, on_open_sources, manga }) {
 		const el = document.getElementById(container_id);
 
@@ -123,17 +124,47 @@ const UI = (() => {
 			return;
 		}
 
-		el.innerHTML = chapters.map(ch => `
-      <div class="chapter_row">
-        <span class="read_dot ${is_read(ch.chapter) ? "read" : ""}"></span>
-        <span class="ch_num">${ch.chapter ? `Ch. ${ch.chapter}` : "Oneshot"}</span>
-        <span class="ch_title">${ch.title ? `- ${escape_html(ch.title)}` : ""}</span>
-        <button class="find_btn">Sources</button>
-      </div>`).join("");
+		const BATCH = 80;
+		let rendered = 0;
 
-		el.querySelectorAll(".find_btn").forEach((btn, i) => {
-			btn.addEventListener("click", e => { e.stopPropagation(); on_open_sources(chapters[i]); });
-		});
+		function append_batch() {
+			const batch = chapters.slice(rendered, rendered + BATCH);
+			if (!batch.length) return;
+
+			const frag = document.createDocumentFragment();
+			batch.forEach((ch, bi) => {
+				const idx = rendered + bi;
+				const row = document.createElement('div');
+				row.className = 'chapter_row';
+				row.innerHTML = `
+					<span class="read_dot ${is_read(ch.chapter) ? 'read' : ''}"></span>
+					<span class="ch_num">${ch.chapter ? `Ch. ${ch.chapter}` : 'Oneshot'}</span>
+					<span class="ch_title">${ch.title ? `- ${escape_html(ch.title)}` : ''}</span>
+					<button class="find_btn">Sources</button>`;
+				row.querySelector('.find_btn').addEventListener('click', e => {
+					e.stopPropagation();
+					on_open_sources(chapters[idx]);
+				});
+				frag.appendChild(row);
+			});
+
+			rendered += batch.length;
+			el.appendChild(frag);
+
+			// Attach scroll listener only if there are more chapters to load.
+			if (rendered < chapters.length) {
+				function on_scroll() {
+					if (el.scrollTop + el.clientHeight >= el.scrollHeight - 300) {
+						el.removeEventListener('scroll', on_scroll);
+						append_batch();
+					}
+				}
+				el.addEventListener('scroll', on_scroll);
+			}
+		}
+
+		el.innerHTML = '';
+		append_batch();
 	}
 
 	// Mark a single chapter row's dot as read.

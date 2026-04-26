@@ -80,7 +80,7 @@ function extract_demonic_cards(html)
 			if (ch_match)
 			{
 				const n = parseFloat(ch_match[1]);
-				if (max_chapter === null || n > max_chapter) max_chapter = n;
+				if ((max_chapter === null || n > max_chapter) && n < 100_000) max_chapter = n;
 			}
 		});
 
