@@ -19071,10 +19071,26 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/living-in-this-world-with-cut-and-paste"
   },
-  "max_chapter": 92,
+  "max_chapter": 102.2,
   "demonic_id": "1323",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "102.2",
+     "chapter_number": 102.2
+    },
+    {
+     "name": "102.1",
+     "chapter_number": 102.1
+    },
+    {
+     "name": "95.2",
+     "chapter_number": 95.2
+    },
+    {
+     "name": "95.1",
+     "chapter_number": 95.1
+    },
     {
      "name": "3.2",
      "chapter_number": 3.2

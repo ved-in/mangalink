@@ -7080,10 +7080,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i-became-the-overlord-in-another-world%2521"
   },
-  "max_chapter": 4.1,
+  "max_chapter": 4.2,
   "demonic_id": "13439",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "4.2",
+     "chapter_number": 4.2
+    },
     {
      "name": "4.1",
      "chapter_number": 4.1
