@@ -26,7 +26,7 @@ async function scrape_violet(opts = {})
 {
 	return scrape_wp_site({
 		name:        'Violet Scans',
-		listing_url: 'https://violetscans.org/comics/?page=',
+		listing_url: 'https://violetscans.org/comics/?status=&type=&order=update&page=',
 		state:       opts.state ?? null,
 	});
 }

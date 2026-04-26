@@ -30,7 +30,7 @@ async function scrape_thunder(opts = {})
 {
 	return scrape_wp_site({
 		name:        'Thunder Scans',
-		listing_url: 'https://en-thunderscans.com/comics/?page=',
+		listing_url: 'https://en-thunderscans.com/comics/?status=&type=&order=update&page=',
 		state:       opts.state ?? null,
 	});
 }
