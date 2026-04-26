@@ -21251,7 +21251,7 @@
  },
  "i became the dukes mistress": {
   "status": "Ongoing",
-  "max_chapter": 1,
+  "max_chapter": 3,
   "chapter_count": null
  },
  "i became the emperors cat": {
@@ -22601,7 +22601,7 @@
  },
  "i want to be fooled": {
   "status": "Ongoing",
-  "max_chapter": 45,
+  "max_chapter": 46,
   "chapter_count": null
  },
  "i want to eat you": {
@@ -84958,7 +84958,7 @@
   "status": "Ongoing"
  },
  "i-became-the-dukes-mistress": {
-  "max_chapter": 1,
+  "max_chapter": 3,
   "status": "Ongoing"
  },
  "i-became-the-emperors-cat": {
@@ -86034,7 +86034,7 @@
   "status": "Ongoing"
  },
  "i-want-to-be-fooled": {
-  "max_chapter": 45,
+  "max_chapter": 46,
   "status": "Ongoing"
  },
  "i-want-to-eat-you": {
