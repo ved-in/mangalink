@@ -3292,10 +3292,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/do-you-think-someone-like-you-can-defeat-the-demon-king%253f"
   },
-  "max_chapter": 35.1,
+  "max_chapter": 35.2,
   "demonic_id": "11233",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "35.2",
+     "chapter_number": 35.2
+    },
     {
      "name": "35.1",
      "chapter_number": 35.1
