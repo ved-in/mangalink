@@ -16824,7 +16824,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-reproducer-of-creation-magic"
   },
-  "max_chapter": 10,
+  "max_chapter": 11,
   "demonic_id": "11705",
   "chapters": {
    "Demonic Scans": [
@@ -21304,10 +21304,26 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-strongest-outcast-plant-user"
   },
-  "max_chapter": 12.2,
+  "max_chapter": 14.2,
   "demonic_id": "13498",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "14.2",
+     "chapter_number": 14.2
+    },
+    {
+     "name": "14.1",
+     "chapter_number": 14.1
+    },
+    {
+     "name": "13.2",
+     "chapter_number": 13.2
+    },
+    {
+     "name": "13.1",
+     "chapter_number": 13.1
+    },
     {
      "name": "12.2",
      "chapter_number": 12.2
@@ -24094,7 +24110,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-ultimate-weapon-hero"
   },
-  "max_chapter": 11,
+  "max_chapter": 12,
   "demonic_id": "13374",
   "chapters": {
    "Demonic Scans": []
