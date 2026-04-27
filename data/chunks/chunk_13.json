@@ -1,5 +1,52 @@
 [
  {
+  "title": "Umineko no Naku Koro ni Chiru Episode 8: Twilight of the Golden Witch",
+  "cover": "https://readermc.org/images/thumbnails/Umineko no Naku Koro ni Chiru Episode 8  Twilight of the Golden Witch.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-chiru-episode-8%253a-twilight-of-the-golden-witch"
+  },
+  "max_chapter": 38,
+  "demonic_id": "6950",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Umineko no Naku Koro ni Ep 1",
+  "cover": "https://readermc.org/images/thumbnails/Umineko no Naku Koro ni Ep 1.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-ep-1"
+  },
+  "max_chapter": 21.003,
+  "demonic_id": "6951",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "21.003",
+     "chapter_number": 21.003
+    },
+    {
+     "name": "21.002",
+     "chapter_number": 21.002
+    },
+    {
+     "name": "21.001",
+     "chapter_number": 21.001
+    },
+    {
+     "name": "16.002",
+     "chapter_number": 16.002
+    },
+    {
+     "name": "5.1",
+     "chapter_number": 5.1
+    }
+   ]
+  }
+ },
+ {
   "title": "Umineko no Naku Koro ni Ep 2",
   "cover": "https://readermc.org/images/thumbnails/Umineko no Naku Koro ni Ep 2.webp",
   "status": "Ongoing",

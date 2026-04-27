@@ -1171,7 +1171,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/the-hated-black-mage-returns",
    "Thunder Scans": "https://en-thunderscans.com/comics/the-hated-black-mage-returns/"
   },
-  "max_chapter": 65,
+  "max_chapter": 66,
   "demonic_id": "12397",
   "chapters": {
    "Demonic Scans": [],
@@ -4136,7 +4136,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-iron-emperor/"
   },
-  "max_chapter": 44,
+  "max_chapter": 45,
   "chapters": {
    "Thunder Scans": []
   }
@@ -6857,7 +6857,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/the-late-game-healer-is-way-too-strong",
    "Thunder Scans": "https://en-thunderscans.com/comics/the-late-game-healer-is-way-too-strong/"
   },
-  "max_chapter": 79,
+  "max_chapter": 81,
   "demonic_id": "13038",
   "chapters": {
    "Demonic Scans": [
@@ -13740,7 +13740,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-poison-master-of-sacheon-tang-clan/"
   },
-  "max_chapter": 81,
+  "max_chapter": 83,
   "chapters": {
    "Thunder Scans": []
   }
@@ -16592,7 +16592,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/the-reincarnation-of-the-forbidden-archmage",
    "Thunder Scans": "https://en-thunderscans.com/comics/the-reincarnation-of-the-forbidden-archmage/"
   },
-  "max_chapter": 178,
+  "max_chapter": 179,
   "demonic_id": "11530",
   "chapters": {
    "Demonic Scans": [
@@ -17133,7 +17133,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-return-of-the-genius-magic-swordsman/"
   },
-  "max_chapter": 41,
+  "max_chapter": 42,
   "chapters": {
    "Thunder Scans": []
   }
@@ -18756,6 +18756,18 @@
   }
  },
  {
+  "title": "The Savage Demon of Joseon",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2026/04/2026-04-26-07-16-46-1777231006320-231x300.jpeg",
+  "status": "Ongoing",
+  "sources": {
+   "Thunder Scans": "https://en-thunderscans.com/comics/the-savage-demon-of-joseon/"
+  },
+  "max_chapter": 5,
+  "chapters": {
+   "Thunder Scans": []
+  }
+ },
+ {
   "title": "The Savior Zero: Saving the World with a Unique Skill from Zero Magic",
   "cover": "https://readermc.org/images/thumbnails/The Savior Zero  Saving the World with a Unique Skill from Zero Magic.webp",
   "status": "Ongoing",
@@ -20197,7 +20209,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-spys-life-in-the-demonic-cult/"
   },
-  "max_chapter": 11,
+  "max_chapter": 65,
   "chapters": {
    "Thunder Scans": []
   }
@@ -22397,6 +22409,18 @@
   "demonic_id": "12636",
   "chapters": {
    "Demonic Scans": []
+  }
+ },
+ {
+  "title": "The Sword Emperor Who Surpasses His Previous Life",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2026/04/2026-04-26-03-23-45-1777217025717-212x300.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Thunder Scans": "https://en-thunderscans.com/comics/the-sword-emperor-who-surpasses-his-previous-life/"
+  },
+  "max_chapter": 20,
+  "chapters": {
+   "Thunder Scans": []
   }
  },
  {
@@ -24777,7 +24801,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/the-villain%255c%2527s-profiler",
    "Thunder Scans": "https://en-thunderscans.com/comics/the-villains-profiler/"
   },
-  "max_chapter": 45,
+  "max_chapter": 48,
   "demonic_id": "13350",
   "chapters": {
    "Demonic Scans": [
@@ -31526,7 +31550,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/the-youngest-son-of-the-eunhae-merchant-group",
    "Thunder Scans": "https://en-thunderscans.com/comics/the-youngest-son-of-the-eunhae-merchant-group/"
   },
-  "max_chapter": 55,
+  "max_chapter": 56,
   "chapter_count": 55,
   "chapters": {
    "Asura Scans": [],
@@ -31610,7 +31634,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/there-are-no-bad-girls-in-the-world/"
   },
-  "max_chapter": 19,
+  "max_chapter": 21,
   "chapters": {
    "Thunder Scans": []
   }
@@ -41661,53 +41685,6 @@
   "demonic_id": "6949",
   "chapters": {
    "Demonic Scans": []
-  }
- },
- {
-  "title": "Umineko no Naku Koro ni Chiru Episode 8: Twilight of the Golden Witch",
-  "cover": "https://readermc.org/images/thumbnails/Umineko no Naku Koro ni Chiru Episode 8  Twilight of the Golden Witch.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-chiru-episode-8%253a-twilight-of-the-golden-witch"
-  },
-  "max_chapter": 38,
-  "demonic_id": "6950",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Umineko no Naku Koro ni Ep 1",
-  "cover": "https://readermc.org/images/thumbnails/Umineko no Naku Koro ni Ep 1.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-ep-1"
-  },
-  "max_chapter": 21.003,
-  "demonic_id": "6951",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "21.003",
-     "chapter_number": 21.003
-    },
-    {
-     "name": "21.002",
-     "chapter_number": 21.002
-    },
-    {
-     "name": "21.001",
-     "chapter_number": 21.001
-    },
-    {
-     "name": "16.002",
-     "chapter_number": 16.002
-    },
-    {
-     "name": "5.1",
-     "chapter_number": 5.1
-    }
-   ]
   }
  }
 ]
