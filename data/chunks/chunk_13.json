@@ -1,5 +1,31 @@
 [
  {
+  "title": "Umimachi Diary",
+  "cover": "https://readermc.org/images/thumbnails/Umimachi Diary.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/umimachi-diary"
+  },
+  "max_chapter": 2,
+  "demonic_id": "6943",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Umineko no Naku Koro ni Chiru Ep 5: End of the Golden Witch",
+  "cover": "https://readermc.org/images/thumbnails/Umineko no Naku Koro ni Chiru Ep 5  End of the Golden Witch.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-chiru-ep-5%253a-end-of-the-golden-witch"
+  },
+  "max_chapter": 27,
+  "demonic_id": "6945",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Umineko No Naku Koro Ni Chiru Episode 5 End Of The Golden Witch",
   "cover": "https://readermc.org/images/thumbnails/Umineko No Naku Koro Ni Chiru Episode 5 End Of The Golden Witch.webp",
   "status": "Ongoing",

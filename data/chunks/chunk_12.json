@@ -8836,7 +8836,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-male-lead-knelt-before-me/"
   },
-  "max_chapter": 48,
+  "max_chapter": 49,
   "chapters": {
    "Violet Scans": []
   }
@@ -9174,7 +9174,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-max-leveled-hero-will-return%2521"
   },
-  "max_chapter": 231,
+  "max_chapter": 232,
   "demonic_id": "303",
   "chapters": {
    "Demonic Scans": [
@@ -14235,7 +14235,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-prince-doesnt-cry-from-mere-onions/"
   },
-  "max_chapter": 55,
+  "max_chapter": 56,
   "chapters": {
    "Violet Scans": []
   }
@@ -14971,7 +14971,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/the-rebel-of-the-tyrant-noble-house",
    "Thunder Scans": "https://en-thunderscans.com/comics/the-rebel-of-the-tyrant-noble-house/"
   },
-  "max_chapter": 18,
+  "max_chapter": 19,
   "demonic_id": "13602",
   "chapters": {
    "Demonic Scans": [],
@@ -17023,7 +17023,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-return-of-namgung%255c%2527s-granddaughter"
   },
-  "max_chapter": 48,
+  "max_chapter": 49,
   "demonic_id": "13421",
   "chapters": {
    "Demonic Scans": []
@@ -17308,7 +17308,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-return-of-the-world-savior/"
   },
-  "max_chapter": 23,
+  "max_chapter": 24,
   "chapters": {
    "Thunder Scans": [
     {
@@ -22241,7 +22241,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-super-strong-noble-lady-wants-to-be-truly-weak/"
   },
-  "max_chapter": 41,
+  "max_chapter": 42,
   "chapters": {
    "Violet Scans": []
   }
@@ -26823,6 +26823,30 @@
   }
  },
  {
+  "title": "The White Tiger Clan’s Baby Cotton Ball",
+  "cover": "https://violetscans.org/wp-content/uploads/2026/04/2026-04-27-04-46-47-1777308407353-210x300.jpeg",
+  "status": "Ongoing",
+  "sources": {
+   "Violet Scans": "https://violetscans.org/comics/the-white-tiger-clans-baby-cotton-ball/"
+  },
+  "max_chapter": null,
+  "chapters": {
+   "Violet Scans": []
+  }
+ },
+ {
+  "title": "The White Tiger Clan’s Little Fluff",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2026/04/2026-04-27-04-44-33-1777308273231-210x300.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Thunder Scans": "https://en-thunderscans.com/comics/the-white-tiger-clans-little-fluff/"
+  },
+  "max_chapter": null,
+  "chapters": {
+   "Thunder Scans": []
+  }
+ },
+ {
   "title": "The White Tiger Princess Isn’t Dangerous",
   "cover": "https://violetscans.org/wp-content/uploads/2025/10/2025-10-21-01-20-10-1761052810870-210x300.png",
   "status": "Ongoing",
@@ -30829,7 +30853,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-world%25252dclass-extra%2527s-walkthrough"
   },
-  "max_chapter": 53,
+  "max_chapter": 54,
   "demonic_id": "13301",
   "chapters": {
    "Demonic Scans": []
@@ -30842,7 +30866,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-world-class-extras-walkthrough-remake/"
   },
-  "max_chapter": 53,
+  "max_chapter": 54,
   "chapters": {
    "Thunder Scans": []
   }
@@ -32881,7 +32905,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/this-love-is-thicker-than-blood/"
   },
-  "max_chapter": 24,
+  "max_chapter": 25,
   "chapters": {
    "Violet Scans": []
   }
@@ -33742,10 +33766,14 @@
    "Flame Comics": "https://flamecomics.xyz/series/136"
   },
   "flame_series_id": 136,
-  "max_chapter": 130,
+  "max_chapter": 131,
   "chapter_count": 130,
   "chapters": {
    "Flame Comics": [
+    {
+     "name": "131",
+     "chapter_slug": "246d5224e91f44bf"
+    },
     {
      "name": "130",
      "chapter_slug": "4fc479e5873c0efb"
@@ -41684,32 +41712,6 @@
      "chapter_number": 1.01
     }
    ]
-  }
- },
- {
-  "title": "Umimachi Diary",
-  "cover": "https://readermc.org/images/thumbnails/Umimachi Diary.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umimachi-diary"
-  },
-  "max_chapter": 2,
-  "demonic_id": "6943",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Umineko no Naku Koro ni Chiru Ep 5: End of the Golden Witch",
-  "cover": "https://readermc.org/images/thumbnails/Umineko no Naku Koro ni Chiru Ep 5  End of the Golden Witch.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-chiru-ep-5%253a-end-of-the-golden-witch"
-  },
-  "max_chapter": 27,
-  "demonic_id": "6945",
-  "chapters": {
-   "Demonic Scans": []
   }
  }
 ]
