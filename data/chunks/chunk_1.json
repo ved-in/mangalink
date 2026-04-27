@@ -976,7 +976,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/between-your-letter-and-my-reply/"
   },
-  "max_chapter": 30,
+  "max_chapter": 31,
   "chapters": {
    "Violet Scans": []
   }
@@ -13657,7 +13657,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/chronicles-of-the-lazy-sovereign",
    "Thunder Scans": "https://en-thunderscans.com/comics/chronicles-of-the-lazy-sovereign/"
   },
-  "max_chapter": 44,
+  "max_chapter": 45,
   "chapter_count": 44,
   "chapters": {
    "Asura Scans": [],
@@ -17205,7 +17205,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/counter-cube"
   },
-  "max_chapter": 184,
+  "max_chapter": 185,
   "demonic_id": "12722",
   "chapters": {
    "Demonic Scans": [

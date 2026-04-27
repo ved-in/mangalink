@@ -1,5 +1,73 @@
 [
  {
+  "title": "My Entire Class Was Summoned To Another World Except For Me",
+  "cover": "https://readermc.org/images/thumbnails/My Entire Class Was Summoned To Another World Except For Me.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/my-entire-class-was-summoned-to-another-world-except-for-me"
+  },
+  "max_chapter": 31.1,
+  "demonic_id": "382",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "31.1",
+     "chapter_number": 31.1
+    },
+    {
+     "name": "29.2",
+     "chapter_number": 29.2
+    },
+    {
+     "name": "29.1",
+     "chapter_number": 29.1
+    },
+    {
+     "name": "20.2",
+     "chapter_number": 20.2
+    },
+    {
+     "name": "20.1",
+     "chapter_number": 20.1
+    },
+    {
+     "name": "14.2",
+     "chapter_number": 14.2
+    },
+    {
+     "name": "14.1",
+     "chapter_number": 14.1
+    },
+    {
+     "name": "7.2",
+     "chapter_number": 7.2
+    },
+    {
+     "name": "7.1",
+     "chapter_number": 7.1
+    }
+   ]
+  }
+ },
+ {
+  "title": "My Eternal Reign",
+  "cover": "https://readermc.org/images/thumbnails/My Eternal Reign.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/my-eternal-reign"
+  },
+  "max_chapter": 50,
+  "demonic_id": "11828",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
   "title": "My Exclusive Tower Guide",
   "cover": "https://cdn.asurascans.com/asura-images/covers/my-exclusive-tower-guide.f49132.webp",
   "status": "Ongoing",
@@ -3170,7 +3238,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/my-pirate-prince/"
   },
-  "max_chapter": 25,
+  "max_chapter": 26,
   "chapters": {
    "Violet Scans": []
   }
@@ -31449,32 +31517,6 @@
   },
   "max_chapter": 235,
   "demonic_id": "5033",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Osusume Boyfriend",
-  "cover": "https://readermc.org/images/thumbnails/Osusume Boyfriend.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/osusume-boyfriend"
-  },
-  "max_chapter": 3,
-  "demonic_id": "5034",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Otaku no Musume-san",
-  "cover": "https://readermc.org/images/thumbnails/Otaku no Musume-san.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/otaku-no-musume%25252dsan"
-  },
-  "max_chapter": 63,
-  "demonic_id": "5037",
   "chapters": {
    "Demonic Scans": []
   }

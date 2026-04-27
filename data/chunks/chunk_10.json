@@ -1,5 +1,36 @@
 [
  {
+  "title": "Renren Zakari",
+  "cover": "https://readermc.org/images/thumbnails/Renren Zakari.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/renren-zakari"
+  },
+  "max_chapter": 5,
+  "demonic_id": "5794",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Renri No Eda",
+  "cover": "https://readermc.org/images/thumbnails/Renri No Eda.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/renri-no-eda"
+  },
+  "max_chapter": 4.001,
+  "demonic_id": "5795",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "4.001",
+     "chapter_number": 4.001
+    }
+   ]
+  }
+ },
+ {
   "title": "Rensen - Hana no Koe Yowa",
   "cover": "https://readermc.org/images/thumbnails/Rensen - Hana no Koe Yowa.webp",
   "status": "Ongoing",
@@ -29039,41 +29070,6 @@
   },
   "max_chapter": 31,
   "demonic_id": "990",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Since The Red Moon Appeared",
-  "cover": "https://readermc.org/images/thumbnails/Since The Red Moon Appeared.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/since-the-red-moon-appeared"
-  },
-  "max_chapter": 172,
-  "demonic_id": "11571",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0.5",
-     "chapter_number": 0.5
-    },
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  }
- },
- {
-  "title": "Sincerely: I Became a Duke's Maid",
-  "cover": "https://readermc.org/images/thumbnails/Sincerely  I Became a Duke's Maid.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/sincerely%253a-i-became-a-duke%2527s-maid"
-  },
-  "max_chapter": 111,
-  "demonic_id": "6606",
   "chapters": {
    "Demonic Scans": []
   }

@@ -1,5 +1,49 @@
 [
  {
+  "title": "The Golden Light of Dawn [ALL CHAPTERS]",
+  "cover": "https://readermc.org/images/thumbnails/The Golden Light of Dawn [ALL CHAPTERS].webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/the-golden-light-of-dawn-%255ball-chapters%255d"
+  },
+  "max_chapter": 66,
+  "demonic_id": "11119",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
+  "title": "The Golden Lion King",
+  "cover": "https://readermc.org/images/thumbnails/The Golden Lion King.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/the-golden-lion-king"
+  },
+  "max_chapter": 38,
+  "demonic_id": "11755",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "8.2",
+     "chapter_number": 8.2
+    },
+    {
+     "name": "8.1",
+     "chapter_number": 8.1
+    },
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
   "title": "The Grand Cudgel Order",
   "cover": "https://en-thunderscans.com/wp-content/uploads/2026/03/2026-03-03-02-12-52-1772547172332-210x300.png",
   "status": "Ongoing",
@@ -1127,7 +1171,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-guild%2527s-strongest-receptionist"
   },
-  "max_chapter": 57,
+  "max_chapter": 58,
   "demonic_id": "13259",
   "chapters": {
    "Demonic Scans": []
@@ -3961,7 +4005,7 @@
    "Asura Scans": "https://asurascans.com/comics/the-indomitable-martial-king",
    "Demonic Scans": "https://demonicscans.org/manga/the-indomitable-martial-king"
   },
-  "max_chapter": 130,
+  "max_chapter": 131,
   "chapter_count": 130,
   "chapters": {
    "Asura Scans": [],
@@ -11233,7 +11277,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/the-novel%2527s-extra-%2528remake%2529",
    "Flame Comics": "https://flamecomics.xyz/series/83"
   },
-  "max_chapter": 154,
+  "max_chapter": 155,
   "demonic_id": "11457",
   "chapters": {
    "Demonic Scans": [
@@ -11267,6 +11311,10 @@
     }
    ],
    "Flame Comics": [
+    {
+     "name": "155",
+     "chapter_slug": "5b7874881c4aee1d"
+    },
     {
      "name": "154",
      "chapter_slug": "e565b2ec7ef513b4"
@@ -14937,7 +14985,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-rebels-quack-doctor/"
   },
-  "max_chapter": 31,
+  "max_chapter": 32,
   "chapters": {
    "Violet Scans": []
   }
@@ -38865,7 +38913,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/true-education"
   },
-  "max_chapter": 241,
+  "max_chapter": 242,
   "demonic_id": "1208",
   "chapters": {
    "Demonic Scans": [
@@ -41660,32 +41708,6 @@
   },
   "max_chapter": 27,
   "demonic_id": "6945",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Umineko No Naku Koro Ni Chiru Episode 5 End Of The Golden Witch",
-  "cover": "https://readermc.org/images/thumbnails/Umineko No Naku Koro Ni Chiru Episode 5 End Of The Golden Witch.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-chiru-episode-5-end-of-the-golden-witch"
-  },
-  "max_chapter": 27,
-  "demonic_id": "6946",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Umineko no Naku Koro ni Chiru Episode 6: Dawn of the Golden Witch",
-  "cover": "https://readermc.org/images/thumbnails/Umineko no Naku Koro ni Chiru Episode 6  Dawn of the Golden Witch.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umineko-no-naku-koro-ni-chiru-episode-6%253a-dawn-of-the-golden-witch"
-  },
-  "max_chapter": 26,
-  "demonic_id": "6947",
   "chapters": {
    "Demonic Scans": []
   }

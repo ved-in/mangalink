@@ -1,5 +1,31 @@
 [
  {
+  "title": "Kiss ni Renzoku",
+  "cover": "https://readermc.org/images/thumbnails/Kiss ni Renzoku.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/kiss-ni-renzoku"
+  },
+  "max_chapter": 1,
+  "demonic_id": "2547",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Kiss no Tochuu",
+  "cover": "https://readermc.org/images/thumbnails/Kiss no Tochuu.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/kiss-no-tochuu"
+  },
+  "max_chapter": 5,
+  "demonic_id": "2548",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Kiss no Tsuchuu",
   "cover": "https://readermc.org/images/thumbnails/Kiss no Tsuchuu.webp",
   "status": "Ongoing",
@@ -7200,10 +7226,26 @@
    "Demonic Scans": "https://demonicscans.org/manga/kunon-the-sorcerer-can-see-through",
    "Flame Comics": "https://flamecomics.xyz/series/90"
   },
-  "max_chapter": 40.2,
+  "max_chapter": 44.2,
   "demonic_id": "11454",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "44.2",
+     "chapter_number": 44.2
+    },
+    {
+     "name": "44.1",
+     "chapter_number": 44.1
+    },
+    {
+     "name": "41.2",
+     "chapter_number": 41.2
+    },
+    {
+     "name": "41.1",
+     "chapter_number": 41.1
+    },
     {
      "name": "40.2",
      "chapter_number": 40.2
@@ -13745,7 +13787,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/legend-of-the-holy-sword"
   },
-  "max_chapter": 100,
+  "max_chapter": 101,
   "demonic_id": "11833",
   "chapters": {
    "Demonic Scans": [
@@ -20257,7 +20299,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/lord-prestons-secret-tutor/"
   },
-  "max_chapter": 9,
+  "max_chapter": 10,
   "chapters": {
    "Violet Scans": []
   }
@@ -25978,41 +26020,6 @@
   "demonic_id": "2986",
   "chapters": {
    "Demonic Scans": []
-  }
- },
- {
-  "title": "Mahochu–!",
-  "cover": "https://readermc.org/images/thumbnails/Mahochu–!.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/mahochu%25e2%2580%2593%2521"
-  },
-  "max_chapter": 3,
-  "demonic_id": "2988",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Mahoraba",
-  "cover": "https://readermc.org/images/thumbnails/Mahoraba.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/mahoraba"
-  },
-  "max_chapter": 95,
-  "demonic_id": "2989",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "50.6",
-     "chapter_number": 50.6
-    },
-    {
-     "name": "50.5",
-     "chapter_number": 50.5
-    }
-   ]
   }
  }
 ]

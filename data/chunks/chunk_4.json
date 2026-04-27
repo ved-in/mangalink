@@ -1,5 +1,18 @@
 [
  {
+  "title": "Holyland",
+  "cover": "https://readermc.org/images/thumbnails/Holyland.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/holyland"
+  },
+  "max_chapter": 182,
+  "demonic_id": "10429",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Home",
   "cover": "https://readermc.org/images/thumbnails/Home.webp",
   "status": "Ongoing",
@@ -3957,7 +3970,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/husband-thief/"
   },
-  "max_chapter": 11,
+  "max_chapter": 12,
   "chapters": {
    "Violet Scans": [
     {
@@ -5830,6 +5843,18 @@
   }
  },
  {
+  "title": "I Became A Married Man in Another World",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2026/04/2026-04-27-01-49-24-1777297764468-231x300.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Thunder Scans": "https://en-thunderscans.com/comics/i-became-a-married-man-in-another-world/"
+  },
+  "max_chapter": 1,
+  "chapters": {
+   "Thunder Scans": []
+  }
+ },
+ {
   "title": "I Became a Miserable Extra in a Healing Story",
   "cover": "https://violetscans.org/wp-content/uploads/2025/02/2026-01-10-03-05-00-1768057500817-212x300.png",
   "status": "Ongoing",
@@ -6503,7 +6528,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/i-became-the-genius-bastard-of-a-noble-dark-clan",
    "Thunder Scans": "https://en-thunderscans.com/comics/i-became-the-genius-bastard-of-a-noble-dark-clan/"
   },
-  "max_chapter": 51,
+  "max_chapter": 52,
   "demonic_id": "13174",
   "chapters": {
    "Demonic Scans": [],
@@ -13342,7 +13367,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i-reincarnated-as-a-legendary-surgeon-%255ball-chapters%255d"
   },
-  "max_chapter": 199,
+  "max_chapter": 200,
   "demonic_id": "11217",
   "chapters": {
    "Demonic Scans": [
@@ -24271,7 +24296,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/im-going-to-change-my-husband-with-a-predatory-marriage/"
   },
-  "max_chapter": 31,
+  "max_chapter": 32,
   "chapters": {
    "Violet Scans": []
   }
@@ -25490,7 +25515,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/im-the-knight-commander-of-the-second-male-lead/"
   },
-  "max_chapter": 35,
+  "max_chapter": 36,
   "chapters": {
    "Violet Scans": []
   }
@@ -31662,7 +31687,8 @@
   "cover": "https://readermc.org/images/thumbnails/Informer.webp",
   "status": "Ongoing",
   "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/informer"
+   "Demonic Scans": "https://demonicscans.org/manga/informer",
+   "Thunder Scans": "https://en-thunderscans.com/comics/informer/"
   },
   "max_chapter": 81.5,
   "demonic_id": "11929",
@@ -33373,37 +33399,6 @@
   },
   "max_chapter": 73,
   "demonic_id": "669",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  }
- },
- {
-  "title": "Invincible Yeonbyeongeol",
-  "cover": "https://readermc.org/images/thumbnails/Invincible Yeonbyeongeol.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/invincible-yeonbyeongeol"
-  },
-  "max_chapter": 10,
-  "demonic_id": "10804",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Invitation of Mystic Messenger",
-  "cover": "https://readermc.org/images/thumbnails/Invitation of Mystic Messenger.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/invitation-of-mystic-messenger"
-  },
-  "max_chapter": 17,
-  "demonic_id": "10805",
   "chapters": {
    "Demonic Scans": [
     {

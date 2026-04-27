@@ -1,5 +1,36 @@
 [
  {
+  "title": "Invincible Yeonbyeongeol",
+  "cover": "https://readermc.org/images/thumbnails/Invincible Yeonbyeongeol.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invincible-yeonbyeongeol"
+  },
+  "max_chapter": 10,
+  "demonic_id": "10804",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Invitation of Mystic Messenger",
+  "cover": "https://readermc.org/images/thumbnails/Invitation of Mystic Messenger.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invitation-of-mystic-messenger"
+  },
+  "max_chapter": 17,
+  "demonic_id": "10805",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
   "title": "Inzak",
   "cover": "https://readermc.org/images/thumbnails/Inzak.webp",
   "status": "Ongoing",
@@ -28616,32 +28647,6 @@
   },
   "max_chapter": 3,
   "demonic_id": "2546",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Kiss ni Renzoku",
-  "cover": "https://readermc.org/images/thumbnails/Kiss ni Renzoku.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/kiss-ni-renzoku"
-  },
-  "max_chapter": 1,
-  "demonic_id": "2547",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Kiss no Tochuu",
-  "cover": "https://readermc.org/images/thumbnails/Kiss no Tochuu.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/kiss-no-tochuu"
-  },
-  "max_chapter": 5,
-  "demonic_id": "2548",
   "chapters": {
    "Demonic Scans": []
   }

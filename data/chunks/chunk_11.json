@@ -1,5 +1,40 @@
 [
  {
+  "title": "Since The Red Moon Appeared",
+  "cover": "https://readermc.org/images/thumbnails/Since The Red Moon Appeared.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/since-the-red-moon-appeared"
+  },
+  "max_chapter": 172,
+  "demonic_id": "11571",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0.5",
+     "chapter_number": 0.5
+    },
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
+  "title": "Sincerely: I Became a Duke's Maid",
+  "cover": "https://readermc.org/images/thumbnails/Sincerely  I Became a Duke's Maid.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/sincerely%253a-i-became-a-duke%2527s-maid"
+  },
+  "max_chapter": 111,
+  "demonic_id": "6606",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Single Wizard's Dormitory Apartment",
   "cover": "https://readermc.org/images/thumbnails/Single Wizard's Dormitory Apartment.webp",
   "status": "Ongoing",
@@ -19416,7 +19451,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/surviving-the-apocalypse",
    "Flame Comics": "https://flamecomics.xyz/series/138"
   },
-  "max_chapter": 73,
+  "max_chapter": 74,
   "demonic_id": "12313",
   "chapters": {
    "Demonic Scans": [
@@ -19426,6 +19461,10 @@
     }
    ],
    "Flame Comics": [
+    {
+     "name": "73",
+     "chapter_slug": "715adb5652092b59"
+    },
     {
      "name": "72",
      "chapter_slug": "0680b7245de7fda6"
@@ -30123,6 +30162,10 @@
    ],
    "Flame Comics": [
     {
+     "name": "114",
+     "chapter_slug": "13cd89d2d1d41141"
+    },
+    {
      "name": "113",
      "chapter_slug": "5b6447353b312f94"
     },
@@ -33947,7 +33990,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-baby-raising-a-devil/"
   },
-  "max_chapter": 41,
+  "max_chapter": 42,
   "chapters": {
    "Violet Scans": []
   }
@@ -37521,7 +37564,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-crown-i-will-seize/"
   },
-  "max_chapter": 35,
+  "max_chapter": 36,
   "chapters": {
    "Violet Scans": []
   }
@@ -42519,7 +42562,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-flower-with-a-sword/"
   },
-  "max_chapter": 49,
+  "max_chapter": 50,
   "chapters": {
    "Violet Scans": []
   }
@@ -44075,10 +44118,14 @@
    "Flame Comics": "https://flamecomics.xyz/series/126"
   },
   "flame_series_id": 126,
-  "max_chapter": 114,
+  "max_chapter": 115,
   "chapter_count": 114,
   "chapters": {
    "Flame Comics": [
+    {
+     "name": "114",
+     "chapter_slug": "64e7503bb1103e97"
+    },
     {
      "name": "113",
      "chapter_slug": "f0f4e26eb3697a6e"
@@ -44773,50 +44820,6 @@
     {
      "name": "3.5",
      "chapter_number": 3.5
-    }
-   ]
-  }
- },
- {
-  "title": "The Golden Light of Dawn [ALL CHAPTERS]",
-  "cover": "https://readermc.org/images/thumbnails/The Golden Light of Dawn [ALL CHAPTERS].webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/the-golden-light-of-dawn-%255ball-chapters%255d"
-  },
-  "max_chapter": 66,
-  "demonic_id": "11119",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  }
- },
- {
-  "title": "The Golden Lion King",
-  "cover": "https://readermc.org/images/thumbnails/The Golden Lion King.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/the-golden-lion-king"
-  },
-  "max_chapter": 38,
-  "demonic_id": "11755",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "8.2",
-     "chapter_number": 8.2
-    },
-    {
-     "name": "8.1",
-     "chapter_number": 8.1
-    },
-    {
-     "name": "0",
-     "chapter_number": 0
     }
    ]
   }

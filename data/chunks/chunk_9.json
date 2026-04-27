@@ -1,5 +1,31 @@
 [
  {
+  "title": "Osusume Boyfriend",
+  "cover": "https://readermc.org/images/thumbnails/Osusume Boyfriend.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/osusume-boyfriend"
+  },
+  "max_chapter": 3,
+  "demonic_id": "5034",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Otaku no Musume-san",
+  "cover": "https://readermc.org/images/thumbnails/Otaku no Musume-san.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/otaku-no-musume%25252dsan"
+  },
+  "max_chapter": 63,
+  "demonic_id": "5037",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Otaku The Loser",
   "cover": "https://readermc.org/images/thumbnails/Otaku The Loser.webp",
   "status": "Ongoing",
@@ -4957,7 +4983,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/past-life-returner-%2528remake-2022%2529"
   },
-  "max_chapter": 169,
+  "max_chapter": 170,
   "demonic_id": "13136",
   "chapters": {
    "Demonic Scans": []
@@ -28732,37 +28758,6 @@
   "demonic_id": "5793",
   "chapters": {
    "Demonic Scans": []
-  }
- },
- {
-  "title": "Renren Zakari",
-  "cover": "https://readermc.org/images/thumbnails/Renren Zakari.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/renren-zakari"
-  },
-  "max_chapter": 5,
-  "demonic_id": "5794",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Renri No Eda",
-  "cover": "https://readermc.org/images/thumbnails/Renri No Eda.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/renri-no-eda"
-  },
-  "max_chapter": 4.001,
-  "demonic_id": "5795",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "4.001",
-     "chapter_number": 4.001
-    }
-   ]
   }
  }
 ]
