@@ -13660,7 +13660,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-player-that-can%2527t-level-up"
   },
-  "max_chapter": 225,
+  "max_chapter": 226,
   "demonic_id": "302",
   "chapters": {
    "Demonic Scans": [
@@ -14741,7 +14741,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-prosecutor-kim-seo-jin"
   },
-  "max_chapter": 33,
+  "max_chapter": 34,
   "demonic_id": "13597",
   "chapters": {
    "Demonic Scans": []
@@ -20770,7 +20770,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-strongest-barrier-mage%252c-banished-from-the-kingdom%252c-just-wants-a-peaceful-journey-with-his-wife"
   },
-  "max_chapter": 23,
+  "max_chapter": 24,
   "demonic_id": "13643",
   "chapters": {
    "Demonic Scans": []
@@ -23769,7 +23769,7 @@
    "Asura Scans": "https://asurascans.com/comics/the-tutorial-is-too-hard",
    "Demonic Scans": "https://demonicscans.org/manga/the-tutorial-is-too-hard"
   },
-  "max_chapter": 266,
+  "max_chapter": 267,
   "chapter_count": 267,
   "chapters": {
    "Asura Scans": [
@@ -34884,7 +34884,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/to-not-die",
    "Flame Comics": "https://flamecomics.xyz/series/30"
   },
-  "max_chapter": 210,
+  "max_chapter": 211,
   "demonic_id": "1528",
   "chapters": {
    "Demonic Scans": [
@@ -34934,6 +34934,10 @@
     }
    ],
    "Flame Comics": [
+    {
+     "name": "207",
+     "chapter_slug": "92c19c1b5e6c8c14"
+    },
     {
      "name": "206",
      "chapter_slug": "1e4c61969f7f118b"

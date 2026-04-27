@@ -18558,7 +18558,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/supreme-academy-genius"
   },
-  "max_chapter": 72,
+  "max_chapter": 74,
   "demonic_id": "13534",
   "chapters": {
    "Demonic Scans": []
@@ -31379,10 +31379,14 @@
    "Flame Comics": "https://flamecomics.xyz/series/23"
   },
   "flame_series_id": 23,
-  "max_chapter": 477,
+  "max_chapter": 478,
   "chapter_count": 477,
   "chapters": {
    "Flame Comics": [
+    {
+     "name": "478",
+     "chapter_slug": "7d42512cf5e4fcb1"
+    },
     {
      "name": "477",
      "chapter_slug": "a16c0d801faa152d"
