@@ -11781,10 +11781,19 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i-live-in-such-a-rural-area-that-i%255c%2527m-the-only-dungeon-explorer-here"
   },
-  "max_chapter": 1,
+  "max_chapter": 2.2,
   "demonic_id": "13653",
   "chapters": {
-   "Demonic Scans": []
+   "Demonic Scans": [
+    {
+     "name": "2.2",
+     "chapter_number": 2.2
+    },
+    {
+     "name": "2.1",
+     "chapter_number": 2.1
+    }
+   ]
   }
  },
  {

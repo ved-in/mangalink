@@ -38036,7 +38036,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-cursed-blade-in-a-magic%25e2%2580%2591ruled-world-a-samurai-reborn-in-a-magic%25e2%2580%2591supremacist-isekai-dominates-with-the-scorned-art-of-the-swor"
   },
-  "max_chapter": 10,
+  "max_chapter": 11,
   "demonic_id": "13669",
   "chapters": {
    "Demonic Scans": []
@@ -40836,6 +40836,19 @@
   },
   "max_chapter": 2,
   "demonic_id": "12752",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "The Eternal Support Mage Becomes the Strongest Sage",
+  "cover": "https://readermc.org/images/thumbnails/The Eternal Support Mage Becomes the Strongest Sage.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/the-eternal-support-mage-becomes-the-strongest-sage"
+  },
+  "max_chapter": 36,
+  "demonic_id": "13680",
   "chapters": {
    "Demonic Scans": []
   }
@@ -43983,7 +43996,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-god-of-ad%25252dlibs"
   },
-  "max_chapter": 13,
+  "max_chapter": 14,
   "demonic_id": "13652",
   "chapters": {
    "Demonic Scans": []
@@ -44802,18 +44815,6 @@
      "chapter_number": 0
     }
    ]
-  }
- },
- {
-  "title": "The Grand Cudgel Order",
-  "cover": "https://en-thunderscans.com/wp-content/uploads/2026/03/2026-03-03-02-12-52-1772547172332-210x300.png",
-  "status": "Ongoing",
-  "sources": {
-   "Thunder Scans": "https://en-thunderscans.com/comics/the-grand-cudgel-order/"
-  },
-  "max_chapter": 30,
-  "chapters": {
-   "Thunder Scans": []
   }
  }
 ]
