@@ -1469,7 +1469,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/1rm%2527s-gigant-rider"
   },
-  "max_chapter": 30,
+  "max_chapter": 32,
   "demonic_id": "12132",
   "chapters": {
    "Demonic Scans": []
@@ -4498,7 +4498,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/a-retired-old-sage-takes-his-disciple-on-a-journey"
   },
-  "max_chapter": 59,
+  "max_chapter": 60,
   "demonic_id": "12828",
   "chapters": {
    "Demonic Scans": []
@@ -6188,7 +6188,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/a-spy%255c%2527s-survival-in-the-demonic-cult"
   },
-  "max_chapter": 37,
+  "max_chapter": 65,
   "demonic_id": "13133",
   "chapters": {
    "Demonic Scans": []
@@ -12978,7 +12978,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/against-the-gods"
   },
-  "max_chapter": 763,
+  "max_chapter": 764,
   "demonic_id": "10",
   "chapters": {
    "Demonic Scans": [
@@ -26768,10 +26768,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/azami-yako-wo-suki-ni-naru"
   },
-  "max_chapter": 11.1,
+  "max_chapter": 11.2,
   "demonic_id": "13082",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "11.2",
+     "chapter_number": 11.2
+    },
     {
      "name": "11.1",
      "chapter_number": 11.1
@@ -26892,10 +26896,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/b%25252drank-adventurer-with-an-evil-look-becomes-a-daddy-to-the-protagonist-and-his-childhood-friends"
   },
-  "max_chapter": 20.3,
+  "max_chapter": 21.1,
   "demonic_id": "11787",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "21.1",
+     "chapter_number": 21.1
+    },
     {
      "name": "20.3",
      "chapter_number": 20.3

@@ -5871,7 +5871,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/round"
   },
-  "max_chapter": 32,
+  "max_chapter": 34,
   "demonic_id": "12614",
   "chapters": {
    "Demonic Scans": []
@@ -19997,10 +19997,18 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/seventh"
   },
-  "max_chapter": 20.2,
+  "max_chapter": 21.2,
   "demonic_id": "12323",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "21.2",
+     "chapter_number": 21.2
+    },
+    {
+     "name": "21.1",
+     "chapter_number": 21.1
+    },
     {
      "name": "20.2",
      "chapter_number": 20.2

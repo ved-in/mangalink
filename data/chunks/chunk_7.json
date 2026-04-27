@@ -1781,7 +1781,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/majo-taisen%253a-32%25252dnin-no-isai-no-majo-wa-koroshiau-%255ball-chapters%255d"
   },
-  "max_chapter": 65,
+  "max_chapter": 66,
   "demonic_id": "11151",
   "chapters": {
    "Demonic Scans": []
@@ -12745,7 +12745,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/memory-in-the-maze"
   },
-  "max_chapter": 61,
+  "max_chapter": 65,
   "demonic_id": "12653",
   "chapters": {
    "Demonic Scans": []
@@ -26718,10 +26718,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/muryoku-seijo-to-munou-oujo"
   },
-  "max_chapter": 14,
+  "max_chapter": 14.5,
   "demonic_id": "12344",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "14.5",
+     "chapter_number": 14.5
+    },
     {
      "name": "9.5",
      "chapter_number": 9.5

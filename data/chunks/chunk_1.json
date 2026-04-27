@@ -7655,7 +7655,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/breakers",
    "Thunder Scans": "https://en-thunderscans.com/comics/the-breakers/"
   },
-  "max_chapter": 74,
+  "max_chapter": 76,
   "chapter_count": 74,
   "chapters": {
    "Asura Scans": [],
@@ -8561,10 +8561,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/burning-kabaddi"
   },
-  "max_chapter": 75,
+  "max_chapter": 75.5,
   "demonic_id": "12988",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "75.5",
+     "chapter_number": 75.5
+    },
     {
      "name": "54.5",
      "chapter_number": 54.5
