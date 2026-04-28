@@ -1,47 +1,15 @@
-/**
- * scrape/sources/flame/index.js -- Flame Comics scraper
- *
- * Flame Comics has a proper API that returns all series in one request,
- * making the list phase very fast. The expensive part is the per-series
- * detail fetch (for cover + chapter tokens). Incremental mode skips the
- * detail fetch for unchanged series, keeping subsequent runs fast.
- *
- * ── Scrape flow ───────────────────────────────────────────────────────────────
- *
- *  1. Fetch buildId from the homepage (required to construct data endpoint URLs).
- *  2. Fetch the complete series list from /api/series.
- *  3. For each series:
- *       - If chapter_count matches state → emit a status-only entry (no detail fetch).
- *       - Otherwise → fetch the detail endpoint for cover + full chapter list.
- *
- * ── Null sentinel (chapters: null) ───────────────────────────────────────────
- *
- * For skipped series we emit `chapters: { 'Flame Comics': null }`. The merge
- * step in scrape.js treats null as "keep existing data" so unchanged chapter
- * lists are preserved in the output chunks without re-fetching.
- */
-
 const { fetch_build_id, fetch_all_series, fetch_series_detail } = require('./api');
 const { sleep, normalise_title, normalise_status, decode_html_entities } = require('../../lib/helpers');
-
-// Milliseconds between per-series detail requests (2 req/s).
-// When skipping unchanged series a 50ms short sleep is used instead
-// to keep the loop responsive without hammering the API.
 const REQ_DELAY_MS      = 500;
 const SKIP_DELAY_MS     = 50;
 
-/**
- * @param {object} opts
- * @param {object|null} opts.state  scrape_state from previous run, or null.
- * @returns {Promise<Array>}        Series array ready for merge().
- */
 async function scrape_flame(opts = {})
 {
-	const state = opts.state ?? null;
+	const state       = opts.state       ?? null;
+	const run         = opts.run         ?? 0;
+	const status_only = opts.status_only ?? false;
 
 	console.log('[Flame] Starting...');
-
-	// Step 1: get the current buildId so we can construct detail endpoint URLs.
 	let build_id;
 	try
 	{
@@ -53,8 +21,6 @@ async function scrape_flame(opts = {})
 		console.error(`[Flame] Could not get buildId: ${e.message}`);
 		return [];
 	}
-
-	// Step 2: fetch the complete series list in one API call.
 	let series_list;
 	try
 	{
@@ -66,8 +32,6 @@ async function scrape_flame(opts = {})
 		console.error(`[Flame] Could not fetch series list: ${e.message}`);
 		return [];
 	}
-
-	// Step 3: process each series.
 	const all_series = [];
 
 	for (const item of series_list)
@@ -80,15 +44,12 @@ async function scrape_flame(opts = {})
 		const state_key  = normalise_title(title);
 		const prev       = state ? state[state_key] : null;
 
-		// ── Incremental skip ──────────────────────────────────────────────────
-		// chapter_count unchanged → skip the expensive detail fetch.
-		// We still push an entry so the merge step can update status.
-
 		const skip_detail = prev != null && prev.chapter_count === new_count;
 		console.log(`[Flame] ${skip_detail ? 'Skipping (unchanged)' : 'Processing'}: ${title} (id=${id})`);
 
-		if (skip_detail)
+		if (skip_detail || status_only)
 		{
+			const ua = item.last_edit ? new Date(item.last_edit * 1000).toISOString() : null;
 			all_series.push({
 				title:           decode_html_entities(title),
 				slug:            `https://flamecomics.xyz/series/${id}`,
@@ -99,18 +60,18 @@ async function scrape_flame(opts = {})
 				max_chapter:     new_count,
 				chapter_count:   new_count,
 				chapters:        { 'Flame Comics': null }, // null = don't overwrite in merge
+				ua,
+				uf: (new_count != null && new_count > (prev?.max_chapter ?? -1)) ? run : (prev?.uf ?? null),
 			});
 			await sleep(SKIP_DELAY_MS);
 			continue;
 		}
 
-		// ── Full detail fetch ─────────────────────────────────────────────────
-
-		const { cover, chapters } = await fetch_series_detail(id, build_id);
-
-		// Fallback cover: use the list API's image field if the detail page had none.
+		const { cover, chapters, last_edit } = await fetch_series_detail(id, build_id);
 		const cover_url = cover
 			?? (image ? `https://cdn.flamecomics.xyz/uploads/images/series/${id}/${image}` : null);
+		const ua_ts = last_edit ?? item.last_edit ?? null;
+		const ua    = ua_ts ? new Date(ua_ts * 1000).toISOString() : null;
 
 		all_series.push({
 			title:           decode_html_entities(title),
@@ -122,6 +83,8 @@ async function scrape_flame(opts = {})
 			max_chapter:     new_count,
 			chapter_count:   new_count,
 			chapters:        { 'Flame Comics': chapters },
+			ua,
+			uf:  run, // max_chapter increased (or brand new) -- bump uf
 		});
 
 		await sleep(REQ_DELAY_MS);

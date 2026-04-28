@@ -6,7 +6,9 @@ Imagine you having to read MTLs because the group which translated for you is no
 
 But the alternative (bookmarking six different scanlator sites and checking each one manually) is genuinely painful.
 
-MangaLink is a middle ground. It doesn't host any content. It just checks some of the scanlator sites if they have the chapter/serues you're looking for and gives you a direct link to go read it there - on the scanlators' own sites, with their own ads, supporting their work.
+MangaLink is a middle ground. It doesn't host any content. It just checks some of the sites if they have the chapter/serues you're looking for and gives you a direct link to go read it there - on the scanlators' own sites, with their own ads, supporting their work.
+
+Aggregators are going to be added for the users which use ad-blockers or the series they want to watch is not available in currently added scanlators/official sources. If you are able to deduce the source while reading, feel free to open up an issue on github regarding it. We also check for `ad-blockers` so scanlators are HIDDEN to ad-block users.
 
 **[→ Try it live](https://ved-in.github.io/mangalink/)**
 
@@ -33,6 +35,7 @@ Search any manga or manhwa title and MangaLink will:
 | [Temple Toons](https://templetoons.com/) | Scanlator |
 | [Violet Scans](https://violetscans.com/) | Scanlator |
 | [ADK Scans / SilentQuill](https://silentquill.net/) | Scanlator |
+| [MANGA Plus](https://mangaplus.shueisha.co.jp/updates/) | Official |
 
 Want a source added? [Open an issue](https://github.com/ved-in/mangalink/issues/new?template=new_source.md).
 
@@ -43,7 +46,7 @@ Want a source added? [Open an issue](https://github.com/ved-in/mangalink/issues/
 ```bash
 npm install
 ```
-In `index.html` change `const BASE = '/mangalink';` with `const BASE = '';` similarly in `js/app.js` - will need to add a toggle for deployment and local testing
+For testing it locally, edit the `config.json` to set the `base` key to `""` whil commiting changes, set it to `mangalink/` (for github pages)
 
 Then open `index.html` with a local server. Live Server in VS Code works great, or:
 
@@ -165,6 +168,34 @@ The scraper writes to `data/index.json` and `data/chunks/`, then commits back to
 
 ## To-do
 
+**Bugs**
+- [ ] Icons of series are cutoff in the `chapters_panel`. Relevant file -> `bookmark.html`, `search-result.html` (apologies for the messy structure)
+
+**UI**
+- [ ] Fix bookmark page. Use the construct in homepage's `Recently Updated` or `Currently Reading` sections.
+- [ ] Fix profile page layout... really... really evident when you visit it
+
+**QOL**
+- [ ] Completely remove `--status-only` flag from scraper. Better way is just to delete the entire `data/` folder and rebuild it which I've implemented. Makes it messy and complicated for no real reason.
+- [ ] Instead of multiple objects related to mapping of sources in different files (i.e., `js/modal.js`, `scrape/scrape.js`), create a `sources.json` file which is used instead. Would make addition of new sources a lot easier. It could have objects like
+```json
+{
+  "comic_sources": [
+    {
+      "source": "Asura Scans",
+      "alias": "A",
+      "object": "ASURASCANS"
+    },
+    {
+      "source": "ADK Scans",
+      "alias": "D",
+      "object": "ADKSCANS"
+    }
+  ]
+}
+```
+- [ ] Fix the messy code a little....
+
 **New sources requested**
 - [ ] Drake Scans ([#26](https://github.com/ved-in/mangalink/issues/26))
 - [ ] Weeb Central ([#3](https://github.com/ved-in/mangalink/issues/3))
@@ -177,17 +208,20 @@ The scraper writes to `data/index.json` and `data/chunks/`, then commits back to
 
 **Features**
 - [ ] Clear read history / bookmarks (per-series or all at once)
-- [ ] Recently updated section in home-page
-- [ ] Filter by genre, status, year
+- [x] Recently updated section in home-page
+- [ ] Notifications based on chapter updates of bookmarked series.
+- [ ] Filter by genre, status, year (I forgot about genre and year... Have to edit scrapers again.. GAH)
 - [ ] GitHub link and About page ([#14](https://github.com/ved-in/mangalink/issues/14))
 - [ ] Aggregator toggle - let users choose scanlators only, aggregators only, or both (with ad-blocker disclaimer)
 - [ ] Cross-device sync (accounts)
 - [ ] MAL export
 
 **Scraper**
+- [ ] Find a workaround/replacement for series cover present on MangaPlus. eg., [this](https://jumpg-assets.tokyo-cdn.com/secure/title/100628/title_thumbnail_portrait_list/456823.jpg), which results in a 403 status code (forbidden) on visiting.
 - [ ] Some series with `null` status still exists. See the issue and fix accordingly.
 
 **Long term**
+- [ ] Sync user's reading progress and bookmarks across devices (login required)
 - [ ] Mobile app
 - [ ] CLI tool
 

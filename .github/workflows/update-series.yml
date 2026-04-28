@@ -26,7 +26,7 @@ jobs:
         run: npm ci
  
       - name: Run quick scrape
-        run: node scrape/scrape.js --quick
+        run: node scrape/scrape.js
  
       - name: Commit updated data
         run: |

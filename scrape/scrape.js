@@ -1,47 +1,7 @@
-/**
- * scrape/scrape.js  --  Main entry point
- *
- * Run with:
- *   node scrape/scrape.js
- *
- * This file is only the orchestrator. It:
- *   1. Loads the previous-run state from data/scrape_state.json
- *   2. Runs all scrapers in parallel (each scraper handles its own rate-limiting)
- *   3. Merges results on top of the existing chunk data
- *   4. Writes data/index.json, data/chunks/chunk_N.json, data/scrape_state.json
- *
- * All scraping logic lives in sources/{site}/. Shared utilities are in lib/.
- * See each scraper's index.js for a description of how that site is scraped.
- *
- * ── Output files ─────────────────────────────────────────────────────────────
- *
- *   data/index.json
- *     Lightweight array used by the search UI. One small object per series:
- *     { i, t, c, s, src, m, k }
- *       i   -- index within its chunk  (global_index % CHUNK_SIZE)
- *       t   -- title
- *       c   -- cover URL or null
- *       s   -- status string or null
- *       src -- array of single-char source codes (see SRC_CODE below)
- *       m   -- max_chapter or null
- *       k   -- chunk number  (Math.floor(global_index / CHUNK_SIZE))
- *
- *   data/chunks/chunk_N.json
- *     Full series data, 1000 entries per file. The front-end fetches only the
- *     chunk for the series the user clicked on. Chunks are patched in-place
- *     rather than rewritten entirely to minimise CI diff noise.
- *
- *   data/scrape_state.json
- *     Per-series metadata from the last run. Used as the comparison baseline
- *     for the next run's incremental checks. See lib/state.js for the schema.
- */
-
 'use strict';
 
 const fs   = require('fs');
 const path = require('path');
-
-// Scrapers
 const { scrape_adk }          = require('./sources/adk');
 const { scrape_asura }        = require('./sources/asura');
 const { scrape_demonic }      = require('./sources/demonic');
@@ -49,17 +9,12 @@ const { scrape_temple_toons } = require('./sources/temple');
 const { scrape_thunder }      = require('./sources/thunder');
 const { scrape_flame }        = require('./sources/flame');
 const { scrape_violet }       = require('./sources/violet');
-
-// Shared utilities
+const { scrape_mangaplus }    = require('./sources/mangaplus');
 const { load_state, save_state, build_state } = require('./lib/state');
 const { load_existing_chunks, merge }         = require('./lib/merge');
 
-// ── Paths ─────────────────────────────────────────────────────────────────────
-
 const OUT_DIR    = path.join(__dirname, '..', 'data');
 const CHUNKS_DIR = path.join(OUT_DIR, 'chunks');
-
-// ── Source codes (single char each, keeps index.json small) ──────────────────
 
 const SRC_CODE =
 {
@@ -70,25 +25,9 @@ const SRC_CODE =
 	'Demonic Scans': 'M',
 	'Flame Comics':  'F',
 	'Violet Scans':  'V',
+	'MangaPlus':     'J',
 };
 
-// ── Chunk writing ─────────────────────────────────────────────────────────────
-
-/**
- * Write chunk files from the merged series array.
- *
- * We patch existing chunks rather than rewriting every file on every run.
- * Strategy:
- *   - If the chunk file already exists, load it, resolve null sentinels using
- *     the stored data, compare entry-by-entry, and only write if something changed.
- *   - If the chunk file doesn't exist yet, write it fresh.
- *
- * Null sentinels (chapters[src] === null) mean "keep whatever was stored for
- * this source last time". We resolve them here rather than in merge() so that
- * the in-memory merged array never has stale chapter data baked in.
- *
- * @param {Array} merged   The full sorted series list from merge().
- */
 function write_chunks(merged)
 {
 	if (!fs.existsSync(OUT_DIR))    fs.mkdirSync(OUT_DIR,    { recursive: true });
@@ -104,7 +43,6 @@ function write_chunks(merged)
 
 		if (fs.existsSync(chunk_file))
 		{
-			// ── Patch existing chunk ──────────────────────────────────────────
 			let existing_chunk = null;
 			try
 			{
@@ -117,14 +55,11 @@ function write_chunks(merged)
 
 			if (existing_chunk)
 			{
-				// Build a title→index map for O(1) lookups into the existing array.
 				const existing_by_title = new Map(
 					existing_chunk
 						.filter(s => s.title)
 						.map((s, j) => [s.title, j])
 				);
-
-				// Resolve null sentinels using the stored chapter lists.
 				for (const series of new_slice)
 				{
 					if (!series.chapters) continue;
@@ -137,8 +72,6 @@ function write_chunks(merged)
 						series.chapters[src] = (old_series?.chapters?.[src]) || [];
 					}
 				}
-
-				// Only write the file if at least one entry changed.
 				let changed = false;
 				for (const incoming of new_slice)
 				{
@@ -164,8 +97,6 @@ function write_chunks(merged)
 				continue;
 			}
 		}
-
-		// ── Write fresh chunk ─────────────────────────────────────────────────
 		for (const series of new_slice)
 		{
 			if (!series.chapters) continue;
@@ -182,20 +113,20 @@ function write_chunks(merged)
 	console.log(`Wrote/updated ${n_chunks} chunk files -> data/chunks/chunk_0..${n_chunks - 1}.json`);
 }
 
-// ── Main ──────────────────────────────────────────────────────────────────────
-
 async function main()
 {
 	console.log('=== MangaLink Scraper ===');
 	const start_time = Date.now();
+	const status_only = process.argv.includes('--status-only');
+	if (status_only) console.log('Mode: --status-only (full catalogue status/cover scan)');
 
-	const prev_state = load_state();
-	console.log(`Loaded state: ${Object.keys(prev_state).length} entries`);
+	const { entries: prev_state, run: prev_run, status_run: prev_status_run } = load_state();
+	console.log(`Loaded state: ${Object.keys(prev_state).length} entries, prev_run=${prev_run}`);
+	const run        = prev_run + 1;
+	const status_run = status_only ? prev_status_run + 1 : prev_status_run;
+	console.log(`Run counter: ${run}${status_only ? ` (status_run: ${status_run})` : ''}`);
 
-	const common_opts = { state: prev_state };
-
-	// ── Run all scrapers in parallel ──────────────────────────────────────────
-	// allSettled() means a failing scraper is logged but doesn't stop the others.
+	const common_opts = { state: prev_state, run, status_only };
 
 	const SCRAPERS =
 	[
@@ -206,6 +137,7 @@ async function main()
 		{ name: 'Thunder', label: 'Thunder Scans',  fn: scrape_thunder      },
 		{ name: 'Flame',   label: 'Flame Comics',   fn: scrape_flame        },
 		{ name: 'Violet',  label: 'Violet Scans',   fn: scrape_violet       },
+		{ name: 'MangaPlus', label: 'MangaPlus',     fn: scrape_mangaplus  },
 	];
 
 	const results = await Promise.allSettled(
@@ -234,12 +166,8 @@ async function main()
 		}
 	}
 
-	// ── Merge and write ───────────────────────────────────────────────────────
-
 	const merged = merge(lists, load_existing_chunks());
 	console.log(`\nTotal after merge: ${merged.length} unique series`);
-
-	// Per-source series counts.
 	const source_counts = {};
 	for (const series of merged)
 	{
@@ -249,8 +177,6 @@ async function main()
 	console.log('\nSeries per source:');
 	for (const [src, count] of Object.entries(source_counts).sort())
 		console.log(`   ${src}: ${count}`);
-
-	// Status distribution.
 	const status_counts = {};
 	for (const s of merged)
 	{
@@ -260,14 +186,14 @@ async function main()
 	console.log('\nStatus distribution:');
 	for (const [k, v] of Object.entries(status_counts).sort())
 		console.log(`   ${k}: ${v}`);
-
-	// Coverage sanity check.
 	const with_chapter  = merged.filter(s => s.max_chapter != null);
 	const with_chapters = merged.filter(s => s.chapters && Object.keys(s.chapters).length > 0);
+	const with_ua       = merged.filter(s => s.ua != null);
+	const with_uf       = merged.filter(s => s.uf != null);
 	console.log(`\nmax_chapter populated: ${with_chapter.length}/${merged.length} series`);
 	console.log(`chapters populated:     ${with_chapters.length}/${merged.length} series`);
-
-	// Write index.json.
+	console.log(`ua populated:           ${with_ua.length}/${merged.length} series`);
+	console.log(`uf populated:           ${with_uf.length}/${merged.length} series`);
 	const index = merged.map((s, gi) => ({
 		i:   gi % 1000,
 		t:   s.title,
@@ -276,6 +202,8 @@ async function main()
 		src: Object.keys(s.sources || {}).map(n => SRC_CODE[n] || n),
 		m:   s.max_chapter ?? null,
 		k:   Math.floor(gi / 1000),
+		ua:  s.ua || null,
+		uf:  s.uf ?? null,
 	}));
 
 	if (!fs.existsSync(OUT_DIR)) {
@@ -290,7 +218,7 @@ async function main()
 	console.log(`\nWrote index.json with ${index.length} entries`);
 
 	write_chunks(merged);
-	save_state(build_state(merged, raw_by_src));
+	save_state(build_state(merged, raw_by_src), run, status_run);
 
 	const elapsed = ((Date.now() - start_time) / 1000).toFixed(1);
 	console.log(`=== Done in ${elapsed}s ===`);

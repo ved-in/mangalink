@@ -1,60 +1,16 @@
-/**
- * scrape/sources/demonic/index.js -- Demonic Scans scraper
- *
- * Orchestrates the Demonic Scans scrape. Demonic has no API -- we scrape their
- * paginated "last updates" listing at lastupdates.php?list={n}.
- *
- * ── Scrape flow ───────────────────────────────────────────────────────────────
- *
- *  Phase 1 -- Listing pagination:
- *    Fetch pages sequentially, newest-first. Stop early when STOP_STREAK
- *    consecutive pages have no new or changed series. This works because the
- *    listing is ordered by last-updated, so once we hit a run of stale pages
- *    everything deeper is older.
- *
- *    Terminal-status series (Completed / Dropped) are excluded from the
- *    stop-streak check -- they'll never update, so we don't care if they're
- *    on a page full of changes.
- *
- *  Phase 2 -- Chapter fetches:
- *    For each series whose max_chapter changed since last run, fetch the series
- *    page to collect non-integer chapter numbers (see demonic/chapters.js).
- *    Fetches run in parallel batches of CONCURRENCY with REQ_DELAY_MS between
- *    batches to stay at roughly 2 req/s.
- *
- * ── State key ─────────────────────────────────────────────────────────────────
- *
- * State is keyed by the series slug (the path segment from /manga/{slug}/).
- * This is the only stable per-series identifier available on the listing page.
- * build_state() in scrape.js writes these slug-keyed entries alongside the
- * normalised-title entries used by API scrapers.
- */
-
 const { extract_demonic_cards }      = require('./listing');
 const { fetch_chapter_data }         = require('./chapters');
 const { http_get_with_retry, sleep } = require('../../lib/helpers');
-
-// Statuses that mean a series will never gain new chapters.
-// These are excluded from the stop-streak check and from chapter fetches.
 const TERMINAL_STATUSES = new Set(['Completed', 'Dropped']);
-
-// Stop paginating after this many consecutive pages with no new/changed series.
 const STOP_STREAK = 5;
-
-// Parallel series-page fetches during the chapter phase.
-const CONCURRENCY = 50;
-
-// Milliseconds between page fetches and between chapter-fetch batches (2 req/s).
+const CONCURRENCY = 5;
 const REQ_DELAY_MS = 500;
 
-/**
- * @param {object} opts
- * @param {object|null} opts.state  scrape_state from previous run, or null.
- * @returns {Promise<Array>}        Series array ready for merge().
- */
 async function scrape_demonic(opts = {})
 {
-	const state = opts.state ?? null;
+	const state       = opts.state       ?? null;
+	const run         = opts.run         ?? 0;
+	const status_only = opts.status_only ?? false;
 
 	console.log('[Demonic] Starting...');
 
@@ -62,8 +18,6 @@ async function scrape_demonic(opts = {})
 	const seen_slugs = new Set();
 	let   list_num        = 1;
 	let   unchanged_pages = 0;
-
-	// ── Phase 1: listing pagination ───────────────────────────────────────────
 
 	while (true)
 	{
@@ -86,19 +40,12 @@ async function scrape_demonic(opts = {})
 			console.log('[Demonic] Empty page -- end of catalogue.');
 			break;
 		}
-
-		// ── Per-page incremental check ────────────────────────────────────────
-		// Check if ANY card on this page represents a change. We ignore terminal-
-		// status series in this check since they cannot gain new chapters anyway.
 		if (state)
 		{
 			const page_has_change = cards.some(card =>
 			{
 				const prev = state[card.slug]; // slug is already lowercased by listing.js
 				if (prev && TERMINAL_STATUSES.has(prev.status)) return false;
-				// A card is changed if the listing shows a chapter we haven't stored yet.
-				// Use > (not !==) so decimal sub-chapters in state don't cause false positives:
-				// if state has 200.5 and listing shows 200, 200 > 200.5 is false -> unchanged.
 				return !prev || card.max_chapter > (prev.max_chapter ?? -1);
 			});
 
@@ -117,10 +64,6 @@ async function scrape_demonic(opts = {})
 				}
 			}
 		}
-
-		// Accumulate new series, skipping terminal-status ones and duplicates.
-		// Unchanged series are included with a null chapters sentinel so that
-		// write_chunks preserves their existing chapter data without re-fetching.
 		for (const card of cards)
 		{
 			if (seen_slugs.has(card.slug)) continue;
@@ -137,10 +80,6 @@ async function scrape_demonic(opts = {})
 		await sleep(REQ_DELAY_MS);
 	}
 
-	// ── Phase 2: fetch non-integer chapters ───────────────────────────────────
-	// Only fetch for series whose max_chapter changed since the last run,
-	// or for brand-new series not yet in state.
-
 	const to_fetch = state
 		? all_series.filter(s =>
 		{
@@ -151,23 +90,53 @@ async function scrape_demonic(opts = {})
 
 	console.log(`[Demonic] Fetching chapters for ${to_fetch.length}/${all_series.length} changed series (concurrency=${CONCURRENCY})...`);
 
+	if (status_only)
+	{
+		for (const s of all_series)
+		{
+			s.chapters['Demonic Scans'] = null;
+			const prev = state ? (state[s.slug.toLowerCase()] ?? state[s.slug]) : null;
+			s.ua = prev?.ua ?? null;
+			s.uf = (s.max_chapter != null && s.max_chapter > (prev?.max_chapter ?? -1)) ? run : (prev?.uf ?? null);
+		}
+		console.log(`[Demonic] Status-only: skipping chapter fetches for ${all_series.length} series.`);
+	}
+	else
+	{
+
 	for (let i = 0; i < to_fetch.length; i += CONCURRENCY)
 	{
 		const batch = to_fetch.slice(i, i + CONCURRENCY);
 
 		await Promise.all(batch.map(async (s) =>
 		{
-			const { chapters, status } = await fetch_chapter_data(s._series_url);
+			const prev            = state ? (state[s.slug.toLowerCase()] ?? state[s.slug]) : null;
+			const chapter_changed = !prev || s.max_chapter > (prev?.max_chapter ?? -1);
+
+			const { chapters, status, ua: site_ua } = await fetch_chapter_data(s._series_url);
 			if (chapters.length > 0) s.chapters['Demonic Scans'] = chapters;
-			// Status isn't available on the listing page -- apply it from the series page.
 			if (status && !s.status) s.status = status;
+			s.ua = site_ua || prev?.ua || null;
+			s.uf = chapter_changed ? run : (prev?.uf ?? null);
 		}));
 
 		console.log(`[Demonic] Chapters: ${Math.min(i + CONCURRENCY, to_fetch.length)}/${to_fetch.length}`);
 		if (i + CONCURRENCY < to_fetch.length) await sleep(REQ_DELAY_MS);
 	}
-
-	// Clean up the temporary _series_url field from all entries.
+	if (state)
+	{
+		const to_fetch_set = new Set(to_fetch.map(s => s.slug));
+		for (const s of all_series)
+		{
+			if (!to_fetch_set.has(s.slug) && s.ua === undefined)
+			{
+				const prev = state[s.slug.toLowerCase()] ?? state[s.slug];
+				s.ua = prev?.ua ?? null;
+				s.uf = prev?.uf ?? null;
+			}
+		}
+	}
+	} // end else (status_only)
 	for (const s of all_series) delete s._series_url;
 
 	console.log(`[Demonic] Done. Found ${all_series.length} series.`);

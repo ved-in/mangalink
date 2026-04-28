@@ -1,32 +1,5 @@
-/*
- * modal.js
- *
- * The "Sources" modal that appears when a user clicks a chapter.
- *
- * WHAT IT DOES:
- *   1. Shows a card for each source that carries this series.
- *   2. Starts availability checks in parallel via Checker.
- *   3. Updates each card's badge (checking -> found / not_found / browse) as results arrive.
- *   4. Moves "found" cards to the top of the list.
- *   5. Tracks which links the user has clicked and shows a "visited" badge.
- *   6. Always appends a Google fallback link at the bottom.
- *
- * CHECK TYPES (defined per source module):
- *   (default)     -- HEAD request to the chapter URL, pass if HTTP 200 + correct content-type
- *   "html_alt"    -- fetch a page and scan for a specific img alt= attribute
- *                    (Demonic Scans and Temple Toons -- chapter pages block bots)
- *   "always_found"-- skip check, show "browse" badge instead
- *                    (Flame Comics -- chapter URLs contain unguessable hex tokens)
- *
- * PAYWALL NOTE:
- *   Thunder Scans and Violet Scans lock some chapters behind a paywall.
- *   A small warning label is shown on their cards.
- */
-
 const Modal = (() => {
 
-	// Maps source name strings to their source module objects.
-	// Filtered per-manga so only relevant sources appear.
 	const SOURCE_MAP = {
 		"Asura Scans":   ASURASCANS,
 		"ADK Scans":     ADKSCANS,
@@ -35,36 +8,28 @@ const Modal = (() => {
 		"Demonic Scans": DEMONICSCANS,
 		"Flame Comics":  FLAMESCANS,
 		"Violet Scans":  VIOLETSCANS,
+		"MangaPlus":     MANGAPLUS,
 	};
-	
 
-	// Sources that lock some chapters behind a subscription.
 	const PAYWALL_SOURCES = new Set(["Thunder Scans", "Violet Scans"]);
 
-	// Callbacks injected by App.init() via Modal.init().
 	let _on_visit    = null;
 	let _was_visited = null;
 
-	// The manga and chapter currently shown in the modal.
-	// Checked in Checker callbacks to discard stale results if the user
-	// closes and reopens the modal before all checks finish.
 	let _manga   = null;
 	let _chapter = null;
 
-	// Grab DOM elements once -- the modal is a singleton that stays in the DOM.
-	const modal    = document.getElementById("modal");
-	const ch_lbl   = document.getElementById("modal_chapter_label");
-	const title    = document.getElementById("modal_title");
-	const body     = document.getElementById("modal_body");
+	const modal     = document.getElementById("modal");
+	const ch_lbl    = document.getElementById("modal_chapter_label");
+	const title     = document.getElementById("modal_title");
+	const body      = document.getElementById("modal_body");
 	const close_btn = document.getElementById("close_modal");
 
-	// Called by App.init() to inject the visit tracking callbacks.
 	function init({ on_visit, was_visited }) {
 		_on_visit    = on_visit;
 		_was_visited = was_visited;
 	}
 
-	// Open the modal for a given manga + chapter and start availability checks.
 	function open(manga, chapter) {
 		_manga   = manga;
 		_chapter = chapter;
@@ -74,101 +39,117 @@ const Modal = (() => {
 		render();
 	}
 
-	// Close the modal and clear state.
 	function close() {
 		modal.classList.remove("open");
 		_manga = _chapter = null;
 	}
 
-	// Return source module objects for sources that this manga is actually on.
-	// manga.sources is an array of name strings (e.g. ["Asura Scans", "ADK Scans"]).
-	function _active_sources(manga)
-	{
-		return (manga.sources || [])
-			.map(n => SOURCE_MAP[n])
-			.filter(Boolean);
+	function _sectioned_sources(manga) {
+		const all = (manga.sources || []).map(n => SOURCE_MAP[n]).filter(Boolean);
+		return {
+			official:    all.filter(s => s.type === "official"),
+			scanlators:  all.filter(s => s.type === "fantl"),
+			aggregators: all.filter(s => s.type === "aggr"),
+		};
 	}
 
-	// Build the modal body and kick off all availability checks.
+	function _ordered_sections(sections, has_adblock) {
+		const order = ["official", "scanlators", "aggregators"];
+		return order
+			.map(key => ({ key, sources: sections[key], has_adblock }))
+			.filter(s => s.sources.length > 0)
+			.filter(s => !(has_adblock && s.key === "scanlators"));
+	}
+
 	async function render() {
 		const manga   = _manga;
 		const chapter = _chapter;
 		if (!manga || !chapter) return;
 
-		const sources = _active_sources(manga);
+		const sections    = _sectioned_sources(manga);
+		const has_adblock = await AdBlock.has_adblock();
+		const ordered     = _ordered_sections(sections, has_adblock);
+		const all_sources = ordered.flatMap(s => s.sources);
 
-		if (sources.length === 0)
-		{
+		if (all_sources.length === 0) {
 			body.innerHTML = `<div class="empty_state"><p>No known sources for this title.</p></div>`
 				+ google_section(manga, chapter);
 			return;
 		}
 
-		// Render all source cards immediately in "checking" state.
-		body.innerHTML = sources.map(
-			src => build_card(src, manga, chapter, "checking", _was_visited(manga.id, chapter.chapter, src.name))
-		).join("") + google_section(manga, chapter);
+		const SECTION_LABELS = {
+			official:    "Official",
+			scanlators:  "Scanlators",
+			aggregators: "Aggregators",
+		};
 
-		// Attach visit-tracking click handlers before checks complete.
+		const show_section_headers = ordered.length > 1;
+
+		body.innerHTML = ordered.map(({ key, sources }) => {
+			const header = show_section_headers
+				? `<div class="source_section_header src_section_${key}">${SECTION_LABELS[key]}</div>`
+				: "";
+			const cards = sources.map(src => {
+				const locked = src.is_chapter_locked ? src.is_chapter_locked(chapter) : false;
+				return build_card(src, manga, chapter, locked ? "locked" : "checking",
+					_was_visited(manga.id, chapter.chapter, src.name));
+			}).join("");
+			return `<div class="source_section" data-section="${key}">${header}${cards}</div>`;
+		}).join("") + google_section(manga, chapter);
+
 		bind_link_tracking(manga, chapter);
 
-		// Build the URL map that Checker needs for each source.
 		const url_map = {};
-		sources.forEach(src => {
-			const check_type = src.get_check_type ? src.get_check_type(manga, chapter) : src.check_type;
-			if (check_type === "always_found")
-			{
-				// Skip network check entirely for sources with unguessable URLs.
-				url_map[src.name] = { type: "always_found" };
+		all_sources.forEach(src => {
+			const locked = src.is_chapter_locked ? src.is_chapter_locked(chapter) : false;
+			if (locked) {
+				url_map[src.name] = { type: "always_found", locked: true };
+				return;
 			}
-			else if (check_type === "html_alt")
-			{
-				// Fetch a page and scan for an img alt attribute.
+			const check_type = src.get_check_type ? src.get_check_type(manga, chapter) : src.check_type;
+			if (check_type === "always_found") {
+				url_map[src.name] = { type: "always_found" };
+			} else if (check_type === "html_alt") {
 				url_map[src.name] = {
 					type: "html_alt",
 					url:  src.get_check_url ? src.get_check_url(manga, chapter) : src.chapter_url(manga, chapter),
 					alt:  src.get_alt_text(manga, chapter),
 				};
-			}
-			else if (src.get_test_urls)
-			{
-				// Source provides multiple candidate URLs to try in order.
+			} else if (src.get_test_urls) {
 				url_map[src.name] = src.get_test_urls(manga, chapter);
-			}
-			else
-			{
-				// Standard case: check the direct chapter URL.
+			} else {
 				url_map[src.name] = [src.chapter_url(manga, chapter)];
 			}
 		});
 
-		// Fire all checks in parallel. Update each card as its result arrives.
 		Checker.check_each(url_map, (name, status) => {
-			// Discard stale results if the user has already switched to a different chapter.
 			if (_manga?.id !== manga.id || _chapter?.chapter !== chapter.chapter) return;
 
-			const src = sources.find(s => s.name === name);
+			const src = all_sources.find(s => s.name === name);
 			if (!src) return;
 
 			const card = body.querySelector(`a.source_item[data-site="${CSS.escape(name)}"]`);
 			if (!card) return;
 
-			// Swap the badge element in place.
+			if (card.dataset.locked === "1") return;
+
 			const old_badge = card.querySelector(".check_badge, .found_badge");
 			if (old_badge) old_badge.replaceWith(make_badge(status));
 
 			card.classList.remove("checking", "not_found");
 			if (status === "not_found") card.classList.add("not_found");
-			// Bubble confirmed-available cards to the top of the list.
-			if (status === "found") body.prepend(card);
+			if (status === "found") {
+				const section = card.closest(".source_section");
+				const header  = section?.querySelector(".source_section_header");
+				if (header) header.after(card);
+				else section?.prepend(card);
+			}
 		});
 	}
 
-	// Build a single source card as an HTML string.
-	// availability: "checking" | "found" | "not_found" | "browse"
-	// visited: true if the user has already clicked this source for this chapter
 	function build_card(src, manga, chapter, availability, visited) {
-		const url = src.chapter_url(manga, chapter);
+		const url     = src.chapter_url(manga, chapter);
+		const locked  = availability === "locked";
 
 		const note_for_user = PAYWALL_SOURCES.has(src.name)
 			? `<span class="paywall_note">some chapters may not be free</span>`
@@ -179,19 +160,31 @@ const Modal = (() => {
 			found:     `<span class="found_badge">available</span>`,
 			not_found: `<span class="check_badge">not found</span>`,
 			browse:    `<span class="browse_badge">browse</span>`,
+			locked:    `<span class="locked_badge">members only</span>`,
 		}[availability] ?? "";
+
 		const visited_html = visited ? `<span class="visited_badge">visited</span>` : "";
-		const extra_class  = availability === "not_found" ? " not_found" : availability === "checking" ? " checking" : "";
+		const extra_class  = availability === "not_found" ? " not_found"
+			: availability === "checking" ? " checking"
+			: availability === "locked"   ? " locked_chapter"
+			: "";
 
 		let acronym = src.name.split(" ").map(w => w[0]).join("").substring(0, 2).toUpperCase();
 		if (acronym.length < 2) acronym = src.name.substring(0, 2).toUpperCase();
 
+		const type_class = src.type === "official" ? "src_official"
+			: src.type === "aggr" ? "src_aggr"
+			: "src_fantl";
+
 		return `
       <a href="${url}" target="_blank" rel="noopener noreferrer"
          class="source_item${visited ? " visited" : ""}${extra_class}"
-         data-site="${src.name}" data-ch="${UI.escape_html(chapter.chapter || "oneshot")}">
-        <div class="source_icon_wrap">
+         data-site="${src.name}"
+         data-ch="${UI.escape_html(chapter.chapter || "oneshot")}"
+         data-locked="${locked ? "1" : "0"}">
+        <div class="source_icon_wrap ${type_class}_wrap">
           <div class="source_icon text_icon">${acronym}</div>
+          <span class="src_type_dot ${type_class}"></span>
         </div>
         <div class="source_info">
           <div class="source_name">${src.name}${note_for_user}</div>
@@ -203,17 +196,15 @@ const Modal = (() => {
       </a>`;
 	}
 
-	// Create a badge DOM element from an availability string.
-	// Used when swapping badges in-place after a check resolves.
 	function make_badge(availability) {
 		if (availability === "checking")  return Object.assign(document.createElement("span"), { className: "check_badge",  textContent: "checking..."  });
 		if (availability === "found")     return Object.assign(document.createElement("span"), { className: "found_badge",  textContent: "available"    });
 		if (availability === "not_found") return Object.assign(document.createElement("span"), { className: "check_badge",  textContent: "not found"    });
 		if (availability === "browse")    return Object.assign(document.createElement("span"), { className: "browse_badge", textContent: "browse"       });
+		if (availability === "locked")    return Object.assign(document.createElement("span"), { className: "locked_badge", textContent: "members only" });
 		return document.createElement("span");
 	}
 
-	// Build the Google search fallback section shown at the bottom of every modal.
 	function google_section(manga, chapter) {
 		const q = encodeURIComponent(`${manga.title} chapter ${chapter.chapter || 1} read online`);
 		return `<div class="google_section">
@@ -221,8 +212,6 @@ const Modal = (() => {
     </div>`;
 	}
 
-	// Attach click listeners to all source link cards.
-	// When clicked, records the visit and adds the "visited" badge.
 	function bind_link_tracking(manga, chapter) {
 		body.querySelectorAll("a.source_item[data-site]").forEach(link => {
 			link.addEventListener("click", () => {
@@ -240,11 +229,14 @@ const Modal = (() => {
 		});
 	}
 
-	// Close on X button, backdrop click, or Escape key.
 	close_btn.addEventListener("click", close);
 	modal.addEventListener("click", e => { if (e.target === modal) close(); });
 	document.addEventListener("keydown", e => { if (e.key === "Escape") close(); });
 
-	return { init, open, close };
+	function refresh_if_open() {
+		if (_manga && _chapter && modal.classList.contains("open")) render();
+	}
+
+	return { init, open, close, refresh_if_open };
 
 })();

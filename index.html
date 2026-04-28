@@ -3,76 +3,379 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manga Link - Find Where to Read</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <title>MangaLink — Find Where to Read</title>
+  <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/home.css" />
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7639EMYFSH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7639EMYFSH');
-</script>
 <body>
 
-<div class="home">
-  <div class="h-screen-wrap">
-    <div class="logo-center">
-      <span class="logo">MangaLink</span>
+<!-- NAV injected by nav.js -->
+
+<div class="hero">
+  <div class="hero-gallery">
+    <div class="img-wrapper wrapper-left">
+      <div class="gallery-img" style="background-image:url('public/left.jpg')"></div>
     </div>
-    <div class="hero_gallery">
-      <div class="img_wrapper wrapper_left">
-        <div class="gallery_img" style="background-image: url('public/left.jpg')"></div>
-      </div>
-      <div class="img_wrapper wrapper_right">
-        <div class="gallery_img" style="background-image: url('public/right.jpg')"></div>
-      </div>
+    <div class="img-wrapper wrapper-right">
+      <div class="gallery-img" style="background-image:url('public/right.jpg')"></div>
     </div>
-    <section class="search_overlay">
-      <div class="search_box_outer">
-        <div class="search_box_inner">
-          <input type="text" class="search_input" id="search_input" placeholder="Search manga..." autocomplete="off">
-          <button class="search_btn" id="search_btn">Search</button>
-          <button class="bookmark_btn" id="bookmark_btn_home"><img src="public/book-marked.svg" alt="bookmark icon"></button>
-        </div>
-      </div>
-    </section>
+  </div>
+  <div class="hero-center">
+    <div class="hero-logo">Manga<span class="accent">Link</span></div>
+    <p class="hero-tagline">Find where to read your favourite manga</p>
+    <div class="hero-search-row" id="hero-wrap">
+      <input type="text" class="hero-input" id="search_input" placeholder="Search manga titles..." autocomplete="off" />
+      <button class="hero-btn" id="search_btn">Search</button>
+      <button class="hero-bm" id="bookmark_btn_home" title="My Bookmarks">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>
+      </button>
+      <div class="hero-sugg" id="hero-sugg"></div>
+    </div>
+  </div>
+</div>
+  <div class="scroll-hint">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    <span>scroll</span>
   </div>
 </div>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-text">
-        MangaLink does not host any content. All links point to third-party websites. &nbsp;·&nbsp;
-        Data scraped from supported scanlations. &nbsp;·&nbsp;
-        Built for readers, by readers.
+<!-- RECENTLY UPDATED SECTION -->
+<section class="home-section">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2 class="section-title">
+        <span class="section-title-bar"></span>
+        Recently Updated
+      </h2>
+      <div class="section-tabs" id="ru-tabs">
+        <button class="section-tab active" data-filter="all">All</button>
+        <button class="section-tab" data-filter="ongoing">Ongoing</button>
+        <button class="section-tab" data-filter="completed">Completed</button>
       </div>
     </div>
-  </footer>
+    <div class="ru-grid" id="recently-updated">
+      <div class="ru-skeleton"><div class="ru-sk-cover"></div><div class="ru-sk-lines"><div class="ru-sk-line"></div><div class="ru-sk-line short"></div><div class="ru-sk-line short"></div></div></div>
+      <div class="ru-skeleton"><div class="ru-sk-cover"></div><div class="ru-sk-lines"><div class="ru-sk-line"></div><div class="ru-sk-line short"></div><div class="ru-sk-line short"></div></div></div>
+      <div class="ru-skeleton"><div class="ru-sk-cover"></div><div class="ru-sk-lines"><div class="ru-sk-line"></div><div class="ru-sk-line short"></div><div class="ru-sk-line short"></div></div></div>
+      <div class="ru-skeleton"><div class="ru-sk-cover"></div><div class="ru-sk-lines"><div class="ru-sk-line"></div><div class="ru-sk-line short"></div><div class="ru-sk-line short"></div></div></div>
+      <div class="ru-skeleton"><div class="ru-sk-cover"></div><div class="ru-sk-lines"><div class="ru-sk-line"></div><div class="ru-sk-line short"></div><div class="ru-sk-line short"></div></div></div>
+      <div class="ru-skeleton"><div class="ru-sk-cover"></div><div class="ru-sk-lines"><div class="ru-sk-line"></div><div class="ru-sk-line short"></div><div class="ru-sk-line short"></div></div></div>
+    </div>
+  </div>
+</section>
 
-  <script src="js/storage.js"></script>
-  <script src="js/api.js"></script>
-  <script src="js/app.js"></script>
-  <script>
+<!-- CURRENTLY WATCHING SECTION (bookmarks) -->
+<section class="home-section" id="watching-section" style="display:none">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2 class="section-title">
+        <span class="section-title-bar"></span>
+        Currently Reading
+      </h2>
+    </div>
+    <div class="ru-grid" id="watching-grid"></div>
+  </div>
+</section>
 
-    const BASE = '/mangalink';
+<footer class="home-footer">
+  MangaLink does not host any content. All links point to third-party websites. &nbsp;·&nbsp;
+  Data scraped from supported scanlations. &nbsp;·&nbsp;
+  Built for readers, by readers.
+</footer>
 
-    document.getElementById('search_btn').addEventListener('click', () => {
-      const q = document.getElementById('search_input').value;
-      if (q) {
-        window.location.href = BASE + '/search-result.html?q=' + encodeURIComponent(q);
-      } else {
-        window.location.href = BASE + '/search-result.html';
+<script src="js/config.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/bookmarks.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/sources/utils.js"></script>
+<script src="js/sources/asura.js"></script>
+<script src="js/sources/demonic.js"></script>
+<script src="js/sources/adk.js"></script>
+<script src="js/sources/thunder.js"></script>
+<script src="js/sources/temple.js"></script>
+<script src="js/sources/flame.js"></script>
+<script src="js/sources/violet.js"></script>
+<script src="js/sources/mangaplus.js"></script>
+<script src="js/lib/adblock-checker.min.js"></script>
+<script src="js/adblock.js"></script>
+<script src="js/checker.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/app.js"></script>
+<script>
+  // ── Search ─────────────────────────────────────────────────────────────────
+  document.getElementById('search_btn').addEventListener('click', () => {
+    const q = document.getElementById('search_input').value.trim();
+    window.location.href = BASE + '/search-result.html' + (q ? '?q=' + encodeURIComponent(q) : '');
+  });
+  document.getElementById('search_input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') document.getElementById('search_btn').click();
+  });
+  document.getElementById('bookmark_btn_home').addEventListener('click', () => {
+    window.location.href = BASE + '/bookmark.html';
+  });
+
+  // ── Hero suggestions ───────────────────────────────────────────────────────
+  const hInput = document.getElementById('search_input');
+  const hSugg  = document.getElementById('hero-sugg');
+  hInput.addEventListener('input', () => {
+    const q = hInput.value.trim();
+    if (!q || q.length < 2) { hSugg.classList.remove('on'); return; }
+    if (typeof API !== 'undefined') {
+      API.search_manga(q).then(results => {
+        const items = results.slice(0, 8);
+        if (!items.length) { hSugg.classList.remove('on'); return; }
+        hSugg.innerHTML = items.map(r =>
+          `<div class="sugg-item" data-t="${r.title.replace(/"/g,'&quot;')}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            ${r.title}
+          </div>`
+        ).join('');
+        hSugg.querySelectorAll('.sugg-item').forEach(el => {
+          el.addEventListener('click', () => {
+            window.location.href = BASE + '/search-result.html?q=' + encodeURIComponent(el.dataset.t);
+          });
+        });
+        hSugg.classList.add('on');
+      });
+    }
+  });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('#hero-wrap')) hSugg.classList.remove('on');
+  });
+
+  // ── Helpers ────────────────────────────────────────────────────────────────
+  function timeAgo(iso) {
+    if (!iso) return '';
+    const diff = Date.now() - new Date(iso).getTime();
+    if (diff < 0) return 'just now';
+    const mins  = Math.floor(diff / 60000);
+    const hrs   = Math.floor(diff / 3600000);
+    const days  = Math.floor(diff / 86400000);
+    const weeks = Math.floor(diff / 604800000);
+    if (mins  < 1)  return 'just now';
+    if (mins  < 60) return `${mins}m ago`;
+    if (hrs   < 24) return `${hrs}h ago`;
+    if (days  < 7)  return `${days}d ago`;
+    if (weeks < 5)  return `${weeks}w ago`;
+    return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  }
+
+  // Get the most recently read chapter number for a manga (from read_log)
+  function getLastReadChapter(mangaId) {
+    if (typeof Storage === 'undefined') return null;
+    const log = Storage.get_read_log();
+    let latest = null, latestTs = 0;
+    for (const [key, ts] of Object.entries(log)) {
+      const parts = key.split('\x00');
+      if (parts[0] === mangaId && ts > latestTs) {
+        latestTs = ts;
+        latest = parts[1];
       }
+    }
+    return latest;
+  }
+
+  // Build the shared card HTML used by recently updated section.
+  function buildCard(m, timeLabel) {
+    const ch1 = m.max_chapter ? `Ch. ${m.max_chapter}` : '—';
+    const ch2 = m.max_chapter > 1 ? `Ch. ${m.max_chapter - 1}` : null;
+    return `<div class="ru-card" data-id="${m.id}">
+      <div class="ru-cover">
+        ${m.cover ? `<img src="${m.cover}" loading="lazy" onerror="this.style.display='none'" alt="" />` : ''}
+      </div>
+      <div class="ru-info">
+        <div class="ru-type">${m.status || 'Unknown'}</div>
+        <div class="ru-title">${m.title.replace(/</g,'&lt;')}</div>
+        <div class="ru-chapters">
+          <div class="ru-ch">
+            <span class="ru-ch-num">${ch1}</span>
+            <span class="ru-ch-time">${timeLabel || ''}</span>
+          </div>
+          ${ch2 ? `<div class="ru-ch"><span class="ru-ch-num">${ch2}</span></div>` : ''}
+        </div>
+      </div>
+    </div>`;
+  }
+
+  // Build a "currently reading" card
+  function buildWatchCard(bm) {
+    const lastRead = getLastReadChapter(bm.id);
+    const currentLabel = lastRead ? `Ch. ${lastRead}` : '—';
+    const maxLabel = bm.total_chapters ? `/ ${bm.total_chapters}` : '';
+    return `<div class="ru-card wl-card" data-id="${bm.id}">
+      <div class="ru-cover">
+        ${bm.cover ? `<img src="${bm.cover}" loading="lazy" onerror="this.style.display='none'" alt="" />` : ''}
+      </div>
+      <div class="ru-info">
+        <div class="ru-type">${bm.status || 'Unknown'}</div>
+        <div class="ru-title">${bm.title.replace(/</g,'&lt;')}</div>
+        <div class="ru-chapters">
+          <div class="ru-ch">
+            <span class="ru-ch-progress">
+              <span class="ru-ch-current">${currentLabel}</span>
+              ${maxLabel ? `<span class="ru-ch-sep">·</span><span class="ru-ch-max">${maxLabel}</span>` : ''}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  // ── Home-page sidebar (open manga chapters inline) ─────────────────────────
+  // Instead of navigating away, open the same right-panel UI from search-result
+  // as an overlay/drawer on the home page.
+  function openMangaSidebar(manga) {
+    // Navigate to search-result.html with the manga id — the cleanest approach
+    // since all chapter/source/modal logic lives there.
+    window.location.href = BASE + '/search-result.html?q=' + encodeURIComponent(manga.id);
+  }
+
+  function wireCardClicks(grid, mangaMap) {
+    grid.querySelectorAll('.ru-card').forEach(card => {
+      card.addEventListener('click', async () => {
+        const id = card.dataset.id;
+        const manga = mangaMap[id];
+        if (manga) openMangaSidebar(manga);
+        else {
+          // Fallback: look up by id
+          try {
+            const m = await API.get_manga(id);
+            if (m) openMangaSidebar(m);
+          } catch(e) {}
+        }
+      });
     });
-    document.getElementById('bookmark_btn_home').addEventListener('click', () => {
-      window.location.href = BASE + '/bookmark.html';
+  }
+
+  // ── Recently Updated ───────────────────────────────────────────────────────
+  let allRecent = [];
+  let recentMap = {};
+
+  function renderRecentlyUpdated(mangas) {
+    const grid = document.getElementById('recently-updated');
+    if (!mangas.length) {
+      grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--ink-muted);padding:40px;font-family:var(--mono);font-size:.82rem;">No results</p>';
+      return;
+    }
+    grid.innerHTML = mangas.slice(0, 24).map(m => buildCard(m, timeAgo(m.updated_at))).join('');
+    wireCardClicks(grid, recentMap);
+  }
+
+  async function loadRecentlyUpdated() {
+    if (typeof API === 'undefined') return;
+    try {
+      allRecent = await API.get_recently_updated(60);
+      recentMap = {};
+      allRecent.forEach(m => { recentMap[m.id] = m; });
+      renderRecentlyUpdated(allRecent);
+    } catch(e) {
+      document.getElementById('recently-updated').innerHTML =
+        '<p style="grid-column:1/-1;text-align:center;color:var(--ink-muted);padding:40px;font-family:var(--mono);font-size:.82rem;">Could not load recently updated.</p>';
+    }
+  }
+
+  document.querySelectorAll('.section-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.section-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      renderRecentlyUpdated(f === 'all' ? allRecent : allRecent.filter(m => m.status === f));
     });
-  </script>
+  });
+
+  // ── Currently Watching (bookmarks) ────────────────────────────────────────
+  async function loadWatching() {
+    if (typeof Storage === 'undefined' || typeof API === 'undefined') return;
+    if (typeof Bookmarks !== 'undefined') Bookmarks.load();
+
+    const log = Storage.get_read_log();
+    if (!Object.keys(log).length) return;
+
+    // Group by manga_id: track latest timestamp and the chapter read at that timestamp
+    const byManga = {};
+    for (const [key, ts] of Object.entries(log)) {
+      const parts    = key.split('\x00');
+      const manga_id = parts[0];
+      const ch_num   = parts[1];
+      if (!byManga[manga_id] || ts > byManga[manga_id].ts) {
+        byManga[manga_id] = { ts, ch_num };
+      }
+    }
+
+    // Sort by most recently read
+    const sorted = Object.entries(byManga).sort((a, b) => b[1].ts - a[1].ts);
+    if (!sorted.length) return;
+
+    const section = document.getElementById('watching-section');
+    const grid    = document.getElementById('watching-grid');
+    section.style.display = '';
+    grid.innerHTML = '';
+
+    // Use bookmark data where available to avoid extra API calls
+    const bmAll = typeof Bookmarks !== 'undefined'
+      ? Object.fromEntries(Bookmarks.get_all().map(b => [b.id, b]))
+      : {};
+
+    for (const [manga_id, { ts, ch_num }] of sorted) {
+      let cover = null, status = null, max_chapter = null, title = manga_id;
+
+      if (bmAll[manga_id]) {
+        const bm = bmAll[manga_id];
+        cover       = bm.cover;
+        status      = bm.status;
+        max_chapter = bm.total_chapters;
+        title       = bm.title;
+      } else {
+        try {
+          const m = await API.get_manga(manga_id);
+          cover       = m.cover;
+          status      = m.status;
+          max_chapter = m.max_chapter;
+          title       = m.title;
+        } catch(e) { /* leave as defaults */ }
+      }
+
+      const currentLabel = ch_num ? `Ch. ${ch_num}` : '\u2014';
+      const maxLabel     = max_chapter ? `/ ${max_chapter}` : '';
+
+      const card = document.createElement('div');
+      card.className  = 'ru-card wl-card';
+      card.dataset.id = manga_id;
+      card.innerHTML  = `
+        <div class="ru-cover">
+          ${cover ? `<img src="${cover}" loading="lazy" onerror="this.style.display='none'" alt="" />` : ''}
+        </div>
+        <div class="ru-info">
+          <div class="ru-type">${status || 'Unknown'}</div>
+          <div class="ru-title">${title.replace(/</g, '&lt;')}</div>
+          <div class="ru-chapters">
+            <div class="ru-ch">
+              <span class="ru-ch-progress">
+                <span class="ru-ch-current">${currentLabel}</span>
+                ${maxLabel ? `<span class="ru-ch-sep">·</span><span class="ru-ch-max">${maxLabel}</span>` : ''}
+              </span>
+            </div>
+          </div>
+        </div>`;
+
+      card.addEventListener('click', async () => {
+        try {
+          const m = await API.get_manga(manga_id);
+          if (m) openMangaSidebar(m);
+        } catch(e) {}
+      });
+
+      grid.appendChild(card);
+    }
+  }
+
+  // ── Init ───────────────────────────────────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', () => {
+    loadWatching();
+    setTimeout(loadRecentlyUpdated, 100);
+  });
+</script>
 </body>
 </html>

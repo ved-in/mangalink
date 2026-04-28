@@ -1,0 +1,47 @@
+name: Weekly full rebuild
+
+on:
+  schedule:
+    # Every Sunday at 02:00 UTC -- offset from the daily scrape to avoid conflicts.
+    - cron: '0 2 * * 0'
+  workflow_dispatch:  # allow manual trigger from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  full-rebuild:
+    name: Full cold rebuild
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Clear previous data (keep README)
+        run: |
+          git rm -rf --cached data/chunks/ data/index.json data/scrape_state.json --ignore-unmatch
+          rm -rf data/chunks/
+          rm -f data/index.json data/scrape_state.json
+
+      - name: Run full scrape (cold)
+        run: node scrape/scrape.js
+
+      - name: Commit rebuilt data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/chunks/ data/index.json data/scrape_state.json
+          git diff --cached --quiet || git commit -m "chore: weekly full rebuild [skip ci]" --strategy-option=theirs
+          git push origin ${{ github.ref_name }} --force-with-lease
