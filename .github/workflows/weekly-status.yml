@@ -5,6 +5,7 @@ on:
     # Every Sunday at 02:00 UTC -- offset from the daily scrape to avoid conflicts.
     - cron: '0 2 * * 0'
   workflow_dispatch:  # allow manual trigger from the Actions tab
+  push:
 
 permissions:
   contents: write
