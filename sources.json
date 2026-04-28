@@ -1,0 +1,78 @@
+{
+  "sources": [
+    {
+      "name":         "ADK Scans",
+      "alias":        "D",
+      "object":       "ADKSCANS",
+      "scrape_fn":    "scrape_adk",
+      "scrape_path":  "./sources/adk",
+      "log_label":    "ADK",
+      "icon":         "☄️",
+      "type":         "fantl"
+    },
+    {
+      "name":         "Asura Scans",
+      "alias":        "A",
+      "object":       "ASURASCANS",
+      "scrape_fn":    "scrape_asura",
+      "scrape_path":  "./sources/asura",
+      "log_label":    "Asura",
+      "icon":         "⚔️",
+      "type":         "fantl"
+    },
+    {
+      "name":         "Demonic Scans",
+      "alias":        "M",
+      "object":       "DEMONICSCANS",
+      "scrape_fn":    "scrape_demonic",
+      "scrape_path":  "./sources/demonic",
+      "log_label":    "Demonic",
+      "icon":         "😈",
+      "type":         "fantl",
+      "check_type":   "html_alt"
+    },
+    {
+      "name":         "Temple Toons",
+      "alias":        "P",
+      "object":       "TEMPLESCANS",
+      "scrape_fn":    "scrape_temple_toons",
+      "scrape_path":  "./sources/temple",
+      "log_label":    "Temple",
+      "icon":         "🏛️",
+      "type":         "fantl",
+      "check_type":   "html_alt"
+    },
+    {
+      "name":         "Thunder Scans",
+      "alias":        "T",
+      "object":       "THUNDERSCANS",
+      "scrape_fn":    "scrape_thunder",
+      "scrape_path":  "./sources/thunder",
+      "log_label":    "Thunder",
+      "icon":         "⚡",
+      "type":         "fantl",
+      "paywall_note": "some chapters may not be free"
+    },
+    {
+      "name":         "Flame Comics",
+      "alias":        "F",
+      "object":       "FLAMESCANS",
+      "scrape_fn":    "scrape_flame",
+      "scrape_path":  "./sources/flame",
+      "log_label":    "Flame",
+      "icon":         "🔥",
+      "type":         "fantl"
+    },
+    {
+      "name":         "Violet Scans",
+      "alias":        "V",
+      "object":       "VIOLETSCANS",
+      "scrape_fn":    "scrape_violet",
+      "scrape_path":  "./sources/violet",
+      "log_label":    "Violet",
+      "icon":         "💜",
+      "type":         "fantl",
+      "paywall_note": "some chapters may not be free"
+    }
+  ]
+}

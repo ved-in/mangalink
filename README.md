@@ -35,7 +35,6 @@ Search any manga or manhwa title and MangaLink will:
 | [Temple Toons](https://templetoons.com/) | Scanlator |
 | [Violet Scans](https://violetscans.com/) | Scanlator |
 | [ADK Scans / SilentQuill](https://silentquill.net/) | Scanlator |
-| [MANGA Plus](https://mangaplus.shueisha.co.jp/updates/) | Official |
 
 Want a source added? [Open an issue](https://github.com/ved-in/mangalink/issues/new?template=new_source.md).
 
@@ -177,19 +176,21 @@ The scraper writes to `data/index.json` and `data/chunks/`, then commits back to
 
 **QOL**
 - [ ] Completely remove `--status-only` flag from scraper. Better way is just to delete the entire `data/` folder and rebuild it which I've implemented. Makes it messy and complicated for no real reason.
-- [ ] Instead of multiple objects related to mapping of sources in different files (i.e., `js/modal.js`, `scrape/scrape.js`), create a `sources.json` file which is used instead. Would make addition of new sources a lot easier. It could have objects like
+- [x] Instead of multiple objects related to mapping of sources in different files (i.e., `js/modal.js`, `scrape/scrape.js`), create a `sources.json` file which is used instead. Would make addition of new sources a lot easier. It could have objects like
 ```json
 {
   "comic_sources": [
     {
       "source": "Asura Scans",
       "alias": "A",
-      "object": "ASURASCANS"
+      "object": "ASURASCANS",
+      "type": "fantl"
     },
     {
       "source": "ADK Scans",
       "alias": "D",
-      "object": "ADKSCANS"
+      "object": "ADKSCANS",
+      "type": "fantl"
     }
   ]
 }
@@ -217,7 +218,7 @@ The scraper writes to `data/index.json` and `data/chunks/`, then commits back to
 - [ ] MAL export
 
 **Scraper**
-- [ ] Find a workaround/replacement for series cover present on MangaPlus. eg., [this](https://jumpg-assets.tokyo-cdn.com/secure/title/100628/title_thumbnail_portrait_list/456823.jpg), which results in a 403 status code (forbidden) on visiting.
+- [ ] Find a workaround/replacement for series cover present on MangaPlus. eg., [this](https://jumpg-assets.tokyo-cdn.com/secure/title/100628/title_thumbnail_portrait_list/456823.jpg), which results in a 403 status code (forbidden) on visiting. --> tried different stuff in its website. Will have to use some external api like Jikan to lookup the series name and get the cover.
 - [ ] Some series with `null` status still exists. See the issue and fix accordingly.
 
 **Long term**

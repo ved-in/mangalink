@@ -1,22 +1,9 @@
 const Modal = (() => {
 
-	const SOURCE_MAP = {
-		"Asura Scans":   ASURASCANS,
-		"ADK Scans":     ADKSCANS,
-		"Thunder Scans": THUNDERSCANS,
-		"Temple Toons":  TEMPLESCANS,
-		"Demonic Scans": DEMONICSCANS,
-		"Flame Comics":  FLAMESCANS,
-		"Violet Scans":  VIOLETSCANS,
-		"MangaPlus":     MANGAPLUS,
-	};
-
-	const PAYWALL_NOTES = {
-		"Thunder Scans": "some chapters may not be free",
-		"Violet Scans":  "some chapters may not be free",
-		"MangaPlus":     "many chapters require a subscription",
-	};
-	const PAYWALL_SOURCES = new Set(Object.keys(PAYWALL_NOTES));
+	// Both maps are populated from sources.json via Modal.init()
+	let SOURCE_MAP    = {}; // { "Asura Scans": ASURASCANS, ... }
+	let PAYWALL_NOTES = {}; // { "Thunder Scans": "note...", ... }
+	let PAYWALL_SOURCES = new Set();
 
 	let _on_visit    = null;
 	let _was_visited = null;
@@ -30,9 +17,21 @@ const Modal = (() => {
 	const body      = document.getElementById("modal_body");
 	const close_btn = document.getElementById("close_modal");
 
-	function init({ on_visit, was_visited }) {
+	function init({ on_visit, was_visited, sources }) {
 		_on_visit    = on_visit;
 		_was_visited = was_visited;
+
+		// Build SOURCE_MAP and PAYWALL maps from sources.json data
+		// `sources` is the parsed array passed in from app.js after fetching sources.json
+		const GLOBAL_OBJECTS = { ASURASCANS, ADKSCANS, THUNDERSCANS, TEMPLESCANS,
+		                          DEMONICSCANS, FLAMESCANS, VIOLETSCANS, MANGAPLUS };
+		SOURCE_MAP    = {};
+		PAYWALL_NOTES = {};
+		for (const s of (sources || [])) {
+			if (GLOBAL_OBJECTS[s.object]) SOURCE_MAP[s.name] = GLOBAL_OBJECTS[s.object];
+			if (s.paywall_note)           PAYWALL_NOTES[s.name] = s.paywall_note;
+		}
+		PAYWALL_SOURCES = new Set(Object.keys(PAYWALL_NOTES));
 	}
 
 	function open(manga, chapter) {
@@ -234,9 +233,11 @@ const Modal = (() => {
 		});
 	}
 
-	close_btn.addEventListener("click", close);
-	modal.addEventListener("click", e => { if (e.target === modal) close(); });
-	document.addEventListener("keydown", e => { if (e.key === "Escape") close(); });
+	if (close_btn) close_btn.addEventListener("click", close);
+	if (modal) {
+		modal.addEventListener("click", e => { if (e.target === modal) close(); });
+		document.addEventListener("keydown", e => { if (e.key === "Escape") close(); });
+	}
 
 	function refresh_if_open() {
 		if (_manga && _chapter && modal.classList.contains("open")) render();

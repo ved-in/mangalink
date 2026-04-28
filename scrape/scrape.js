@@ -2,31 +2,26 @@
 
 const fs   = require('fs');
 const path = require('path');
-const { scrape_adk }          = require('./sources/adk');
-const { scrape_asura }        = require('./sources/asura');
-const { scrape_demonic }      = require('./sources/demonic');
-const { scrape_temple_toons } = require('./sources/temple');
-const { scrape_thunder }      = require('./sources/thunder');
-const { scrape_flame }        = require('./sources/flame');
-const { scrape_violet }       = require('./sources/violet');
-const { scrape_mangaplus }    = require('./sources/mangaplus');
 const { load_state, save_state, build_state } = require('./lib/state');
 const { load_existing_chunks, merge }         = require('./lib/merge');
 
+const SOURCES_JSON = JSON.parse(
+	fs.readFileSync(path.join(__dirname, '..', 'sources.json'), 'utf8')
+).sources;
+
+// Build alias map from sources.json: { 'Asura Scans': 'A', ... }
+const SRC_CODE = Object.fromEntries(SOURCES_JSON.map(s => [s.name, s.alias]));
+
+const SCRAPERS = SOURCES_JSON.map(s =>
+{
+	const mod = require(s.scrape_path);
+	const fn  = mod[s.scrape_fn];
+	if (!fn) throw new Error(`sources.json: scrape_fn "${s.scrape_fn}" not found in "${s.scrape_path}"`);
+	return { name: s.log_label, label: s.name, fn };
+});
+
 const OUT_DIR    = path.join(__dirname, '..', 'data');
 const CHUNKS_DIR = path.join(OUT_DIR, 'chunks');
-
-const SRC_CODE =
-{
-	'Asura Scans':   'A',
-	'ADK Scans':     'D',
-	'Thunder Scans': 'T',
-	'Temple Toons':  'P',
-	'Demonic Scans': 'M',
-	'Flame Comics':  'F',
-	'Violet Scans':  'V',
-	'MangaPlus':     'J',
-};
 
 function write_chunks(merged)
 {
@@ -127,18 +122,6 @@ async function main()
 	console.log(`Run counter: ${run}${status_only ? ` (status_run: ${status_run})` : ''}`);
 
 	const common_opts = { state: prev_state, run, status_only };
-
-	const SCRAPERS =
-	[
-		{ name: 'ADK',     label: 'ADK Scans',     fn: scrape_adk          },
-		{ name: 'Asura',   label: 'Asura Scans',   fn: scrape_asura        },
-		{ name: 'Demonic', label: 'Demonic Scans',  fn: scrape_demonic      },
-		{ name: 'Temple',  label: 'Temple Toons',   fn: scrape_temple_toons },
-		{ name: 'Thunder', label: 'Thunder Scans',  fn: scrape_thunder      },
-		{ name: 'Flame',   label: 'Flame Comics',   fn: scrape_flame        },
-		{ name: 'Violet',  label: 'Violet Scans',   fn: scrape_violet       },
-		{ name: 'MangaPlus', label: 'MangaPlus',     fn: scrape_mangaplus  },
-	];
 
 	const results = await Promise.allSettled(
 		SCRAPERS.map(s => s.fn(common_opts))

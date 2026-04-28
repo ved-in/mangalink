@@ -1,762 +1,5 @@
 [
  {
-  "title": "Hitotsu Yane no Shita no",
-  "cover": "https://readermc.org/images/thumbnails/Hitotsu Yane no Shita no.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hitotsu-yane-no-shita-no"
-  },
-  "max_chapter": 6,
-  "demonic_id": "10403",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hitoyuri Touge",
-  "cover": "https://readermc.org/images/thumbnails/Hitoyuri Touge.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hitoyuri-touge"
-  },
-  "max_chapter": 4,
-  "demonic_id": "10404",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hitpoint",
-  "cover": "https://readermc.org/images/thumbnails/Hitpoint.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hitpoint"
-  },
-  "max_chapter": 23,
-  "demonic_id": "1262",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-08-23T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "HITS",
-  "cover": "https://readermc.org/images/thumbnails/HITS.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hits"
-  },
-  "max_chapter": 20,
-  "demonic_id": "11242",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2023-02-10T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hitsugi Katsugi no Kuro",
-  "cover": "https://readermc.org/images/thumbnails/Hitsugi Katsugi no Kuro.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hitsugi-katsugi-no-kuro"
-  },
-  "max_chapter": 3,
-  "demonic_id": "10405",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hitsugi Katsugi no Kuro. - Kaichu Tabi no Wa",
-  "cover": "https://readermc.org/images/thumbnails/Hitsugi Katsugi no Kuro. - Kaichu Tabi no Wa.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hitsugi-katsugi-no-kuro.-%25252d-kaichu-tabi-no-wa"
-  },
-  "max_chapter": 2.1,
-  "demonic_id": "10406",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "2.1",
-     "chapter_number": 2.1
-    },
-    {
-     "name": "1.3",
-     "chapter_number": 1.3
-    },
-    {
-     "name": "1.2",
-     "chapter_number": 1.2
-    },
-    {
-     "name": "1.1",
-     "chapter_number": 1.1
-    }
-   ]
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hitsugi no Chaikakka",
-  "cover": "https://readermc.org/images/thumbnails/Hitsugi no Chaikakka.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hitsugi-no-chaikakka"
-  },
-  "max_chapter": 3,
-  "demonic_id": "10407",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hitsugime no Chaika",
-  "cover": "https://readermc.org/images/thumbnails/Hitsugime no Chaika.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hitsugime-no-chaika"
-  },
-  "max_chapter": 27,
-  "demonic_id": "10408",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hitsuji no Namida",
-  "cover": "https://readermc.org/images/thumbnails/Hitsuji no Namida.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hitsuji-no-namida"
-  },
-  "max_chapter": 42,
-  "demonic_id": "10409",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "1.2",
-     "chapter_number": 1.2
-    },
-    {
-     "name": "1.1",
-     "chapter_number": 1.1
-    }
-   ]
-  },
-  "ua": "2021-11-09T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hitsuji no Uta",
-  "cover": "https://readermc.org/images/thumbnails/Hitsuji no Uta.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hitsuji-no-uta"
-  },
-  "max_chapter": 47,
-  "demonic_id": "10410",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hitsuji o Kazoete Dokomademo",
-  "cover": "https://readermc.org/images/thumbnails/Hitsuji o Kazoete Dokomademo.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hitsuji-o-kazoete-dokomademo"
-  },
-  "max_chapter": 0,
-  "demonic_id": "10411",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hive",
-  "cover": "https://readermc.org/images/thumbnails/Hive.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hive"
-  },
-  "max_chapter": 243,
-  "demonic_id": "199",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  },
-  "ua": "2021-04-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hiyoko Voice",
-  "cover": "https://readermc.org/images/thumbnails/Hiyoko Voice.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hiyoko-voice"
-  },
-  "max_chapter": 1,
-  "demonic_id": "10412",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hiyokoi",
-  "cover": "https://readermc.org/images/thumbnails/Hiyokoi.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hiyokoi"
-  },
-  "max_chapter": 52.5,
-  "demonic_id": "10413",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "52.5",
-     "chapter_number": 52.5
-    },
-    {
-     "name": "45.5",
-     "chapter_number": 45.5
-    },
-    {
-     "name": "42.5",
-     "chapter_number": 42.5
-    },
-    {
-     "name": "37.5",
-     "chapter_number": 37.5
-    },
-    {
-     "name": "31.5",
-     "chapter_number": 31.5
-    },
-    {
-     "name": "29.2",
-     "chapter_number": 29.2
-    },
-    {
-     "name": "29.1",
-     "chapter_number": 29.1
-    },
-    {
-     "name": "24.5",
-     "chapter_number": 24.5
-    }
-   ]
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hiyumi's Country Road",
-  "cover": "https://readermc.org/images/thumbnails/Hiyumi's Country Road.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hiyumi%2527s-country-road"
-  },
-  "max_chapter": 13,
-  "demonic_id": "10414",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hizamazuite Ai wo Chikae",
-  "cover": "https://readermc.org/images/thumbnails/Hizamazuite Ai wo Chikae.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hizamazuite-ai-wo-chikae"
-  },
-  "max_chapter": 5,
-  "demonic_id": "10415",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hoarding in Hell",
-  "cover": "https://cdn.asurascans.com/asura-images/covers/hoarding-in-hell.b72a6e.webp",
-  "status": "Completed",
-  "sources": {
-   "Asura Scans": "https://asurascans.com/comics/hoarding-in-hell"
-  },
-  "max_chapter": 60,
-  "chapter_count": 61,
-  "chapters": {
-   "Asura Scans": [
-    {
-     "name": "0",
-     "chapter_slug": "28c732cc-608d-4f2d-a5b6-3ed405dd0e6e"
-    }
-   ]
-  },
-  "ua": "2024-01-28T17:08:51Z",
-  "uf": 1
- },
- {
-  "title": "Hoarding in Hell [ALL CHAPTERS]",
-  "cover": "https://readermc.org/images/thumbnails/Hoarding in Hell [ALL CHAPTERS].webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hoarding-in-hell-%255ball-chapters%255d"
-  },
-  "max_chapter": 60,
-  "demonic_id": "11118",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "39.5",
-     "chapter_number": 39.5
-    },
-    {
-     "name": "32.5",
-     "chapter_number": 32.5
-    },
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  },
-  "ua": "2024-01-22T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hoho ni Shizumu",
-  "cover": "https://readermc.org/images/thumbnails/Hoho ni Shizumu.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hoho-ni-shizumu"
-  },
-  "max_chapter": 4,
-  "demonic_id": "10416",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hokenshitsu no Shinigami",
-  "cover": "https://readermc.org/images/thumbnails/Hokenshitsu no Shinigami.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hokenshitsu-no-shinigami"
-  },
-  "max_chapter": 87,
-  "demonic_id": "10418",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "65.5",
-     "chapter_number": 65.5
-    },
-    {
-     "name": "65.005",
-     "chapter_number": 65.005
-    },
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hokkaido Gals Are Super Adorable!",
-  "cover": "https://jumpg-assets.tokyo-cdn.com/secure/title/100116/title_thumbnail_portrait_list/312697.jpg",
-  "author": "Kai Ikada",
-  "status": "Completed",
-  "sources": {
-   "MangaPlus": "https://mangaplus.shueisha.co.jp/titles/100116"
-  },
-  "max_chapter": "119",
-  "chapters": {
-   "MangaPlus": [
-    {
-     "chapter": "0",
-     "name": "Chapter 0,1",
-     "chapter_slug": "1007745",
-     "is_locked": false
-    },
-    {
-     "chapter": "2",
-     "name": "Chapter 2",
-     "chapter_slug": "1007746",
-     "is_locked": false
-    },
-    {
-     "chapter": "3",
-     "name": "Chapter 3",
-     "chapter_slug": "1007747",
-     "is_locked": false
-    },
-    {
-     "chapter": "4",
-     "name": "Chapter 4",
-     "chapter_slug": "1007748",
-     "is_locked": false
-    },
-    {
-     "chapter": "5",
-     "name": "Chapter 5",
-     "chapter_slug": "1007749",
-     "is_locked": false
-    },
-    {
-     "chapter": "6",
-     "name": "Chapter 6",
-     "chapter_slug": "1007750",
-     "is_locked": false
-    },
-    {
-     "chapter": "7",
-     "name": "Chapter 7 Part1",
-     "chapter_slug": "1007751",
-     "is_locked": true
-    },
-    {
-     "chapter": "119",
-     "name": "Final Chapter",
-     "chapter_slug": "1022039",
-     "is_locked": true
-    }
-   ]
-  },
-  "ua": "2024-09-10T15:00:00.000Z",
-  "uf": 3
- },
- {
-  "title": "Hokori",
-  "cover": "https://readermc.org/images/thumbnails/Hokori.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hokori"
-  },
-  "max_chapter": 0,
-  "demonic_id": "10419",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hokori (AYANO Chihiro)",
-  "cover": "https://readermc.org/images/thumbnails/Hokori (AYANO Chihiro).webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hokori-%2528ayano-chihiro%2529"
-  },
-  "max_chapter": 1,
-  "demonic_id": "10420",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hokuou Kizoku To Moukinzuma No Yukiguni Karigurashi",
-  "cover": "https://readermc.org/images/thumbnails/Hokuou Kizoku To Moukinzuma No Yukiguni Karigurashi.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hokuou-kizoku-to-moukinzuma-no-yukiguni-karigurashi"
-  },
-  "max_chapter": 100,
-  "demonic_id": "613",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2024-01-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hokuto No Ken - Ryuken Gaiden",
-  "cover": "https://readermc.org/images/thumbnails/Hokuto No Ken - Ryuken Gaiden.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hokuto-no-ken-%25252d-ryuken-gaiden"
-  },
-  "max_chapter": 1,
-  "demonic_id": "10421",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Hokuto no Ken Yuria Gaiden - Jibo no Hoshi",
-  "cover": "https://readermc.org/images/thumbnails/Hokuto no Ken Yuria Gaiden - Jibo no Hoshi.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hokuto-no-ken-yuria-gaiden-%25252d-jibo-no-hoshi"
-  },
-  "max_chapter": 9,
-  "demonic_id": "10422",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Holiday",
-  "cover": "https://readermc.org/images/thumbnails/Holiday.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/holiday"
-  },
-  "max_chapter": 1,
-  "demonic_id": "10424",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Holiday Part 2",
-  "cover": "https://readermc.org/images/thumbnails/Holiday Part 2.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/holiday-part-2"
-  },
-  "max_chapter": 1,
-  "demonic_id": "10425",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Holy Alice Returns",
-  "cover": "https://readermc.org/images/thumbnails/Holy Alice Returns.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/holy-alice-returns"
-  },
-  "max_chapter": 3,
-  "demonic_id": "1211",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  },
-  "ua": "2021-06-01T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Holy Ancestor",
-  "cover": "https://readermc.org/images/thumbnails/Holy Ancestor.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/holy-ancestor"
-  },
-  "max_chapter": 258,
-  "demonic_id": "274",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  },
-  "ua": "2021-04-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Holy Avenger",
-  "cover": "https://readermc.org/images/thumbnails/Holy Avenger.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/holy-avenger"
-  },
-  "max_chapter": 12,
-  "demonic_id": "10426",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Holy Chef, Crazy Empress",
-  "cover": "https://readermc.org/images/thumbnails/Holy Chef, Crazy Empress.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/holy-chef%252c-crazy-empress"
-  },
-  "max_chapter": 303,
-  "demonic_id": "164",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2023-10-17T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Holy Glory",
-  "cover": "https://readermc.org/images/thumbnails/Holy Glory.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/holy-glory"
-  },
-  "max_chapter": 4,
-  "demonic_id": "10427",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2021-11-09T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Holy Idol",
-  "cover": "https://readermc.org/images/thumbnails/Holy Idol.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/holy-idol"
-  },
-  "max_chapter": 47,
-  "demonic_id": "326",
-  "chapters": {
-   "Demonic Scans": []
-  },
-  "ua": "2025-09-23T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Holy Liquid Blacksmith with Eroranta",
-  "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201365%201920'%3E%3C/svg%3E",
-  "status": "Ongoing",
-  "sources": {
-   "ADK Scans": "https://www.silentquill.net/holy-liquid-blacksmith-with-eroranta/"
-  },
-  "max_chapter": null,
-  "chapters": {
-   "ADK Scans": [
-    {
-     "name": "6.5",
-     "chapter_slug": "holy-liquid-blacksmith-with-eroranta-chapter-6-5"
-    }
-   ]
-  },
-  "ua": "2025-09-28T14:25:47.000Z",
-  "uf": null
- },
- {
-  "title": "Holy Money",
-  "cover": "https://en-thunderscans.com/wp-content/uploads/2025/06/2025-06-29-06-44-52-1751222692467-231x300.jpg",
-  "status": "Ongoing",
-  "sources": {
-   "Thunder Scans": "https://en-thunderscans.com/comics/holy-money/"
-  },
-  "max_chapter": 45,
-  "chapters": {
-   "Thunder Scans": []
-  },
-  "ua": null,
-  "uf": 1
- },
- {
-  "title": "Holy Night",
-  "cover": "https://readermc.org/images/thumbnails/Holy Night.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/holy-night"
-  },
-  "max_chapter": 0,
-  "demonic_id": "10428",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  },
-  "ua": "2021-11-02T00:00:00.000Z",
-  "uf": 1
- },
- {
-  "title": "Holy Night: The Zero",
-  "cover": "https://readermc.org/images/thumbnails/Holy Night  The Zero.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/holy-night%253a-the-zero"
-  },
-  "max_chapter": 50.5,
-  "demonic_id": "12663",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "50.5",
-     "chapter_number": 50.5
-    }
-   ]
-  },
-  "ua": "2026-02-06T00:00:00.000Z",
-  "uf": 1
- },
- {
   "title": "Holyland",
   "cover": "https://readermc.org/images/thumbnails/Holyland.webp",
   "status": "Ongoing",
@@ -785,70 +28,6 @@
   },
   "ua": "2021-11-02T00:00:00.000Z",
   "uf": 1
- },
- {
-  "title": "Home at the Horizon",
-  "cover": "https://jumpg-assets.tokyo-cdn.com/secure/title/100467/title_thumbnail_portrait_list/406440.jpg",
-  "author": "Taiyo Watabe",
-  "status": "Ongoing",
-  "sources": {
-   "MangaPlus": "https://mangaplus.shueisha.co.jp/titles/100467"
-  },
-  "max_chapter": "19",
-  "chapters": {
-   "MangaPlus": [
-    {
-     "chapter": "1",
-     "name": "Chapter 1: Chance Meeting",
-     "chapter_slug": "1024395",
-     "is_locked": false
-    },
-    {
-     "chapter": "2",
-     "name": "Chapter 2: Feigned Ignorance",
-     "chapter_slug": "1024396",
-     "is_locked": false
-    },
-    {
-     "chapter": "3",
-     "name": "Chapter 3: Secret",
-     "chapter_slug": "1024397",
-     "is_locked": false
-    },
-    {
-     "chapter": "4",
-     "name": "Chapter 4: Visitor",
-     "chapter_slug": "1024398",
-     "is_locked": false
-    },
-    {
-     "chapter": "5",
-     "name": "Chapter 5: The Mark of the Place I Belong",
-     "chapter_slug": "1024399",
-     "is_locked": false
-    },
-    {
-     "chapter": "ex",
-     "name": "Extra Chapter ",
-     "chapter_slug": "1024400",
-     "is_locked": false
-    },
-    {
-     "chapter": "6",
-     "name": "Chapter 6: The Same Thing",
-     "chapter_slug": "1024563",
-     "is_locked": true
-    },
-    {
-     "chapter": "19",
-     "name": "Chapter 19: The Meaning of the Photo",
-     "chapter_slug": "1027658",
-     "is_locked": true
-    }
-   ]
-  },
-  "ua": "2026-04-25T15:00:00.000Z",
-  "uf": 3
  },
  {
   "title": "Home Centre Sales Clerk's Life in Another World ~with the titles -",
@@ -2063,70 +1242,6 @@
   "uf": 1
  },
  {
-  "title": "Hope You're Happy, Lemon",
-  "cover": "https://jumpg-assets.tokyo-cdn.com/secure/title/100280/title_thumbnail_portrait_list/317512.jpg",
-  "author": "Mizuki Kishikawa",
-  "status": "Ongoing",
-  "sources": {
-   "MangaPlus": "https://mangaplus.shueisha.co.jp/titles/100280"
-  },
-  "max_chapter": "89",
-  "chapters": {
-   "MangaPlus": [
-    {
-     "chapter": "1",
-     "name": "Chapter 1",
-     "chapter_slug": "1019131",
-     "is_locked": false
-    },
-    {
-     "chapter": "2",
-     "name": "Chapter 2",
-     "chapter_slug": "1019129",
-     "is_locked": false
-    },
-    {
-     "chapter": "3",
-     "name": "Chapter 3",
-     "chapter_slug": "1019134",
-     "is_locked": false
-    },
-    {
-     "chapter": "4",
-     "name": "Chapter 4",
-     "chapter_slug": "1019128",
-     "is_locked": false
-    },
-    {
-     "chapter": "5",
-     "name": "Chapter 5",
-     "chapter_slug": "1019133",
-     "is_locked": false
-    },
-    {
-     "chapter": "ex",
-     "name": "ILLUSTRATION",
-     "chapter_slug": "1019130",
-     "is_locked": false
-    },
-    {
-     "chapter": "6",
-     "name": "Chapter 6",
-     "chapter_slug": "1019135",
-     "is_locked": true
-    },
-    {
-     "chapter": "89",
-     "name": "Chapter 89",
-     "chapter_slug": "1028052",
-     "is_locked": true
-    }
-   ]
-  },
-  "ua": "2026-04-18T15:00:00.000Z",
-  "uf": 3
- },
- {
   "title": "Hortensia Saga",
   "cover": "https://readermc.org/images/thumbnails/Hortensia Saga.webp",
   "status": "Ongoing",
@@ -2820,6 +1935,350 @@
   "uf": 1
  },
  {
+  "title": "How Far Are You Okay With?",
+  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/98f025fd-74d0-4e7c-bb2d-c2ec88ff6962.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/how-far-are-you-okay-with"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "27910-chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "20141-chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "51567-chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "42265-chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "79022-chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "chapter-22"
+    },
+    {
+     "name": "Chapter 23",
+     "chapter_slug": "chapter-23"
+    },
+    {
+     "name": "Chapter 24",
+     "chapter_slug": "chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "chapter-25"
+    },
+    {
+     "name": "Chapter 26",
+     "chapter_slug": "chapter-26"
+    },
+    {
+     "name": "Chapter 27",
+     "chapter_slug": "chapter-27"
+    },
+    {
+     "name": "Chapter 28",
+     "chapter_slug": "chapter-28"
+    },
+    {
+     "name": "Chapter 29",
+     "chapter_slug": "chapter-29"
+    },
+    {
+     "name": "Chapter 30",
+     "chapter_slug": "chapter-30"
+    },
+    {
+     "name": "Chapter 31",
+     "chapter_slug": "chapter-31"
+    },
+    {
+     "name": "Chapter 32",
+     "chapter_slug": "chapter-32"
+    },
+    {
+     "name": "Chapter 33",
+     "chapter_slug": "chapter-33"
+    },
+    {
+     "name": "Chapter 34",
+     "chapter_slug": "chapter-34"
+    },
+    {
+     "name": "Chapter 35",
+     "chapter_slug": "chapter-35"
+    },
+    {
+     "name": "Chapter 36",
+     "chapter_slug": "chapter-36"
+    },
+    {
+     "name": "Chapter 37",
+     "chapter_slug": "chapter-37"
+    },
+    {
+     "name": "Chapter 38",
+     "chapter_slug": "chapter-38"
+    },
+    {
+     "name": "Chapter 39",
+     "chapter_slug": "chapter-39"
+    },
+    {
+     "name": "Chapter 40",
+     "chapter_slug": "chapter-40"
+    },
+    {
+     "name": "Chapter 41",
+     "chapter_slug": "chapter-41"
+    },
+    {
+     "name": "Chapter 42",
+     "chapter_slug": "chapter-42"
+    },
+    {
+     "name": "Chapter 43",
+     "chapter_slug": "chapter-43"
+    },
+    {
+     "name": "Chapter 44",
+     "chapter_slug": "chapter-44"
+    },
+    {
+     "name": "Chapter 45",
+     "chapter_slug": "chapter-45"
+    },
+    {
+     "name": "Chapter 46",
+     "chapter_slug": "chapter-46"
+    },
+    {
+     "name": "Chapter 47",
+     "chapter_slug": "chapter-47"
+    },
+    {
+     "name": "Chapter 48",
+     "chapter_slug": "chapter-48"
+    },
+    {
+     "name": "Chapter 49",
+     "chapter_slug": "chapter-49"
+    },
+    {
+     "name": "Chapter 50",
+     "chapter_slug": "chapter-50"
+    },
+    {
+     "name": "Chapter 51",
+     "chapter_slug": "chapter-51"
+    },
+    {
+     "name": "Chapter 52",
+     "chapter_slug": "chapter-52"
+    },
+    {
+     "name": "Chapter 53",
+     "chapter_slug": "chapter-53"
+    },
+    {
+     "name": "Chapter 54",
+     "chapter_slug": "chapter-54"
+    },
+    {
+     "name": "Chapter 55",
+     "chapter_slug": "chapter-55"
+    },
+    {
+     "name": "Chapter 56",
+     "chapter_slug": "chapter-56"
+    },
+    {
+     "name": "Chapter 57",
+     "chapter_slug": "chapter-57"
+    },
+    {
+     "name": "Chapter 58",
+     "chapter_slug": "chapter-58"
+    },
+    {
+     "name": "Chapter 59",
+     "chapter_slug": "chapter-59"
+    },
+    {
+     "name": "Chapter 60",
+     "chapter_slug": "chapter-60"
+    },
+    {
+     "name": "Chapter 61",
+     "chapter_slug": "chapter-61"
+    },
+    {
+     "name": "Chapter 62",
+     "chapter_slug": "chapter-62"
+    },
+    {
+     "name": "Chapter 63",
+     "chapter_slug": "chapter-63"
+    },
+    {
+     "name": "Chapter 64",
+     "chapter_slug": "chapter-64"
+    },
+    {
+     "name": "Chapter 65",
+     "chapter_slug": "chapter-65"
+    },
+    {
+     "name": "Chapter 66",
+     "chapter_slug": "chapter-66"
+    },
+    {
+     "name": "Chapter 67",
+     "chapter_slug": "chapter-67"
+    },
+    {
+     "name": "Chapter 68",
+     "chapter_slug": "chapter-68"
+    },
+    {
+     "name": "Chapter 69",
+     "chapter_slug": "chapter-69"
+    },
+    {
+     "name": "Chapter 70",
+     "chapter_slug": "chapter-70"
+    },
+    {
+     "name": "Chapter 71",
+     "chapter_slug": "chapter-71"
+    },
+    {
+     "name": "Chapter 72",
+     "chapter_slug": "chapter-72"
+    },
+    {
+     "name": "Chapter 73",
+     "chapter_slug": "chapter-73"
+    },
+    {
+     "name": "Chapter 74",
+     "chapter_slug": "chapter-74"
+    },
+    {
+     "name": "Chapter 75",
+     "chapter_slug": "chapter-75"
+    },
+    {
+     "name": "Chapter 76",
+     "chapter_slug": "chapter-76"
+    },
+    {
+     "name": "Chapter 77",
+     "chapter_slug": "chapter-77"
+    },
+    {
+     "name": "Chapter 78",
+     "chapter_slug": "chapter-78"
+    },
+    {
+     "name": "Chapter 79",
+     "chapter_slug": "chapter-79"
+    },
+    {
+     "name": "Chapter 80",
+     "chapter_slug": "chapter-80"
+    },
+    {
+     "name": "Chapter 81",
+     "chapter_slug": "chapter-81"
+    },
+    {
+     "name": "Chapter 82",
+     "chapter_slug": "chapter-82"
+    }
+   ]
+  },
+  "max_chapter": 82,
+  "chapter_count": null,
+  "ua": "2026-03-28T15:46:38.062Z",
+  "uf": 1
+ },
+ {
   "title": "How I Became an SSS Rank Delivery Hunter",
   "cover": "https://readermc.org/images/thumbnails/How I Became an SSS Rank Delivery Hunter.webp",
   "status": "Ongoing",
@@ -2902,7 +2361,7 @@
  {
   "title": "How The Villainous Alicia Saves The Day",
   "cover": "https://violetscans.org/wp-content/uploads/2025/07/2025-07-23-09-59-02-1753307942367-210x300.jpg",
-  "status": "Ongoing",
+  "status": "Completed",
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/how-the-villainous-alicia-saves-the-day/"
   },
@@ -2910,7 +2369,7 @@
   "chapters": {
    "Violet Scans": []
   },
-  "ua": "2026-04-20T22:22:44.000Z",
+  "ua": "2026-04-27T21:45:08.000Z",
   "uf": 1
  },
  {
@@ -2926,6 +2385,70 @@
    "Demonic Scans": []
   },
   "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "How To Court A Fighting Dog",
+  "cover": "https://media.templetoons.com/file/terms54/covers/a897373f-35e0-4e0b-a73d-af3bad73a1f6.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/how-to-court-a-fighting-dog"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "chapter-12"
+    }
+   ]
+  },
+  "max_chapter": 12,
+  "chapter_count": null,
+  "ua": "2025-11-21T20:35:27.477Z",
   "uf": 1
  },
  {
@@ -3500,7 +3023,7 @@
  {
   "title": "How To Live As a Villain",
   "cover": "https://cdn.asurascans.com/asura-images/covers/how-to-live-as-a-villain.24847b.webp",
-  "status": "Dropped",
+  "status": "Ongoing",
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/how-to-live-as-a-villain",
    "Demonic Scans": "https://demonicscans.org/manga/how-to-live-as-a-villain",
@@ -3524,7 +3047,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/how-to-live-as-a-wandering-knight/"
   },
-  "max_chapter": 38,
+  "max_chapter": 39,
   "chapters": {
    "Thunder Scans": []
   },
@@ -4166,6 +3689,106 @@
   "uf": 1
  },
  {
+  "title": "How to Win Over a One-Sided Love",
+  "cover": "https://media.templetoons.com/file/terms54/covers/5978981c-005d-4b67-9dea-dc8350d5ed22.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/how-to-win-over-a-one-sided-love"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "chapter-20"
+    },
+    {
+     "name": "Chapter 20.5",
+     "chapter_slug": "chapter-205"
+    }
+   ]
+  },
+  "max_chapter": 205,
+  "chapter_count": null,
+  "ua": "2025-12-21T21:52:49.850Z",
+  "uf": 1
+ },
+ {
   "title": "Howls Moving Castle: Chandora Maharu no Oujisama",
   "cover": "https://readermc.org/images/thumbnails/Howls Moving Castle  Chandora Maharu no Oujisama.webp",
   "status": "Ongoing",
@@ -4575,7 +4198,7 @@
  {
   "title": "Hunter Academy's Strongest Battle God",
   "cover": "https://readermc.org/images/thumbnails/Hunter Academy’s Strongest Battle God.webp",
-  "status": "Hiatus",
+  "status": "Ongoing",
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/hunter-academy%2527s-strongest-battle-god",
    "Thunder Scans": "https://en-thunderscans.com/comics/hunter-academys-strongest-battle-god/"
@@ -4629,10 +4252,9 @@
   "cover": "https://readermc.org/images/thumbnails/Hunter x Hunter.webp",
   "status": "Ongoing",
   "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/hunter-x-hunter",
-   "MangaPlus": "https://mangaplus.shueisha.co.jp/titles/100015"
+   "Demonic Scans": "https://demonicscans.org/manga/hunter-x-hunter"
   },
-  "max_chapter": "407",
+  "max_chapter": 400,
   "demonic_id": "10513",
   "chapters": {
    "Demonic Scans": [
@@ -4644,43 +4266,10 @@
      "name": "0",
      "chapter_number": 0
     }
-   ],
-   "MangaPlus": [
-    {
-     "chapter": "1",
-     "name": "Chapter 1: The Day of Departure",
-     "chapter_slug": "1000338",
-     "is_locked": false
-    },
-    {
-     "chapter": "2",
-     "name": "Chapter 2: An Encounter in the Storm",
-     "chapter_slug": "1000339",
-     "is_locked": false
-    },
-    {
-     "chapter": "3",
-     "name": "Chapter 3: The Ultimate Choice",
-     "chapter_slug": "1000340",
-     "is_locked": false
-    },
-    {
-     "chapter": "4",
-     "name": "Chapter 4: Kiriko: Wicked Magical Vulpes",
-     "chapter_slug": "1000341",
-     "is_locked": true
-    },
-    {
-     "chapter": "407",
-     "name": "Chapter 407: Negotiation",
-     "chapter_slug": "1022633",
-     "is_locked": true
-    }
    ]
   },
-  "ua": "2024-12-08T15:00:00.000Z",
-  "uf": 3,
-  "author": "Yoshihiro Togashi"
+  "ua": "2023-02-21T00:00:00.000Z",
+  "uf": 1
  },
  {
   "title": "Husband Thief",
@@ -4699,7 +4288,7 @@
    ]
   },
   "ua": "2026-04-27T15:48:14.000Z",
-  "uf": 4
+  "uf": 1
  },
  {
   "title": "Husband, the throne is mine!",
@@ -5684,7 +5273,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/i-am-the-fated-villain"
   },
   "max_chapter": 327,
-  "chapter_count": 325,
+  "chapter_count": 326,
   "chapters": {
    "Asura Scans": [],
    "Demonic Scans": [
@@ -5699,7 +5288,7 @@
    ]
   },
   "ua": "2026-04-27T09:30:51.312Z",
-  "uf": 4,
+  "uf": 1,
   "demonic_id": "11873"
  },
  {
@@ -6218,12 +5807,12 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i-became-a-cheat%25252dlevel-skill-thief"
   },
-  "max_chapter": 30,
+  "max_chapter": 31,
   "demonic_id": "13585",
   "chapters": {
    "Demonic Scans": []
   },
-  "ua": "2026-04-11T00:00:00.000Z",
+  "ua": "2026-04-28T00:00:00.000Z",
   "uf": 1
  },
  {
@@ -6722,12 +6311,12 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/i-became-a-married-man-in-another-world/"
   },
-  "max_chapter": 1,
+  "max_chapter": 2,
   "chapters": {
    "Thunder Scans": []
   },
   "ua": null,
-  "uf": 4
+  "uf": 1
  },
  {
   "title": "I Became a Miserable Extra in a Healing Story",
@@ -6761,7 +6350,7 @@
  {
   "title": "I Became a Renowned Family's Sword Prodigy",
   "cover": "https://cdn.asurascans.com/asura-images/covers/i-became-a-renowned-familys-sword-prodigy.e34982.webp",
-  "status": "Dropped",
+  "status": "Ongoing",
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/i-became-a-renowned-familys-sword-prodigy",
    "Demonic Scans": "https://demonicscans.org/manga/i-became-a-renowned-family%2527s-sword-prodigy"
@@ -7189,8 +6778,8 @@
   "chapters": {
    "Violet Scans": []
   },
-  "ua": "2026-04-27T16:23:02.000Z",
-  "uf": 4
+  "ua": "2026-04-27T20:48:04.000Z",
+  "uf": 1
  },
  {
   "title": "I Became the Despised Granddaughter of the Murim Family",
@@ -7233,7 +6822,7 @@
    "Violet Scans": []
   },
   "ua": "2026-04-27T13:00:05.000Z",
-  "uf": 4
+  "uf": 1
  },
  {
   "title": "I Became the Emperor’s Cat",
@@ -7460,7 +7049,7 @@
    "Thunder Scans": []
   },
   "ua": "2026-04-27T00:00:00.000Z",
-  "uf": 4
+  "uf": 1
  },
  {
   "title": "I Became the Head of the Family",
@@ -7708,6 +7297,342 @@
   "uf": 1
  },
  {
+  "title": "I Became the Mother of the Tragic Male Lead",
+  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/05c90c06-be78-4128-939a-d9b1091b25e0.png",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/i-became-the-mother-of-the-tragic-male-lead"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "76905-chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "30726-chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "72924-chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "64816-chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "12163-chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "26614-chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "71702-chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "13032-chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "93246-chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "99258-chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "43628-chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "13829-chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "27516-chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "85069-chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "80373-chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "22625-chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "81460-chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "14092-chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "94199-chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "96449-chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "22370-chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "76226-chapter-22"
+    },
+    {
+     "name": "Chapter 23",
+     "chapter_slug": "61944-chapter-23"
+    },
+    {
+     "name": "Chapter 24",
+     "chapter_slug": "99288-chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "50676-chapter-25"
+    },
+    {
+     "name": "Chapter 26",
+     "chapter_slug": "69646-chapter-26"
+    },
+    {
+     "name": "Chapter 27",
+     "chapter_slug": "42409-chapter-27"
+    },
+    {
+     "name": "Chapter 28",
+     "chapter_slug": "36718-chapter-28"
+    },
+    {
+     "name": "Chapter 29",
+     "chapter_slug": "32605-chapter-29"
+    },
+    {
+     "name": "Chapter 30",
+     "chapter_slug": "45435-chapter-30"
+    },
+    {
+     "name": "Chapter 31",
+     "chapter_slug": "25776-chapter-31"
+    },
+    {
+     "name": "Chapter 32",
+     "chapter_slug": "chapter-32"
+    },
+    {
+     "name": "Chapter 33",
+     "chapter_slug": "chapter-33"
+    },
+    {
+     "name": "Chapter 34",
+     "chapter_slug": "chapter-34"
+    },
+    {
+     "name": "Chapter 35",
+     "chapter_slug": "654694-chapter-35"
+    },
+    {
+     "name": "Chapter 36",
+     "chapter_slug": "chapter-36"
+    },
+    {
+     "name": "Chapter 37",
+     "chapter_slug": "53586-chapter-37"
+    },
+    {
+     "name": "Chapter 38",
+     "chapter_slug": "chapter-38"
+    },
+    {
+     "name": "Chapter 39",
+     "chapter_slug": "42772-chapter-39"
+    },
+    {
+     "name": "Chapter 40",
+     "chapter_slug": "chapter-40"
+    },
+    {
+     "name": "Chapter 41",
+     "chapter_slug": "chapter-41"
+    },
+    {
+     "name": "Chapter 42",
+     "chapter_slug": "chapter-42"
+    },
+    {
+     "name": "Chapter 43",
+     "chapter_slug": "chapter-43"
+    },
+    {
+     "name": "Chapter 44",
+     "chapter_slug": "93739-chapter-44"
+    },
+    {
+     "name": "Chapter 45",
+     "chapter_slug": "45848-chapter-45"
+    },
+    {
+     "name": "Chapter 46",
+     "chapter_slug": "chapter-46"
+    },
+    {
+     "name": "Chapter 47",
+     "chapter_slug": "541158-chapter-47"
+    },
+    {
+     "name": "Chapter 48",
+     "chapter_slug": "64984-chapter-48"
+    },
+    {
+     "name": "Chapter 49",
+     "chapter_slug": "chapter-49"
+    },
+    {
+     "name": "Chapter 50",
+     "chapter_slug": "chapter-50"
+    },
+    {
+     "name": "Chapter 51",
+     "chapter_slug": "chapter-51"
+    },
+    {
+     "name": "Chapter 52",
+     "chapter_slug": "541584-chapter-52"
+    },
+    {
+     "name": "Chapter 53",
+     "chapter_slug": "02837-chapter-53"
+    },
+    {
+     "name": "Chapter 54",
+     "chapter_slug": "45844-chapter-54"
+    },
+    {
+     "name": "Chapter 55",
+     "chapter_slug": "chapter-55"
+    },
+    {
+     "name": "Chapter 56",
+     "chapter_slug": "183719-chapter-56"
+    },
+    {
+     "name": "Chapter 57",
+     "chapter_slug": "chapter-57"
+    },
+    {
+     "name": "Chapter 58",
+     "chapter_slug": "chapter-58"
+    },
+    {
+     "name": "Chapter 59",
+     "chapter_slug": "chapter-59"
+    },
+    {
+     "name": "Chapter 60",
+     "chapter_slug": "chapter-60"
+    },
+    {
+     "name": "Chapter 61",
+     "chapter_slug": "chapter-61"
+    },
+    {
+     "name": "Chapter 62",
+     "chapter_slug": "chapter-62"
+    },
+    {
+     "name": "Chapter 63",
+     "chapter_slug": "chapter-63"
+    },
+    {
+     "name": "Chapter 64",
+     "chapter_slug": "chapter-64"
+    },
+    {
+     "name": "Chapter 65",
+     "chapter_slug": "chapter-65"
+    },
+    {
+     "name": "Chapter 66",
+     "chapter_slug": "chapter-66"
+    },
+    {
+     "name": "Chapter 67",
+     "chapter_slug": "chapter-67"
+    },
+    {
+     "name": "Chapter 68",
+     "chapter_slug": "chapter-68"
+    },
+    {
+     "name": "Chapter 69",
+     "chapter_slug": "chapter-69"
+    },
+    {
+     "name": "Chapter 70",
+     "chapter_slug": "chapter-70"
+    },
+    {
+     "name": "Chapter 71",
+     "chapter_slug": "chapter-71"
+    },
+    {
+     "name": "Chapter 72",
+     "chapter_slug": "chapter-72"
+    },
+    {
+     "name": "Chapter 73",
+     "chapter_slug": "chapter-73"
+    },
+    {
+     "name": "Chapter 74",
+     "chapter_slug": "chapter-74"
+    },
+    {
+     "name": "Chapter 75",
+     "chapter_slug": "chapter-75"
+    },
+    {
+     "name": "Chapter 76",
+     "chapter_slug": "chapter-76"
+    },
+    {
+     "name": "Chapter 77",
+     "chapter_slug": "chapter-77"
+    },
+    {
+     "name": "Chapter 78",
+     "chapter_slug": "chapter-78"
+    },
+    {
+     "name": "Chapter 79",
+     "chapter_slug": "chapter-79"
+    },
+    {
+     "name": "Chapter 80",
+     "chapter_slug": "chapter-80"
+    }
+   ]
+  },
+  "max_chapter": 80,
+  "chapter_count": null,
+  "ua": "2025-03-29T01:19:56.804Z",
+  "uf": 1
+ },
+ {
   "title": "I Became the Nanny of My Future Villainous Stepdaughter?!",
   "cover": "https://violetscans.org/wp-content/uploads/2026/03/2026-03-11-05-41-42-1773250902449-210x300.png",
   "status": "Ongoing",
@@ -7840,6 +7765,50 @@
   "ua": "2025-09-23T02:46:13Z",
   "uf": 1,
   "demonic_id": "13177"
+ },
+ {
+  "title": "I became the Sultan's Spoils",
+  "cover": "https://media.templetoons.com/file/terms54/covers/1722383b-555d-4844-a635-b30a75e19b17.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/i-became-the-sultans-spoils"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "chapter-7"
+    }
+   ]
+  },
+  "max_chapter": 7,
+  "chapter_count": null,
+  "ua": "2025-12-31T04:43:13.404Z",
+  "uf": 1
  },
  {
   "title": "I Became the Tyrant of a Defence Game",
@@ -8039,7 +8008,7 @@
  {
   "title": "I Became the Wife of the Male Lead",
   "cover": "https://readermc.org/images/thumbnails/I Became the Wife of the Male Lead.webp",
-  "status": "Hiatus",
+  "status": "Ongoing",
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i-became-the-wife-of-the-male-lead",
    "Violet Scans": "https://violetscans.org/comics/i-became-the-wife-of-the-male-lead/"
@@ -8873,11 +8842,11 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/i-cant-divorce-because-i-love-my-family/"
   },
-  "max_chapter": 37,
+  "max_chapter": 38,
   "chapters": {
    "Violet Scans": []
   },
-  "ua": "2026-04-21T01:27:24.000Z",
+  "ua": "2026-04-28T01:17:57.000Z",
   "uf": 1
  },
  {
@@ -8915,17 +8884,513 @@
   "uf": 1
  },
  {
-  "title": "I Can’t Wait To Eat You",
-  "cover": "https://violetscans.org/wp-content/uploads/2025/02/2025-02-07-10-55-50-1738968950890-231x300.jpg",
+  "title": "I Can't Wait To Eat You",
+  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/ddf9a149-ca25-4a19-a329-d5cd180f0074.webp",
   "status": "Ongoing",
   "sources": {
+   "Temple Toons": "https://templetoons.com/comic/i-cant-wait-to-eat-you",
    "Violet Scans": "https://violetscans.org/comics/i-cant-wait-to-eat-you/"
   },
-  "max_chapter": 90,
   "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "66246-chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "77445-chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "57141-chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "80979-chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "37012-chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "36325-chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "78321-chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "14607-chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "62099-chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "16845-chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "29240-chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "24862-chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "54366-chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "57507-chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "39541-chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "36595-chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "22423-chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "90490-chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "32920-chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "70392-chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "90998-chapter-22"
+    },
+    {
+     "name": "Chapter 23",
+     "chapter_slug": "40519-chapter-23"
+    },
+    {
+     "name": "Chapter 24",
+     "chapter_slug": "18995-chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "87089-chapter-25"
+    },
+    {
+     "name": "Chapter 26",
+     "chapter_slug": "17918-chapter-26"
+    },
+    {
+     "name": "Chapter 27",
+     "chapter_slug": "63351-chapter-27"
+    },
+    {
+     "name": "Chapter 28",
+     "chapter_slug": "73493-chapter-28"
+    },
+    {
+     "name": "Chapter 29",
+     "chapter_slug": "74852-chapter-29"
+    },
+    {
+     "name": "Chapter 30",
+     "chapter_slug": "65223-chapter-30"
+    },
+    {
+     "name": "Chapter 31",
+     "chapter_slug": "84819-chapter-31"
+    },
+    {
+     "name": "Chapter 32",
+     "chapter_slug": "76784-chapter-32"
+    },
+    {
+     "name": "Chapter 33",
+     "chapter_slug": "77959-chapter-33"
+    },
+    {
+     "name": "Chapter 34",
+     "chapter_slug": "97812-chapter-34"
+    },
+    {
+     "name": "Chapter 35",
+     "chapter_slug": "27249-chapter-35"
+    },
+    {
+     "name": "Chapter 36",
+     "chapter_slug": "76449-chapter-36"
+    },
+    {
+     "name": "Chapter 37",
+     "chapter_slug": "64096-chapter-37"
+    },
+    {
+     "name": "Chapter 38",
+     "chapter_slug": "96129-chapter-38"
+    },
+    {
+     "name": "Chapter 39",
+     "chapter_slug": "chapter-39"
+    },
+    {
+     "name": "Chapter 40",
+     "chapter_slug": "chapter-40"
+    },
+    {
+     "name": "Chapter 41",
+     "chapter_slug": "chapter-41"
+    },
+    {
+     "name": "Chapter 42",
+     "chapter_slug": "chapter-42"
+    },
+    {
+     "name": "Chapter 43",
+     "chapter_slug": "chapter-43"
+    },
+    {
+     "name": "Chapter 44",
+     "chapter_slug": "chapter-44"
+    },
+    {
+     "name": "Chapter 45",
+     "chapter_slug": "chapter-45"
+    },
+    {
+     "name": "Chapter 46",
+     "chapter_slug": "chapter-46"
+    },
+    {
+     "name": "Chapter 47",
+     "chapter_slug": "chapter-47"
+    },
+    {
+     "name": "Chapter 48",
+     "chapter_slug": "chapter-48"
+    },
+    {
+     "name": "Chapter 49",
+     "chapter_slug": "chapter-49"
+    },
+    {
+     "name": "Chapter 50",
+     "chapter_slug": "chapter-50"
+    },
+    {
+     "name": "Chapter 51",
+     "chapter_slug": "chapter-51"
+    },
+    {
+     "name": "Chapter 52",
+     "chapter_slug": "chapter-52"
+    },
+    {
+     "name": "Chapter 53",
+     "chapter_slug": "chapter-53"
+    },
+    {
+     "name": "Chapter 54",
+     "chapter_slug": "chapter-54"
+    },
+    {
+     "name": "Chapter 55",
+     "chapter_slug": "chapter-55"
+    },
+    {
+     "name": "Chapter 56",
+     "chapter_slug": "chapter-56"
+    },
+    {
+     "name": "Chapter 57",
+     "chapter_slug": "chapter-57"
+    },
+    {
+     "name": "Chapter 58",
+     "chapter_slug": "chapter-58"
+    },
+    {
+     "name": "Chapter 59",
+     "chapter_slug": "chapter-59"
+    },
+    {
+     "name": "Chapter 60",
+     "chapter_slug": "chapter-60"
+    },
+    {
+     "name": "Chapter 61",
+     "chapter_slug": "chapter-61"
+    },
+    {
+     "name": "Chapter 62",
+     "chapter_slug": "chapter-62"
+    },
+    {
+     "name": "Chapter 63",
+     "chapter_slug": "chapter-63"
+    },
+    {
+     "name": "Chapter 64",
+     "chapter_slug": "chapter-64"
+    },
+    {
+     "name": "Chapter 65",
+     "chapter_slug": "chapter-65"
+    },
+    {
+     "name": "Chapter 66",
+     "chapter_slug": "chapter-66"
+    },
+    {
+     "name": "Chapter 67",
+     "chapter_slug": "chapter-67"
+    },
+    {
+     "name": "Chapter 68",
+     "chapter_slug": "chapter-68"
+    },
+    {
+     "name": "Chapter 69",
+     "chapter_slug": "chapter-69"
+    },
+    {
+     "name": "Chapter 70",
+     "chapter_slug": "chapter-70"
+    },
+    {
+     "name": "Chapter 71",
+     "chapter_slug": "chapter-71"
+    },
+    {
+     "name": "Chapter 72",
+     "chapter_slug": "chapter-72"
+    },
+    {
+     "name": "Chapter 73",
+     "chapter_slug": "chapter-73"
+    },
+    {
+     "name": "Chapter 74",
+     "chapter_slug": "chapter-74"
+    },
+    {
+     "name": "Chapter 75",
+     "chapter_slug": "chapter-75"
+    },
+    {
+     "name": "Chapter 76",
+     "chapter_slug": "chapter-76"
+    },
+    {
+     "name": "Chapter 77",
+     "chapter_slug": "chapter-77"
+    },
+    {
+     "name": "Chapter 78",
+     "chapter_slug": "chapter-78"
+    },
+    {
+     "name": "Chapter 79",
+     "chapter_slug": "chapter-79"
+    },
+    {
+     "name": "Chapter 80",
+     "chapter_slug": "chapter-80"
+    },
+    {
+     "name": "Chapter 81",
+     "chapter_slug": "chapter-81"
+    },
+    {
+     "name": "Chapter 82",
+     "chapter_slug": "chapter-82"
+    },
+    {
+     "name": "Chapter 83",
+     "chapter_slug": "chapter-83"
+    },
+    {
+     "name": "Chapter 84",
+     "chapter_slug": "chapter-84"
+    },
+    {
+     "name": "Chapter 85",
+     "chapter_slug": "chapter-85"
+    },
+    {
+     "name": "Chapter 86",
+     "chapter_slug": "chapter-86"
+    },
+    {
+     "name": "Chapter 87",
+     "chapter_slug": "chapter-87"
+    },
+    {
+     "name": "Chapter 88",
+     "chapter_slug": "chapter-88"
+    },
+    {
+     "name": "Chapter 89",
+     "chapter_slug": "chapter-89"
+    },
+    {
+     "name": "Chapter 90",
+     "chapter_slug": "chapter-90"
+    },
+    {
+     "name": "Chapter 91",
+     "chapter_slug": "chapter-91"
+    },
+    {
+     "name": "Chapter 92",
+     "chapter_slug": "chapter-92"
+    },
+    {
+     "name": "Chapter 93",
+     "chapter_slug": "chapter-93"
+    },
+    {
+     "name": "Chapter 94",
+     "chapter_slug": "chapter-94"
+    },
+    {
+     "name": "Chapter 95",
+     "chapter_slug": "chapter-95"
+    },
+    {
+     "name": "Chapter 96",
+     "chapter_slug": "chapter-96"
+    },
+    {
+     "name": "Chapter 97",
+     "chapter_slug": "chapter-97"
+    },
+    {
+     "name": "Chapter 98",
+     "chapter_slug": "chapter-98"
+    },
+    {
+     "name": "Chapter 99",
+     "chapter_slug": "chapter-99"
+    },
+    {
+     "name": "Chapter 100",
+     "chapter_slug": "chapter-100"
+    },
+    {
+     "name": "Chapter 101",
+     "chapter_slug": "chapter-101"
+    },
+    {
+     "name": "Chapter 102",
+     "chapter_slug": "chapter-102"
+    },
+    {
+     "name": "Chapter 103",
+     "chapter_slug": "chapter-103"
+    },
+    {
+     "name": "Chapter 104",
+     "chapter_slug": "chapter-104"
+    },
+    {
+     "name": "Chapter 105",
+     "chapter_slug": "chapter-105"
+    },
+    {
+     "name": "Chapter 106",
+     "chapter_slug": "chapter-106"
+    },
+    {
+     "name": "Chapter 107",
+     "chapter_slug": "chapter-107"
+    },
+    {
+     "name": "Chapter 108",
+     "chapter_slug": "chapter-108"
+    },
+    {
+     "name": "Chapter 109",
+     "chapter_slug": "chapter-109"
+    },
+    {
+     "name": "Chapter 110",
+     "chapter_slug": "chapter-110"
+    },
+    {
+     "name": "Chapter 111",
+     "chapter_slug": "chapter-111"
+    },
+    {
+     "name": "Chapter 112",
+     "chapter_slug": "chapter-112"
+    },
+    {
+     "name": "Chapter 113",
+     "chapter_slug": "chapter-113"
+    },
+    {
+     "name": "Chapter 114",
+     "chapter_slug": "chapter-114"
+    },
+    {
+     "name": "Chapter 115",
+     "chapter_slug": "chapter-115"
+    },
+    {
+     "name": "Chapter 116",
+     "chapter_slug": "chapter-116"
+    },
+    {
+     "name": "Chapter 117",
+     "chapter_slug": "chapter-117"
+    },
+    {
+     "name": "Chapter 118",
+     "chapter_slug": "chapter-118"
+    },
+    {
+     "name": "Chapter 119",
+     "chapter_slug": "chapter-119"
+    },
+    {
+     "name": "Chapter 120",
+     "chapter_slug": "chapter-120"
+    },
+    {
+     "name": "Chapter 121",
+     "chapter_slug": "chapter-121"
+    },
+    {
+     "name": "Chapter 122",
+     "chapter_slug": "chapter-122"
+    },
+    {
+     "name": "Chapter 123",
+     "chapter_slug": "chapter-123"
+    }
+   ],
    "Violet Scans": []
   },
-  "ua": "2025-07-22T08:10:47.000Z",
+  "max_chapter": 123,
+  "chapter_count": null,
+  "ua": "2026-02-01T17:16:29.808Z",
   "uf": 1
  },
  {
@@ -8976,6 +9441,238 @@
    "Asura Scans": []
   },
   "ua": "2023-07-18T09:34:07Z",
+  "uf": 1
+ },
+ {
+  "title": "I Caught That Arrogant Bastard By The Leash",
+  "cover": "https://media.templetoons.com/file/terms54/covers/72b4a4fc-6aca-4807-ad40-03d757b914dd.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/i-caught-that-arrogant-bastard-by-the-leash"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 0",
+     "chapter_slug": "chapter-0"
+    },
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "chapter-22"
+    },
+    {
+     "name": "Chapter 23",
+     "chapter_slug": "chapter-23"
+    },
+    {
+     "name": "Chapter 24",
+     "chapter_slug": "chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "chapter-25"
+    },
+    {
+     "name": "Chapter 26",
+     "chapter_slug": "chapter-26"
+    },
+    {
+     "name": "Chapter 27",
+     "chapter_slug": "chapter-27"
+    },
+    {
+     "name": "Chapter 28",
+     "chapter_slug": "chapter-28"
+    },
+    {
+     "name": "Chapter 29",
+     "chapter_slug": "chapter-29"
+    },
+    {
+     "name": "Chapter 30",
+     "chapter_slug": "chapter-30"
+    },
+    {
+     "name": "Chapter 31",
+     "chapter_slug": "chapter-31"
+    },
+    {
+     "name": "Chapter 32",
+     "chapter_slug": "chapter-32"
+    },
+    {
+     "name": "Chapter 33",
+     "chapter_slug": "chapter-33"
+    },
+    {
+     "name": "Chapter 34",
+     "chapter_slug": "chapter-34"
+    },
+    {
+     "name": "Chapter 35",
+     "chapter_slug": "chapter-35"
+    },
+    {
+     "name": "Chapter 36",
+     "chapter_slug": "chapter-36"
+    },
+    {
+     "name": "Chapter 37",
+     "chapter_slug": "chapter-37"
+    },
+    {
+     "name": "Chapter 38",
+     "chapter_slug": "chapter-38"
+    },
+    {
+     "name": "Chapter 39",
+     "chapter_slug": "chapter-39"
+    },
+    {
+     "name": "Chapter 40",
+     "chapter_slug": "chapter-40"
+    },
+    {
+     "name": "Chapter 41",
+     "chapter_slug": "chapter-41"
+    },
+    {
+     "name": "Chapter 42",
+     "chapter_slug": "chapter-42"
+    },
+    {
+     "name": "Chapter 43",
+     "chapter_slug": "chapter-43"
+    },
+    {
+     "name": "Chapter 44",
+     "chapter_slug": "chapter-44"
+    },
+    {
+     "name": "Chapter 45",
+     "chapter_slug": "chapter-45"
+    },
+    {
+     "name": "Chapter 46",
+     "chapter_slug": "chapter-46"
+    },
+    {
+     "name": "Chapter 47",
+     "chapter_slug": "chapter-47"
+    },
+    {
+     "name": "Chapter 48",
+     "chapter_slug": "chapter-48"
+    },
+    {
+     "name": "Chapter 49",
+     "chapter_slug": "chapter-49"
+    },
+    {
+     "name": "Chapter 50",
+     "chapter_slug": "chapter-50"
+    },
+    {
+     "name": "Chapter 51",
+     "chapter_slug": "chapter-51"
+    },
+    {
+     "name": "Chapter 52",
+     "chapter_slug": "chapter-52"
+    },
+    {
+     "name": "Chapter 53",
+     "chapter_slug": "chapter-53"
+    }
+   ]
+  },
+  "max_chapter": 53,
+  "chapter_count": null,
+  "ua": "2026-04-23T00:39:33.511Z",
   "uf": 1
  },
  {
@@ -9122,7 +9819,7 @@
  {
   "title": "I Defy My Ascension",
   "cover": "https://readermc.org/images/thumbnails/I Defy My Ascension.webp",
-  "status": "Dropped",
+  "status": "Ongoing",
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i-defy-my-ascension",
    "Flame Comics": "https://flamecomics.xyz/series/98"
@@ -9203,7 +9900,7 @@
    ]
   },
   "ua": "2025-04-11T15:39:43.000Z",
-  "uf": 4,
+  "uf": 1,
   "flame_series_id": 98
  },
  {
@@ -10836,7 +11533,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/0086250808-i-got-the-weakest-class-dragon-tamer/"
   },
-  "max_chapter": 234,
+  "max_chapter": 235,
   "chapters": {
    "Thunder Scans": []
   },
@@ -11469,6 +12166,114 @@
   "uf": 1
  },
  {
+  "title": "I Hold The Heart Of A Tyrant",
+  "cover": "https://imagizer.imageshack.com/img923/49/lmqtUZ.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/i-hold-the-heart-of-a-tyrant"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "40279-chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "10333-chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "47668-chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "99561-chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "27172-chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "69747-chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "95589-chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "62922-chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "24971-chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "69954-chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "89695-chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "42651-chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "70975-chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "27824-chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "74268-chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "40526-chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "68905-chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "18890-chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "54470-chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "84351-chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "44401-chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "28962-chapter-22"
+    },
+    {
+     "name": "Chapter 23",
+     "chapter_slug": "68853-chapter-23"
+    }
+   ]
+  },
+  "max_chapter": 23,
+  "chapter_count": null,
+  "ua": "2023-11-19T23:09:05.189Z",
+  "uf": 1
+ },
+ {
   "title": "I Just Want to be a Useless Duke's Daughter",
   "cover": "https://readermc.org/images/thumbnails/I Just Want to be a Useless Duke's Daughter.webp",
   "status": "Ongoing",
@@ -11647,7 +12452,7 @@
  {
   "title": "I Killed the Immortal",
   "cover": "https://readermc.org/images/thumbnails/I Killed the Immortal.webp",
-  "status": "Hiatus",
+  "status": "Ongoing",
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i-killed-the-immortal",
    "Flame Comics": "https://flamecomics.xyz/series/20"
@@ -11688,7 +12493,7 @@
    ]
   },
   "ua": "2025-04-11T12:06:43.000Z",
-  "uf": 4,
+  "uf": 1,
   "flame_series_id": 20
  },
  {
@@ -11838,7 +12643,7 @@
    ]
   },
   "ua": "2026-04-27T00:00:00.000Z",
-  "uf": 3
+  "uf": 1
  },
  {
   "title": "I live Stream Goods In The Three Realms",
@@ -11998,7 +12803,7 @@
   "chapters": {
    "ADK Scans": []
   },
-  "ua": "2026-04-19T22:14:50.000Z",
+  "ua": "2026-04-27T03:03:03.000Z",
   "uf": null
  },
  {
@@ -12071,7 +12876,12 @@
   "max_chapter": 13.5,
   "demonic_id": "13632",
   "chapters": {
-   "Demonic Scans": [],
+   "Demonic Scans": [
+    {
+     "name": "13.5",
+     "chapter_number": 13.5
+    }
+   ],
    "Thunder Scans": [
     {
      "name": "13.5",
@@ -12079,7 +12889,7 @@
     }
    ]
   },
-  "ua": "2026-04-19T00:00:00.000Z",
+  "ua": "2026-04-27T00:00:00.000Z",
   "uf": 1
  },
  {
@@ -12463,7 +13273,7 @@
  {
   "title": "I Picked A Hammer To Save The World",
   "cover": "https://readermc.org/images/thumbnails/I Picked A Hammer To Save The World.webp",
-  "status": "Hiatus",
+  "status": "Ongoing",
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i-picked-a-hammer-to-save-the-world",
    "Thunder Scans": "https://en-thunderscans.com/comics/i-picked-a-hammer-to-save-the-world/"
@@ -12914,6 +13724,222 @@
   "uf": 1
  },
  {
+  "title": "I Raised A Boy Kindly But He Returned As An Obsessive Man",
+  "cover": "https://imagizer.imageshack.com/img923/5901/sQJ2nL.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/i-raised-a-boy-kindly-but-he-returned-as-an-obsessive-man"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "15379-chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "72162-chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "52259-chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "38372-chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "60988-chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "40251-chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "73034-chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "41650-chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "17254-chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "88861-chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "19542-chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "50162-chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "75097-chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "94770-chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "28668-chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "42074-chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "49523-chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "59087-chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "38859-chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "37781-chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "64660-chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "13418-chapter-22"
+    },
+    {
+     "name": "Chapter 23",
+     "chapter_slug": "14832-chapter-23"
+    },
+    {
+     "name": "Chapter 24",
+     "chapter_slug": "61591-chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "93969-chapter-25"
+    },
+    {
+     "name": "Chapter 26",
+     "chapter_slug": "83971-chapter-26"
+    },
+    {
+     "name": "Chapter 27",
+     "chapter_slug": "78675-chapter-27"
+    },
+    {
+     "name": "Chapter 28",
+     "chapter_slug": "86955-chapter-28"
+    },
+    {
+     "name": "Chapter 29",
+     "chapter_slug": "81444-chapter-29"
+    },
+    {
+     "name": "Chapter 30",
+     "chapter_slug": "19257-chapter-30"
+    },
+    {
+     "name": "Chapter 31",
+     "chapter_slug": "56103-chapter-31"
+    },
+    {
+     "name": "Chapter 32",
+     "chapter_slug": "19483-chapter-32"
+    },
+    {
+     "name": "Chapter 33",
+     "chapter_slug": "57226-chapter-33"
+    },
+    {
+     "name": "Chapter 34",
+     "chapter_slug": "73460-chapter-34"
+    },
+    {
+     "name": "Chapter 35",
+     "chapter_slug": "35906-chapter-35"
+    },
+    {
+     "name": "Chapter 36",
+     "chapter_slug": "54187-chapter-36"
+    },
+    {
+     "name": "Chapter 37",
+     "chapter_slug": "19282-chapter-37"
+    },
+    {
+     "name": "Chapter 38",
+     "chapter_slug": "67872-chapter-38"
+    },
+    {
+     "name": "Chapter 39",
+     "chapter_slug": "89012-chapter-39"
+    },
+    {
+     "name": "Chapter 40",
+     "chapter_slug": "50548-chapter-40"
+    },
+    {
+     "name": "Chapter 41",
+     "chapter_slug": "21305-chapter-41"
+    },
+    {
+     "name": "Chapter 42",
+     "chapter_slug": "37524-chapter-42"
+    },
+    {
+     "name": "Chapter 43",
+     "chapter_slug": "74148-chapter-43"
+    },
+    {
+     "name": "Chapter 44",
+     "chapter_slug": "chapter-44"
+    },
+    {
+     "name": "Chapter 45",
+     "chapter_slug": "chapter-45"
+    },
+    {
+     "name": "Chapter 46",
+     "chapter_slug": "chapter-46"
+    },
+    {
+     "name": "Chapter 47",
+     "chapter_slug": "chapter-47"
+    },
+    {
+     "name": "Chapter 48",
+     "chapter_slug": "chapter-48"
+    },
+    {
+     "name": "Chapter 49",
+     "chapter_slug": "chapter-49"
+    },
+    {
+     "name": "Chapter 50",
+     "chapter_slug": "chapter-50"
+    }
+   ]
+  },
+  "max_chapter": 50,
+  "chapter_count": null,
+  "ua": "2024-07-15T23:40:42.735Z",
+  "uf": 1
+ },
+ {
   "title": "I raised my childhood friend as a tyrant",
   "cover": "https://readermc.org/images/thumbnails/I raised my childhood friend as a tyrant.webp",
   "status": "Ongoing",
@@ -13039,7 +14065,7 @@
    ]
   },
   "ua": "2026-04-27T00:00:00.000Z",
-  "uf": 4
+  "uf": 1
  },
  {
   "title": "I Really Don't Want To Be School Master",
@@ -13190,7 +14216,7 @@
  {
   "title": "I Regressed As The Duke",
   "cover": "https://cdn.asurascans.com/asura-images/covers/i-regressed-as-the-duke.23b174.webp",
-  "status": "Dropped",
+  "status": "Ongoing",
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/i-regressed-as-the-duke",
    "Demonic Scans": "https://demonicscans.org/manga/i-regressed-as-the-duke"
@@ -13297,7 +14323,7 @@
    ]
   },
   "ua": "2026-04-27T00:00:00.000Z",
-  "uf": 4
+  "uf": 1
  },
  {
   "title": "I Reincarnated As A Meathead Saint",
@@ -13368,7 +14394,7 @@
  {
   "title": "I Reincarnated As The Crazed Heir",
   "cover": "https://cdn.asurascans.com/asura-images/covers/i-reincarnated-as-the-crazed-heir.1770cb.webp",
-  "status": "Dropped",
+  "status": "Ongoing",
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/i-reincarnated-as-the-crazed-heir",
    "Demonic Scans": "https://demonicscans.org/manga/i-reincarnated-as-the-crazed-heir"
@@ -13683,7 +14709,7 @@
  {
   "title": "I Returned as an FFF-Class Witch Doctor",
   "cover": "https://cdn.asurascans.com/asura-images/covers/i-returned-as-an-fff-class-witch-doctor.1ecfd1.webp",
-  "status": "Dropped",
+  "status": "Ongoing",
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/i-returned-as-an-fff-class-witch-doctor",
    "Demonic Scans": "https://demonicscans.org/manga/i-returned-as-an-fff%25252dclass-witch-doctor"
@@ -13701,7 +14727,7 @@
  {
   "title": "I Robbed The Storehouse Of The God",
   "cover": "https://readermc.org/images/thumbnails/I Robbed The Storehouse Of The God.webp",
-  "status": "Hiatus",
+  "status": "Ongoing",
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i-robbed-the-storehouse-of-the-god",
    "Thunder Scans": "https://en-thunderscans.com/comics/i-robbed-the-storehouse-of-the-god/"
@@ -14994,52 +16020,6 @@
   "uf": 1
  },
  {
-  "title": "i tell c",
-  "cover": "https://jumpg-assets.tokyo-cdn.com/secure/title/100144/title_thumbnail_portrait_list/312745.jpg",
-  "author": "Kazusa Inaoka",
-  "status": "Completed",
-  "sources": {
-   "MangaPlus": "https://mangaplus.shueisha.co.jp/titles/100144"
-  },
-  "max_chapter": "21",
-  "chapters": {
-   "MangaPlus": [
-    {
-     "chapter": "1",
-     "name": "chapter 1: gaze",
-     "chapter_slug": "1008860",
-     "is_locked": false
-    },
-    {
-     "chapter": "2",
-     "name": "chapter 2: jewel",
-     "chapter_slug": "1008861",
-     "is_locked": false
-    },
-    {
-     "chapter": "3",
-     "name": "chapter 3: bright",
-     "chapter_slug": "1008862",
-     "is_locked": false
-    },
-    {
-     "chapter": "4",
-     "name": "chapter 4: start",
-     "chapter_slug": "1008863",
-     "is_locked": true
-    },
-    {
-     "chapter": "21",
-     "name": "chapter 21: n",
-     "chapter_slug": "1009454",
-     "is_locked": true
-    }
-   ]
-  },
-  "ua": "2021-06-27T16:00:00.000Z",
-  "uf": 3
- },
- {
   "title": "I Tell You, Monster.",
   "cover": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20281%20400'%3E%3C/svg%3E",
   "status": "Ongoing",
@@ -15073,17 +16053,529 @@
   "uf": 1
  },
  {
-  "title": "I Thought It’s a Common Possession",
-  "cover": "https://violetscans.org/wp-content/uploads/2025/02/2025-02-03-08-30-38-1738571438411-207x300.jpg",
-  "status": "Completed",
+  "title": "I Thought It’s A Common Possession",
+  "cover": "https://imagizer.imageshack.com/img922/3036/65QrQ7.jpg",
+  "status": "Ongoing",
   "sources": {
+   "Temple Toons": "https://templetoons.com/comic/i-thought-its-a-common-possession",
    "Violet Scans": "https://violetscans.org/comics/i-thought-its-a-common-possession/"
   },
-  "max_chapter": 100,
   "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "95958-chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "93678-chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "91326-chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "94913-chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "98993-chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "25596-chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "85533-chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "21131-chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "34586-chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "35497-chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "41778-chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "47579-chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "17908-chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "36544-chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "19226-chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "61772-chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "47821-chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "95685-chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "53495-chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "49922-chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "99071-chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "77427-chapter-22"
+    },
+    {
+     "name": "Chapter 23",
+     "chapter_slug": "96780-chapter-23"
+    },
+    {
+     "name": "Chapter 24",
+     "chapter_slug": "61080-chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "53181-chapter-25"
+    },
+    {
+     "name": "Chapter 26",
+     "chapter_slug": "24896-chapter-26"
+    },
+    {
+     "name": "Chapter 27",
+     "chapter_slug": "41704-chapter-27"
+    },
+    {
+     "name": "Chapter 28",
+     "chapter_slug": "27853-chapter-28"
+    },
+    {
+     "name": "Chapter 29",
+     "chapter_slug": "15078-chapter-29"
+    },
+    {
+     "name": "Chapter 30",
+     "chapter_slug": "33789-chapter-30"
+    },
+    {
+     "name": "Chapter 31",
+     "chapter_slug": "19549-chapter-31"
+    },
+    {
+     "name": "Chapter 32",
+     "chapter_slug": "10181-chapter-32"
+    },
+    {
+     "name": "Chapter 33",
+     "chapter_slug": "95004-chapter-33"
+    },
+    {
+     "name": "Chapter 34",
+     "chapter_slug": "76842-chapter-34"
+    },
+    {
+     "name": "Chapter 35",
+     "chapter_slug": "93449-chapter-35"
+    },
+    {
+     "name": "Chapter 36",
+     "chapter_slug": "28701-chapter-36"
+    },
+    {
+     "name": "Chapter 37",
+     "chapter_slug": "72144-chapter-37"
+    },
+    {
+     "name": "Chapter 38",
+     "chapter_slug": "21983-chapter-38"
+    },
+    {
+     "name": "Chapter 39",
+     "chapter_slug": "51915-chapter-39"
+    },
+    {
+     "name": "Chapter 40",
+     "chapter_slug": "85542-chapter-40"
+    },
+    {
+     "name": "Chapter 41",
+     "chapter_slug": "70101-chapter-41"
+    },
+    {
+     "name": "Chapter 42",
+     "chapter_slug": "58220-chapter-42"
+    },
+    {
+     "name": "Chapter 43",
+     "chapter_slug": "62136-chapter-43"
+    },
+    {
+     "name": "Chapter 44",
+     "chapter_slug": "13402-chapter-44"
+    },
+    {
+     "name": "Chapter 45",
+     "chapter_slug": "84170-chapter-45"
+    },
+    {
+     "name": "Chapter 46",
+     "chapter_slug": "58585-chapter-46"
+    },
+    {
+     "name": "Chapter 47",
+     "chapter_slug": "47318-chapter-47"
+    },
+    {
+     "name": "Chapter 48",
+     "chapter_slug": "89797-chapter-48"
+    },
+    {
+     "name": "Chapter 49",
+     "chapter_slug": "15412-chapter-49"
+    },
+    {
+     "name": "Chapter 50",
+     "chapter_slug": "65962-chapter-50"
+    },
+    {
+     "name": "Chapter 51",
+     "chapter_slug": "70844-chapter-51"
+    },
+    {
+     "name": "Chapter 52",
+     "chapter_slug": "75185-chapter-52"
+    },
+    {
+     "name": "Chapter 53",
+     "chapter_slug": "21780-chapter-53"
+    },
+    {
+     "name": "Chapter 54",
+     "chapter_slug": "chapter-54"
+    },
+    {
+     "name": "Chapter 55",
+     "chapter_slug": "chapter-55"
+    },
+    {
+     "name": "Chapter 56",
+     "chapter_slug": "chapter-56"
+    },
+    {
+     "name": "Chapter 57",
+     "chapter_slug": "chapter-57"
+    },
+    {
+     "name": "Chapter 58",
+     "chapter_slug": "chapter-58"
+    },
+    {
+     "name": "Chapter 59",
+     "chapter_slug": "chapter-59"
+    },
+    {
+     "name": "Chapter 60",
+     "chapter_slug": "chapter-60"
+    },
+    {
+     "name": "Chapter 61",
+     "chapter_slug": "chapter-61"
+    },
+    {
+     "name": "Chapter 62",
+     "chapter_slug": "chapter-62"
+    },
+    {
+     "name": "Chapter 63",
+     "chapter_slug": "chapter-63"
+    },
+    {
+     "name": "Chapter 64",
+     "chapter_slug": "chapter-64"
+    },
+    {
+     "name": "Chapter 65",
+     "chapter_slug": "chapter-65"
+    },
+    {
+     "name": "Chapter 66",
+     "chapter_slug": "chapter-66"
+    },
+    {
+     "name": "Chapter 67",
+     "chapter_slug": "chapter-67"
+    },
+    {
+     "name": "Chapter 68",
+     "chapter_slug": "chapter-68"
+    },
+    {
+     "name": "Chapter 69",
+     "chapter_slug": "chapter-69"
+    },
+    {
+     "name": "Chapter 70",
+     "chapter_slug": "chapter-70"
+    },
+    {
+     "name": "Chapter 71",
+     "chapter_slug": "chapter-71"
+    },
+    {
+     "name": "Chapter 72",
+     "chapter_slug": "chapter-72"
+    },
+    {
+     "name": "Chapter 73",
+     "chapter_slug": "chapter-73"
+    },
+    {
+     "name": "Chapter 74",
+     "chapter_slug": "chapter-74"
+    },
+    {
+     "name": "Chapter 75",
+     "chapter_slug": "chapter-75"
+    },
+    {
+     "name": "Chapter 76",
+     "chapter_slug": "chapter-76"
+    },
+    {
+     "name": "Chapter 77",
+     "chapter_slug": "chapter-77"
+    },
+    {
+     "name": "Chapter 78",
+     "chapter_slug": "chapter-78"
+    },
+    {
+     "name": "Chapter 79",
+     "chapter_slug": "chapter-79"
+    },
+    {
+     "name": "Chapter 80",
+     "chapter_slug": "chapter-80"
+    },
+    {
+     "name": "Chapter 81",
+     "chapter_slug": "chapter-81"
+    },
+    {
+     "name": "Chapter 82",
+     "chapter_slug": "chapter-82"
+    },
+    {
+     "name": "Chapter 83",
+     "chapter_slug": "chapter-83"
+    },
+    {
+     "name": "Chapter 84",
+     "chapter_slug": "chapter-84"
+    },
+    {
+     "name": "Chapter 85",
+     "chapter_slug": "chapter-85"
+    },
+    {
+     "name": "Chapter 86",
+     "chapter_slug": "chapter-86"
+    },
+    {
+     "name": "Chapter 87",
+     "chapter_slug": "chapter-87"
+    },
+    {
+     "name": "Chapter 88",
+     "chapter_slug": "chapter-88"
+    },
+    {
+     "name": "Chapter 89",
+     "chapter_slug": "chapter-89"
+    },
+    {
+     "name": "Chapter 90",
+     "chapter_slug": "chapter-90"
+    },
+    {
+     "name": "Chapter 91",
+     "chapter_slug": "chapter-91"
+    },
+    {
+     "name": "Chapter 92",
+     "chapter_slug": "chapter-92"
+    },
+    {
+     "name": "Chapter 93",
+     "chapter_slug": "chapter-93"
+    },
+    {
+     "name": "Chapter 94",
+     "chapter_slug": "chapter-94"
+    },
+    {
+     "name": "Chapter 95",
+     "chapter_slug": "chapter-95"
+    },
+    {
+     "name": "Chapter 96",
+     "chapter_slug": "chapter-96"
+    },
+    {
+     "name": "Chapter 97",
+     "chapter_slug": "chapter-97"
+    },
+    {
+     "name": "Chapter 98",
+     "chapter_slug": "chapter-98"
+    },
+    {
+     "name": "Chapter 99",
+     "chapter_slug": "chapter-99"
+    },
+    {
+     "name": "Chapter 100",
+     "chapter_slug": "chapter-100"
+    },
+    {
+     "name": "Chapter 101",
+     "chapter_slug": "chapter-101"
+    },
+    {
+     "name": "Chapter 102",
+     "chapter_slug": "chapter-102"
+    },
+    {
+     "name": "Chapter 103",
+     "chapter_slug": "103"
+    },
+    {
+     "name": "Chapter 104",
+     "chapter_slug": "chapter-104"
+    },
+    {
+     "name": "Chapter 105",
+     "chapter_slug": "chapter-105"
+    },
+    {
+     "name": "Chapter 106",
+     "chapter_slug": "chapter-106"
+    },
+    {
+     "name": "Chapter 107",
+     "chapter_slug": "chapter-107"
+    },
+    {
+     "name": "Chapter 108",
+     "chapter_slug": "chapter-108"
+    },
+    {
+     "name": "Chapter 109",
+     "chapter_slug": "chapter-109"
+    },
+    {
+     "name": "Chapter 110",
+     "chapter_slug": "chapter-110"
+    },
+    {
+     "name": "Chapter 111",
+     "chapter_slug": "chapter-111"
+    },
+    {
+     "name": "Chapter 112",
+     "chapter_slug": "chapter-112"
+    },
+    {
+     "name": "Chapter 113",
+     "chapter_slug": "chapter-113"
+    },
+    {
+     "name": "Chapter 114",
+     "chapter_slug": "chapter-114"
+    },
+    {
+     "name": "Chapter 115",
+     "chapter_slug": "chapter-115"
+    },
+    {
+     "name": "Chapter 116",
+     "chapter_slug": "chapter-116"
+    }
+   ],
    "Violet Scans": []
   },
-  "ua": "2025-03-06T04:17:51.000Z",
+  "max_chapter": 116,
+  "chapter_count": null,
+  "ua": "2025-11-02T19:32:15.931Z",
+  "uf": 1
+ },
+ {
+  "title": "I Told My Ridiculously Hot Fuck Buddy That I Wanted To Break Up…",
+  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/befbe2c0-e997-4b04-a35d-4c655e92745e.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/i-told-my-ridiculously-hot-fuck-buddy-that-i-wanted-to-break-up"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 0",
+     "chapter_slug": "chapter-0"
+    },
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    }
+   ]
+  },
+  "max_chapter": 6,
+  "chapter_count": null,
+  "ua": "2025-06-11T22:24:48.901Z",
   "uf": 1
  },
  {
@@ -15401,7 +16893,7 @@
  {
   "title": "I Used to be a Boss",
   "cover": "https://readermc.org/images/thumbnails/I Used to be a Boss.webp",
-  "status": "Hiatus",
+  "status": "Ongoing",
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i-used-to-be-a-boss",
    "Flame Comics": "https://flamecomics.xyz/series/117"
@@ -15943,7 +17435,7 @@
    ]
   },
   "ua": "2026-01-18T14:28:53.000Z",
-  "uf": 4,
+  "uf": 1,
   "flame_series_id": 117
  },
  {
@@ -16022,7 +17514,7 @@
  {
   "title": "I Want To Be Fooled",
   "cover": "https://violetscans.org/wp-content/uploads/2025/06/2025-06-28-06-41-33-1751136093308-207x300.jpeg",
-  "status": "Ongoing",
+  "status": "Hiatus",
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/i-want-to-be-fooled/"
   },
@@ -16045,6 +17537,130 @@
    "Violet Scans": []
   },
   "ua": "2026-04-08T16:11:29.000Z",
+  "uf": 1
+ },
+ {
+  "title": "I Want To Hug Dad Today",
+  "cover": "https://media.templetoons.com/file/terms54/covers/f14c0710-e249-48c8-a2a9-32f9523da5ae.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/i-want-to-hug-dad-today"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "chapter-22"
+    },
+    {
+     "name": "Chapter 23",
+     "chapter_slug": "chapter-23"
+    },
+    {
+     "name": "Chapter 24",
+     "chapter_slug": "chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "chapter-25"
+    },
+    {
+     "name": "Chapter 26",
+     "chapter_slug": "chapter-26"
+    },
+    {
+     "name": "Chapter 27",
+     "chapter_slug": "chapter-27"
+    }
+   ]
+  },
+  "max_chapter": 27,
+  "chapter_count": null,
+  "ua": "2026-04-24T23:52:07.107Z",
   "uf": 1
  },
  {
@@ -16074,6 +17690,198 @@
    "Demonic Scans": []
   },
   "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "I Want To Trick You",
+  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/0aeeadee-6af1-45d2-98b3-5031227b2456.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/i-want-to-trick-you"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "chapter-22"
+    },
+    {
+     "name": "Chapter 23",
+     "chapter_slug": "chapter-23"
+    },
+    {
+     "name": "Chapter 24",
+     "chapter_slug": "chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "chapter-25"
+    },
+    {
+     "name": "Chapter 26",
+     "chapter_slug": "chapter-26"
+    },
+    {
+     "name": "Chapter 27",
+     "chapter_slug": "chapter-27"
+    },
+    {
+     "name": "Chapter 28",
+     "chapter_slug": "chapter-28"
+    },
+    {
+     "name": "Chapter 29",
+     "chapter_slug": "chapter-29"
+    },
+    {
+     "name": "Chapter 30",
+     "chapter_slug": "chapter-30"
+    },
+    {
+     "name": "Chapter 31",
+     "chapter_slug": "chapter-31"
+    },
+    {
+     "name": "Chapter 32",
+     "chapter_slug": "chapter-32"
+    },
+    {
+     "name": "Chapter 33",
+     "chapter_slug": "chapter-33"
+    },
+    {
+     "name": "Chapter 34",
+     "chapter_slug": "chapter-34"
+    },
+    {
+     "name": "Chapter 35",
+     "chapter_slug": "chapter-35"
+    },
+    {
+     "name": "Chapter 36",
+     "chapter_slug": "chapter-36"
+    },
+    {
+     "name": "Chapter 37",
+     "chapter_slug": "chapter-37"
+    },
+    {
+     "name": "Chapter 38",
+     "chapter_slug": "chapter-38"
+    },
+    {
+     "name": "Chapter 39",
+     "chapter_slug": "chapter-39"
+    },
+    {
+     "name": "Chapter 40",
+     "chapter_slug": "chapter-40"
+    },
+    {
+     "name": "Chapter 41",
+     "chapter_slug": "chapter-41"
+    },
+    {
+     "name": "Chapter 42",
+     "chapter_slug": "chapter-42"
+    },
+    {
+     "name": "Chapter 43",
+     "chapter_slug": "chapter-43"
+    },
+    {
+     "name": "Chapter 44",
+     "chapter_slug": "chapter-44"
+    }
+   ]
+  },
+  "max_chapter": 44,
+  "chapter_count": null,
+  "ua": "2026-04-20T21:07:49.589Z",
   "uf": 1
  },
  {
@@ -18792,6 +20600,54 @@
   "uf": 1
  },
  {
+  "title": "I was trapped in a botched game",
+  "cover": "https://i.ibb.co/6Yv5RPX/I-WAS.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/i-was-trapped-in-a-botched-game"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "79097-chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "75930-chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "48264-chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "59850-chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "68504-chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "81450-chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "13314-chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "35074-chapter-8"
+    }
+   ]
+  },
+  "max_chapter": 8,
+  "chapter_count": null,
+  "ua": "2023-11-03T07:18:48.217Z",
+  "uf": 1
+ },
+ {
   "title": "I Was Trash",
   "cover": "https://readermc.org/images/thumbnails/I Was Trash.webp",
   "status": "Ongoing",
@@ -19593,7 +21449,7 @@
   "chapters": {
    "Violet Scans": []
   },
-  "ua": "2026-04-20T00:56:29.000Z",
+  "ua": "2026-04-27T04:24:59.000Z",
   "uf": 1
  },
  {
@@ -21099,7 +22955,7 @@
  {
   "title": "I'll Become the Mother of the Hero",
   "cover": "https://readermc.org/images/thumbnails/I’ll Become the Mother of the Hero.webp",
-  "status": "Dropped",
+  "status": "Ongoing",
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i%2527ll-become-the-mother-of-the-hero",
    "Flame Comics": "https://flamecomics.xyz/series/106"
@@ -21317,7 +23173,7 @@
    ]
   },
   "ua": "2025-06-08T00:00:00.000Z",
-  "uf": 4,
+  "uf": 1,
   "flame_series_id": 106
  },
  {
@@ -21382,6 +23238,46 @@
    "Violet Scans": []
   },
   "ua": "2026-04-24T02:05:37.000Z",
+  "uf": 1
+ },
+ {
+  "title": "I'll Marry Your Brother",
+  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/85f9f0f9-ba52-4cf0-88dc-3a2b131f5a72.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/ill-marry-your-brother"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    }
+   ]
+  },
+  "max_chapter": 6,
+  "chapter_count": null,
+  "ua": "2025-02-07T23:25:25.553Z",
   "uf": 1
  },
  {
@@ -21456,7 +23352,7 @@
  {
   "title": "I'll Retire After Saving the World",
   "cover": "https://cdn.asurascans.com/asura-images/covers/ill-retire-after-saving-the-world.014a6a.webp",
-  "status": "Dropped",
+  "status": "Ongoing",
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/ill-retire-after-saving-the-world",
    "Demonic Scans": "https://demonicscans.org/manga/i%2527ll-retire-after-saving-the-world",
@@ -22342,11 +24238,11 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/im-a-sickly-mother-but-ill-raise-my-villainous-son/"
   },
-  "max_chapter": 20,
+  "max_chapter": 21,
   "chapters": {
    "Violet Scans": []
   },
-  "ua": "2026-04-21T01:16:08.000Z",
+  "ua": "2026-04-28T01:18:31.000Z",
   "uf": 1
  },
  {
@@ -22356,11 +24252,11 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/im-a-villain-but-im-favored/"
   },
-  "max_chapter": 70,
+  "max_chapter": 71,
   "chapters": {
    "Violet Scans": []
   },
-  "ua": "2026-04-20T17:40:27.000Z",
+  "ua": "2026-04-27T17:18:39.000Z",
   "uf": 1
  },
  {
@@ -22414,11 +24310,11 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/im-a-worthless-stepmother-but-i-love-my-family-madly/"
   },
-  "max_chapter": 143,
+  "max_chapter": 144,
   "chapters": {
    "Violet Scans": []
   },
-  "ua": "2026-04-20T21:29:13.000Z",
+  "ua": "2026-04-27T18:41:06.000Z",
   "uf": 1
  },
  {
@@ -23637,52 +25533,6 @@
   "uf": 1
  },
  {
-  "title": "I'm From Japan",
-  "cover": "https://jumpg-assets.tokyo-cdn.com/secure/title/100032/title_thumbnail_portrait_list/312763.jpg",
-  "author": "Seiji Hayashi",
-  "status": "Completed",
-  "sources": {
-   "MangaPlus": "https://mangaplus.shueisha.co.jp/titles/100032"
-  },
-  "max_chapter": "45",
-  "chapters": {
-   "MangaPlus": [
-    {
-     "chapter": "1",
-     "name": "Chapter 1: I'm From Japan",
-     "chapter_slug": "1001196",
-     "is_locked": false
-    },
-    {
-     "chapter": "2",
-     "name": "Chapter 2: Hide's From Saitama",
-     "chapter_slug": "1001197",
-     "is_locked": false
-    },
-    {
-     "chapter": "3",
-     "name": "Chapter 3: Japan Grand Prix in Shizuoka",
-     "chapter_slug": "1001198",
-     "is_locked": false
-    },
-    {
-     "chapter": "4",
-     "name": "Chapter 4: First Lessons in Hometownese!",
-     "chapter_slug": "1001199",
-     "is_locked": true
-    },
-    {
-     "chapter": "45",
-     "name": "Chapter 45: I'm From Japan",
-     "chapter_slug": "1006369",
-     "is_locked": true
-    }
-   ]
-  },
-  "ua": "2023-11-26T15:00:00.000Z",
-  "uf": 3
- },
- {
   "title": "I'm getting married to a girl I hate in my class",
   "cover": "https://readermc.org/images/thumbnails/I'm getting married to a girl I hate in my class.webp",
   "status": "Ongoing",
@@ -23822,7 +25672,7 @@
    "Violet Scans": []
   },
   "ua": "2026-04-27T14:26:17.000Z",
-  "uf": 4
+  "uf": 1
  },
  {
   "title": "I'm Going to Steal From Today",
@@ -23870,7 +25720,7 @@
    "Demonic Scans": []
   },
   "ua": "2026-04-27T00:00:00.000Z",
-  "uf": 4
+  "uf": 1
  },
  {
   "title": "I'm Haunted by a Ghost, but it Keeps Getting Cuter!",
@@ -24614,58 +26464,6 @@
   "uf": 1
  },
  {
-  "title": "I’m So Hungry I Could Eat Basashi",
-  "cover": "https://jumpg-assets.tokyo-cdn.com/secure/title/100320/title_thumbnail_portrait_list/347515.jpg",
-  "author": "Sayoru Sakurai",
-  "status": "Completed",
-  "sources": {
-   "MangaPlus": "https://mangaplus.shueisha.co.jp/titles/100320"
-  },
-  "max_chapter": "6",
-  "chapters": {
-   "MangaPlus": [
-    {
-     "chapter": "1",
-     "name": "Chapter 1",
-     "chapter_slug": "1021093",
-     "is_locked": false
-    },
-    {
-     "chapter": "2",
-     "name": "Chapter 2",
-     "chapter_slug": "1021102",
-     "is_locked": false
-    },
-    {
-     "chapter": "3",
-     "name": "Chapter 3",
-     "chapter_slug": "1021092",
-     "is_locked": false
-    },
-    {
-     "chapter": "4",
-     "name": "Chapter 4",
-     "chapter_slug": "1021223",
-     "is_locked": false
-    },
-    {
-     "chapter": "5",
-     "name": "Chapter 5",
-     "chapter_slug": "1021228",
-     "is_locked": false
-    },
-    {
-     "chapter": "6",
-     "name": "Final Chapter",
-     "chapter_slug": "1021288",
-     "is_locked": false
-    }
-   ]
-  },
-  "ua": "2024-06-03T15:00:00.000Z",
-  "uf": 3
- },
- {
   "title": "I’m So Overpowered That I Completely Broke The Game Balance",
   "cover": "https://en-thunderscans.com/wp-content/uploads/2024/12/2025-06-18-06-48-02-1750272482690-212x300.jpg",
   "status": "Ongoing",
@@ -25146,7 +26944,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/i%2527m-the-great-immortal"
   },
-  "max_chapter": 795,
+  "max_chapter": 796,
   "demonic_id": "10617",
   "chapters": {
    "Demonic Scans": [
@@ -25156,7 +26954,7 @@
     }
    ]
   },
-  "ua": "2026-04-17T00:00:00.000Z",
+  "ua": "2026-04-27T00:00:00.000Z",
   "uf": 1
  },
  {
@@ -25171,7 +26969,7 @@
    "Violet Scans": []
   },
   "ua": "2026-04-27T14:23:58.000Z",
-  "uf": 4
+  "uf": 1
  },
  {
   "title": "I’m the Main Character’s Child",
@@ -25326,7 +27124,7 @@
  {
   "title": "I'm the Only One Loved by the Constellations!",
   "cover": "https://cdn.asurascans.com/asura-images/covers/im-the-only-one-loved-by-the-constellations.88d664.webp",
-  "status": "Dropped",
+  "status": "Ongoing",
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/im-the-only-one-loved-by-the-constellations",
    "Demonic Scans": "https://demonicscans.org/manga/i%2527m-the-only-one-loved-by-the-constellations%2521"
@@ -25551,7 +27349,7 @@
  {
   "title": "I've Become the Villainous Empress of a Novel",
   "cover": "https://cdn.asurascans.com/asura-images/covers/ive-become-the-villainous-empress-of-a-novel.e74af4.webp",
-  "status": "Dropped",
+  "status": "Ongoing",
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/ive-become-the-villainous-empress-of-a-novel",
    "Demonic Scans": "https://demonicscans.org/manga/-i%255c%2527ve-become-the-villainous-empress-of-a-novel"
@@ -25582,11 +27380,11 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/ive-gotten-used-to-being-on-my-own-so-im-ignoring-my-fiance/"
   },
-  "max_chapter": 18,
+  "max_chapter": 19,
   "chapters": {
    "Violet Scans": []
   },
-  "ua": "2026-03-02T17:14:57.000Z",
+  "ua": "2026-04-27T23:32:18.000Z",
   "uf": 1
  },
  {
@@ -26134,52 +27932,6 @@
   "uf": 1
  },
  {
-  "title": "Ice-Head Gill ",
-  "cover": "https://jumpg-assets.tokyo-cdn.com/secure/title/100254/title_thumbnail_portrait_list/312751.jpg",
-  "author": "Ikuo Hachiya",
-  "status": "Completed",
-  "sources": {
-   "MangaPlus": "https://mangaplus.shueisha.co.jp/titles/100254"
-  },
-  "max_chapter": "20",
-  "chapters": {
-   "MangaPlus": [
-    {
-     "chapter": "1",
-     "name": "Chapter 1 Gill Sol and the Lich",
-     "chapter_slug": "1018322",
-     "is_locked": false
-    },
-    {
-     "chapter": "2",
-     "name": "Chapter 2 Memories and Liches",
-     "chapter_slug": "1018320",
-     "is_locked": false
-    },
-    {
-     "chapter": "3",
-     "name": "Chapter 3 Gill and Sana",
-     "chapter_slug": "1018323",
-     "is_locked": false
-    },
-    {
-     "chapter": "4",
-     "name": "Chapter 4 Ulfgard the Bloodchaser",
-     "chapter_slug": "1018318",
-     "is_locked": true
-    },
-    {
-     "chapter": "20",
-     "name": "Final Chapter The Ice-Head Sagas",
-     "chapter_slug": "1019238",
-     "is_locked": true
-    }
-   ]
-  },
-  "ua": "2023-11-12T15:00:00.000Z",
-  "uf": 3
- },
- {
   "title": "Ichi",
   "cover": "https://readermc.org/images/thumbnails/Ichi.webp",
   "status": "Ongoing",
@@ -26232,52 +27984,6 @@
   },
   "ua": "2021-11-02T00:00:00.000Z",
   "uf": 1
- },
- {
-  "title": "Ichi the Witch",
-  "cover": "https://jumpg-assets.tokyo-cdn.com/secure/title/100348/title_thumbnail_portrait_list/371494.jpg",
-  "author": "Osamu Nishi / Shiro Usazaki",
-  "status": "Ongoing",
-  "sources": {
-   "MangaPlus": "https://mangaplus.shueisha.co.jp/titles/100348"
-  },
-  "max_chapter": "77",
-  "chapters": {
-   "MangaPlus": [
-    {
-     "chapter": "1",
-     "name": "1st Hunt: Ichi",
-     "chapter_slug": "1022313",
-     "is_locked": false
-    },
-    {
-     "chapter": "2",
-     "name": "2nd Hunt: Uroro Majik",
-     "chapter_slug": "1022317",
-     "is_locked": false
-    },
-    {
-     "chapter": "3",
-     "name": "3rd Hunt: Raiko Majik",
-     "chapter_slug": "1022315",
-     "is_locked": false
-    },
-    {
-     "chapter": "4",
-     "name": "4th Hunt: Natali, the Capital",
-     "chapter_slug": "1022327",
-     "is_locked": true
-    },
-    {
-     "chapter": "77",
-     "name": "77th Hunt: Gate-crashers",
-     "chapter_slug": "1028947",
-     "is_locked": true
-    }
-   ]
-  },
-  "ua": "2026-04-26T15:00:00.000Z",
-  "uf": 3
  },
  {
   "title": "Ichiba Kurogane wa Kasegitai",
@@ -26400,52 +28106,6 @@
   },
   "ua": "2021-11-02T00:00:00.000Z",
   "uf": 1
- },
- {
-  "title": "Ichigoki's Under Control!!",
-  "cover": "https://jumpg-assets.tokyo-cdn.com/secure/title/100217/title_thumbnail_portrait_list/312757.jpg",
-  "author": "Seiji Hayashi",
-  "status": "Completed",
-  "sources": {
-   "MangaPlus": "https://mangaplus.shueisha.co.jp/titles/100217"
-  },
-  "max_chapter": "19",
-  "chapters": {
-   "MangaPlus": [
-    {
-     "chapter": "1",
-     "name": "Manual 1: Ichigoki's Under Control!!",
-     "chapter_slug": "1015342",
-     "is_locked": false
-    },
-    {
-     "chapter": "2",
-     "name": "Manual 2: Ichigoki's Back in School!!",
-     "chapter_slug": "1015334",
-     "is_locked": false
-    },
-    {
-     "chapter": "3",
-     "name": "Manual 3: Ichigoki's Ready to Blossom!!",
-     "chapter_slug": "1015340",
-     "is_locked": false
-    },
-    {
-     "chapter": "4",
-     "name": "Manual 4: Ichigoki's Taking P.E.!!",
-     "chapter_slug": "1015338",
-     "is_locked": true
-    },
-    {
-     "chapter": "19",
-     "name": "Manual 19: Ichigoki's Getting Married!!",
-     "chapter_slug": "1015806",
-     "is_locked": true
-    }
-   ]
-  },
-  "ua": "2023-04-16T15:00:00.000Z",
-  "uf": 3
  },
  {
   "title": "Ichihime Ninja",
@@ -27482,6 +29142,198 @@
    ]
   },
   "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Ignite the Dawn",
+  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/7a6a59b7-ea0b-435e-9933-6346c230a801.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/ignite-the-dawn"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "29372-chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "chapter-11"
+    },
+    {
+     "name": "Chapter 11.5",
+     "chapter_slug": "chapter-11-5"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "chapter-22"
+    },
+    {
+     "name": "Chapter 23",
+     "chapter_slug": "chapter-23"
+    },
+    {
+     "name": "Chapter 24",
+     "chapter_slug": "chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "chapter-25"
+    },
+    {
+     "name": "Chapter 26",
+     "chapter_slug": "chapter-26"
+    },
+    {
+     "name": "Chapter 27",
+     "chapter_slug": "chapter-27"
+    },
+    {
+     "name": "Chapter 28",
+     "chapter_slug": "chapter-28"
+    },
+    {
+     "name": "Chapter 29",
+     "chapter_slug": "chapter-29"
+    },
+    {
+     "name": "Chapter 30",
+     "chapter_slug": "chapter-30"
+    },
+    {
+     "name": "Chapter 31",
+     "chapter_slug": "chapter-31"
+    },
+    {
+     "name": "Chapter 32",
+     "chapter_slug": "chapter-32"
+    },
+    {
+     "name": "Chapter 33",
+     "chapter_slug": "chapter-33"
+    },
+    {
+     "name": "Chapter 34",
+     "chapter_slug": "chapter-34"
+    },
+    {
+     "name": "Chapter 35",
+     "chapter_slug": "chapter-35"
+    },
+    {
+     "name": "Chapter 36",
+     "chapter_slug": "chapter-36"
+    },
+    {
+     "name": "Chapter 37",
+     "chapter_slug": "chapter-37"
+    },
+    {
+     "name": "Chapter 38",
+     "chapter_slug": "chapter-38"
+    },
+    {
+     "name": "Chapter 39",
+     "chapter_slug": "chapter-39"
+    },
+    {
+     "name": "Chapter 40",
+     "chapter_slug": "chapter-40"
+    },
+    {
+     "name": "Chapter 41",
+     "chapter_slug": "chapter-41"
+    },
+    {
+     "name": "Chapter 42",
+     "chapter_slug": "chapter-42"
+    },
+    {
+     "name": "Chapter 43",
+     "chapter_slug": "chapter-43"
+    }
+   ]
+  },
+  "max_chapter": 43,
+  "chapter_count": null,
+  "ua": "2026-04-26T15:30:53.613Z",
   "uf": 1
  },
  {
@@ -28534,6 +30386,38 @@
   "uf": 1
  },
  {
+  "title": "Immoral Parody",
+  "cover": "https://imagizer.imageshack.com/img923/649/7festc.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/immoral-parody"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "36292-chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "83747-chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "71577-chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "58981-chapter-4"
+    }
+   ]
+  },
+  "max_chapter": 4,
+  "chapter_count": null,
+  "ua": "2023-11-12T23:24:00.336Z",
+  "uf": 1
+ },
+ {
   "title": "Immortal Bone",
   "cover": "https://readermc.org/images/thumbnails/Immortal Bone.webp",
   "status": "Ongoing",
@@ -29061,6 +30945,226 @@
    "Violet Scans": []
   },
   "ua": "2026-04-25T20:24:22.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Impure Reunion [Complete Edition]",
+  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/275004ed-b54d-4b7c-92b6-c974863be80a.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/impure-reunion"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "chapter-22"
+    },
+    {
+     "name": "Chapter 23",
+     "chapter_slug": "chapter-23"
+    },
+    {
+     "name": "Chapter 24",
+     "chapter_slug": "chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "chapter-25"
+    },
+    {
+     "name": "Chapter 26",
+     "chapter_slug": "chapter-26"
+    },
+    {
+     "name": "Chapter 27",
+     "chapter_slug": "chapter-27"
+    },
+    {
+     "name": "Chapter 28",
+     "chapter_slug": "chapter-28"
+    },
+    {
+     "name": "Chapter 29",
+     "chapter_slug": "chapter-29"
+    },
+    {
+     "name": "Chapter 30",
+     "chapter_slug": "chapter-30"
+    },
+    {
+     "name": "Chapter 31",
+     "chapter_slug": "chapter-31"
+    },
+    {
+     "name": "Chapter 32",
+     "chapter_slug": "chapter-32"
+    },
+    {
+     "name": "Chapter 33",
+     "chapter_slug": "chapter-33"
+    },
+    {
+     "name": "Chapter 34",
+     "chapter_slug": "chapter-34"
+    },
+    {
+     "name": "Chapter 35",
+     "chapter_slug": "chapter-35"
+    },
+    {
+     "name": "Chapter 36",
+     "chapter_slug": "chapter-36"
+    },
+    {
+     "name": "Chapter 37",
+     "chapter_slug": "chapter-37"
+    },
+    {
+     "name": "Chapter 38",
+     "chapter_slug": "chapter-38"
+    },
+    {
+     "name": "Chapter 39",
+     "chapter_slug": "chapter-39"
+    },
+    {
+     "name": "Chapter 40",
+     "chapter_slug": "chapter-40"
+    },
+    {
+     "name": "Chapter 41",
+     "chapter_slug": "chapter-41"
+    },
+    {
+     "name": "Chapter 42",
+     "chapter_slug": "chapter-42"
+    },
+    {
+     "name": "Chapter 43",
+     "chapter_slug": "chapter-43"
+    },
+    {
+     "name": "Chapter 44",
+     "chapter_slug": "chapter-44"
+    },
+    {
+     "name": "Chapter 45",
+     "chapter_slug": "chapter-45"
+    },
+    {
+     "name": "Chapter 46",
+     "chapter_slug": "chapter-46"
+    },
+    {
+     "name": "Chapter 47",
+     "chapter_slug": "chapter-47"
+    },
+    {
+     "name": "Chapter 48",
+     "chapter_slug": "chapter-48"
+    },
+    {
+     "name": "Chapter 49",
+     "chapter_slug": "chapter-49"
+    },
+    {
+     "name": "Chapter 50",
+     "chapter_slug": "chapter-50"
+    },
+    {
+     "name": "Chapter 51",
+     "chapter_slug": "chapter-51"
+    }
+   ]
+  },
+  "max_chapter": 51,
+  "chapter_count": null,
+  "ua": "2026-03-20T21:02:34.592Z",
   "uf": 1
  },
  {
@@ -30124,6 +32228,298 @@
    "Demonic Scans": []
   },
   "ua": "2024-09-24T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "In The Night, At The Duke's Mansion",
+  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/f48a2231-9d26-4a93-ba33-29b0a1a9404c.png",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/in-the-night-at-the-dukes-mansion"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "chapter-22"
+    },
+    {
+     "name": "Chapter 23",
+     "chapter_slug": "chapter-23"
+    },
+    {
+     "name": "Chapter 24",
+     "chapter_slug": "chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "chapter-25"
+    },
+    {
+     "name": "Chapter 26",
+     "chapter_slug": "chapter-26"
+    },
+    {
+     "name": "Chapter 27",
+     "chapter_slug": "chapter-27"
+    },
+    {
+     "name": "Chapter 28",
+     "chapter_slug": "chapter-28"
+    },
+    {
+     "name": "Chapter 29",
+     "chapter_slug": "chapter-29"
+    },
+    {
+     "name": "Chapter 30",
+     "chapter_slug": "chapter-30"
+    },
+    {
+     "name": "Chapter 31",
+     "chapter_slug": "chapter-31"
+    },
+    {
+     "name": "Chapter 32",
+     "chapter_slug": "chapter-32"
+    },
+    {
+     "name": "Chapter 33",
+     "chapter_slug": "chapter-33"
+    },
+    {
+     "name": "Chapter 34",
+     "chapter_slug": "chapter-34"
+    },
+    {
+     "name": "Chapter 35",
+     "chapter_slug": "chapter-35"
+    },
+    {
+     "name": "Chapter 36",
+     "chapter_slug": "chapter-36"
+    },
+    {
+     "name": "Chapter 37",
+     "chapter_slug": "chapter-37"
+    },
+    {
+     "name": "Chapter 38",
+     "chapter_slug": "chapter-38"
+    },
+    {
+     "name": "Chapter 39",
+     "chapter_slug": "chapter-39"
+    },
+    {
+     "name": "Chapter 40",
+     "chapter_slug": "chapter-40"
+    },
+    {
+     "name": "Chapter 41",
+     "chapter_slug": "chapter-41"
+    },
+    {
+     "name": "Chapter 42",
+     "chapter_slug": "chapter-42"
+    },
+    {
+     "name": "Chapter 43",
+     "chapter_slug": "chapter-43"
+    },
+    {
+     "name": "Chapter 44",
+     "chapter_slug": "chapter-44"
+    },
+    {
+     "name": "Chapter 45",
+     "chapter_slug": "chapter-45"
+    },
+    {
+     "name": "Chapter 46",
+     "chapter_slug": "chapter-46"
+    },
+    {
+     "name": "Chapter 47",
+     "chapter_slug": "chapter-47"
+    },
+    {
+     "name": "Chapter 48",
+     "chapter_slug": "chapter-48"
+    },
+    {
+     "name": "Chapter 49",
+     "chapter_slug": "chapter-49"
+    },
+    {
+     "name": "Chapter 50",
+     "chapter_slug": "chapter-50"
+    },
+    {
+     "name": "Chapter 51",
+     "chapter_slug": "chapter-51"
+    },
+    {
+     "name": "Chapter 52",
+     "chapter_slug": "chapter-52"
+    },
+    {
+     "name": "Chapter 53",
+     "chapter_slug": "chapter-53"
+    },
+    {
+     "name": "Chapter 54",
+     "chapter_slug": "chapter-54"
+    },
+    {
+     "name": "Chapter 55",
+     "chapter_slug": "chapter-55"
+    }
+   ]
+  },
+  "max_chapter": 55,
+  "chapter_count": null,
+  "ua": "2025-08-14T14:19:14.209Z",
+  "uf": 1
+ },
+ {
+  "title": "In the Spring Shadow",
+  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/912a4f28-d6e2-4fc4-b35c-bcafc857bfe5.webp",
+  "status": "Dropped",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/in-the-spring-shadow"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "chapter-10"
+    }
+   ]
+  },
+  "max_chapter": 10,
+  "chapter_count": null,
+  "ua": "2024-09-30T02:44:55.076Z",
   "uf": 1
  },
  {
@@ -31201,7 +33597,8 @@
      "name": "81.5",
      "chapter_number": 81.5
     }
-   ]
+   ],
+   "Thunder Scans": []
   },
   "ua": "2025-10-02T00:00:00.000Z",
   "uf": 1
@@ -31576,7 +33973,7 @@
  {
   "title": "Insanely Talented Player",
   "cover": "https://readermc.org/images/thumbnails/Insanely Talented Player.webp",
-  "status": "Dropped",
+  "status": "Ongoing",
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/insanely-talented-player",
    "Flame Comics": "https://flamecomics.xyz/series/130"
@@ -31909,7 +34306,7 @@
    ]
   },
   "ua": "2026-04-19T00:00:00.000Z",
-  "uf": 4,
+  "uf": 1,
   "flame_series_id": 130
  },
  {
@@ -31932,67 +34329,15 @@
   "cover": "https://readermc.org/images/thumbnails/Insect Girl.webp",
   "status": "Ongoing",
   "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/insect-girl",
-   "MangaPlus": "https://mangaplus.shueisha.co.jp/titles/100341"
+   "Demonic Scans": "https://demonicscans.org/manga/insect-girl"
   },
-  "max_chapter": "32",
+  "max_chapter": 4,
   "demonic_id": "12592",
   "chapters": {
-   "Demonic Scans": [],
-   "MangaPlus": [
-    {
-     "chapter": "1",
-     "name": "Chapter 1: Numerous Deaths in the Night",
-     "chapter_slug": "1022024",
-     "is_locked": false
-    },
-    {
-     "chapter": "2",
-     "name": "Chapter 2: Without Knowing Its Flavor",
-     "chapter_slug": "1022026",
-     "is_locked": false
-    },
-    {
-     "chapter": "3",
-     "name": "Chapter 3: Red Even After Bathing",
-     "chapter_slug": "1022023",
-     "is_locked": false
-    },
-    {
-     "chapter": "4",
-     "name": "Chapter 4: Bugs Bugs Bugs",
-     "chapter_slug": "1022021",
-     "is_locked": false
-    },
-    {
-     "chapter": "5",
-     "name": "Chapter 5: Standing on Stacked Legs",
-     "chapter_slug": "1022017",
-     "is_locked": false
-    },
-    {
-     "chapter": "6",
-     "name": "Chapter 6: Looking with Eyes Wide Open",
-     "chapter_slug": "1022029",
-     "is_locked": false
-    },
-    {
-     "chapter": "7",
-     "name": "Chapter 7: Opposing Thoughts",
-     "chapter_slug": "1022022",
-     "is_locked": true
-    },
-    {
-     "chapter": "32",
-     "name": "Final Chapter",
-     "chapter_slug": "1024726",
-     "is_locked": true
-    }
-   ]
+   "Demonic Scans": []
   },
-  "ua": "2025-06-07T15:00:00.000Z",
-  "uf": 3,
-  "author": "Kanya Aki"
+  "ua": "2024-09-15T00:00:00.000Z",
+  "uf": 1
  },
  {
   "title": "Insector",
@@ -32306,6 +34651,226 @@
   "uf": 1
  },
  {
+  "title": "Into the thrill",
+  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/cfec8181-7522-4dc6-8440-72cb30286544.png",
+  "status": "Ongoing",
+  "sources": {
+   "Temple Toons": "https://templetoons.com/comic/into-the-thrill"
+  },
+  "chapters": {
+   "Temple Toons": [
+    {
+     "name": "Chapter 1",
+     "chapter_slug": "68132-chapter-1"
+    },
+    {
+     "name": "Chapter 2",
+     "chapter_slug": "14739-chapter-2"
+    },
+    {
+     "name": "Chapter 3",
+     "chapter_slug": "86078-chapter-3"
+    },
+    {
+     "name": "Chapter 4",
+     "chapter_slug": "96789-chapter-4"
+    },
+    {
+     "name": "Chapter 5",
+     "chapter_slug": "99098-chapter-5"
+    },
+    {
+     "name": "Chapter 6",
+     "chapter_slug": "92064-chapter-6"
+    },
+    {
+     "name": "Chapter 7",
+     "chapter_slug": "77900-chapter-7"
+    },
+    {
+     "name": "Chapter 8",
+     "chapter_slug": "61322-chapter-8"
+    },
+    {
+     "name": "Chapter 9",
+     "chapter_slug": "14207-chapter-9"
+    },
+    {
+     "name": "Chapter 10",
+     "chapter_slug": "12318-chapter-10"
+    },
+    {
+     "name": "Chapter 11",
+     "chapter_slug": "36906-chapter-11"
+    },
+    {
+     "name": "Chapter 12",
+     "chapter_slug": "68581-chapter-12"
+    },
+    {
+     "name": "Chapter 13",
+     "chapter_slug": "47139-chapter-13"
+    },
+    {
+     "name": "Chapter 14",
+     "chapter_slug": "39508-chapter-14"
+    },
+    {
+     "name": "Chapter 15",
+     "chapter_slug": "76490-chapter-15"
+    },
+    {
+     "name": "Chapter 16",
+     "chapter_slug": "28799-chapter-16"
+    },
+    {
+     "name": "Chapter 17",
+     "chapter_slug": "95663-chapter-17"
+    },
+    {
+     "name": "Chapter 18",
+     "chapter_slug": "69008-chapter-18"
+    },
+    {
+     "name": "Chapter 19",
+     "chapter_slug": "51853-chapter-19"
+    },
+    {
+     "name": "Chapter 20",
+     "chapter_slug": "34515-chapter-20"
+    },
+    {
+     "name": "Chapter 21",
+     "chapter_slug": "13322-chapter-21"
+    },
+    {
+     "name": "Chapter 22",
+     "chapter_slug": "29685-chapter-22"
+    },
+    {
+     "name": "Chapter 23",
+     "chapter_slug": "45197-chapter-23"
+    },
+    {
+     "name": "Chapter 24",
+     "chapter_slug": "70321-chapter-24"
+    },
+    {
+     "name": "Chapter 25",
+     "chapter_slug": "20472-chapter-25"
+    },
+    {
+     "name": "Chapter 26",
+     "chapter_slug": "chapter-26"
+    },
+    {
+     "name": "Chapter 26.5",
+     "chapter_slug": "chapter-26-5"
+    },
+    {
+     "name": "Chapter 27",
+     "chapter_slug": "chapter-27"
+    },
+    {
+     "name": "Chapter 28",
+     "chapter_slug": "chapter-28"
+    },
+    {
+     "name": "Chapter 29",
+     "chapter_slug": "chapter-29"
+    },
+    {
+     "name": "Chapter 30",
+     "chapter_slug": "30"
+    },
+    {
+     "name": "Chapter 31",
+     "chapter_slug": "chapter-31"
+    },
+    {
+     "name": "Chapter 32",
+     "chapter_slug": "chapter-32"
+    },
+    {
+     "name": "Chapter 33",
+     "chapter_slug": "chapter-33"
+    },
+    {
+     "name": "Chapter 34",
+     "chapter_slug": "chapter-34"
+    },
+    {
+     "name": "Chapter 35",
+     "chapter_slug": "chapter-35"
+    },
+    {
+     "name": "Chapter 36",
+     "chapter_slug": "chapter-36"
+    },
+    {
+     "name": "Chapter 37",
+     "chapter_slug": "chapter-37"
+    },
+    {
+     "name": "Chapter 38",
+     "chapter_slug": "chapter-38"
+    },
+    {
+     "name": "Chapter 39",
+     "chapter_slug": "chapter-39"
+    },
+    {
+     "name": "Chapter 40",
+     "chapter_slug": "chapter-40"
+    },
+    {
+     "name": "Chapter 41",
+     "chapter_slug": "chapter-41"
+    },
+    {
+     "name": "Chapter 42",
+     "chapter_slug": "chapter-42"
+    },
+    {
+     "name": "Chapter 43",
+     "chapter_slug": "chapter-43"
+    },
+    {
+     "name": "Chapter 44",
+     "chapter_slug": "chapter-44"
+    },
+    {
+     "name": "Chapter 45",
+     "chapter_slug": "chapter-45"
+    },
+    {
+     "name": "Chapter 46",
+     "chapter_slug": "chapter-46"
+    },
+    {
+     "name": "Chapter 47",
+     "chapter_slug": "chapter-47"
+    },
+    {
+     "name": "Chapter 48",
+     "chapter_slug": "chapter-48"
+    },
+    {
+     "name": "Chapter 49",
+     "chapter_slug": "chapter-49"
+    },
+    {
+     "name": "Chapter 50",
+     "chapter_slug": "chapter-50"
+    }
+   ]
+  },
+  "max_chapter": 50,
+  "chapter_count": null,
+  "ua": "2025-10-01T20:19:49.049Z",
+  "uf": 1
+ },
+ {
   "title": "Introduction to Survival",
   "cover": "https://readermc.org/images/thumbnails/Introduction to Survival.webp",
   "status": "Ongoing",
@@ -32323,6 +34888,528 @@
    ]
   },
   "ua": "2024-02-01T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Inu Jikan",
+  "cover": "https://readermc.org/images/thumbnails/Inu Jikan.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inu-jikan"
+  },
+  "max_chapter": 3,
+  "demonic_id": "10787",
+  "chapters": {
+   "Demonic Scans": []
+  },
+  "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Inu to Hasami wa Tsukaiyou",
+  "cover": "https://readermc.org/images/thumbnails/Inu to Hasami wa Tsukaiyou.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inu-to-hasami-wa-tsukaiyou"
+  },
+  "max_chapter": 2,
+  "demonic_id": "10789",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  },
+  "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Inu wo Kau",
+  "cover": "https://readermc.org/images/thumbnails/Inu wo Kau.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inu-wo-kau"
+  },
+  "max_chapter": 5,
+  "demonic_id": "10790",
+  "chapters": {
+   "Demonic Scans": []
+  },
+  "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Inubaka",
+  "cover": "https://readermc.org/images/thumbnails/Inubaka.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inubaka"
+  },
+  "max_chapter": 162,
+  "demonic_id": "10791",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "51.001",
+     "chapter_number": 51.001
+    }
+   ]
+  },
+  "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Inugami",
+  "cover": "https://readermc.org/images/thumbnails/Inugami.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inugami"
+  },
+  "max_chapter": 72,
+  "demonic_id": "10792",
+  "chapters": {
+   "Demonic Scans": []
+  },
+  "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Inugami-san to Sarutobi-kun wa Naka ga Warui.",
+  "cover": "https://readermc.org/images/thumbnails/Inugami-san to Sarutobi-kun wa Naka ga Warui..webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inugami%25252dsan-to-sarutobi%25252dkun-wa-naka-ga-warui."
+  },
+  "max_chapter": 17,
+  "demonic_id": "10793",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "4.5",
+     "chapter_number": 4.5
+    },
+    {
+     "name": "4.005",
+     "chapter_number": 4.005
+    }
+   ]
+  },
+  "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Inugamihime no Shimobe",
+  "cover": "https://readermc.org/images/thumbnails/Inugamihime no Shimobe.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inugamihime-no-shimobe"
+  },
+  "max_chapter": 15,
+  "demonic_id": "10795",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "12.005",
+     "chapter_number": 12.005
+    }
+   ]
+  },
+  "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Inukai x Tribe",
+  "cover": "https://readermc.org/images/thumbnails/Inukai x Tribe.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inukai-x-tribe"
+  },
+  "max_chapter": 21,
+  "demonic_id": "10796",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "15.5",
+     "chapter_number": 15.5
+    },
+    {
+     "name": "9.5",
+     "chapter_number": 9.5
+    },
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  },
+  "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Inukami!",
+  "cover": "https://readermc.org/images/thumbnails/Inukami!.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inukami%2521"
+  },
+  "max_chapter": 15,
+  "demonic_id": "10797",
+  "chapters": {
+   "Demonic Scans": []
+  },
+  "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Inumarudashi",
+  "cover": "https://readermc.org/images/thumbnails/Inumarudashi.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inumarudashi"
+  },
+  "max_chapter": 15,
+  "demonic_id": "10798",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "9.1",
+     "chapter_number": 9.1
+    },
+    {
+     "name": "8.2",
+     "chapter_number": 8.2
+    },
+    {
+     "name": "8.1",
+     "chapter_number": 8.1
+    },
+    {
+     "name": "7.2",
+     "chapter_number": 7.2
+    },
+    {
+     "name": "7.1",
+     "chapter_number": 7.1
+    },
+    {
+     "name": "5.2",
+     "chapter_number": 5.2
+    },
+    {
+     "name": "5.1",
+     "chapter_number": 5.1
+    }
+   ]
+  },
+  "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Inuyasha",
+  "cover": "https://readermc.org/images/thumbnails/Inuyasha.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inuyasha"
+  },
+  "max_chapter": 558,
+  "demonic_id": "10799",
+  "chapters": {
+   "Demonic Scans": []
+  },
+  "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Invasion Of The Immortal Emperor",
+  "cover": "https://readermc.org/images/thumbnails/Invasion Of The Immortal Emperor.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invasion-of-the-immortal-emperor"
+  },
+  "max_chapter": 25,
+  "demonic_id": "1082",
+  "chapters": {
+   "Demonic Scans": []
+  },
+  "ua": "2021-06-01T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Invasion of the Myriad Races: Starting by Taming a Legendary Beast",
+  "cover": "https://readermc.org/images/thumbnails/Invasion of the Myriad Races  Starting by Taming a Legendary Beast.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invasion-of-the-myriad-races%253a-starting-by-taming-a-legendary-beast",
+   "Thunder Scans": "https://en-thunderscans.com/comics/invasion-of-the-myriad-races-starting-by-taming-a-legendary-beast/"
+  },
+  "max_chapter": 78,
+  "demonic_id": "12655",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0.2",
+     "chapter_number": 0.2
+    },
+    {
+     "name": "0.1",
+     "chapter_number": 0.1
+    }
+   ],
+   "Thunder Scans": []
+  },
+  "ua": "2026-04-21T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Inverse Scale",
+  "cover": "https://readermc.org/images/thumbnails/Inverse Scale.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inverse-scale"
+  },
+  "max_chapter": 136,
+  "demonic_id": "10800",
+  "chapters": {
+   "Demonic Scans": []
+  },
+  "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Inverted Patema: Another Side",
+  "cover": "https://readermc.org/images/thumbnails/Inverted Patema  Another Side.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/inverted-patema%253a-another-side"
+  },
+  "max_chapter": 3,
+  "demonic_id": "10801",
+  "chapters": {
+   "Demonic Scans": []
+  },
+  "ua": "2021-11-02T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Invincibility Begins with a Broken Hand",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2024/11/2024-11-18-03-40-59-1731944459123-226x300.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Thunder Scans": "https://en-thunderscans.com/comics/invincibility-begins-with-a-broken-hand/"
+  },
+  "max_chapter": 6,
+  "chapters": {
+   "Thunder Scans": [
+    {
+     "name": "0",
+     "chapter_slug": "invincibility-begins-with-a-broken-hand-chapter-0"
+    }
+   ]
+  },
+  "ua": null,
+  "uf": 1
+ },
+ {
+  "title": "Invincible After a Hundred Years of Seclusion",
+  "cover": "https://readermc.org/images/thumbnails/Invincible After a Hundred Years of Seclusion.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invincible-after-a-hundred-years-of-seclusion"
+  },
+  "max_chapter": 329,
+  "demonic_id": "11889",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  },
+  "ua": "2024-08-19T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Invincible at the Start",
+  "cover": "https://readermc.org/images/thumbnails/Invincible at the Start.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invincible-at-the-start"
+  },
+  "max_chapter": 118.5,
+  "demonic_id": "11957",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "118.5",
+     "chapter_number": 118.5
+    },
+    {
+     "name": "67.5",
+     "chapter_number": 67.5
+    },
+    {
+     "name": "58.5",
+     "chapter_number": 58.5
+    }
+   ]
+  },
+  "ua": "2024-03-13T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Invincible High School Girl",
+  "cover": "https://readermc.org/images/thumbnails/Invincible High School Girl.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invincible-high-school-girl"
+  },
+  "max_chapter": 0,
+  "demonic_id": "10802",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  },
+  "ua": "2021-11-09T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Invincible in the apocalypse: I'm the only beta player",
+  "cover": "https://readermc.org/images/thumbnails/Invincible in the apocalypse  I’m the only beta player.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invincible-in-the-apocalypse%253a-i%2527m-the-only-beta-player"
+  },
+  "max_chapter": 24,
+  "demonic_id": "11918",
+  "chapters": {
+   "Demonic Scans": []
+  },
+  "ua": "2024-05-16T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Invincible Martial Sage",
+  "cover": "https://readermc.org/images/thumbnails/Invincible Martial Sage.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invincible-martial-sage"
+  },
+  "max_chapter": 136,
+  "demonic_id": "12623",
+  "chapters": {
+   "Demonic Scans": []
+  },
+  "ua": "2025-06-05T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Invincible Starts with a Severed Hand",
+  "cover": "https://readermc.org/images/thumbnails/Invincible Starts with a Severed Hand.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invincible-starts-with-a-severed-hand"
+  },
+  "max_chapter": 6,
+  "demonic_id": "12829",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  },
+  "ua": "2024-12-27T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Invincible Sword Domain",
+  "cover": "https://readermc.org/images/thumbnails/Invincible Sword Domain.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invincible-sword-domain"
+  },
+  "max_chapter": 111,
+  "demonic_id": "10803",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  },
+  "ua": "2023-04-27T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Invincible Territory",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2024/08/2024-08-27-01-10-15-1724721015726-210x300.jpg",
+  "status": "Completed",
+  "sources": {
+   "Thunder Scans": "https://en-thunderscans.com/comics/invincible-territory/"
+  },
+  "max_chapter": 50,
+  "chapters": {
+   "Thunder Scans": []
+  },
+  "ua": null,
+  "uf": 1
+ },
+ {
+  "title": "Invincible to 100 Hits",
+  "cover": "https://readermc.org/images/thumbnails/Invincible to 100 Hits.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invincible-to-100-hits"
+  },
+  "max_chapter": 49,
+  "demonic_id": "11861",
+  "chapters": {
+   "Demonic Scans": []
+  },
+  "ua": "2024-04-20T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Invincible Villain",
+  "cover": "https://readermc.org/images/thumbnails/Invincible Villain.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invincible-villain"
+  },
+  "max_chapter": 59,
+  "demonic_id": "11560",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  },
+  "ua": "2025-04-14T00:00:00.000Z",
+  "uf": 1
+ },
+ {
+  "title": "Invincible With Only a Single Point of HP",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2025/11/2025-11-27-03-29-05-1764214145746-227x300.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Thunder Scans": "https://en-thunderscans.com/comics/invincible-with-only-a-single-point-of-hp/"
+  },
+  "max_chapter": 20,
+  "chapters": {
+   "Thunder Scans": []
+  },
+  "ua": null,
   "uf": 1
  }
 ]

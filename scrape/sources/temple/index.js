@@ -113,7 +113,7 @@ async function scrape_temple_toons(opts = {})
 		}));
 
 		console.log(`[Temple] Chapters: ${Math.min(i + CONCURRENCY, all_series.length)}/${all_series.length}`);
-		if (has_fetch && i + CONCURRENCY < all_series.length) await sleep(REQ_DELAY_MS);
+		if (to_fetch_count>0 && i + CONCURRENCY < all_series.length) await sleep(REQ_DELAY_MS);
 	}
 	for (const s of all_series)
 	{

@@ -31,6 +31,13 @@ const App = (
 				if (input_2) input_2.value = url_q;
 			}
 
+			// Load sources.json once — shared across Modal and anything else that needs it
+			let sources = [];
+			try {
+				const res = await fetch((window.BASE || '') + '/sources.json');
+				if (res.ok) sources = (await res.json()).sources ?? [];
+			} catch(e) { console.warn('Failed to load sources.json:', e); }
+
 			if (typeof Bookmarks !== "undefined") {
 				Bookmarks.load();
 			}
@@ -38,6 +45,7 @@ const App = (
 			if (typeof Modal !== "undefined" && typeof Bookmarks !== "undefined") {
 				Modal.init(
 					{
+						sources,
 						on_visit: (manga_id, ch_num, site) => {
 							Bookmarks.mark_visited(manga_id, ch_num, site);
 							if (current_manga?.id === manga_id && typeof UI !== "undefined") UI.mark_chapter_read(ch_num);
@@ -168,7 +176,7 @@ const App = (
 
 			if (search_btn) {
 				search_btn.addEventListener("click", () => do_search());
-				if (input) {
+				if (input && !document.getElementById("hero-sugg")) {
 					const parent = input.parentElement;
 					input.addEventListener("input", e => { 
 						if (input_2) input_2.value = e.target.value; 
@@ -177,6 +185,9 @@ const App = (
 					input.addEventListener("focus", e => handle_input_suggest(e.target.value, input, parent));
 					input.addEventListener("blur", () => { if (sugg_box) sugg_box.style.display = "none"; });
 					input.addEventListener("keydown", e => handle_keydown(e, input));
+				} else if (input) {
+					// On index.html, hero-sugg handles suggestions; just sync input_2
+					input.addEventListener("input", e => { if (input_2) input_2.value = e.target.value; });
 				}
 			}
 
@@ -186,28 +197,30 @@ const App = (
 					if (is_bookmark_page) return;
 					do_search();
 				});
-				if (input_2) {
-					const parent = input_2.parentElement;
-					input_2.addEventListener("input", e => { 
-						const val = e.target.value;
-						if (input) input.value = val; 
-						const is_bookmark_page = window.location.pathname.includes("bookmark.html");
-						if (is_bookmark_page) {
-							render_bookmarks(val);
-						} else {
-							handle_input_suggest(val, input_2, parent);
-						}
-					});
-					input_2.addEventListener("focus", e => {
-						const is_bookmark_page = window.location.pathname.includes("bookmark.html");
-						if (!is_bookmark_page) handle_input_suggest(e.target.value, input_2, parent);
-					});
-					input_2.addEventListener("blur", () => { if (sugg_box) sugg_box.style.display = "none"; });
-					input_2.addEventListener("keydown", e => {
-						const is_bookmark_page = window.location.pathname.includes("bookmark.html");
-						if (!is_bookmark_page) handle_keydown(e, input_2);
-					});
-				}
+			}
+
+			if (input_2) {
+				const parent = input_2.parentElement;
+				const has_panel_sugg = !!document.getElementById('panel-suggestions');
+				input_2.addEventListener("input", e => { 
+					const val = e.target.value;
+					if (input) input.value = val; 
+					const is_bookmark_page = window.location.pathname.includes("bookmark.html");
+					if (is_bookmark_page) {
+						render_bookmarks(val);
+					} else if (!has_panel_sugg) {
+						handle_input_suggest(val, input_2, parent);
+					}
+				});
+				input_2.addEventListener("focus", e => {
+					const is_bookmark_page = window.location.pathname.includes("bookmark.html");
+					if (!is_bookmark_page && !has_panel_sugg) handle_input_suggest(e.target.value, input_2, parent);
+				});
+				input_2.addEventListener("blur", () => { if (sugg_box) sugg_box.style.display = "none"; });
+				input_2.addEventListener("keydown", e => {
+					const is_bookmark_page = window.location.pathname.includes("bookmark.html");
+					if (!is_bookmark_page) handle_keydown(e, input_2);
+				});
 			}
 
 			if (ch_filter) {

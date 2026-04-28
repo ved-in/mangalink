@@ -1,24 +1,23 @@
 const API = (() => {
 
-	const SRC_NAME = {
-		A: 'Asura Scans',
-		D: 'ADK Scans',
-		T: 'Thunder Scans',
-		P: 'Temple Toons',
-		M: 'Demonic Scans',
-		F: 'Flame Comics',
-		V: 'Violet Scans',
-		J: 'MangaPlus',
-	};
+	// SRC_NAME is built at runtime from sources.json (alias → name)
+	let SRC_NAME = null;
 
 	let _index  = null;
 	let _chunks = {};
 
 	async function _load_index() {
 		if (_index) return _index;
-		const res = await fetch('data/index.json');
-		if (!res.ok) throw new Error(`Failed to load index.json (HTTP ${res.status})`);
-		_index = await res.json();
+		const [index_res, sources_res] = await Promise.all([
+			fetch('data/index.json'),
+			SRC_NAME ? Promise.resolve(null) : fetch((window.BASE || '') + '/sources.json'),
+		]);
+		if (!index_res.ok) throw new Error(`Failed to load index.json (HTTP ${index_res.status})`);
+		_index = await index_res.json();
+		if (sources_res) {
+			const data = await sources_res.json();
+			SRC_NAME = Object.fromEntries(data.sources.map(s => [s.alias, s.name]));
+		}
 		return _index;
 	}
 

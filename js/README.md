@@ -18,7 +18,7 @@ Front-end JavaScript modules. Load order matters - each file depends on those ab
 
 | File | Purpose |
 |------|---------|
-| `config.js` Loads `config.json`; sets `window.BASE`; required for testing vs deployment |
+| `config.js` | Loads `config.json` and sets `window.BASE`; required for testing vs deployment |
 | `api.js` | Loads `data/index.json` and chunk files; runs the tiered search algorithm |
 | `app.js` | DOM init, event wiring, search flow, manga/chapter selection, bookmark rendering |
 | `bookmarks.js` | In-memory bookmark + read-log state, backed by `Storage` |
