@@ -4535,7 +4535,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/girl-x-salvation-agency/"
   },
-  "max_chapter": 1,
+  "max_chapter": 6,
   "chapters": {
    "Thunder Scans": []
   }
@@ -11813,7 +11813,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/gray-ash-the-dismissed-knight-begins-anew-in-the-dungeon-city/"
   },
-  "max_chapter": 34,
+  "max_chapter": 35,
   "chapters": {
    "Thunder Scans": []
   }
@@ -25700,7 +25700,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/hidden-house-in-the-apocalypse",
    "Thunder Scans": "https://en-thunderscans.com/comics/hidden-house-in-the-apocalypse/"
   },
-  "max_chapter": 96,
+  "max_chapter": 97,
   "demonic_id": "12316",
   "chapters": {
    "Demonic Scans": [
