@@ -3,7 +3,7 @@ const { fetch_chapter_data }         = require('./chapters');
 const { http_get_with_retry, sleep } = require('../../lib/helpers');
 const TERMINAL_STATUSES = new Set(['Completed', 'Dropped']);
 const STOP_STREAK = 5;
-const CONCURRENCY = 200;
+const CONCURRENCY = 5;
 const REQ_DELAY_MS = 500;
 
 async function scrape_demonic(opts = {})
