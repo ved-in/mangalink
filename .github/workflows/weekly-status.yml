@@ -2,10 +2,8 @@ name: Weekly full rebuild
 
 on:
   schedule:
-    # Every Sunday at 02:00 UTC -- offset from the daily scrape to avoid conflicts.
     - cron: '0 2 * * 0'
-  workflow_dispatch:  # allow manual trigger from the Actions tab
-  push:
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -44,5 +42,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/chunks/ data/index.json data/scrape_state.json
-          git diff --cached --quiet || git commit -m "chore: weekly full rebuild"
+          git diff --cached --quiet || git commit -m "chore: weekly full rebuild [skip ci]"
           git push origin ${{ github.ref_name }} --force-with-lease
