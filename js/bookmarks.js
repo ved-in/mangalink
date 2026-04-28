@@ -31,6 +31,7 @@ const Bookmarks = (
 					added_at:       Date.now(),
 					read_count:     count_read(manga.id),
 					total_chapters,
+				    max_chapter:    manga.max_chapter ?? null,
 				};
 			}
 			Storage.save_bookmarks(bookmarks);

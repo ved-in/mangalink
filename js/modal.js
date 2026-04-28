@@ -11,7 +11,12 @@ const Modal = (() => {
 		"MangaPlus":     MANGAPLUS,
 	};
 
-	const PAYWALL_SOURCES = new Set(["Thunder Scans", "Violet Scans"]);
+	const PAYWALL_NOTES = {
+		"Thunder Scans": "some chapters may not be free",
+		"Violet Scans":  "some chapters may not be free",
+		"MangaPlus":     "many chapters require a subscription",
+	};
+	const PAYWALL_SOURCES = new Set(Object.keys(PAYWALL_NOTES));
 
 	let _on_visit    = null;
 	let _was_visited = null;
@@ -152,7 +157,7 @@ const Modal = (() => {
 		const locked  = availability === "locked";
 
 		const note_for_user = PAYWALL_SOURCES.has(src.name)
-			? `<span class="paywall_note">some chapters may not be free</span>`
+			? `<span class="paywall_note">${PAYWALL_NOTES[src.name]}</span>`
 			: "";
 
 		const badge_html = {

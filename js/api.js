@@ -150,29 +150,42 @@ const API = (() => {
 		manga.chapters    = full.chapters        || {};
 		manga.flame_id    = full.flame_series_id ?? null;
 		manga.demonic_id  = full.demonic_id      ?? null;
-		const slug_map = {};
+		const slug_map   = {};
+		const title_map  = {};
+		const locked_map = {};
 		for (const [src, entries] of Object.entries(manga.chapters)) {
 			if (!Array.isArray(entries)) continue;
 			for (const entry of entries) {
-				const key = String(entry.name).replace(/^Chapter\s*/i, '').trim();
+				// MangaPlus stores { chapter, name, chapter_slug, is_locked }
+				// Other sources store { name: "Chapter N", chapter_slug }
+				const has_chapter_field = entry.chapter != null;
+				const key = has_chapter_field
+					? String(entry.chapter).trim()
+					: String(entry.name).replace(/^Chapter\s*/i, '').trim();
 				if (!slug_map[key]) slug_map[key] = {};
 				slug_map[key][src] = entry.chapter_slug || null;
+				// Carry episode title if present (MangaPlus)
+				if (entry.name && has_chapter_field && !title_map[key]) {
+					title_map[key] = entry.name;
+				}
+				// Carry locked flag (MangaPlus)
+				if (entry.is_locked) locked_map[key] = true;
 			}
 		}
 		if (!manga.max_chapter) {
 			return Object.keys(slug_map)
 				.sort((a, b) => parseFloat(b) - parseFloat(a))
-				.map(ch => ({ chapter: ch, title: '', chapter_slugs: slug_map[ch] }));
+				.map(ch => ({ chapter: ch, title: title_map[ch] || '', chapter_slugs: slug_map[ch], is_locked: locked_map[ch] ?? false }));
 		}
 		const chapters = [];
 		for (let i = Math.floor(manga.max_chapter); i >= 1; i--) {
 			const key = String(i);
-			chapters.push({ chapter: key, title: '', chapter_slugs: slug_map[key] ?? {} });
+			chapters.push({ chapter: key, title: title_map[key] || '', chapter_slugs: slug_map[key] ?? {}, is_locked: locked_map[key] ?? false });
 		}
 		for (const key of Object.keys(slug_map)) {
 			const n = parseFloat(key);
 			if (!Number.isInteger(n))
-				chapters.push({ chapter: key, title: '', chapter_slugs: slug_map[key] ?? {} });
+				chapters.push({ chapter: key, title: title_map[key] || '', chapter_slugs: slug_map[key] ?? {}, is_locked: locked_map[key] ?? false });
 		}
 		chapters.sort((a, b) => parseFloat(b.chapter) - parseFloat(a.chapter));
 		return chapters;

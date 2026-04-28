@@ -169,7 +169,7 @@ The scraper writes to `data/index.json` and `data/chunks/`, then commits back to
 ## To-do
 
 **Bugs**
-- [ ] Icons of series are cutoff in the `chapters_panel`. Relevant file -> `bookmark.html`, `search-result.html` (apologies for the messy structure)
+- [x] Icons of series are cutoff in the `chapters_panel`. Relevant file -> `bookmark.html`, `search-result.html` (apologies for the messy structure)
 
 **UI**
 - [ ] Fix bookmark page. Use the construct in homepage's `Recently Updated` or `Currently Reading` sections.
@@ -212,7 +212,7 @@ The scraper writes to `data/index.json` and `data/chunks/`, then commits back to
 - [ ] Notifications based on chapter updates of bookmarked series.
 - [ ] Filter by genre, status, year (I forgot about genre and year... Have to edit scrapers again.. GAH)
 - [ ] GitHub link and About page ([#14](https://github.com/ved-in/mangalink/issues/14))
-- [ ] Aggregator toggle - let users choose scanlators only, aggregators only, or both (with ad-blocker disclaimer)
+- [x] Aggregator toggle - let users choose scanlators only, aggregators only, or both (with ad-blocker disclaimer) -> current implementation is good. If adblocker detected, wont show scanlators. if not, then it will show all three different source types (scanlators, official, aggregators)
 - [ ] Cross-device sync (accounts)
 - [ ] MAL export
 

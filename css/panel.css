@@ -183,6 +183,8 @@ body { padding-top: var(--nav-h); }
   border-radius: 6px;
   overflow: hidden;
   background: var(--surface2);
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: stretch;
 }
