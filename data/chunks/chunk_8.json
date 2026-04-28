@@ -1,5 +1,18 @@
 [
  {
+  "title": "My endless inventory",
+  "cover": "https://readermc.org/images/thumbnails/My endless inventory.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/my-endless-inventory"
+  },
+  "max_chapter": 10,
+  "demonic_id": "11314",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "My Entire Class Was Summoned To Another World Except For Me",
   "cover": "https://readermc.org/images/thumbnails/My Entire Class Was Summoned To Another World Except For Me.webp",
   "status": "Ongoing",
@@ -75,7 +88,7 @@
    "Asura Scans": "https://asurascans.com/comics/my-exclusive-tower-guide",
    "Demonic Scans": "https://demonicscans.org/manga/my-exclusive-tower-guide"
   },
-  "max_chapter": 113,
+  "max_chapter": 114,
   "chapter_count": 113,
   "chapters": {
    "Asura Scans": [],
@@ -3840,7 +3853,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/my-second-senior-brother-is-a-mortal-but-strong/"
   },
-  "max_chapter": 70,
+  "max_chapter": 71,
   "chapters": {
    "Thunder Scans": []
   }
@@ -4235,7 +4248,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/my-starting-talent-is-mythical%252c-a-single-strike-smites-deities"
   },
-  "max_chapter": 31,
+  "max_chapter": 32,
   "demonic_id": "13525",
   "chapters": {
    "Demonic Scans": [
@@ -6939,7 +6952,7 @@
    "Asura Scans": "https://asurascans.com/comics/my-wife-is-the-demonic-cult-leader",
    "Demonic Scans": "https://demonicscans.org/manga/my-wife-is-the-demonic-cult-leader"
   },
-  "max_chapter": 59,
+  "max_chapter": 62,
   "chapter_count": 59,
   "chapters": {
    "Asura Scans": [],
@@ -31506,19 +31519,6 @@
      "chapter_number": 1.1
     }
    ]
-  }
- },
- {
-  "title": "Osu!! Karate Bu",
-  "cover": "https://readermc.org/images/thumbnails/Osu!! Karate Bu.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/osu%2521%2521-karate-bu"
-  },
-  "max_chapter": 235,
-  "demonic_id": "5033",
-  "chapters": {
-   "Demonic Scans": []
   }
  }
 ]

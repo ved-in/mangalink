@@ -1456,7 +1456,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/18-year-old-demon-king"
   },
-  "max_chapter": 36,
+  "max_chapter": 37,
   "demonic_id": "13598",
   "chapters": {
    "Demonic Scans": []
@@ -4031,13 +4031,9 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/a-nursery-school-teacher-in-my-previous-life-a-villainess-in-this-one-and-now-im-the-spoiled-princesss-tutor/"
   },
-  "max_chapter": 9.2,
+  "max_chapter": 10.1,
   "chapters": {
    "Violet Scans": [
-    {
-     "name": "9.1",
-     "chapter_slug": "a-nursery-school-teacher-in-my-previous-life-a-villainess-in-this-one-and-now-im-the-spoiled-princesss-tutor-chapter-9-1"
-    },
     {
      "name": "8.2",
      "chapter_slug": "a-nursery-school-teacher-in-my-previous-life-a-villainess-in-this-one-and-now-im-the-spoiled-princesss-tutor-chapter-8-2"
@@ -6598,7 +6594,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/a-strange-but-effective-villainess-life/"
   },
-  "max_chapter": 46,
+  "max_chapter": 47,
   "chapters": {
    "Violet Scans": []
   }
@@ -12978,7 +12974,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/against-the-gods"
   },
-  "max_chapter": 764,
+  "max_chapter": 765,
   "demonic_id": "10",
   "chapters": {
    "Demonic Scans": [
@@ -16829,7 +16825,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/almighty-pig-slaughtering-knife"
   },
-  "max_chapter": 40,
+  "max_chapter": 41,
   "demonic_id": "13353",
   "chapters": {
    "Demonic Scans": [
@@ -31170,7 +31166,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/becoming-the-villains-family/"
   },
-  "max_chapter": 169,
+  "max_chapter": 170,
   "chapters": {
    "Violet Scans": [
     {

@@ -1,5 +1,49 @@
 [
  {
+  "title": "Umi no Yami, Tsuki no Kage",
+  "cover": "https://readermc.org/images/thumbnails/Umi no Yami, Tsuki no Kage.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/umi-no-yami%252c-tsuki-no-kage"
+  },
+  "max_chapter": 31,
+  "demonic_id": "6940",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Umi Yori mo Fukaku",
+  "cover": "https://readermc.org/images/thumbnails/Umi Yori mo Fukaku.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/umi-yori-mo-fukaku"
+  },
+  "max_chapter": 4,
+  "demonic_id": "6941",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "Umibe no Onnanoko",
+  "cover": "https://readermc.org/images/thumbnails/Umibe no Onnanoko.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/umibe-no-onnanoko"
+  },
+  "max_chapter": 20,
+  "demonic_id": "6942",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "1.01",
+     "chapter_number": 1.01
+    }
+   ]
+  }
+ },
+ {
   "title": "Umimachi Diary",
   "cover": "https://readermc.org/images/thumbnails/Umimachi Diary.webp",
   "status": "Ongoing",
@@ -898,7 +942,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/undercover-chaebol-high-school/"
   },
-  "max_chapter": 98,
+  "max_chapter": 99,
   "chapters": {
    "Violet Scans": [
     {
@@ -1893,7 +1937,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/until-our-marriage-is-over/"
   },
-  "max_chapter": 36,
+  "max_chapter": 37,
   "chapters": {
    "Violet Scans": []
   }
@@ -26964,7 +27008,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/zero-game"
   },
-  "max_chapter": 357,
+  "max_chapter": 358,
   "demonic_id": "1301",
   "chapters": {
    "Demonic Scans": [
@@ -27856,7 +27900,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/zombie-herd"
   },
-  "max_chapter": 35,
+  "max_chapter": 36,
   "demonic_id": "13364",
   "chapters": {
    "Demonic Scans": []

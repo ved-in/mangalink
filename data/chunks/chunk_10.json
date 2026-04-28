@@ -1,5 +1,18 @@
 [
  {
+  "title": "Renka",
+  "cover": "https://readermc.org/images/thumbnails/Renka.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/renka"
+  },
+  "max_chapter": 3,
+  "demonic_id": "5793",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Renren Zakari",
   "cover": "https://readermc.org/images/thumbnails/Renren Zakari.webp",
   "status": "Ongoing",
@@ -645,7 +658,7 @@
    "Asura Scans": "https://asurascans.com/comics/return-of-the-apocalypse-class-death-knight",
    "Demonic Scans": "https://demonicscans.org/manga/return-of-the-apocalypse%25252dclass-death-knight"
   },
-  "max_chapter": 67,
+  "max_chapter": 68,
   "chapter_count": 67,
   "chapters": {
    "Asura Scans": [],
@@ -1209,7 +1222,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/return-of-the-calamity-class-death-knight/"
   },
-  "max_chapter": 67,
+  "max_chapter": 68,
   "chapters": {
    "Thunder Scans": []
   }
@@ -2417,7 +2430,7 @@
    "Asura Scans": "https://asurascans.com/comics/return-of-the-mount-hua-sect",
    "Demonic Scans": "https://demonicscans.org/manga/return-of-the-mount-hua-sect"
   },
-  "max_chapter": 159,
+  "max_chapter": 160,
   "chapter_count": 165,
   "chapters": {
    "Asura Scans": [
@@ -10214,7 +10227,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/saikyou-ranking-ga-aru-isekai-ni-seito%25252dtachi-to-shuudan-teni-shita-koukou-kyoushi-no-ore%252c-mob-kara-kensei-e-to-nariagaru"
   },
-  "max_chapter": 18,
+  "max_chapter": 19,
   "demonic_id": "12870",
   "chapters": {
    "Demonic Scans": [
@@ -10724,7 +10737,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/saitei-chingin-ma%25c5%258d-rekidai-saiky%25c5%258d-no-ma%25c5%258dgun%252c-sono-ashi-o-hipparu-no-ga-o-shigoto-desu-bunsatsuban-original-text"
   },
-  "max_chapter": 9,
+  "max_chapter": 10,
   "demonic_id": "13533",
   "chapters": {
    "Demonic Scans": []
@@ -24060,7 +24073,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/shh-im-not-a-villainess-im-a-detective/"
   },
-  "max_chapter": 63,
+  "max_chapter": 64,
   "chapters": {
    "Violet Scans": []
   }
@@ -29059,19 +29072,6 @@
      "chapter_number": 7.1
     }
    ]
-  }
- },
- {
-  "title": "Since I Became a Commoner, My Engagement was Annulled!",
-  "cover": "https://readermc.org/images/thumbnails/Since I Became a Commoner, My Engagement was Annulled!.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/since-i-became-a-commoner%252c-my-engagement-was-annulled%2521"
-  },
-  "max_chapter": 31,
-  "demonic_id": "990",
-  "chapters": {
-   "Demonic Scans": []
   }
  }
 ]

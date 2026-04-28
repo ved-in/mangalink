@@ -1,5 +1,18 @@
 [
  {
+  "title": "Kiss ni Juuzoku",
+  "cover": "https://readermc.org/images/thumbnails/Kiss ni Juuzoku.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/kiss-ni-juuzoku"
+  },
+  "max_chapter": 3,
+  "demonic_id": "2546",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Kiss ni Renzoku",
   "cover": "https://readermc.org/images/thumbnails/Kiss ni Renzoku.webp",
   "status": "Ongoing",
@@ -4056,7 +4069,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/konjiki-no-moji-tsukai-%25252d-yuusha-yonin-ni-makikomareta-unique-cheat"
   },
-  "max_chapter": 127,
+  "max_chapter": 128,
   "demonic_id": "4062",
   "chapters": {
    "Demonic Scans": [
@@ -7226,10 +7239,14 @@
    "Demonic Scans": "https://demonicscans.org/manga/kunon-the-sorcerer-can-see-through",
    "Flame Comics": "https://flamecomics.xyz/series/90"
   },
-  "max_chapter": 44.2,
+  "max_chapter": 45.1,
   "demonic_id": "11454",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "45.1",
+     "chapter_number": 45.1
+    },
     {
      "name": "44.2",
      "chapter_number": 44.2
@@ -15811,7 +15828,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/leveling-up-by-killing-gods/"
   },
-  "max_chapter": 146,
+  "max_chapter": 147,
   "chapters": {
    "Thunder Scans": []
   }
@@ -15823,7 +15840,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/leveling-up-fast-with-divine-measurement-skills"
   },
-  "max_chapter": 43,
+  "max_chapter": 44,
   "demonic_id": "12924",
   "chapters": {
    "Demonic Scans": []
@@ -16017,7 +16034,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/leveling-with-the-gods",
    "Flame Comics": "https://flamecomics.xyz/series/152"
   },
-  "max_chapter": 168,
+  "max_chapter": 169,
   "demonic_id": "1725",
   "chapters": {
    "Demonic Scans": [
@@ -16127,6 +16144,10 @@
     }
    ],
    "Flame Comics": [
+    {
+     "name": "167",
+     "chapter_slug": "4dd7c71e8c366b70"
+    },
     {
      "name": "166",
      "chapter_slug": "3a17798203a9f83e"
@@ -17053,7 +17074,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/librale-of-reincarnation"
   },
-  "max_chapter": 31,
+  "max_chapter": 32,
   "demonic_id": "13497",
   "chapters": {
    "Demonic Scans": []
@@ -26005,19 +26026,6 @@
   },
   "max_chapter": 12,
   "demonic_id": "2985",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Mahiru no Youjinbou",
-  "cover": "https://readermc.org/images/thumbnails/Mahiru no Youjinbou.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/mahiru-no-youjinbou"
-  },
-  "max_chapter": 2,
-  "demonic_id": "2986",
   "chapters": {
    "Demonic Scans": []
   }

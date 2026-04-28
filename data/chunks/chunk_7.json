@@ -1,5 +1,18 @@
 [
  {
+  "title": "Mahiru no Youjinbou",
+  "cover": "https://readermc.org/images/thumbnails/Mahiru no Youjinbou.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/mahiru-no-youjinbou"
+  },
+  "max_chapter": 2,
+  "demonic_id": "2986",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Mahochu–!",
   "cover": "https://readermc.org/images/thumbnails/Mahochu–!.webp",
   "status": "Ongoing",
@@ -22832,7 +22845,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/mood-disorder",
    "Thunder Scans": "https://en-thunderscans.com/comics/mood-disorder/"
   },
-  "max_chapter": 73,
+  "max_chapter": 74,
   "demonic_id": "13389",
   "chapters": {
    "Demonic Scans": [
@@ -29722,7 +29735,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/my-disciples-are-all-big-villains"
   },
-  "max_chapter": 501,
+  "max_chapter": 503,
   "demonic_id": "13062",
   "chapters": {
    "Demonic Scans": [
@@ -29811,19 +29824,6 @@
      "chapter_number": 5.002
     }
    ]
-  }
- },
- {
-  "title": "My endless inventory",
-  "cover": "https://readermc.org/images/thumbnails/My endless inventory.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/my-endless-inventory"
-  },
-  "max_chapter": 10,
-  "demonic_id": "11314",
-  "chapters": {
-   "Demonic Scans": []
   }
  }
 ]

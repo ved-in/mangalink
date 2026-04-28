@@ -1,5 +1,23 @@
 [
  {
+  "title": "invincible xueba system",
+  "cover": "https://readermc.org/images/thumbnails/invincible xueba system.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invincible-xueba-system"
+  },
+  "max_chapter": 73,
+  "demonic_id": "669",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
   "title": "Invincible Yeonbyeongeol",
   "cover": "https://readermc.org/images/thumbnails/Invincible Yeonbyeongeol.webp",
   "status": "Ongoing",
@@ -2465,10 +2483,22 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/isekai-de-cheat-skill-wo-te-ni-shita-ore-wa%252c-genjitsu-sekai-wo-mo-musou-suru-%257elevel-up-wa-jinsei-wo-kaeta%257e"
   },
-  "max_chapter": 34.1,
+  "max_chapter": 35.2,
   "demonic_id": "11376",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "35.2",
+     "chapter_number": 35.2
+    },
+    {
+     "name": "35.1",
+     "chapter_number": 35.1
+    },
+    {
+     "name": "34.2",
+     "chapter_number": 34.2
+    },
     {
      "name": "34.1",
      "chapter_number": 34.1
@@ -11915,7 +11945,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/justice-served"
   },
-  "max_chapter": 58,
+  "max_chapter": 59,
   "demonic_id": "12792",
   "chapters": {
    "Demonic Scans": [
@@ -28641,18 +28671,5 @@
   },
   "max_chapter": 355,
   "chapter_count": null
- },
- {
-  "title": "Kiss ni Juuzoku",
-  "cover": "https://readermc.org/images/thumbnails/Kiss ni Juuzoku.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/kiss-ni-juuzoku"
-  },
-  "max_chapter": 3,
-  "demonic_id": "2546",
-  "chapters": {
-   "Demonic Scans": []
-  }
  }
 ]

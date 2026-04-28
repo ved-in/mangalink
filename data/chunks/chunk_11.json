@@ -1,5 +1,18 @@
 [
  {
+  "title": "Since I Became a Commoner, My Engagement was Annulled!",
+  "cover": "https://readermc.org/images/thumbnails/Since I Became a Commoner, My Engagement was Annulled!.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/since-i-became-a-commoner%252c-my-engagement-was-annulled%2521"
+  },
+  "max_chapter": 31,
+  "demonic_id": "990",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Since The Red Moon Appeared",
   "cover": "https://readermc.org/images/thumbnails/Since The Red Moon Appeared.webp",
   "status": "Ongoing",
@@ -11413,7 +11426,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/splendid-sword-is-still-the-strongest"
   },
-  "max_chapter": 93,
+  "max_chapter": 94,
   "demonic_id": "1560",
   "chapters": {
    "Demonic Scans": [
@@ -11927,7 +11940,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/sss-grade-saint-knight"
   },
-  "max_chapter": 155,
+  "max_chapter": 158,
   "demonic_id": "12111",
   "chapters": {
    "Demonic Scans": []
@@ -13183,7 +13196,7 @@
    "Asura Scans": "https://asurascans.com/comics/star-embracing-swordmaster",
    "Demonic Scans": "https://demonicscans.org/manga/star%25252dembracing-swordmaster"
   },
-  "max_chapter": 119,
+  "max_chapter": 120,
   "chapter_count": 119,
   "chapters": {
    "Asura Scans": [],
@@ -14269,7 +14282,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/starting-with-a-mythic-talent-i-cut-down-gods/"
   },
-  "max_chapter": 31,
+  "max_chapter": 32,
   "chapters": {
    "Thunder Scans": [
     {
@@ -18950,7 +18963,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/survival-story-of-a-sword-king-in-a-fantasy-world"
   },
-  "max_chapter": 286,
+  "max_chapter": 287,
   "demonic_id": "64",
   "chapters": {
    "Demonic Scans": [
@@ -19451,7 +19464,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/surviving-the-apocalypse",
    "Flame Comics": "https://flamecomics.xyz/series/138"
   },
-  "max_chapter": 74,
+  "max_chapter": 75,
   "demonic_id": "12313",
   "chapters": {
    "Demonic Scans": [
@@ -19461,6 +19474,10 @@
     }
    ],
    "Flame Comics": [
+    {
+     "name": "74",
+     "chapter_slug": "5863396460eccbcc"
+    },
     {
      "name": "73",
      "chapter_slug": "715adb5652092b59"
@@ -19782,7 +19799,7 @@
    "Asura Scans": "https://asurascans.com/comics/surviving-the-game-as-a-barbarian",
    "Demonic Scans": "https://demonicscans.org/manga/surviving-the-game-as-a-barbarian"
   },
-  "max_chapter": 151,
+  "max_chapter": 152,
   "chapter_count": 151,
   "chapters": {
    "Asura Scans": [],
@@ -20891,7 +20908,7 @@
    "Asura Scans": "https://asurascans.com/comics/talent-swallowing-magician",
    "Demonic Scans": "https://demonicscans.org/manga/talent%25252dswallowing-magician"
   },
-  "max_chapter": 139,
+  "max_chapter": 140,
   "chapter_count": 140,
   "chapters": {
    "Asura Scans": [
@@ -26647,6 +26664,18 @@
   }
  },
  {
+  "title": "Tales of the Nonhuman",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2026/04/2026-04-28-01-50-49-1777384249086-231x300.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Thunder Scans": "https://en-thunderscans.com/comics/tales-of-the-nonhuman/"
+  },
+  "max_chapter": 2,
+  "chapters": {
+   "Thunder Scans": []
+  }
+ },
+ {
   "title": "Tales of the Stellar Unknown",
   "cover": "https://readermc.org/images/thumbnails/Tales of the Stellar Unknown.webp",
   "status": "Ongoing",
@@ -27916,10 +27945,30 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/tensei-akuma-no-saikyou-yuusha-ikusei-keikaku"
   },
-  "max_chapter": 19,
+  "max_chapter": 21.2,
   "demonic_id": "12090",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "21.2",
+     "chapter_number": 21.2
+    },
+    {
+     "name": "21.1",
+     "chapter_number": 21.1
+    },
+    {
+     "name": "20.3",
+     "chapter_number": 20.3
+    },
+    {
+     "name": "20.2",
+     "chapter_number": 20.2
+    },
+    {
+     "name": "20.1",
+     "chapter_number": 20.1
+    },
     {
      "name": "8.5",
      "chapter_number": 8.5
@@ -28800,7 +28849,7 @@
    "Asura Scans": "https://asurascans.com/comics/terminally-ill-genius-dark-knight",
    "Demonic Scans": "https://demonicscans.org/manga/terminally%25252dill-genius-dark-knight"
   },
-  "max_chapter": 145,
+  "max_chapter": 146,
   "chapter_count": 144,
   "chapters": {
    "Asura Scans": [],
@@ -30826,7 +30875,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-abandoned-saintess-became-the-elfs-beloved/"
   },
-  "max_chapter": 27,
+  "max_chapter": 28,
   "chapters": {
    "Violet Scans": []
   }
@@ -36788,7 +36837,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-chubby-villainess-restaurant/"
   },
-  "max_chapter": 78,
+  "max_chapter": 79,
   "chapters": {
    "Violet Scans": []
   }
@@ -38376,7 +38425,7 @@
    "Asura Scans": "https://asurascans.com/comics/the-dark-swordsman-returns",
    "Demonic Scans": "https://demonicscans.org/manga/the-dark-swordsman-returns"
   },
-  "max_chapter": 46,
+  "max_chapter": 47,
   "chapter_count": 46,
   "chapters": {
    "Asura Scans": [],
@@ -38698,7 +38747,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-demon-king-is-18/"
   },
-  "max_chapter": 36,
+  "max_chapter": 37,
   "chapters": {
    "Thunder Scans": []
   }
@@ -39560,7 +39609,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-duchess-has-decided-to-have-an-affair/"
   },
-  "max_chapter": 24,
+  "max_chapter": 25,
   "chapters": {
    "Violet Scans": []
   }
@@ -42301,7 +42350,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-father-and-the-daughter/"
   },
-  "max_chapter": 63,
+  "max_chapter": 64,
   "chapters": {
    "Violet Scans": []
   }
@@ -43783,7 +43832,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-genius-assassins-second-life-at-the-academy/"
   },
-  "max_chapter": 38,
+  "max_chapter": 39,
   "chapters": {
    "Thunder Scans": []
   }
@@ -44103,7 +44152,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/the-god-of-war-is-leveling-up",
    "Thunder Scans": "https://en-thunderscans.com/comics/the-god-of-war-is-leveling-up/"
   },
-  "max_chapter": 83,
+  "max_chapter": 84,
   "demonic_id": "13036",
   "chapters": {
    "Demonic Scans": [],
@@ -44706,7 +44755,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-god%25252dslaying-copycat"
   },
-  "max_chapter": 40,
+  "max_chapter": 47,
   "demonic_id": "12256",
   "chapters": {
    "Demonic Scans": []
@@ -44772,56 +44821,6 @@
   "demonic_id": "1405",
   "chapters": {
    "Demonic Scans": []
-  }
- },
- {
-  "title": "The Golden Chevalier",
-  "cover": "https://violetscans.org/wp-content/uploads/2025/11/2025-11-22-02-37-38-1763822258084-210x300.jpg",
-  "status": "Ongoing",
-  "sources": {
-   "Violet Scans": "https://violetscans.org/comics/the-golden-chevalier/"
-  },
-  "max_chapter": 42,
-  "chapters": {
-   "Violet Scans": []
-  }
- },
- {
-  "title": "The Golden Experience Point",
-  "cover": "https://readermc.org/images/thumbnails/The Golden Experience Point.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/the-golden-experience-point"
-  },
-  "max_chapter": 21.2,
-  "demonic_id": "12865",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "21.2",
-     "chapter_number": 21.2
-    },
-    {
-     "name": "12.2",
-     "chapter_number": 12.2
-    },
-    {
-     "name": "12.1",
-     "chapter_number": 12.1
-    },
-    {
-     "name": "10.2",
-     "chapter_number": 10.2
-    },
-    {
-     "name": "10.1",
-     "chapter_number": 10.1
-    },
-    {
-     "name": "3.5",
-     "chapter_number": 3.5
-    }
-   ]
   }
  }
 ]

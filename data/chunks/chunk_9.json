@@ -1,5 +1,18 @@
 [
  {
+  "title": "Osu!! Karate Bu",
+  "cover": "https://readermc.org/images/thumbnails/Osu!! Karate Bu.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/osu%2521%2521-karate-bu"
+  },
+  "max_chapter": 235,
+  "demonic_id": "5033",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Osusume Boyfriend",
   "cover": "https://readermc.org/images/thumbnails/Osusume Boyfriend.webp",
   "status": "Ongoing",
@@ -129,7 +142,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/other-world-warrior",
    "Thunder Scans": "https://en-thunderscans.com/comics/other-world-warrior/"
   },
-  "max_chapter": 298,
+  "max_chapter": 299,
   "demonic_id": "52",
   "chapters": {
    "Demonic Scans": [
@@ -6819,7 +6832,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/physician-return"
   },
-  "max_chapter": 56,
+  "max_chapter": 57,
   "demonic_id": "11286",
   "chapters": {
    "Demonic Scans": []
@@ -12491,7 +12504,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/princess-hurricane"
   },
-  "max_chapter": 105,
+  "max_chapter": 106,
   "demonic_id": "12289",
   "chapters": {
    "Demonic Scans": []
@@ -13419,7 +13432,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/prisoners-of-twilight-town/"
   },
-  "max_chapter": 35,
+  "max_chapter": 36,
   "chapters": {
    "Thunder Scans": [
     {
@@ -19402,7 +19415,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/ranker%2527s-return-%2528remake%2529"
   },
-  "max_chapter": 240,
+  "max_chapter": 241,
   "demonic_id": "5654",
   "chapters": {
    "Demonic Scans": [
@@ -24160,7 +24173,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/red-blue"
   },
-  "max_chapter": 190,
+  "max_chapter": 191,
   "demonic_id": "11230",
   "chapters": {
    "Demonic Scans": []
@@ -24819,11 +24832,15 @@
    "Demonic Scans": "https://demonicscans.org/manga/regressing-as-the-reincarnated-bastard-of-the-sword-clan",
    "Flame Comics": "https://flamecomics.xyz/series/154"
   },
-  "max_chapter": 92,
+  "max_chapter": 93,
   "demonic_id": "12628",
   "chapters": {
    "Demonic Scans": [],
    "Flame Comics": [
+    {
+     "name": "93",
+     "chapter_slug": "012e8303a2dd5a32"
+    },
     {
      "name": "92",
      "chapter_slug": "f420b785bacb245c"
@@ -28743,19 +28760,6 @@
   },
   "max_chapter": 10,
   "demonic_id": "5792",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Renka",
-  "cover": "https://readermc.org/images/thumbnails/Renka.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/renka"
-  },
-  "max_chapter": 3,
-  "demonic_id": "5793",
   "chapters": {
    "Demonic Scans": []
   }

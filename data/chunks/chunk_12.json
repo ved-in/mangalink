@@ -1,5 +1,55 @@
 [
  {
+  "title": "The Golden Chevalier",
+  "cover": "https://violetscans.org/wp-content/uploads/2025/11/2025-11-22-02-37-38-1763822258084-210x300.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Violet Scans": "https://violetscans.org/comics/the-golden-chevalier/"
+  },
+  "max_chapter": 42,
+  "chapters": {
+   "Violet Scans": []
+  }
+ },
+ {
+  "title": "The Golden Experience Point",
+  "cover": "https://readermc.org/images/thumbnails/The Golden Experience Point.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/the-golden-experience-point"
+  },
+  "max_chapter": 21.2,
+  "demonic_id": "12865",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "21.2",
+     "chapter_number": 21.2
+    },
+    {
+     "name": "12.2",
+     "chapter_number": 12.2
+    },
+    {
+     "name": "12.1",
+     "chapter_number": 12.1
+    },
+    {
+     "name": "10.2",
+     "chapter_number": 10.2
+    },
+    {
+     "name": "10.1",
+     "chapter_number": 10.1
+    },
+    {
+     "name": "3.5",
+     "chapter_number": 3.5
+    }
+   ]
+  }
+ },
+ {
   "title": "The Golden Light of Dawn [ALL CHAPTERS]",
   "cover": "https://readermc.org/images/thumbnails/The Golden Light of Dawn [ALL CHAPTERS].webp",
   "status": "Ongoing",
@@ -50,7 +100,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-grand-cudgel-order/"
   },
-  "max_chapter": 30,
+  "max_chapter": 31,
   "chapters": {
    "Thunder Scans": []
   }
@@ -816,7 +866,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-great-villain-senior-brother-and-all-of-his-yandere-junior-sisters/"
   },
-  "max_chapter": 230,
+  "max_chapter": 231,
   "chapters": {
    "Thunder Scans": []
   }
@@ -7563,7 +7613,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-level-9999-otherworldly-warriors-from-the-end-of-the-edo-period"
   },
-  "max_chapter": 70,
+  "max_chapter": 75,
   "demonic_id": "12991",
   "chapters": {
    "Demonic Scans": []
@@ -9904,7 +9954,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-monster%2527s-undertaker"
   },
-  "max_chapter": 30,
+  "max_chapter": 31,
   "demonic_id": "13237",
   "chapters": {
    "Demonic Scans": []
@@ -11024,6 +11074,27 @@
   }
  },
  {
+  "title": "The Neglected Princess in a Foreign Land Doesn’t Realize Her Husband’s Love",
+  "cover": "https://violetscans.org/wp-content/uploads/2026/04/2026-04-27-06-30-42-1777314642046-211x300.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Violet Scans": "https://violetscans.org/comics/the-neglected-princess-in-a-foreign-land-doesnt-realize-her-husbands-love/"
+  },
+  "max_chapter": 2.2,
+  "chapters": {
+   "Violet Scans": [
+    {
+     "name": "1.2",
+     "chapter_slug": "the-neglected-princess-in-a-foreign-land-doesnt-realize-her-husbands-love-chapter-1-2"
+    },
+    {
+     "name": "1.1",
+     "chapter_slug": "the-neglected-princess-in-a-foreign-land-doesnt-realize-her-husbands-love-chapter-1-1"
+    }
+   ]
+  }
+ },
+ {
   "title": "The Neighbor's Puppy",
   "cover": "https://media.templetoons.com/file/9BSHk1m/covers/ba59ee26-f246-4d12-abff-f06cbeee7bfb.webp",
   "status": "Ongoing",
@@ -12106,7 +12177,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-only-new-game-plus-hardcore-gamer-i%2527m-so-overpowered%252c-i-shattered-the-game%2527s-balance"
   },
-  "max_chapter": 92,
+  "max_chapter": 93,
   "demonic_id": "12112",
   "chapters": {
    "Demonic Scans": [
@@ -12807,7 +12878,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-peaceful-life-of-a-maid-who-hides-her-power/"
   },
-  "max_chapter": 23,
+  "max_chapter": 24,
   "chapters": {
    "Violet Scans": []
   }
@@ -12891,7 +12962,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-pearl-of-albrecht/"
   },
-  "max_chapter": 21,
+  "max_chapter": 22,
   "chapters": {
    "Violet Scans": []
   }
@@ -14958,7 +15029,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-reason-why-that-villainess-picked-up-a-sword/"
   },
-  "max_chapter": 56,
+  "max_chapter": 57,
   "chapters": {
    "Violet Scans": []
   }
@@ -15567,7 +15638,7 @@
    "Asura Scans": "https://asurascans.com/comics/the-regressed-mercenarys-machinations",
    "Demonic Scans": "https://demonicscans.org/manga/the-regressed-mercenary%2527s-machinations"
   },
-  "max_chapter": 86,
+  "max_chapter": 87,
   "chapter_count": 86,
   "chapters": {
    "Asura Scans": [],
@@ -17248,7 +17319,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-return-of-the-namgung-clans-granddaughter/"
   },
-  "max_chapter": 49,
+  "max_chapter": 50,
   "chapters": {
    "Thunder Scans": []
   }
@@ -17741,7 +17812,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-rogue-10th-class-of-the-frontier-count/"
   },
-  "max_chapter": 6,
+  "max_chapter": 8,
   "chapters": {
    "Thunder Scans": []
   }
@@ -18451,7 +18522,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-saint-who-levels-up-as-a-necromancer"
   },
-  "max_chapter": 17,
+  "max_chapter": 18,
   "demonic_id": "13664",
   "chapters": {
    "Demonic Scans": []
@@ -19295,7 +19366,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-secret-martial-artist-of-demonic-blood"
   },
-  "max_chapter": 29,
+  "max_chapter": 30,
   "demonic_id": "13619",
   "chapters": {
    "Demonic Scans": [
@@ -19623,7 +19694,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/the-shepherd-wizard",
    "Thunder Scans": "https://en-thunderscans.com/comics/the-shepherd-wizard/"
   },
-  "max_chapter": 16,
+  "max_chapter": 17,
   "chapter_count": 16,
   "chapters": {
    "Asura Scans": [],
@@ -19674,7 +19745,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-silver-saint-is-doted-on-in-her-second-life/"
   },
-  "max_chapter": 22,
+  "max_chapter": 23,
   "chapters": {
    "Violet Scans": []
   }
@@ -19961,7 +20032,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-smiling-boxer"
   },
-  "max_chapter": 35,
+  "max_chapter": 37,
   "demonic_id": "13429",
   "chapters": {
    "Demonic Scans": []
@@ -21285,7 +21356,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-strongest-level-0-absolute-supremacy-through-analysis-skills"
   },
-  "max_chapter": 37,
+  "max_chapter": 38,
   "demonic_id": "13574",
   "chapters": {
    "Demonic Scans": []
@@ -21377,7 +21448,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-strongest-monster-killer-dad-in-history"
   },
-  "max_chapter": 19,
+  "max_chapter": 21,
   "demonic_id": "13679",
   "chapters": {
    "Demonic Scans": []
@@ -22279,7 +22350,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-superhumans-gaming-broadcast/"
   },
-  "max_chapter": 31,
+  "max_chapter": 32,
   "chapters": {
    "Thunder Scans": [
     {
@@ -24277,7 +24348,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-underworld-transcendent-is-unrivaled-at-the-school%25e2%2580%2594%25e2%2580%2594%2521"
   },
-  "max_chapter": 23,
+  "max_chapter": 26,
   "demonic_id": "13127",
   "chapters": {
    "Demonic Scans": []
@@ -25068,7 +25139,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-villainess-hides-her-wealth/"
   },
-  "max_chapter": 64,
+  "max_chapter": 65,
   "chapters": {
    "Violet Scans": []
   }
@@ -26829,7 +26900,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-white-tiger-clans-baby-cotton-ball/"
   },
-  "max_chapter": null,
+  "max_chapter": 1,
   "chapters": {
    "Violet Scans": []
   }
@@ -31349,7 +31420,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-wrongfully-accused-villainess-cant-escape-the-knight/"
   },
-  "max_chapter": 20,
+  "max_chapter": 21,
   "chapters": {
    "Violet Scans": []
   }
@@ -32875,7 +32946,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/this-killer-is-a-son-in-law/"
   },
-  "max_chapter": 1,
+  "max_chapter": 2,
   "chapters": {
    "Thunder Scans": []
   }
@@ -33596,7 +33667,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/three-times-is-enough/"
   },
-  "max_chapter": 23,
+  "max_chapter": 24,
   "chapters": {
    "Violet Scans": []
   }
@@ -34476,7 +34547,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/to-live-as-an-immortal/"
   },
-  "max_chapter": 9,
+  "max_chapter": 10,
   "chapters": {
    "Thunder Scans": [
     {
@@ -36979,7 +37050,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/toaru-ossan-no-vrmmo-katsudouki"
   },
-  "max_chapter": 101,
+  "max_chapter": 102,
   "demonic_id": "11065",
   "chapters": {
    "Demonic Scans": [
@@ -41668,50 +41739,6 @@
   "demonic_id": "6939",
   "chapters": {
    "Demonic Scans": []
-  }
- },
- {
-  "title": "Umi no Yami, Tsuki no Kage",
-  "cover": "https://readermc.org/images/thumbnails/Umi no Yami, Tsuki no Kage.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umi-no-yami%252c-tsuki-no-kage"
-  },
-  "max_chapter": 31,
-  "demonic_id": "6940",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Umi Yori mo Fukaku",
-  "cover": "https://readermc.org/images/thumbnails/Umi Yori mo Fukaku.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umi-yori-mo-fukaku"
-  },
-  "max_chapter": 4,
-  "demonic_id": "6941",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Umibe no Onnanoko",
-  "cover": "https://readermc.org/images/thumbnails/Umibe no Onnanoko.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umibe-no-onnanoko"
-  },
-  "max_chapter": 20,
-  "demonic_id": "6942",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "1.01",
-     "chapter_number": 1.01
-    }
-   ]
   }
  }
 ]
