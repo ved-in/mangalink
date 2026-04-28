@@ -1,4 +1,4 @@
-const VIOLETSCANS = {
+var VIOLETSCANS = {
 	name: "Violet Scans",
 	icon: "💜",
 	type: "fantl",

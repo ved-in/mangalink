@@ -10,7 +10,7 @@
 //   "html_alt"      - fetch a page and look for an <img alt="..."> match
 //   "always_found"  - skip check entirely (e.g. when URLs are unguessable)
 
-const SampleSource = {
+var SampleSource = {
 	name: "Site Name",
 	icon: "🌐",
 	type: "fantl",

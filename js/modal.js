@@ -21,15 +21,12 @@ const Modal = (() => {
 		_on_visit    = on_visit;
 		_was_visited = was_visited;
 
-		// Build SOURCE_MAP and PAYWALL maps from sources.json data
-		// `sources` is the parsed array passed in from app.js after fetching sources.json
-		const GLOBAL_OBJECTS = { ASURASCANS, ADKSCANS, THUNDERSCANS, TEMPLESCANS,
-		                          DEMONICSCANS, FLAMESCANS, VIOLETSCANS, MANGAPLUS };
 		SOURCE_MAP    = {};
 		PAYWALL_NOTES = {};
 		for (const s of (sources || [])) {
-			if (GLOBAL_OBJECTS[s.object]) SOURCE_MAP[s.name] = GLOBAL_OBJECTS[s.object];
-			if (s.paywall_note)           PAYWALL_NOTES[s.name] = s.paywall_note;
+			const obj = window[s.object];
+			if (obj) SOURCE_MAP[s.name] = obj;
+			if (s.paywall_note) PAYWALL_NOTES[s.name] = s.paywall_note;
 		}
 		PAYWALL_SOURCES = new Set(Object.keys(PAYWALL_NOTES));
 	}

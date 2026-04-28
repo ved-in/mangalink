@@ -8,22 +8,30 @@ const API = (() => {
 
 	async function _load_index() {
 		if (_index) return _index;
+		const base = (typeof window !== 'undefined' && window.BASE) ? window.BASE : '';
 		const [index_res, sources_res] = await Promise.all([
-			fetch('data/index.json'),
-			SRC_NAME ? Promise.resolve(null) : fetch((window.BASE || '') + '/sources.json'),
+			fetch(base + '/data/index.json'),
+			SRC_NAME ? Promise.resolve(null) : fetch(base + '/sources.json'),
 		]);
 		if (!index_res.ok) throw new Error(`Failed to load index.json (HTTP ${index_res.status})`);
 		_index = await index_res.json();
-		if (sources_res) {
-			const data = await sources_res.json();
-			SRC_NAME = Object.fromEntries(data.sources.map(s => [s.alias, s.name]));
+		if (sources_res && sources_res.ok) {
+			try {
+				const data = await sources_res.json();
+				SRC_NAME = Object.fromEntries(data.sources.map(s => [s.alias, s.name]));
+			} catch(e) {
+				console.warn('Failed to parse sources.json:', e);
+			}
 		}
+		// Fallback: if sources.json failed, set empty map so _parse_index_entry never crashes
+		if (!SRC_NAME) SRC_NAME = {};
 		return _index;
 	}
 
 	async function _load_chunk(k) {
 		if (_chunks[k]) return _chunks[k];
-		const res = await fetch(`data/chunks/chunk_${k}.json`);
+		const base = (typeof window !== 'undefined' && window.BASE) ? window.BASE : '';
+		const res = await fetch(`${base}/data/chunks/chunk_${k}.json`);
 		if (!res.ok) throw new Error(`Failed to load chunk_${k}.json (HTTP ${res.status})`);
 		_chunks[k] = await res.json();
 		return _chunks[k];

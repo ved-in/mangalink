@@ -1,4 +1,4 @@
-const ASURASCANS = {
+var ASURASCANS = {
 	name: "Asura Scans",
 	icon: "⚔️",
 	type: "fantl",

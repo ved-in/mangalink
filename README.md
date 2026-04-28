@@ -220,6 +220,8 @@ The scraper writes to `data/index.json` and `data/chunks/`, then commits back to
 **Scraper**
 - [ ] Find a workaround/replacement for series cover present on MangaPlus. eg., [this](https://jumpg-assets.tokyo-cdn.com/secure/title/100628/title_thumbnail_portrait_list/456823.jpg), which results in a 403 status code (forbidden) on visiting. --> tried different stuff in its website. Will have to use some external api like Jikan to lookup the series name and get the cover.
 - [ ] Some series with `null` status still exists. See the issue and fix accordingly.
+= [ ] Fix duplicate entries for series which have diff names on diff websites. Can probably use Jikan api to get alternate titles
+![alt text](image.png)
 
 **Long term**
 - [ ] Sync user's reading progress and bookmarks across devices (login required)

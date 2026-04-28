@@ -1,4 +1,4 @@
-const FLAMESCANS = {
+var FLAMESCANS = {
 	name: "Flame Comics",
 	icon: "🔥",
 	type: "fantl",

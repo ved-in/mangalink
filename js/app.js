@@ -34,7 +34,8 @@ const App = (
 			// Load sources.json once — shared across Modal and anything else that needs it
 			let sources = [];
 			try {
-				const res = await fetch((window.BASE || '') + '/sources.json');
+				const base = (typeof window !== 'undefined' && window.BASE) ? window.BASE : '';
+				const res = await fetch(base + '/sources.json');
 				if (res.ok) sources = (await res.json()).sources ?? [];
 			} catch(e) { console.warn('Failed to load sources.json:', e); }
 

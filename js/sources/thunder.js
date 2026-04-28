@@ -1,4 +1,4 @@
-const THUNDERSCANS = {
+var THUNDERSCANS = {
 	name: "Thunder Scans",
 	icon: "⚡",
 	type: "fantl",

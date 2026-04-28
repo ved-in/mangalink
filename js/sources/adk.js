@@ -1,4 +1,4 @@
-const ADKSCANS = {
+var ADKSCANS = {
 	name: "ADK Scans",
 	icon: "☄️",
 	type: "fantl",

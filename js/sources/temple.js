@@ -1,4 +1,4 @@
-const TEMPLESCANS = {
+var TEMPLESCANS = {
 	name: "Temple Toons",
 	icon: "🏛️",
 	type: "fantl",

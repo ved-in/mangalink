@@ -1,4 +1,4 @@
-const DEMONICSCANS = {
+var DEMONICSCANS = {
 	name: "Demonic Scans",
 	icon: "😈",
 	type: "fantl",
