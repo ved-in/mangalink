@@ -6853,7 +6853,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-last-master-of-jongnam-sect"
   },
-  "max_chapter": 44,
+  "max_chapter": 45,
   "demonic_id": "13351",
   "chapters": {
    "Demonic Scans": [
@@ -23016,7 +23016,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-tales-of-heaven-and-earth"
   },
-  "max_chapter": 64,
+  "max_chapter": 65,
   "demonic_id": "12535",
   "chapters": {
    "Demonic Scans": []
@@ -35031,7 +35031,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/to-not-die",
    "Flame Comics": "https://flamecomics.xyz/series/30"
   },
-  "max_chapter": 211,
+  "max_chapter": 212,
   "demonic_id": "1528",
   "chapters": {
    "Demonic Scans": [
@@ -35081,6 +35081,10 @@
     }
    ],
    "Flame Comics": [
+    {
+     "name": "208",
+     "chapter_slug": "952ccb3a38f7e777"
+    },
     {
      "name": "207",
      "chapter_slug": "92c19c1b5e6c8c14"
@@ -37050,7 +37054,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/toaru-ossan-no-vrmmo-katsudouki"
   },
-  "max_chapter": 102,
+  "max_chapter": 103,
   "demonic_id": "11065",
   "chapters": {
    "Demonic Scans": [
