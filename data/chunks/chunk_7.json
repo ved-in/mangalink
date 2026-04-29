@@ -1,5 +1,18 @@
 [
  {
+  "title": "Magudala de Nemure",
+  "cover": "https://readermc.org/images/thumbnails/Magudala de Nemure.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/magudala-de-nemure"
+  },
+  "max_chapter": 12,
+  "demonic_id": "2985",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Mahiru no Youjinbou",
   "cover": "https://readermc.org/images/thumbnails/Mahiru no Youjinbou.webp",
   "status": "Ongoing",
@@ -13804,7 +13817,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/meteor-the-savior-of-blinding-speed/"
   },
-  "max_chapter": 24,
+  "max_chapter": 25,
   "chapters": {
    "Thunder Scans": []
   }
@@ -29257,7 +29270,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/my-dead-wife-came-back/"
   },
-  "max_chapter": 29,
+  "max_chapter": 30,
   "chapters": {
    "Violet Scans": []
   }
@@ -29806,24 +29819,6 @@
   "max_chapter": 297,
   "chapters": {
    "Thunder Scans": []
-  }
- },
- {
-  "title": "My Dream, My Work",
-  "cover": "https://readermc.org/images/thumbnails/My Dream, My Work.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/my-dream%252c-my-work"
-  },
-  "max_chapter": 6,
-  "demonic_id": "3827",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "5.002",
-     "chapter_number": 5.002
-    }
-   ]
   }
  }
 ]

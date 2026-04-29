@@ -1,5 +1,23 @@
 [
  {
+  "title": "My Dream, My Work",
+  "cover": "https://readermc.org/images/thumbnails/My Dream, My Work.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/my-dream%252c-my-work"
+  },
+  "max_chapter": 6,
+  "demonic_id": "3827",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "5.002",
+     "chapter_number": 5.002
+    }
+   ]
+  }
+ },
+ {
   "title": "My endless inventory",
   "cover": "https://readermc.org/images/thumbnails/My endless inventory.webp",
   "status": "Ongoing",
@@ -3853,7 +3871,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/my-second-senior-brother-is-a-mortal-but-strong/"
   },
-  "max_chapter": 71,
+  "max_chapter": 82,
   "chapters": {
    "Thunder Scans": []
   }
@@ -31445,96 +31463,6 @@
   "demonic_id": "12639",
   "chapters": {
    "Demonic Scans": []
-  }
- },
- {
-  "title": "Ossan, Yuusha to Maou wo Hirou",
-  "cover": "https://readermc.org/images/thumbnails/Ossan, Yuusha to Maou wo Hirou.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/ossan%252c-yuusha-to-maou-wo-hirou"
-  },
-  "max_chapter": 20,
-  "demonic_id": "741",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "9.2",
-     "chapter_number": 9.2
-    },
-    {
-     "name": "9.1",
-     "chapter_number": 9.1
-    },
-    {
-     "name": "8.2",
-     "chapter_number": 8.2
-    },
-    {
-     "name": "8.1",
-     "chapter_number": 8.1
-    },
-    {
-     "name": "7.2",
-     "chapter_number": 7.2
-    },
-    {
-     "name": "7.1",
-     "chapter_number": 7.1
-    },
-    {
-     "name": "6.2",
-     "chapter_number": 6.2
-    },
-    {
-     "name": "6.1",
-     "chapter_number": 6.1
-    },
-    {
-     "name": "5.2",
-     "chapter_number": 5.2
-    },
-    {
-     "name": "5.1",
-     "chapter_number": 5.1
-    },
-    {
-     "name": "4.2",
-     "chapter_number": 4.2
-    },
-    {
-     "name": "4.1",
-     "chapter_number": 4.1
-    },
-    {
-     "name": "3.2",
-     "chapter_number": 3.2
-    },
-    {
-     "name": "3.1",
-     "chapter_number": 3.1
-    },
-    {
-     "name": "2.2",
-     "chapter_number": 2.2
-    },
-    {
-     "name": "2.1",
-     "chapter_number": 2.1
-    },
-    {
-     "name": "1.3",
-     "chapter_number": 1.3
-    },
-    {
-     "name": "1.2",
-     "chapter_number": 1.2
-    },
-    {
-     "name": "1.1",
-     "chapter_number": 1.1
-    }
-   ]
   }
  }
 ]

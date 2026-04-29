@@ -1,5 +1,76 @@
 [
  {
+  "title": "Silvertown of Hell",
+  "cover": "https://readermc.org/images/thumbnails/Silvertown of Hell.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/silvertown-of-hell"
+  },
+  "max_chapter": 29,
+  "demonic_id": "13274",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
+  "title": "simmering jam at the edge of the forest",
+  "cover": "https://readermc.org/images/thumbnails/simmering jam at the edge of the forest.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/simmering-jam-at-the-edge-of-the-forest"
+  },
+  "max_chapter": 17.2,
+  "demonic_id": "1380",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "17.2",
+     "chapter_number": 17.2
+    },
+    {
+     "name": "17.1",
+     "chapter_number": 17.1
+    },
+    {
+     "name": "16.2",
+     "chapter_number": 16.2
+    },
+    {
+     "name": "16.1",
+     "chapter_number": 16.1
+    },
+    {
+     "name": "9.2",
+     "chapter_number": 9.2
+    },
+    {
+     "name": "9.1",
+     "chapter_number": 9.1
+    },
+    {
+     "name": "8.2",
+     "chapter_number": 8.2
+    },
+    {
+     "name": "8.1",
+     "chapter_number": 8.1
+    },
+    {
+     "name": "7.3",
+     "chapter_number": 7.3
+    },
+    {
+     "name": "7.2",
+     "chapter_number": 7.2
+    },
+    {
+     "name": "7.1",
+     "chapter_number": 7.1
+    }
+   ]
+  }
+ },
+ {
   "title": "Since I Became a Commoner, My Engagement was Annulled!",
   "cover": "https://readermc.org/images/thumbnails/Since I Became a Commoner, My Engagement was Annulled!.webp",
   "status": "Ongoing",
@@ -13224,7 +13295,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/star-forging-titan/"
   },
-  "max_chapter": 6,
+  "max_chapter": 7,
   "chapters": {
    "Thunder Scans": []
   }
@@ -17530,7 +17601,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/summoning-the-three-kingdoms-famous-generals-i-rise-as-dongyings-prime-minister/"
   },
-  "max_chapter": 4,
+  "max_chapter": 5,
   "chapters": {
    "Thunder Scans": []
   }
@@ -19464,7 +19535,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/surviving-the-apocalypse",
    "Flame Comics": "https://flamecomics.xyz/series/138"
   },
-  "max_chapter": 75,
+  "max_chapter": 76,
   "demonic_id": "12313",
   "chapters": {
    "Demonic Scans": [
@@ -19474,6 +19545,10 @@
     }
    ],
    "Flame Comics": [
+    {
+     "name": "75",
+     "chapter_slug": "d9a3c9bb072f9704"
+    },
     {
      "name": "74",
      "chapter_slug": "5863396460eccbcc"
@@ -26726,7 +26801,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/taming-a-munchkin/"
   },
-  "max_chapter": 50,
+  "max_chapter": 51,
   "chapters": {
    "Violet Scans": []
   }
@@ -31041,7 +31116,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-absolute-scholar/"
   },
-  "max_chapter": 35,
+  "max_chapter": 36,
   "chapters": {
    "Thunder Scans": []
   }
@@ -33980,7 +34055,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/the-awakening-of-light-magic",
    "Thunder Scans": "https://en-thunderscans.com/comics/the-awakening-of-light-magic/"
   },
-  "max_chapter": 76,
+  "max_chapter": 77,
   "demonic_id": "12764",
   "chapters": {
    "Demonic Scans": [],
@@ -37077,7 +37152,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-condemned-dukes-daughter-is-reborn-as-the-child-of-the-final-boss-queen/"
   },
-  "max_chapter": 5.1,
+  "max_chapter": 5.4,
   "chapters": {
    "Violet Scans": [
     {
@@ -44794,37 +44869,6 @@
      "chapter_number": 0
     }
    ]
-  }
- },
- {
-  "title": "The Goddess Consort Reigns Supreme",
-  "cover": "https://readermc.org/images/thumbnails/The Goddess Consort Reigns Supreme.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/the-goddess-consort-reigns-supreme"
-  },
-  "max_chapter": 0,
-  "demonic_id": "1511",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  }
- },
- {
-  "title": "The Golden Age",
-  "cover": "https://readermc.org/images/thumbnails/The Golden Age.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/the-golden-age"
-  },
-  "max_chapter": 4,
-  "demonic_id": "1405",
-  "chapters": {
-   "Demonic Scans": []
   }
  }
 ]

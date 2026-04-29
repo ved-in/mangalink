@@ -1,5 +1,40 @@
 [
  {
+  "title": "Umi no Kishidan",
+  "cover": "https://readermc.org/images/thumbnails/Umi no Kishidan.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/umi-no-kishidan"
+  },
+  "max_chapter": 30,
+  "demonic_id": "6938",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "3.5",
+     "chapter_number": 3.5
+    },
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
+  "title": "Umi no Teppen",
+  "cover": "https://readermc.org/images/thumbnails/Umi no Teppen.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/umi-no-teppen"
+  },
+  "max_chapter": 16,
+  "demonic_id": "6939",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Umi no Yami, Tsuki no Kage",
   "cover": "https://readermc.org/images/thumbnails/Umi no Yami, Tsuki no Kage.webp",
   "status": "Ongoing",

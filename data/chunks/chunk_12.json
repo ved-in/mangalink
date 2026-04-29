@@ -1,5 +1,36 @@
 [
  {
+  "title": "The Goddess Consort Reigns Supreme",
+  "cover": "https://readermc.org/images/thumbnails/The Goddess Consort Reigns Supreme.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/the-goddess-consort-reigns-supreme"
+  },
+  "max_chapter": 0,
+  "demonic_id": "1511",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
+  "title": "The Golden Age",
+  "cover": "https://readermc.org/images/thumbnails/The Golden Age.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/the-golden-age"
+  },
+  "max_chapter": 4,
+  "demonic_id": "1405",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "The Golden Chevalier",
   "cover": "https://violetscans.org/wp-content/uploads/2025/11/2025-11-22-02-37-38-1763822258084-210x300.jpg",
   "status": "Ongoing",
@@ -7796,7 +7827,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-little-demon-king-is-too-bothered-by-her-brave-dads/"
   },
-  "max_chapter": 51,
+  "max_chapter": 52,
   "chapters": {
    "Violet Scans": []
   }
@@ -8099,7 +8130,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-mad-dog/"
   },
-  "max_chapter": 28,
+  "max_chapter": 29,
   "chapters": {
    "Thunder Scans": []
   }
@@ -17051,7 +17082,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-retired-saintess-raises-property-values/"
   },
-  "max_chapter": 5,
+  "max_chapter": 22,
   "chapters": {
    "Violet Scans": []
   }
@@ -17208,7 +17239,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-return-of-the-disaster%25252dclass-hero"
   },
-  "max_chapter": 173,
+  "max_chapter": 174,
   "demonic_id": "11125",
   "chapters": {
    "Demonic Scans": [
@@ -17365,7 +17396,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/the-return-of-the-unrivaled-genius-ranker",
    "Thunder Scans": "https://en-thunderscans.com/comics/the-return-of-the-unrivaled-genius-ranker/"
   },
-  "max_chapter": 21,
+  "max_chapter": 22,
   "demonic_id": "13675",
   "chapters": {
    "Demonic Scans": [],
@@ -22350,7 +22381,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/the-superhumans-gaming-broadcast/"
   },
-  "max_chapter": 32,
+  "max_chapter": 33,
   "chapters": {
    "Thunder Scans": [
     {
@@ -25464,7 +25495,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-villainess-is-a-millionaire-solver/"
   },
-  "max_chapter": 24,
+  "max_chapter": 25,
   "chapters": {
    "Violet Scans": []
   }
@@ -25815,7 +25846,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-villainess-wont-let-go-of-her-husband/"
   },
-  "max_chapter": 35,
+  "max_chapter": 36,
   "chapters": {
    "Violet Scans": []
   }
@@ -31678,7 +31709,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/the-youngest-is-hiding-a-lot/"
   },
-  "max_chapter": 39,
+  "max_chapter": 40,
   "chapters": {
    "Violet Scans": []
   }
@@ -32658,7 +32689,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/this-emperor-runs-a-marriage-scam/"
   },
-  "max_chapter": 20,
+  "max_chapter": 21,
   "chapters": {
    "Violet Scans": []
   }
@@ -32988,7 +33019,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/this-marriage-will-surely-succeed/"
   },
-  "max_chapter": 54,
+  "max_chapter": 55,
   "chapters": {
    "Violet Scans": []
   }
@@ -41708,41 +41739,6 @@
      "chapter_number": 16.1
     }
    ]
-  }
- },
- {
-  "title": "Umi no Kishidan",
-  "cover": "https://readermc.org/images/thumbnails/Umi no Kishidan.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umi-no-kishidan"
-  },
-  "max_chapter": 30,
-  "demonic_id": "6938",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "3.5",
-     "chapter_number": 3.5
-    },
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
-  }
- },
- {
-  "title": "Umi no Teppen",
-  "cover": "https://readermc.org/images/thumbnails/Umi no Teppen.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umi-no-teppen"
-  },
-  "max_chapter": 16,
-  "demonic_id": "6939",
-  "chapters": {
-   "Demonic Scans": []
   }
  }
 ]

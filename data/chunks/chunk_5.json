@@ -1,5 +1,17 @@
 [
  {
+  "title": "Invincible With Only a Single Point of HP",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2025/11/2025-11-27-03-29-05-1764214145746-227x300.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Thunder Scans": "https://en-thunderscans.com/comics/invincible-with-only-a-single-point-of-hp/"
+  },
+  "max_chapter": 21,
+  "chapters": {
+   "Thunder Scans": []
+  }
+ },
+ {
   "title": "invincible xueba system",
   "cover": "https://readermc.org/images/thumbnails/invincible xueba system.webp",
   "status": "Ongoing",
@@ -12118,6 +12130,10 @@
    "Demonic Scans": [],
    "Flame Comics": [
     {
+     "name": "92",
+     "chapter_slug": "f12a211903083f91"
+    },
+    {
      "name": "91",
      "chapter_slug": "33261a8eddf4363d"
     },
@@ -22361,7 +22377,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/kidnapped-dragons",
    "Thunder Scans": "https://en-thunderscans.com/comics/kidnapped-dragons/"
   },
-  "max_chapter": 39,
+  "max_chapter": 40,
   "chapter_count": 39,
   "chapters": {
    "Asura Scans": [],
@@ -28497,183 +28513,5 @@
   "chapters": {
    "Demonic Scans": []
   }
- },
- {
-  "title": "Kiss Me If You Can",
-  "cover": "https://media.templetoons.com/file/9BSHk1m/covers/84ddf2fb-846d-432b-82e4-e69d553f368f.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Temple Toons": "https://templetoons.com/comic/kiss-me-if-you-can"
-  },
-  "chapters": {
-   "Temple Toons": [
-    {
-     "name": "Chapter 01",
-     "chapter_slug": "chapter-01"
-    },
-    {
-     "name": "Chapter 02",
-     "chapter_slug": "chapter-02"
-    },
-    {
-     "name": "Chapter 03",
-     "chapter_slug": "chapter-03"
-    },
-    {
-     "name": "Chapter 04",
-     "chapter_slug": "chapter-04"
-    },
-    {
-     "name": "Chapter 05",
-     "chapter_slug": "chapter-05"
-    },
-    {
-     "name": "Chapter 06",
-     "chapter_slug": "chapter-06"
-    },
-    {
-     "name": "Chapter 07",
-     "chapter_slug": "chapter-07"
-    },
-    {
-     "name": "Chapter 08",
-     "chapter_slug": "chapter-08"
-    },
-    {
-     "name": "Chapter 09",
-     "chapter_slug": "chapter-09"
-    },
-    {
-     "name": "Chapter 10",
-     "chapter_slug": "chapter-10"
-    },
-    {
-     "name": "Chapter 11",
-     "chapter_slug": "chapter-11"
-    },
-    {
-     "name": "Chapter 12",
-     "chapter_slug": "chapter-12"
-    },
-    {
-     "name": "Chapter 13",
-     "chapter_slug": "chapter-13"
-    },
-    {
-     "name": "Chapter 14",
-     "chapter_slug": "chapter-14"
-    },
-    {
-     "name": "Chapter 15",
-     "chapter_slug": "chapter-15"
-    },
-    {
-     "name": "Chapter 16",
-     "chapter_slug": "chapter-16"
-    },
-    {
-     "name": "Chapter 17",
-     "chapter_slug": "chapter-17"
-    },
-    {
-     "name": "Chapter 18",
-     "chapter_slug": "chapter-18"
-    },
-    {
-     "name": "Chapter 19",
-     "chapter_slug": "chapter-19"
-    },
-    {
-     "name": "Chapter 20",
-     "chapter_slug": "chapter-20"
-    },
-    {
-     "name": "Chapter 21",
-     "chapter_slug": "chapter-21"
-    },
-    {
-     "name": "Chapter 22",
-     "chapter_slug": "chapter-22"
-    },
-    {
-     "name": "Chapter 23",
-     "chapter_slug": "chapter-23"
-    },
-    {
-     "name": "Chapter 24",
-     "chapter_slug": "chapter-24"
-    },
-    {
-     "name": "Chapter 25",
-     "chapter_slug": "chapter-25"
-    },
-    {
-     "name": "Chapter 26",
-     "chapter_slug": "chapter-26"
-    },
-    {
-     "name": "Chapter 27",
-     "chapter_slug": "chapter-27"
-    },
-    {
-     "name": "Chapter 28",
-     "chapter_slug": "chapter-28"
-    },
-    {
-     "name": "Chapter 29",
-     "chapter_slug": "chapter-29"
-    },
-    {
-     "name": "Chapter 30",
-     "chapter_slug": "chapter-30"
-    },
-    {
-     "name": "Chapter 31",
-     "chapter_slug": "chapter-31"
-    },
-    {
-     "name": "Chapter 32",
-     "chapter_slug": "chapter-32"
-    },
-    {
-     "name": "Chapter 33",
-     "chapter_slug": "chapter-33"
-    },
-    {
-     "name": "Chapter 34",
-     "chapter_slug": "chapter-34"
-    },
-    {
-     "name": "Chapter 35",
-     "chapter_slug": "chapter-35"
-    },
-    {
-     "name": "Chapter 35.5",
-     "chapter_slug": "chapter-355"
-    },
-    {
-     "name": "Chapter 36",
-     "chapter_slug": "chapter-36"
-    },
-    {
-     "name": "Chapter 37",
-     "chapter_slug": "chapter-37"
-    },
-    {
-     "name": "Chapter 38",
-     "chapter_slug": "chapter-38"
-    },
-    {
-     "name": "Chapter 39",
-     "chapter_slug": "chapter-39"
-    },
-    {
-     "name": "Chapter 40",
-     "chapter_slug": "chapter-40"
-    }
-   ]
-  },
-  "max_chapter": 355,
-  "chapter_count": null
  }
 ]

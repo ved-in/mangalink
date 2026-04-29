@@ -1,5 +1,95 @@
 [
  {
+  "title": "Ossan, Yuusha to Maou wo Hirou",
+  "cover": "https://readermc.org/images/thumbnails/Ossan, Yuusha to Maou wo Hirou.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/ossan%252c-yuusha-to-maou-wo-hirou"
+  },
+  "max_chapter": 20,
+  "demonic_id": "741",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "9.2",
+     "chapter_number": 9.2
+    },
+    {
+     "name": "9.1",
+     "chapter_number": 9.1
+    },
+    {
+     "name": "8.2",
+     "chapter_number": 8.2
+    },
+    {
+     "name": "8.1",
+     "chapter_number": 8.1
+    },
+    {
+     "name": "7.2",
+     "chapter_number": 7.2
+    },
+    {
+     "name": "7.1",
+     "chapter_number": 7.1
+    },
+    {
+     "name": "6.2",
+     "chapter_number": 6.2
+    },
+    {
+     "name": "6.1",
+     "chapter_number": 6.1
+    },
+    {
+     "name": "5.2",
+     "chapter_number": 5.2
+    },
+    {
+     "name": "5.1",
+     "chapter_number": 5.1
+    },
+    {
+     "name": "4.2",
+     "chapter_number": 4.2
+    },
+    {
+     "name": "4.1",
+     "chapter_number": 4.1
+    },
+    {
+     "name": "3.2",
+     "chapter_number": 3.2
+    },
+    {
+     "name": "3.1",
+     "chapter_number": 3.1
+    },
+    {
+     "name": "2.2",
+     "chapter_number": 2.2
+    },
+    {
+     "name": "2.1",
+     "chapter_number": 2.1
+    },
+    {
+     "name": "1.3",
+     "chapter_number": 1.3
+    },
+    {
+     "name": "1.2",
+     "chapter_number": 1.2
+    },
+    {
+     "name": "1.1",
+     "chapter_number": 1.1
+    }
+   ]
+  }
+ },
+ {
   "title": "Osu!! Karate Bu",
   "cover": "https://readermc.org/images/thumbnails/Osu!! Karate Bu.webp",
   "status": "Ongoing",
@@ -6934,7 +7024,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/pick-me-up"
   },
-  "max_chapter": 198,
+  "max_chapter": 199,
   "demonic_id": "11699",
   "chapters": {
    "Demonic Scans": []
@@ -6947,7 +7037,7 @@
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/pick-me-up-infinite-gacha"
   },
-  "max_chapter": 198,
+  "max_chapter": 199,
   "chapter_count": 198,
   "chapters": {
    "Asura Scans": []
@@ -22953,7 +23043,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/reborn-after-the-eight-empresses-betrayed-me-now-ill-make-them-regret-it/"
   },
-  "max_chapter": 19,
+  "max_chapter": 20,
   "chapters": {
    "Thunder Scans": []
   }
@@ -23714,7 +23804,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/reborn-ranker-gravity-user/"
   },
-  "max_chapter": 187,
+  "max_chapter": 188,
   "chapters": {
    "Thunder Scans": []
   }
@@ -28749,19 +28839,6 @@
      "chapter_number": 5.5
     }
    ]
-  }
- },
- {
-  "title": "Renjou Sparkle",
-  "cover": "https://readermc.org/images/thumbnails/Renjou Sparkle.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/renjou-sparkle"
-  },
-  "max_chapter": 10,
-  "demonic_id": "5792",
-  "chapters": {
-   "Demonic Scans": []
   }
  }
 ]

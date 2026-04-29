@@ -2143,7 +2143,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/how-i-ended-up-as-the-villainesss-favorite/"
   },
-  "max_chapter": 32,
+  "max_chapter": 33,
   "chapters": {
    "Violet Scans": []
   }
@@ -5987,6 +5987,18 @@
   "max_chapter": 28,
   "chapters": {
    "Violet Scans": []
+  }
+ },
+ {
+  "title": "I Became a Wizard in a Medieval Fantasy World",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2026/04/2026-04-29-03-45-11-1777477511673-210x300.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Thunder Scans": "https://en-thunderscans.com/comics/i-became-a-wizard-in-a-medieval-fantasy-world/"
+  },
+  "max_chapter": null,
+  "chapters": {
+   "Thunder Scans": []
   }
  },
  {
@@ -12504,7 +12516,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/i-quit-the-hero%2527s-party",
    "Thunder Scans": "https://en-thunderscans.com/comics/i-quit-the-heros-party/"
   },
-  "max_chapter": 152,
+  "max_chapter": 153,
   "demonic_id": "12411",
   "chapters": {
    "Demonic Scans": [],
@@ -13224,7 +13236,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/i-refuse-to-be-the-guide-of-that-mysophobic-villain/"
   },
-  "max_chapter": 38,
+  "max_chapter": 39,
   "chapters": {
    "Violet Scans": []
   }
@@ -15591,7 +15603,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/i-took-over-the-system-players",
    "Thunder Scans": "https://en-thunderscans.com/comics/i-took-over-the-system-players/"
   },
-  "max_chapter": 120,
+  "max_chapter": 121,
   "demonic_id": "12009",
   "chapters": {
    "Demonic Scans": [
@@ -22036,7 +22048,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/ill-protect-my-beloved-knight-with-everything-i-have/"
   },
-  "max_chapter": 3,
+  "max_chapter": 15,
   "chapters": {
    "Violet Scans": []
   }
@@ -24724,7 +24736,7 @@
   "sources": {
    "Violet Scans": "https://violetscans.org/comics/im-only-a-stepmother-but-my-daughter-is-just-so-cute/"
   },
-  "max_chapter": 170,
+  "max_chapter": 171,
   "chapters": {
    "Violet Scans": [
     {
@@ -33396,18 +33408,6 @@
      "chapter_number": 0
     }
    ]
-  }
- },
- {
-  "title": "Invincible With Only a Single Point of HP",
-  "cover": "https://en-thunderscans.com/wp-content/uploads/2025/11/2025-11-27-03-29-05-1764214145746-227x300.jpg",
-  "status": "Ongoing",
-  "sources": {
-   "Thunder Scans": "https://en-thunderscans.com/comics/invincible-with-only-a-single-point-of-hp/"
-  },
-  "max_chapter": 21,
-  "chapters": {
-   "Thunder Scans": []
   }
  }
 ]

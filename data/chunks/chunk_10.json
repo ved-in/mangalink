@@ -1,5 +1,18 @@
 [
  {
+  "title": "Renjou Sparkle",
+  "cover": "https://readermc.org/images/thumbnails/Renjou Sparkle.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/renjou-sparkle"
+  },
+  "max_chapter": 10,
+  "demonic_id": "5792",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Renka",
   "cover": "https://readermc.org/images/thumbnails/Renka.webp",
   "status": "Ongoing",
@@ -1276,7 +1289,7 @@
   "sources": {
    "Asura Scans": "https://asurascans.com/comics/return-of-the-disaster-class-hero"
   },
-  "max_chapter": 173,
+  "max_chapter": 174,
   "chapter_count": 174,
   "chapters": {
    "Asura Scans": [
@@ -1324,7 +1337,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/return-of-the-first-generation-the-strongest-in-history-reincarnates-as-his-descendant-1000-years-later/"
   },
-  "max_chapter": 36,
+  "max_chapter": 37,
   "chapters": {
    "Thunder Scans": []
   }
@@ -13414,7 +13427,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/savior-of-divine-blood-draw-out-0-00000001-to-become-the-strongest/"
   },
-  "max_chapter": 181,
+  "max_chapter": 182,
   "chapters": {
    "Thunder Scans": [
     {
@@ -16207,7 +16220,7 @@
   "sources": {
    "Thunder Scans": "https://en-thunderscans.com/comics/seian/"
   },
-  "max_chapter": 48,
+  "max_chapter": 49,
   "chapters": {
    "Thunder Scans": []
   }
@@ -18497,6 +18510,23 @@
   "max_chapter": 16,
   "chapters": {
    "Thunder Scans": []
+  }
+ },
+ {
+  "title": "Selfish Alliance",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2026/04/2026-04-29-01-56-01-1777470961865-231x300.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Thunder Scans": "https://en-thunderscans.com/comics/selfish-alliance/"
+  },
+  "max_chapter": 0,
+  "chapters": {
+   "Thunder Scans": [
+    {
+     "name": "0",
+     "chapter_slug": "selfish-alliance-chapter-0"
+    }
+   ]
   }
  },
  {
@@ -28999,77 +29029,6 @@
     {
      "name": "66.5",
      "chapter_number": 66.5
-    }
-   ]
-  }
- },
- {
-  "title": "Silvertown of Hell",
-  "cover": "https://readermc.org/images/thumbnails/Silvertown of Hell.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/silvertown-of-hell"
-  },
-  "max_chapter": 29,
-  "demonic_id": "13274",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "simmering jam at the edge of the forest",
-  "cover": "https://readermc.org/images/thumbnails/simmering jam at the edge of the forest.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/simmering-jam-at-the-edge-of-the-forest"
-  },
-  "max_chapter": 17.2,
-  "demonic_id": "1380",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "17.2",
-     "chapter_number": 17.2
-    },
-    {
-     "name": "17.1",
-     "chapter_number": 17.1
-    },
-    {
-     "name": "16.2",
-     "chapter_number": 16.2
-    },
-    {
-     "name": "16.1",
-     "chapter_number": 16.1
-    },
-    {
-     "name": "9.2",
-     "chapter_number": 9.2
-    },
-    {
-     "name": "9.1",
-     "chapter_number": 9.1
-    },
-    {
-     "name": "8.2",
-     "chapter_number": 8.2
-    },
-    {
-     "name": "8.1",
-     "chapter_number": 8.1
-    },
-    {
-     "name": "7.3",
-     "chapter_number": 7.3
-    },
-    {
-     "name": "7.2",
-     "chapter_number": 7.2
-    },
-    {
-     "name": "7.1",
-     "chapter_number": 7.1
     }
    ]
   }
