@@ -1162,10 +1162,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/is-a-mother-in-her-30s-like-me-alright%253f"
   },
-  "max_chapter": 52,
+  "max_chapter": 52.5,
   "demonic_id": "11357",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "52.5",
+     "chapter_number": 52.5
+    },
     {
      "name": "48.5",
      "chapter_number": 48.5

@@ -16628,10 +16628,18 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/noble-reincarnation-%257eblessed-with-the-strongest-power-from-birth%257e"
   },
-  "max_chapter": 40.4,
+  "max_chapter": 41.2,
   "demonic_id": "11378",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "41.2",
+     "chapter_number": 41.2
+    },
+    {
+     "name": "41.1",
+     "chapter_number": 41.1
+    },
     {
      "name": "40.4",
      "chapter_number": 40.4
@@ -22393,7 +22401,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/omniscient-reader%2527s-viewpoint",
    "Flame Comics": "https://flamecomics.xyz/series/2"
   },
-  "max_chapter": 309,
+  "max_chapter": 310,
   "chapter_count": 309,
   "chapters": {
    "Asura Scans": [
@@ -22413,6 +22421,10 @@
     }
    ],
    "Flame Comics": [
+    {
+     "name": "309",
+     "chapter_slug": "7b1a45c05fc72996"
+    },
     {
      "name": "308",
      "chapter_slug": "22c2ab1becfa6b21"
@@ -24870,10 +24882,14 @@
    "Flame Comics": "https://flamecomics.xyz/series/110"
   },
   "flame_series_id": 110,
-  "max_chapter": 195,
+  "max_chapter": 196,
   "chapter_count": 195,
   "chapters": {
    "Flame Comics": [
+    {
+     "name": "196",
+     "chapter_slug": "614b37a0cd47b8a4"
+    },
     {
      "name": "195",
      "chapter_slug": "ab3943afcf16cc03"

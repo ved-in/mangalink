@@ -11045,7 +11045,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/spectres"
   },
-  "max_chapter": 28,
+  "max_chapter": 29,
   "demonic_id": "11640",
   "chapters": {
    "Demonic Scans": []
@@ -17777,7 +17777,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/super-gene",
    "Thunder Scans": "https://en-thunderscans.com/comics/super-gene/"
   },
-  "max_chapter": 450,
+  "max_chapter": 451,
   "demonic_id": "11913",
   "chapters": {
    "Demonic Scans": [
@@ -20956,10 +20956,14 @@
    "Demonic Scans": "https://demonicscans.org/manga/tales-of-demons-and-gods",
    "Thunder Scans": "https://en-thunderscans.com/comics/tales-of-demons-and-gods/"
   },
-  "max_chapter": 517.1,
+  "max_chapter": 517.6,
   "demonic_id": "4",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "517.6",
+     "chapter_number": 517.6
+    },
     {
      "name": "517.1",
      "chapter_number": 517.1
@@ -38262,7 +38266,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-dark-mage-%257e-i-am-the-only-transcendant-mage-who-regressed-with-cheat-skills"
   },
-  "max_chapter": 48,
+  "max_chapter": 49,
   "demonic_id": "13218",
   "chapters": {
    "Demonic Scans": []
