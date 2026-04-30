@@ -1,5 +1,18 @@
 [
  {
+  "title": "Ossan Yuusha wa Kajiya de Slow Life Hajimemashita",
+  "cover": "https://readermc.org/images/thumbnails/Ossan Yuusha wa Kajiya de Slow Life Hajimemashita.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/ossan-yuusha-wa-kajiya-de-slow-life-hajimemashita"
+  },
+  "max_chapter": 23,
+  "demonic_id": "12639",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Ossan, Yuusha to Maou wo Hirou",
   "cover": "https://readermc.org/images/thumbnails/Ossan, Yuusha to Maou wo Hirou.webp",
   "status": "Ongoing",
@@ -28817,28 +28830,6 @@
   "demonic_id": "5790",
   "chapters": {
    "Demonic Scans": []
-  }
- },
- {
-  "title": "Rengoku no Karutagura",
-  "cover": "https://readermc.org/images/thumbnails/Rengoku no Karutagura.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/rengoku-no-karutagura"
-  },
-  "max_chapter": 10.5,
-  "demonic_id": "5791",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "10.5",
-     "chapter_number": 10.5
-    },
-    {
-     "name": "5.5",
-     "chapter_number": 5.5
-    }
-   ]
   }
  }
 ]

@@ -1,5 +1,17 @@
 [
  {
+  "title": "My Dragon System",
+  "cover": "https://en-thunderscans.com/wp-content/uploads/2025/09/2025-09-29-11-10-35-1759187435099.jpg",
+  "status": "Ongoing",
+  "sources": {
+   "Thunder Scans": "https://en-thunderscans.com/comics/my-dragon-system/"
+  },
+  "max_chapter": 297,
+  "chapters": {
+   "Thunder Scans": []
+  }
+ },
+ {
   "title": "My Dream, My Work",
   "cover": "https://readermc.org/images/thumbnails/My Dream, My Work.webp",
   "status": "Ongoing",
@@ -31450,19 +31462,6 @@
      "chapter_number": 1.1
     }
    ]
-  }
- },
- {
-  "title": "Ossan Yuusha wa Kajiya de Slow Life Hajimemashita",
-  "cover": "https://readermc.org/images/thumbnails/Ossan Yuusha wa Kajiya de Slow Life Hajimemashita.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/ossan-yuusha-wa-kajiya-de-slow-life-hajimemashita"
-  },
-  "max_chapter": 23,
-  "demonic_id": "12639",
-  "chapters": {
-   "Demonic Scans": []
   }
  }
 ]

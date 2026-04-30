@@ -1,5 +1,23 @@
 [
  {
+  "title": "Invincible Villain",
+  "cover": "https://readermc.org/images/thumbnails/Invincible Villain.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/invincible-villain"
+  },
+  "max_chapter": 59,
+  "demonic_id": "11560",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
   "title": "Invincible With Only a Single Point of HP",
   "cover": "https://en-thunderscans.com/wp-content/uploads/2025/11/2025-11-27-03-29-05-1764214145746-227x300.jpg",
   "status": "Ongoing",
@@ -28501,19 +28519,6 @@
   },
   "max_chapter": 5,
   "demonic_id": "2543",
-  "chapters": {
-   "Demonic Scans": []
-  }
- },
- {
-  "title": "Kiss Me Host-Gumi",
-  "cover": "https://readermc.org/images/thumbnails/Kiss Me Host-Gumi.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/kiss-me-host%25252dgumi"
-  },
-  "max_chapter": 2,
-  "demonic_id": "2545",
   "chapters": {
    "Demonic Scans": []
   }

@@ -1,5 +1,27 @@
 [
  {
+  "title": "Rengoku no Karutagura",
+  "cover": "https://readermc.org/images/thumbnails/Rengoku no Karutagura.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/rengoku-no-karutagura"
+  },
+  "max_chapter": 10.5,
+  "demonic_id": "5791",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "10.5",
+     "chapter_number": 10.5
+    },
+    {
+     "name": "5.5",
+     "chapter_number": 5.5
+    }
+   ]
+  }
+ },
+ {
   "title": "Renjou Sparkle",
   "cover": "https://readermc.org/images/thumbnails/Renjou Sparkle.webp",
   "status": "Ongoing",
@@ -29009,28 +29031,6 @@
   "demonic_id": "6592",
   "chapters": {
    "Demonic Scans": []
-  }
- },
- {
-  "title": "Silver Spoon",
-  "cover": "https://readermc.org/images/thumbnails/Silver Spoon.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/silver-spoon"
-  },
-  "max_chapter": 131,
-  "demonic_id": "6593",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "66.9",
-     "chapter_number": 66.9
-    },
-    {
-     "name": "66.5",
-     "chapter_number": 66.5
-    }
-   ]
   }
  }
 ]

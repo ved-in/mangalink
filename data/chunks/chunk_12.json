@@ -1,5 +1,23 @@
 [
  {
+  "title": "The God's Contract in the Virtual World",
+  "cover": "https://readermc.org/images/thumbnails/The God’s Contract in the Virtual World.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/the-god%2527s-contract-in-the-virtual-world"
+  },
+  "max_chapter": 27,
+  "demonic_id": "13507",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "0",
+     "chapter_number": 0
+    }
+   ]
+  }
+ },
+ {
   "title": "The Goddess Consort Reigns Supreme",
   "cover": "https://readermc.org/images/thumbnails/The Goddess Consort Reigns Supreme.webp",
   "status": "Ongoing",
@@ -3589,7 +3607,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-house-without-time"
   },
-  "max_chapter": 221,
+  "max_chapter": 225,
   "demonic_id": "1156",
   "chapters": {
    "Demonic Scans": [
@@ -12208,7 +12226,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-only-new-game-plus-hardcore-gamer-i%2527m-so-overpowered%252c-i-shattered-the-game%2527s-balance"
   },
-  "max_chapter": 93,
+  "max_chapter": 94,
   "demonic_id": "12112",
   "chapters": {
    "Demonic Scans": [
@@ -22578,12 +22596,14 @@
   "cover": "https://en-thunderscans.com/wp-content/uploads/2026/04/2026-04-26-03-23-45-1777217025717-212x300.jpg",
   "status": "Ongoing",
   "sources": {
-   "Thunder Scans": "https://en-thunderscans.com/comics/the-sword-emperor-who-surpasses-his-previous-life/"
+   "Thunder Scans": "https://en-thunderscans.com/comics/the-sword-emperor-who-surpasses-his-previous-life/",
+   "Demonic Scans": "https://demonicscans.org/manga/the-sword-emperor-who-surpasses-his-previous-life"
   },
   "max_chapter": 20,
   "chapters": {
    "Thunder Scans": []
-  }
+  },
+  "demonic_id": "13682"
  },
  {
   "title": "The Sword God from a Ruined World",
@@ -41719,24 +41739,6 @@
     {
      "name": "0",
      "chapter_number": 0
-    }
-   ]
-  }
- },
- {
-  "title": "Umi no Cradle",
-  "cover": "https://readermc.org/images/thumbnails/Umi no Cradle.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/umi-no-cradle"
-  },
-  "max_chapter": 19,
-  "demonic_id": "6937",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "16.1",
-     "chapter_number": 16.1
     }
    ]
   }

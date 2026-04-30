@@ -1,5 +1,18 @@
 [
  {
+  "title": "Kiss Me Host-Gumi",
+  "cover": "https://readermc.org/images/thumbnails/Kiss Me Host-Gumi.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/kiss-me-host%25252dgumi"
+  },
+  "max_chapter": 2,
+  "demonic_id": "2545",
+  "chapters": {
+   "Demonic Scans": []
+  }
+ },
+ {
   "title": "Kiss Me If You Can",
   "cover": "https://media.templetoons.com/file/9BSHk1m/covers/84ddf2fb-846d-432b-82e4-e69d553f368f.webp",
   "status": "Ongoing",
@@ -14507,10 +14520,19 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/let%2527s-be-an-adventurer%2521-%257edefeating-dungeons-with-a-skill-board%257e"
   },
-  "max_chapter": 55,
+  "max_chapter": 57.2,
   "demonic_id": "12971",
   "chapters": {
-   "Demonic Scans": []
+   "Demonic Scans": [
+    {
+     "name": "57.2",
+     "chapter_number": 57.2
+    },
+    {
+     "name": "57.1",
+     "chapter_number": 57.1
+    }
+   ]
   }
  },
  {
@@ -20458,7 +20480,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/lord-of-summons%2521-sudden-mutation"
   },
-  "max_chapter": 111,
+  "max_chapter": 112,
   "demonic_id": "13277",
   "chapters": {
    "Demonic Scans": []
@@ -26171,32 +26193,6 @@
   "demonic_id": "2983",
   "chapters": {
    "Demonic Scans": []
-  }
- },
- {
-  "title": "Magnolia Waltz",
-  "cover": "https://readermc.org/images/thumbnails/Magnolia Waltz.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/magnolia-waltz"
-  },
-  "max_chapter": 10,
-  "demonic_id": "2984",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "6.001",
-     "chapter_number": 6.001
-    },
-    {
-     "name": "5.002",
-     "chapter_number": 5.002
-    },
-    {
-     "name": "5.001",
-     "chapter_number": 5.001
-    }
-   ]
   }
  }
 ]

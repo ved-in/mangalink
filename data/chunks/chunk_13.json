@@ -1,5 +1,23 @@
 [
  {
+  "title": "Umi no Cradle",
+  "cover": "https://readermc.org/images/thumbnails/Umi no Cradle.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/umi-no-cradle"
+  },
+  "max_chapter": 19,
+  "demonic_id": "6937",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "16.1",
+     "chapter_number": 16.1
+    }
+   ]
+  }
+ },
+ {
   "title": "Umi no Kishidan",
   "cover": "https://readermc.org/images/thumbnails/Umi no Kishidan.webp",
   "status": "Ongoing",
@@ -2798,7 +2816,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/urban-dragon-revealed"
   },
-  "max_chapter": 61,
+  "max_chapter": 65,
   "demonic_id": "13411",
   "chapters": {
    "Demonic Scans": []

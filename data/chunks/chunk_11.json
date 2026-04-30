@@ -1,5 +1,27 @@
 [
  {
+  "title": "Silver Spoon",
+  "cover": "https://readermc.org/images/thumbnails/Silver Spoon.webp",
+  "status": "Ongoing",
+  "sources": {
+   "Demonic Scans": "https://demonicscans.org/manga/silver-spoon"
+  },
+  "max_chapter": 131,
+  "demonic_id": "6593",
+  "chapters": {
+   "Demonic Scans": [
+    {
+     "name": "66.9",
+     "chapter_number": 66.9
+    },
+    {
+     "name": "66.5",
+     "chapter_number": 66.5
+    }
+   ]
+  }
+ },
+ {
   "title": "Silvertown of Hell",
   "cover": "https://readermc.org/images/thumbnails/Silvertown of Hell.webp",
   "status": "Ongoing",
@@ -1535,7 +1557,7 @@
    "Demonic Scans": "https://demonicscans.org/manga/sleepless-death",
    "Violet Scans": "https://violetscans.org/comics/sleepless-death/"
   },
-  "max_chapter": 12,
+  "max_chapter": 13,
   "demonic_id": "13656",
   "chapters": {
    "Demonic Scans": [],
@@ -41022,7 +41044,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/the-eternal-support-mage-becomes-the-strongest-sage"
   },
-  "max_chapter": 36,
+  "max_chapter": 37,
   "demonic_id": "13680",
   "chapters": {
    "Demonic Scans": []
@@ -44851,24 +44873,6 @@
   "demonic_id": "13081",
   "chapters": {
    "Demonic Scans": []
-  }
- },
- {
-  "title": "The God's Contract in the Virtual World",
-  "cover": "https://readermc.org/images/thumbnails/The God’s Contract in the Virtual World.webp",
-  "status": "Ongoing",
-  "sources": {
-   "Demonic Scans": "https://demonicscans.org/manga/the-god%2527s-contract-in-the-virtual-world"
-  },
-  "max_chapter": 27,
-  "demonic_id": "13507",
-  "chapters": {
-   "Demonic Scans": [
-    {
-     "name": "0",
-     "chapter_number": 0
-    }
-   ]
   }
  }
 ]

@@ -666,7 +666,7 @@
  },
  "a private debt": {
   "status": "Ongoing",
-  "max_chapter": 20,
+  "max_chapter": 22,
   "chapter_count": null
  },
  "a private story on third street": {
@@ -676,7 +676,7 @@
  },
  "a rank party wo ridatsu shita ore wa moto oshiego tachi to meikyuu shinbu wo mezasu": {
   "status": "Ongoing",
-  "max_chapter": 157,
+  "max_chapter": 161,
   "chapter_count": null
  },
  "a rare marriage how to grill our love": {
@@ -1616,7 +1616,7 @@
  },
  "against the gods": {
   "status": "Ongoing",
-  "max_chapter": 766,
+  "max_chapter": 767,
   "chapter_count": null
  },
  "agape": {
@@ -1636,7 +1636,7 @@
  },
  "age of terror": {
   "status": "Ongoing",
-  "max_chapter": 564,
+  "max_chapter": 567,
   "chapter_count": null
  },
  "age": {
@@ -4376,7 +4376,7 @@
  },
  "baek xx": {
   "status": "Ongoing",
-  "max_chapter": 170,
+  "max_chapter": 171,
   "chapter_count": null
  },
  "bai zes bizarre collection": {
@@ -6641,7 +6641,7 @@
  },
  "call of the spear": {
   "status": "Ongoing",
-  "max_chapter": 238,
+  "max_chapter": 239,
   "chapter_count": null
  },
  "campfire friends": {
@@ -11011,7 +11011,7 @@
  },
  "doomsday smuggler i trade spicy strips for gold bars": {
   "status": "Ongoing",
-  "max_chapter": 30,
+  "max_chapter": 31,
   "chapter_count": null
  },
  "doomsday weapon": {
@@ -12271,7 +12271,7 @@
  },
  "embarrassment game": {
   "status": "Ongoing",
-  "max_chapter": 18,
+  "max_chapter": 19,
   "chapter_count": null
  },
  "embodiment of the assassin in the murim world": {
@@ -12991,7 +12991,7 @@
  },
  "executioner": {
   "status": "Ongoing",
-  "max_chapter": 51,
+  "max_chapter": 52,
   "chapter_count": null
  },
  "exiled hero picked up by a demon": {
@@ -16121,7 +16121,7 @@
  },
  "global beast tamer i can see the path of evolution 2025": {
   "status": "Ongoing",
-  "max_chapter": 70,
+  "max_chapter": 75,
   "chapter_count": null
  },
  "global cataclysm my ancestors spirit tablet awakened at the start": {
@@ -18921,7 +18921,7 @@
  },
  "hero killer": {
   "status": "Ongoing",
-  "max_chapter": 260,
+  "max_chapter": 261,
   "chapter_count": null
  },
  "hero mask": {
@@ -19231,7 +19231,7 @@
  },
  "high school queen": {
   "status": "Ongoing",
-  "max_chapter": 88,
+  "max_chapter": 89,
   "chapter_count": null
  },
  "high school taoist": {
@@ -21142,6 +21142,11 @@
  "i became a legend a decade later after telling my comrades to leave everything to me and retreat first": {
   "status": "Ongoing",
   "max_chapter": 58.2,
+  "chapter_count": null
+ },
+ "i became a mage in a medieval fantasy world": {
+  "status": "Ongoing",
+  "max_chapter": 18,
   "chapter_count": null
  },
  "i became a maid in a tl novel": {
@@ -32746,7 +32751,7 @@
  },
  "lets be an adventurer defeating dungeons with a skill board": {
   "status": "Ongoing",
-  "max_chapter": 55,
+  "max_chapter": 57.2,
   "chapter_count": null
  },
  "lets be romantic": {
@@ -33731,7 +33736,7 @@
  },
  "lord of summons sudden mutation": {
   "status": "Ongoing",
-  "max_chapter": 111,
+  "max_chapter": 112,
   "chapter_count": null
  },
  "lord of the abyss": {
@@ -55231,7 +55236,7 @@
  },
  "sleepless death": {
   "status": "Ongoing",
-  "max_chapter": 12,
+  "max_chapter": 13,
   "chapter_count": null
  },
  "slice of black chocolate": {
@@ -59456,7 +59461,7 @@
  },
  "the eternal support mage becomes the strongest sage": {
   "status": "Ongoing",
-  "max_chapter": 36,
+  "max_chapter": 37,
   "chapter_count": null
  },
  "the eternal supreme": {
@@ -60396,7 +60401,7 @@
  },
  "the house without time": {
   "status": "Ongoing",
-  "max_chapter": 221,
+  "max_chapter": 225,
   "chapter_count": null
  },
  "the hungry demon king and the hostage hero": {
@@ -61506,7 +61511,7 @@
  },
  "the only new game plus hardcore gamer im so overpowered i shattered the games balance": {
   "status": "Ongoing",
-  "max_chapter": 93,
+  "max_chapter": 94,
   "chapter_count": null
  },
  "the order of slave breeding": {
@@ -65521,7 +65526,7 @@
  },
  "urban dragon revealed": {
   "status": "Ongoing",
-  "max_chapter": 61,
+  "max_chapter": 65,
   "chapter_count": null
  },
  "urban fairy king": {
@@ -70346,7 +70351,7 @@
   "status": "Ongoing"
  },
  "a-private-debt": {
-  "max_chapter": 20,
+  "max_chapter": 22,
   "status": "Ongoing"
  },
  "a-private-story-on-third-street": {
@@ -70354,7 +70359,7 @@
   "status": "Ongoing"
  },
  "a-rank-party-wo-ridatsu-shita-ore-wa%252c-moto-oshiego-tachi-to-meikyuu-shinbu-wo-mezasu": {
-  "max_chapter": 157,
+  "max_chapter": 161,
   "status": "Ongoing"
  },
  "a-rare-marriage%253a-how-to-grill-our-love": {
@@ -71054,7 +71059,7 @@
   "status": "Ongoing"
  },
  "against-the-gods": {
-  "max_chapter": 766,
+  "max_chapter": 767,
   "status": "Ongoing"
  },
  "age-matters": {
@@ -71062,7 +71067,7 @@
   "status": "Ongoing"
  },
  "age-of-terror": {
-  "max_chapter": 564,
+  "max_chapter": 567,
   "status": "Ongoing"
  },
  "age%2521": {
@@ -73002,7 +73007,7 @@
   "status": "Ongoing"
  },
  "baek-xx": {
-  "max_chapter": 170,
+  "max_chapter": 171,
   "status": "Ongoing"
  },
  "bai-ze%2527s-bizarre-collection": {
@@ -74602,7 +74607,7 @@
   "status": "Ongoing"
  },
  "call-of-the-spear": {
-  "max_chapter": 238,
+  "max_chapter": 239,
   "status": "Ongoing"
  },
  "campfire-friends": {
@@ -77622,7 +77627,7 @@
   "status": "Ongoing"
  },
  "doomsday-smuggler%253a-i-trade-spicy-strips-for-gold-bars": {
-  "max_chapter": 30,
+  "max_chapter": 31,
   "status": "Ongoing"
  },
  "doomsday-weapon": {
@@ -78514,7 +78519,7 @@
   "status": "Ongoing"
  },
  "embarrassment-game": {
-  "max_chapter": 18,
+  "max_chapter": 19,
   "status": "Ongoing"
  },
  "embodiment-of-the-assassin-in-the-murim-world": {
@@ -81294,7 +81299,7 @@
   "status": "Ongoing"
  },
  "global-beast-tamer%253a-i-can-see-the-path-of-evolution-%25282025%2529": {
-  "max_chapter": 70,
+  "max_chapter": 75,
   "status": "Ongoing"
  },
  "global-cataclysm%253a-my-ancestors%2527-spirit-tablet-awakened-at-the-start": {
@@ -83330,7 +83335,7 @@
   "status": "Ongoing"
  },
  "hero-killer": {
-  "max_chapter": 260,
+  "max_chapter": 261,
   "status": "Ongoing"
  },
  "hero-mask": {
@@ -83558,7 +83563,7 @@
   "status": "Ongoing"
  },
  "high-school-queen": {
-  "max_chapter": 88,
+  "max_chapter": 89,
   "status": "Ongoing"
  },
  "high-school-taoist": {
@@ -84927,6 +84932,10 @@
  },
  "i-became-a-legend-a-decade-later-after-telling-my-comrades-to-leave-everything-to-me-and-retreat-first": {
   "max_chapter": 58.2,
+  "status": "Ongoing"
+ },
+ "i-became-a-mage-in-a-medieval-fantasy-world": {
+  "max_chapter": 18,
   "status": "Ongoing"
  },
  "i-became-a-maid-in-a-tl-novel": {
@@ -93426,7 +93435,7 @@
   "status": "Ongoing"
  },
  "let%2527s-be-an-adventurer%2521-%257edefeating-dungeons-with-a-skill-board%257e": {
-  "max_chapter": 55,
+  "max_chapter": 57.2,
   "status": "Ongoing"
  },
  "let%2527s-be-romantic": {
@@ -94106,7 +94115,7 @@
   "status": "Ongoing"
  },
  "lord-of-summons%2521-sudden-mutation": {
-  "max_chapter": 111,
+  "max_chapter": 112,
   "status": "Ongoing"
  },
  "lord-of-the-abyss": {
@@ -109414,7 +109423,7 @@
   "status": "Dropped"
  },
  "sleepless-death": {
-  "max_chapter": 12,
+  "max_chapter": 13,
   "status": "Ongoing"
  },
  "slice-of-black-chocolate": {
@@ -112590,7 +112599,7 @@
   "status": "Ongoing"
  },
  "the-eternal-support-mage-becomes-the-strongest-sage": {
-  "max_chapter": 36,
+  "max_chapter": 37,
   "status": "Ongoing"
  },
  "the-eternal-supreme": {
@@ -113298,7 +113307,7 @@
   "status": "Ongoing"
  },
  "the-house-without-time": {
-  "max_chapter": 221,
+  "max_chapter": 225,
   "status": "Ongoing"
  },
  "the-hungry-demon-king-and-the-hostage-hero": {
@@ -114150,7 +114159,7 @@
   "status": "Ongoing"
  },
  "the-only-new-game-plus-hardcore-gamer-i%2527m-so-overpowered%252c-i-shattered-the-game%2527s-balance": {
-  "max_chapter": 93,
+  "max_chapter": 94,
   "status": "Ongoing"
  },
  "the-ordinary-lawyer%255c%2527s-subspace": {
@@ -117154,7 +117163,7 @@
   "status": "Ongoing"
  },
  "urban-dragon-revealed": {
-  "max_chapter": 61,
+  "max_chapter": 65,
   "status": "Ongoing"
  },
  "urban-fairy-king": {
