@@ -3790,10 +3790,14 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/isekai-yakkyoku"
   },
-  "max_chapter": 63,
+  "max_chapter": 64.1,
   "demonic_id": "12457",
   "chapters": {
    "Demonic Scans": [
+    {
+     "name": "64.1",
+     "chapter_number": 64.1
+    },
     {
      "name": "62.2",
      "chapter_number": 62.2
@@ -11892,7 +11896,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/just-a-cat"
   },
-  "max_chapter": 57,
+  "max_chapter": 58,
   "demonic_id": "13146",
   "chapters": {
    "Demonic Scans": []
@@ -24136,7 +24140,7 @@
   "sources": {
    "Demonic Scans": "https://demonicscans.org/manga/killer-peter"
   },
-  "max_chapter": 126,
+  "max_chapter": 127,
   "demonic_id": "11895",
   "chapters": {
    "Demonic Scans": [
